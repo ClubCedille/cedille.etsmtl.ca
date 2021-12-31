@@ -2,3 +2,30 @@ baseURL = 'https://cedille.etsmtl.ca/'
 languageCode = 'fr-ca'
 title = 'Club Cedille'
 theme = 'cedille'
+
+# main menu
+[menu]
+    [[menu.main]]
+        name = "Accueil"
+        url = "/accueil/"
+        weight = 1 
+    [[menu.main]]
+        name = "Équipe"
+        url = "/équipe"
+        weight = 2
+    [[menu.main]]    
+        name = "Projets"
+        url = "/projets"
+        weight = 3
+    [[menu.main]]    
+        name = "Partenaires"
+        url = "/partenaires"
+        weight = 4
+    [[menu.main]]   
+        name = "À propos de nous"
+        url = "/àproposdenous"
+        weight = 5    
+
+# footer menu
+
+    

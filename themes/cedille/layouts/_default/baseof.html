@@ -5,10 +5,11 @@
     </head>    
     <body>
         <div id="main">
-            {{- partial "navbar.html" . -}}
+            {{- partial "header.html" . -}}
             
             <div class="w3-container">
-                {{ .Content }}
+                {{ block "main" . }}
+                {{ end }}
             </div>
         </div>
 

@@ -1,11 +1,6 @@
-{{ define "main" }}
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ range .Data.Pages }}
     {{ .Content }}
-
-    <ul>
-        {{ range .Site.title}}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </li>
-        {{ end }}
-    </ul>
 {{ end }}
+{{ partial "footer.html" . }}
