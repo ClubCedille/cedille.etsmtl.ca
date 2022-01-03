@@ -1,14 +1,12 @@
-<div>
-    <header class="header bg-grey">
+<div class="header">
+    <header>
         <nav>
-
-        
         <img src="/resources/_gen/images/cedille-logo-new.png" alt="logoets">
-           
-        {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}">{{ .Name }}</a>
-        {{ end }}
+            <div class="navbar">
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}    
+            </div>
         </nav>
     </header>
-    
 </div>
