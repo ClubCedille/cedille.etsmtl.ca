@@ -1,60 +1,166 @@
 body{
     margin: 0;
     font-family:'Courier New', Courier, monospace;
+    background-color:rgb(177, 176, 176);
 }
 
+/*------------ header section --------------*/
 .header{
     overflow: hidden;
     opacity: 80%;
-    background-color: rgb(84, 84, 84);
-    padding: 35px 20px;
+    background-color: black; /*rgb(84, 84, 84);*/
+    padding: 15px 100px;
     font-size: 20px;
 }
+
 .header img{
     float: left;
-    width: auto;
-    height: fit-content;
+    width: fit-content;
+    height: 140px;
+    padding-left: none;
 }
 
 .navbar{
-    float:right;
+    float: right;
+    padding-top: 50px;
 }
+
 .header a{
     float: left;
-    color: black;
+    color: white;
     text-align: center;
-    padding: 12px;
     text-decoration: none;
+    padding: 12px;
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-.header a:hover{
+.navbar a.active{
+    text-decoration: underline;
+}
+
+.navbar a:hover{
     background-color: #ddd;
     color: black;
 }
 
-.header a.active{
-    background-color: black;
-    color: white;
+/*-------- Footer section --------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+ul a{
+    width: 100px;
 }
 
 .footer{
-    background-color: #ddd;
-    margin-top: 90%;
-    padding: 30px 0px;;
+    background-color: rgb(96, 95, 95); /*#ddd;*/
+    padding: 60px 0;
+    color: black;
+    font-size: 15px;
+}
+
+.footer-col{
+    width: 50%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.footer-col h3{
+    font-size: 19px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-col h3::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    box-sizing: border-box;
+    background-color: black;
+    width: 60px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3.s ease;
+}
+
+.footer-col ul li a:hover{
+    color: rgba(255, 166, 0, 0.85);
+    padding-left: 10px;
+}
+
+.social-links a{
+    display: inline-block;
+    background-color: none;
+    text-align: center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    transition: all 0.5s ease;
+}
+
+.adresse{
+    color: white;
 }
 
 .copyleft {
     /* trouver comment rotate le copyright */
 }
 
-@media screen and (max-width: 500px){
+@media (max-width: 900px){
     .header a{
         float: none;
         display: block;
         text-align: left;        
     }
 
+    .coordonnees {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .medias{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 570px){
+    .coordonnees{
+        width: 80%;
+    }
+
+    .medias{
+        width: 80%;
+    }
 }

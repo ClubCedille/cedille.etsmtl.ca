@@ -1,26 +1,34 @@
-<div class="footer">
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="coordonnees">
-                    
-                </div>
-                <div class="medias">
-                    <p>Venez nous suivre</p>
-                    <ul>
-                        <li>github</li>
-                        <li><a href=""></a>facebook</li>
-                        <li>linkedin</li>
-                        <li>twitter</li>
-                        <li>instagram</li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <span class="copy">Copyleft <span class="copyleft">©</span> {{ site.Title }}</span>
-                </div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h3>C&eacutedille</h3>
+                <ul>
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Adresse</h3>
+                <div class="adresse">
+                    1219 Rue William
+                    <br>Montr&eacuteal (Qu&eacutebec) 
+                    <br>H3C 1R1
+                    <br>Local D-2020 
+                    <br>
+                    <br>T&eacutel&eacutephone: (514)-396-8800 poste 7302
+                </div>     
             </div>
         </div>
-    </footer>
-</div>
+        <div class="social-links">
+            <ul>
+
+            </ul>
+            <span class="copy">Copyleft <span class="copyleft">©</span> {{ site.Title }}</span>
+        </div>
+    </div>
+</footer>
+
 
                    

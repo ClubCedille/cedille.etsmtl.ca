@@ -1,7 +1,10 @@
 <div class="header">
     <header>
         <nav>
-        <img src="/resources/_gen/images/cedille-logo-new.png" alt="logoets">
+            
+            <a href = "{{ relref . "/accueil" }}">
+                <img src="/images/cedille-logo-blanc.png" alt="logoets">
+            </a>
             <div class="navbar">
             {{ range .Site.Menus.main }}
             <a href="{{ .URL }}">{{ .Name }}</a>
