@@ -2,15 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="footer-col">
-                <h3>C&eacutedille</h3>
-                <ul>
-                    {{ range .Site.Menus.main }}
-                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                    {{ end }}
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Adresse</h3>
+                <div class="name-address">
+                    <h3>Adresse</h3>
+                </div>
                 <div class="adresse">
                     1219 Rue William
                     <br>Montr&eacuteal (Qu&eacutebec) 
@@ -20,12 +14,20 @@
                     <br>T&eacutel&eacutephone: (514)-396-8800 poste 7302
                 </div>     
             </div>
-        </div>
-        <div class="social-links">
-            <ul>
-
-            </ul>
-            <span class="copy">Copyleft <span class="copyleft">©</span> {{ site.Title }}</span>
+            <div class="footer-col">
+                <div class="follow-us">
+                    <h3>Suivez-nous</h3>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/ClubCedille"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/clubcedille"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/cedilleets/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/cedille/about/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="year">    
+                    <span class="copyleft">&copy;</span> 2022 | {{ site.Title }}</span>
+                </div>
+            </div>
         </div>
     </div>
 </footer>

@@ -7,7 +7,7 @@ theme = 'cedille'
 [menu]
     [[menu.main]]
         name = "Accueil"
-        url = "/accueil"
+        url = "/"
         weight = 1 
     [[menu.main]]
         name = "Équipe"
@@ -26,6 +26,5 @@ theme = 'cedille'
         url = "/contact"
         weight = 5    
 
-# footer menu
 
     
