@@ -1,16 +1,24 @@
 <div class="header">
     <header>
-        <nav>
+        <nav class="nav">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
             <a href = "{{ relref . "/" }}">
-                <img src="/images/cedille-logo-blanc.png" alt="logoets">
+                <img src="/images/cedille-logo-orange.png" alt="logoets">
             </a>
             <div class="navbar">
-            {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}">{{ .Name }}</a>
-            {{ end }}    
+            <ul>
+                {{ $current := .}}
+                {{ range .Site.Menus.main }}
+                {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+                {{ $active = or $active (eq .Name $current.Title) }}
+                {{ $active = or $active (and (eq .Name "Équipe") (eq $current.Section "équipe")) }}
+                {{ $active = or $active (and (eq .Name "Projets") (eq $current.Section "projets")) }}
+                {{ $active = or $active (and (eq .Name "Partenaires") (eq $current.Section "partenaires")) }}
+                {{ $active = or $active (and (eq .Name "Contact") (eq $current.Section "contact")) }}
+                <li><a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a></li>
+                {{ end }}    
             </div>
         </nav>
     </header>
