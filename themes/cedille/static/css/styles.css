@@ -7,8 +7,8 @@ body{
 /*------------ header section --------------*/
 .header{
     overflow: hidden;
-    opacity: 80%;
-    background-color: black; /*rgb(84, 84, 84);*/
+    opacity: 90%;
+    background-color: rgb(12, 12, 12);
     height: 140px;
     padding: 0px 100px;
     font-size: 20px;
@@ -27,6 +27,7 @@ body{
     display: flex;
     float: right;
     margin-top: 50px;
+    opacity: none;
 }
 
 .navbar ul{
@@ -48,12 +49,14 @@ body{
     line-height: 30px;
     border-radius: 4px;
     transition: all 0.3s ease;
+    opacity: none;
 }
 
 .navbar a.active{
-    text-decoration-line: underline;
-    text-underline-offset: 2px;
-    color: white;
+    border-radius: 4px;
+    background-color: rgb(243, 241, 241);
+    opacity: 95%;
+    color: rgba(255, 166, 0, 0.544);
 }
 
 .navbar a:hover{
