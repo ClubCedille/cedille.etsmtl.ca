@@ -54,14 +54,13 @@ body{
 
 .navbar a.active{
     border-radius: 4px;
-    background-color: rgb(243, 241, 241);
-    opacity: 95%;
-    color: rgba(255, 166, 0, 0.544);
+    background-color: rgba(255, 166, 0, 0.748);
+    color: white;
 }
 
 .navbar a:hover{
-    background-color: rgb(221, 207, 207);
-    color: rgba(255, 166, 0, 0.748);
+    background-color: rgba(255, 166, 0, 0.925);
+    color: white;
 }
 
 .checkbtn{
