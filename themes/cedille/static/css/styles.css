@@ -11,39 +11,35 @@ body{
 }
 
 /*------------ header section --------------*/
-.header{
-    overflow: hidden;
-    opacity: 90%;
-    background-color: rgb(12, 12, 12);
-    height: 140px;
-    padding: 0px 100px;
-    font-size: 20px;
-    position: sticky;
-    top: 0;
-}
-
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 90%;
+    background-color: rgb(12, 12, 12);
+    position: sticky;
+    top: 0;
+    padding: 0 70px;
 }
 
-.header img{
+.nav img{
     width: fit-content;
-    height: 120px;
-    margin-top: 10px;
+    height: 110px;
+    margin: .5rem;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 
-.navbar{
+.navbar ul{
     display: flex;
     justify-content: space-around;
 }
 
-.navbar li{
+.navbar ul li{
     list-style: none;
 }
 
-.navbar li a{
+.navbar ul li a{
     color: rgba(255, 166, 0, 0.748);
     text-align: center;
     text-decoration: none;
@@ -68,28 +64,89 @@ nav{
 
 .burger{
     display: none;
+    position: absolute;
+    top: .75 rem;
+    right: 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
 }
 
 .burger div{
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
+    width: 30px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: orange;
+    margin: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-@media screen and(max-width:200px){
+@media (max-width:900px){
+
+    .burger{
+        display: flex;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .navbar{
         display: none;
+        width: 100%;
     }
 
-    .navbar li{
-        opacity: 0;
+    .navbar ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+       /*
+        background-color: rgb(69, 67, 67);
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        opacity: 0;*/
+
+    .navbar ul li{
+        text-align: center;
     }
 
+    .navbar ul li a.active{
+        background-color: none;
+    }
+    
     .burger{
         display: block;
     }
+}
 
+.navbar.active{
+    display: flex;
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        /*transform: translateX(50px);*/
+    }
+    to{
+        opacity: 1;
+        /*transform: translateX(0px);*/
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,10px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-10px);
 }
 
 /*-------- Footer section --------*/
