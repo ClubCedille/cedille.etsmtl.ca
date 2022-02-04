@@ -94,7 +94,7 @@ nav{
     }
 
     .navbar{
-        display: none;
+        /* display: none; */
         width: 100%;
     }
 
@@ -106,21 +106,10 @@ nav{
     .navbar ul li{
         text-align: center;
     }
-}
 
-.navbar.active{
+    .navbar.active{
         display: flex;
-    }
-
-
-@keyframes navLinkFade {
-    from{
-        opacity: 0;
-        /*transform: translateX(50px);*/
-    }
-    to{
-        opacity: 1;
-        /*transform: translateX(0px);*/
+        width: 100%;
     }
 }
 
