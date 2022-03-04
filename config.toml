@@ -2,6 +2,7 @@ baseURL = 'https://cedille.etsmtl.ca/'
 languageCode = 'fr-ca'
 title = 'Club Cedille'
 theme = 'cedille'
+<<<<<<< HEAD
 
 # main menu
 [menu]
@@ -28,3 +29,5 @@ theme = 'cedille'
 
 
     
+=======
+>>>>>>> master

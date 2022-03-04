@@ -3,6 +3,7 @@
 Presenting [CEDILLE](https://cedille.etsmtl.ca/) Homepage v2.0, generated with Hugo and a theme designed from scratch.
 # Getting started
 
+<<<<<<< HEAD
 Requirements:
 
 * [Hugo](https://gohugo.io/) (`apt install hugo`)
@@ -35,3 +36,5 @@ $ hugo serve -D
 
 ## TODO
 Check out our website's issues page for more details
+=======
+>>>>>>> master

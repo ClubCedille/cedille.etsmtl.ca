@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="fr" > 
     <head>
         {{- partial "head.html" . -}}             
@@ -16,5 +17,15 @@
         <div>
             {{- partial "footer.html" . -}}
         </div>
+=======
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <div id="content">
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+>>>>>>> master
     </body>
 </html>
