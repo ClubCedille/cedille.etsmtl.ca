@@ -1,36 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<div class="header">
-    <header>
-        <nav class="nav">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href = "{{ relref . "/" }}">
-                <img src="/images/cedille-logo-orange.png" alt="logoets">
-            </a>
-            <div class="navbar">
-            <ul>
-                {{ $current := .}}
-                {{ range .Site.Menus.main }}
-                {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-                {{ $active = or $active (eq .Name $current.Title) }}
-                {{ $active = or $active (and (eq .Name "Équipe") (eq $current.Section "équipe")) }}
-                {{ $active = or $active (and (eq .Name "Projets") (eq $current.Section "projets")) }}
-                {{ $active = or $active (and (eq .Name "Partenaires") (eq $current.Section "partenaires")) }}
-                {{ $active = or $active (and (eq .Name "Contact") (eq $current.Section "contact")) }}
-                <li><a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a></li>
-                {{ end }}    
-            </div>
-        </nav>
-    </header>
-</div>
-=======
-<div>header</div>
->>>>>>> master
-=======
-<div>header</div>
-=======
 <nav class="navbar navbar-expand-lg px-5 navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href = "{{ relref . "/" }}" >
@@ -60,5 +27,3 @@
       </div>
     </div>
   </nav>
->>>>>>> 51a79b5b3f6ba3106704555b832abf58b92fcec8
->>>>>>> master

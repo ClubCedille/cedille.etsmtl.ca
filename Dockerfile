@@ -17,6 +17,6 @@ COPY ./ /site
 
 WORKDIR /site
 
-CMD [ "hugo", "server", "--buildDrafts", "watch", "--bind", "0.0.0.0", "-p", "3000"]
+CMD [ "hugo", "server", "watch", "--bind", "0.0.0.0", "-p", "3000"]
 
 

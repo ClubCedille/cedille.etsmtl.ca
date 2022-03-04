@@ -2,11 +2,7 @@ baseURL = 'https://cedille.etsmtl.ca/'
 languageCode = 'fr-ca'
 title = 'Club Cedille'
 theme = 'cedille'
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
+
 
 # main menu
 [menu]
@@ -37,9 +33,4 @@ theme = 'cedille'
     instagram = "https://www.instagram.com/cedilleets/"
     linkedin = "https://www.linkedin.com/company/cedille/about/"
     
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> 51a79b5b3f6ba3106704555b832abf58b92fcec8
->>>>>>> master
+
