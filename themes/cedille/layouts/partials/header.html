@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg px-5 navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href = "{{ relref . "/" }}" >
+        <img src="/images/cedille-logo-orange.png" alt="logoets">
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          {{ $current := .}}
+          {{ range .Site.Menus.main }}
+          {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+          {{ $active = or $active (eq .Name $current.Title) }}
+          {{ $active = or $active (and (eq .Name "Équipe") (eq $current.Section "équipe")) }}                
+          {{ $active = or $active (and (eq .Name "Projets") (eq $current.Section "projets")) }}
+          {{ $active = or $active (and (eq .Name "Partenaires") (eq $current.Section "partenaires")) }}
+          {{ $active = or $active (and (eq .Name "Contact") (eq $current.Section "contact")) }}
+          <li>
+            <a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </nav>

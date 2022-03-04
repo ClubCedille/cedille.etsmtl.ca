@@ -1,0 +1,34 @@
+baseURL = 'https://cedille.etsmtl.ca/'
+languageCode = 'fr-ca'
+title = 'Club Cedille'
+theme = 'cedille'
+
+# main menu
+[menu]
+    [[menu.main]]
+        name = "Accueil"
+        url = "/"
+        weight = 1 
+    [[menu.main]]
+        name = "Équipe"
+        url = "/équipe"
+        weight = 2
+    [[menu.main]]    
+        name = "Projets"
+        url = "/projets"
+        weight = 3
+    [[menu.main]]    
+        name = "Partenaires"
+        url = "/partenaires"
+        weight = 4
+    [[menu.main]]   
+        name = "Contact"
+        url = "/contact"
+        weight = 5    
+
+[params]
+    github = "https://github.com/ClubCedille"
+    facebook = "https://www.facebook.com/clubcedille"
+    instagram = "https://www.instagram.com/cedilleets/"
+    linkedin = "https://www.linkedin.com/company/cedille/about/"
+    

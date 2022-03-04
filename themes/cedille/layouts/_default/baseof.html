@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr" > 
+    <head>
+        {{- partial "head.html" . -}}             
+    </head>    
+    <body>
+        {{- partial "header.html" . -}}
+        <div id="main">
+            
+            <div class="w3-container">
+                {{ block "main" . }}
+                {{ end }}
+            </div>
+        </div>
+
+        <div>
+            {{- partial "footer.html" . -}}
+        </div>
+    </body>
+</html>
