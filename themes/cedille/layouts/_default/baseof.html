@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
     {{- partial "head.html" . -}}
     <body>
@@ -7,5 +8,24 @@
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
+=======
+<html lang="fr" > 
+    <head>
+        {{- partial "head.html" . -}}             
+    </head>    
+    <body>
+        {{- partial "header.html" . -}}
+        <div id="main">
+            
+            <div class="w3-container">
+                {{ block "main" . }}
+                {{ end }}
+            </div>
+        </div>
+
+        <div>
+            {{- partial "footer.html" . -}}
+        </div>
+>>>>>>> 51a79b5b3f6ba3106704555b832abf58b92fcec8
     </body>
 </html>
