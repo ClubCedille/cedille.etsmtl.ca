@@ -1,7 +1,12 @@
 ---
 title: "Accueil"
 date: 2021-12-21T20:08:58-05:00
-draft: true
+draft: false
+links:  
+    github: https://github.com/ClubCedille
+    facebook: https://www.facebook.com/clubcedille
+    instagram: https://www.instagram.com/cedilleets/
+    linkedin: https://www.linkedin.com/company/cedille/about/
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut orci ac enim gravida porttitor. Pellentesque non dolor posuere odio gravida volutpat. Pellentesque nulla est, porttitor vitae molestie eu, gravida et massa. Pellentesque eget volutpat mi, et imperdiet ex. Aliquam erat volutpat. Ut dignissim imperdiet facilisis. Duis vestibulum scelerisque lectus ut fringilla. Nullam quis ex et enim fringilla accumsan at vitae tortor. Morbi id velit felis. Nullam quis magna ipsum.
