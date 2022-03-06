@@ -1,6 +1,6 @@
 FROM yanqd0/hugo as build
 
-EXPOSE 1313
+EXPOSE 3000
 
 WORKDIR /src
 
