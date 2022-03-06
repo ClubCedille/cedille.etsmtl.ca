@@ -1,22 +1,14 @@
-FROM nginx:alpine as build 
+FROM yanqd0/hugo as build
 
-RUN apk add --update \
-    wget
+WORKDIR /src
 
-EXPOSE 1313
+COPY . .
 
-ENV HUGO_VERSION 0.92.1
+RUN hugo
 
-EXPOSE 1313
-RUN wget --quiet "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" && \ 
-    tar xzf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz && \
-    rm -r hugo_${HUGO_VERSION}_Linux-64bit.tar.gz && \
-    mv hugo /usr/bin
+FROM nginx
 
-COPY ./ /site
+FROM nginx:1.21.6-alpine
+COPY --from=build /src/public/ /usr/share/nginx/html
 
-WORKDIR /site
-
-CMD [ "hugo", "server", "watch", "--bind", "0.0.0.0", "-p", "3000"]
-
-
+CMD ["nginx", "-g", "daemon off;"]
