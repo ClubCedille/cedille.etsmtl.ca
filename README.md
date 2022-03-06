@@ -14,23 +14,30 @@ Alternatively :
 
 # Usage 
 
-For now building the project following our instructions will not include content marked has draft.
+## Production
 
-## With docker
-
-Move to the project's directory and simply build your customized configuration :
+To deploy the website, you can use the following command:
 ```bash
-$ cd cedille.etsmtl.ca/
-$ sudo docker-compose up 
+$ make prod
 ...
 ```
-Note 
-## With hugo
+The website will then be deployed at the base-url defined in config.toml
 
-Move to the project's directory and locally build the site with :
+## Development
+### With docker
+
+You can build locally with the following command :
 ```bash
-$ cd cedille.etsmtl.ca/
-$ hugo serve
+$ make dev
+...
+```
+
+### Without docker
+
+locally build the site with :
+```bash
+$ make dev-hugo
+...
 ```
 
 ## TODO
