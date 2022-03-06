@@ -1,4 +1,4 @@
-.PHONY: src nginx
+.PHONY: nginx
 
 
 prod:
