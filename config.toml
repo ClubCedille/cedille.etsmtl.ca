@@ -1,4 +1,3 @@
-baseURL = 'https://cedille.etsmtl.ca/'
 languageCode = 'fr-ca'
 title = 'Club Cedille'
 theme = 'cedille'
