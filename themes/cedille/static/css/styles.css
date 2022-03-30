@@ -19,6 +19,9 @@ body{
     background-color: rgb(12, 12, 12);
     position: sticky;
     top: 0;
+
+    /**/
+    z-index: 2000;
 }
 
 img{
@@ -255,4 +258,22 @@ ul a{
 .copyleft{
     display: inline-block;
     transform: rotateY(180deg);
+}
+
+
+/**************************************bayes's edits *************************************************/
+
+.card-img-top{
+    border-radius: 50%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+#MemberCarousel{
+    height: 100px;
+}
+
+.card{
+    background-color:rgb(177, 176, 176);
+    border: 0ch;
 }

@@ -6,5 +6,5 @@ draft: false
 
 
 
-h
+{{< Equipe >}}
 # sdddsdsd
