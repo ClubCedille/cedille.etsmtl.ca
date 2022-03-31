@@ -26,7 +26,14 @@
             </div>
             <div class="col projets">
                 <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#projet2" aria-expanded="false">
-                    <h4>Titre projet 2</h4>
+                    <div class="row">
+                        <div class="col titreProjet">
+                            <h4>Titre projet 2</h4>
+                        </div>
+                        <div class="col-sm-auto lienGithub">
+                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
                     <p>Brève description</p>
                 </button>
                 <div class="btn-collapse collapse" id="projet2">
