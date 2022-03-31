@@ -1,67 +1,3 @@
-<style>
-
-    .container{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .titre{
-        color: black;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .col{
-        border-radius: 15px;
-        background-color: grey;
-        margin: 0px 20px;
-        padding: 20px;
-    }
-
-    .projets:hover{
-        padding: 25px;
-        transition: all 0.3s ease-out;
-    }
-
-    .col h4{
-        margin-top: 15px;
-        padding-bottom: 10px;
-        font-size: 25px;
-        font-weight: bold;
-        color: black;
-        text-align: left;
-    }
-
-    .col p{
-        text-align: left;
-    }
-
-    .temoignage{
-        display: none;
-    }
-
-    .contribution{
-        border-radius: 15px;
-        padding: 20px;
-        background-color: grey;
-        color: black;
-    }
-
-    .contribution h2{
-        font-size: 30px;
-        font-weight: bold;
-        text-align: left;
-        margin: 5px;
-        padding-bottom: 10px;
-    }
-
-    .contribution p {
-        margin:10px;
-        text-align: left;
-    }
-
-</style>
-
 <div class="recents">
     <div class="container">
         <h2 class="titre">Projets en cours</h2>
@@ -70,22 +6,36 @@
         <div class="row">
             <div class="col projets">
                 <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-expanded="false">
-                    <h4>Titre du projet</h4>
-                    <p>breve description</p>
-                    <p class="temoignage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a eaque unde officiis eos! Voluptatem nemo 
-                    inventore numquam! Maiores exercitationem rem unde optio reiciendis id, ullam temporibus deleniti enim vel.</p>
+                    <div class="row">
+                        <div class="col titreProjet">
+                            <h4>Titre projet 1</h4>
+                        </div>
+                        <div class="col-sm-auto lienGithub">
+                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>Brève description</p>
                 </button>
                 <div class="btn-collapse collapse" id="content">
-                    <div class="well">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="temoignage">
+                        <h5>Auteur: </h5>
+                        <p class="titre2">T&eacutemoignage sur le projet:</p>
+                        <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
                     </div>
                 </div>              
             </div>
             <div class="col projets">
-                <h4>Titre du projet</h4>
-                <p>breve description</p>
-                <p class="temoignage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a eaque unde officiis eos! Voluptatem nemo 
-                    inventore numquam! Maiores exercitationem rem unde optio reiciendis id, ullam temporibus deleniti enim vel.</p>
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#projet2" aria-expanded="false">
+                    <h4>Titre projet 2</h4>
+                    <p>Brève description</p>
+                </button>
+                <div class="btn-collapse collapse" id="projet2">
+                    <div class="temoignage">
+                        <h5>Auteur: </h5>
+                        <p class="titre2">T&eacutemoignage sur le projet:</p>
+                        <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
