@@ -276,20 +276,38 @@ ul a{
     border-radius: 15px;
     background-color: grey;
     margin: 0px 20px;
-    padding: 20px;
+    padding: 10px 20px;
+    transition: box-shadow .2s;
+}
+
+.recents .projets:hover{
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.285);
 }
 
 .recents .projets button{
     text-align: left;
 }
+.recents .projets .btn:focus{
+    box-shadow: none;
+}
 
-.recents .projets button a{
-    color: white;
+.recents .projets .titreProjet{
+    border-radius: 8px;
+}
+
+.recents .projets .lienGithub{
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.recents .projets a{
+    color: rgba(255, 166, 0, 0.748);
     border-radius: 100%;
     background-color: black;
     display: inline-flex;
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -297,17 +315,9 @@ ul a{
     text-align: right;
 }
 
-.recents .projets button a:hover{
-    height: 32px;
-    width: 32px;
-}
-
-.recents .projets .titreProjet{
-    padding-right: 170px;
-}
-
-.recents .projets .lienGithub{
-    padding-top: 15px;
+.recents .projets a:hover{
+    height: 40px;
+    width: 40px;
 }
 
 .recents .projets h4{
@@ -339,16 +349,16 @@ ul a{
     margin: 10px;
 }
 
-.recents .projets:hover{
-    padding: 25px;
-    transition: all 0.3s ease-out;
-}
-
 .recents .contribution{
     border-radius: 15px;
     padding: 20px;
     background-color: grey;
     color: black;
+    transition: box-shadow .2s;
+}
+
+.recents .contribution:hover{
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.285);
 }
 
 .recents .contribution h2{

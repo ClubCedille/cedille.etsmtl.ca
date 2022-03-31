@@ -5,17 +5,19 @@
     <div class="container">
         <div class="row">
             <div class="col projets">
-                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-expanded="false">
-                    <div class="row">
-                        <div class="col titreProjet">
-                            <h4>Titre projet 1</h4>
+                <div class="row">
+                    <button class="btn col" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-expanded="false">
+                        <div class="row">
+                            <div class="col titreProjet">
+                                <h4>Titre projet 1</h4>
+                                <p>Brève description</p>
+                            </div>
                         </div>
-                        <div class="col-sm-auto lienGithub">
-                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
-                        </div>
+                    </button>
+                    <div class="col-sm-auto lienGithub">
+                        <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
                     </div>
-                    <p>Brève description</p>
-                </button>
+                </div>
                 <div class="btn-collapse collapse" id="content">
                     <div class="temoignage">
                         <h5>Auteur: </h5>
@@ -25,24 +27,26 @@
                 </div>              
             </div>
             <div class="col projets">
-                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#projet2" aria-expanded="false">
-                    <div class="row">
-                        <div class="col titreProjet">
-                            <h4>Titre projet 2</h4>
+                <div class="row">
+                    <button class="btn col" type="button" data-bs-toggle="collapse" data-bs-target="#projet2" aria-expanded="false">
+                        <div class="row">
+                            <div class="col titreProjet">
+                                <h4>Titre projet 1</h4>
+                                <p>Brève description</p>
+                            </div>
                         </div>
-                        <div class="col-sm-auto lienGithub">
-                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
-                        </div>
+                    </button>
+                    <div class="col-sm-auto lienGithub">
+                        <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
                     </div>
-                    <p>Brève description</p>
-                </button>
+                </div>
                 <div class="btn-collapse collapse" id="projet2">
                     <div class="temoignage">
                         <h5>Auteur: </h5>
                         <p class="titre2">T&eacutemoignage sur le projet:</p>
                         <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
                     </div>
-                </div>
+                </div>              
             </div>
         </div>
     </div>
