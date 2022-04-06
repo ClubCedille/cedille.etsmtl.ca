@@ -311,13 +311,15 @@ ul a{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
     text-align: right;
 }
 
 .recents .projets a:hover{
     height: 40px;
     width: 40px;
+    color: rgba(255, 166, 0, 0.748);
+    background-color: rgb(221, 207, 207);
 }
 
 .recents .projets h4{
