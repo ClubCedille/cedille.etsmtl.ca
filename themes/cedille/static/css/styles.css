@@ -5,9 +5,8 @@
 }
 
 body{
-    margin: 0;
-    font-family:'Courier New', Courier, monospace;
-    background-color:rgb(177, 176, 176);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(217, 214, 214);
 }
 
 /*--------------- HEADER SECTION -----------------*/
@@ -167,7 +166,8 @@ ul a{
 }
 
 .footer{
-    background-color: rgb(96, 95, 95);
+    background-color: rgb(14, 14, 14);
+    opacity: 85%;
     padding: 25px 0;
     color: rgba(255, 166, 0, 0.748);
     font-size: 15px;
@@ -192,7 +192,7 @@ ul a{
     height: 1px;
     box-sizing: border-box;
     background-color: rgba(255, 166, 0, 0.748);
-    width: 70px;
+    width: 62px;
     margin-left: 4px;
     text-align: center;
 }
@@ -204,7 +204,7 @@ ul a{
     height: 1px;
     box-sizing: border-box;
     background-color: rgba(255, 166, 0, 0.748);
-    width: 110px;
+    width: 90px;
     margin-left: 8px;
     text-align: center;
 }
@@ -222,7 +222,7 @@ ul a{
 
 .social-links a{
     display: inline-flex;
-    background-color: black;
+    background-color: rgba(255, 166, 0, 0.748);
     border-radius: 100%;
     height: 35px;
     width: 35px;
@@ -230,7 +230,7 @@ ul a{
     justify-content: center;
     text-decoration: none;
     transition: all 0.5s ease;
-    color: rgba(255, 166, 0, 0.748)/*#ffffff*/;
+    color: rgba(242, 238, 238, 0.941)/*#ffffff*/;
 }
 
 .social-links i{
@@ -274,7 +274,7 @@ ul a{
 
 .recents .projets{
     border-radius: 15px;
-    background-color: grey;
+    background-color: rgb(191, 189, 189);
     margin: 0px 20px;
     padding: 10px 20px;
     transition: box-shadow .2s;
@@ -334,7 +334,7 @@ ul a{
     margin-top: 10px;
     padding: 7px;
     border-radius: 10px;
-    background-color: rgb(177, 176, 176);
+    background-color: rgb(217, 214, 214);
 }
 
 .recents .temoignage h5{
@@ -354,7 +354,7 @@ ul a{
 .recents .contribution{
     border-radius: 15px;
     padding: 20px;
-    background-color: grey;
+    background-color: rgb(191, 189, 189);
     color: black;
     transition: box-shadow .2s;
 }
@@ -374,4 +374,47 @@ ul a{
 .recents .contribution p {
     margin:10px;
     text-align: left;
+    font-size: 20px;
+}
+
+/*-------- TEST -------*/
+.contact{
+    background-color: rgb(117, 117, 2);
+    width: 100%;
+    height: 120%;
+    display: flex;
+}
+
+.contact h4{
+    font-weight: bold;
+}
+
+.contact .btn{
+    border-radius: 4px;
+    background-color: orange;
+}
+
+.contact .box{
+    background-color: rgba(252, 188, 68, 0.97);
+    height: 100%;
+    padding: 50px;
+    border-right: rgb(222, 222, 7) solid 3px;
+    flex: 1;
+    transition: 3s ease-in-out;
+}
+
+.contact h4,p, button{
+    text-align: center;
+}
+
+.contact .box:hover {
+    flex: 4;
+}
+
+.contact form{
+    justify-content: center;
+}
+.contact .membre{
+    padding: 15px;
+    border-radius: 4px;
 }

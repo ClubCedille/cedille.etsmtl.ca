@@ -1,11 +1,19 @@
-const slideMenu = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.navbar');
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+const container = document.querySelector(".contact");
 
-    burger.addEventListener('click', () =>{
-        nav.classList.toggle('.navbar.active');
-        burger.classList.toggle('toggle');
-    });
-}
+left.addEventListener("mouseenter", () => {
+  container.classList.add("hover-left");
+});
 
-slideMenu();
+left.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-left");
+});
+
+right.addEventListener("mouseenter", () => {
+  container.classList.add("hover-right");
+});
+
+right.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-right");
+});
