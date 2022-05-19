@@ -7,6 +7,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color:rgb(217, 214, 214);
+    height: 100vh;
 }
 
 /*--------------- HEADER SECTION -----------------*/
@@ -146,25 +147,6 @@ img{
 
 /*---------------- FOOTER SECTION -------------*/
 
-.container{
-    max-width: 1100px;
-    margin: auto;
-}
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-ul{
-    list-style: none;
-}
-
-ul a{
-    width: 100px;
-}
-
 .footer{
     background-color: rgb(14, 14, 14);
     opacity: 85%;
@@ -173,19 +155,30 @@ ul a{
     font-size: 15px;
 }
 
-.footer-col{
+.footer .container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer .row .footer-col{
     width: 50%;
     padding: 0 15px;
     text-align: center;
 }
 
-.footer-col h3{
+.footer .row .footer-col h3{
     font-size: 19px;
     margin-bottom: 25px;
     position: relative;
 }
 
-.name-address h3::before{
+.footer .footer-col .name-address h3::before{
     content: '';
     position: absolute;
     bottom: -5px;
@@ -197,7 +190,7 @@ ul a{
     text-align: center;
 }
 
-.follow-us h3::before{
+.footer .row .footer-col .follow-us h3::before{
     content: '';
     position: absolute;
     bottom: -5px;
@@ -209,18 +202,7 @@ ul a{
     text-align: center;
 }
 
-.footer-col ul li{
-    margin-bottom: 10px;
-}
-
-.footer-col ul li a{
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
-    transition: all 0.3.s ease;
-}
-
-.social-links a{
+.footer .row .footer-col .social-links a{
     display: inline-flex;
     background-color: rgba(255, 166, 0, 0.748);
     border-radius: 100%;
@@ -230,78 +212,84 @@ ul a{
     justify-content: center;
     text-decoration: none;
     transition: all 0.5s ease;
-    color: rgba(242, 238, 238, 0.941)/*#ffffff*/;
+    color: rgba(242, 238, 238, 0.941);
 }
 
-.social-links i{
-    vertical-align: text-top;
-    justify-content: center;
-}
-
-.social-links a:hover{
+.footer .row .footer-col .social-links a:hover{
     color: rgba(255, 166, 0, 0.748);
     background-color: rgb(221, 207, 207);
 }
 
-.adresse{
+.footer .row .footer-col .social-links i{
+    vertical-align: text-top;
+    justify-content: center;
+}
+
+.footer .row .footer-col .adresse{
     color: white;
 }
 
-.year{
+.footer .row .footer-col .year{
     color: white;
     margin-top: 10px;
 }
 
-.copyleft{
+.footer .row .footer-col .year .copyleft{
     display: inline-block;
     transform: rotateY(180deg);
 }
 
 /*---------------- PROJECT PAGES -----------------*/
-.recents .container{
+
+.projets-recents .container{
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.recents .titre{
+.projets-recents .titre{
     color: black;
     font-weight: bold;
     text-align: center;
+    margin-top: 5px;
 }
-.recents .col{
+
+.projets-recents .col{
     text-align: left;
 }
 
-.recents .projets{
+.projets-recents .panel{
     border-radius: 15px;
     background-color: rgb(191, 189, 189);
-    margin: 0px 20px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     transition: box-shadow .2s;
+    margin: 10px 15px;
 }
 
-.recents .projets:hover{
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.285);
+.projets-recents .panel:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
 }
 
-.recents .projets button{
+.projets-recents .panel button{
     text-align: left;
-}
-.recents .projets .btn:focus{
+    padding-right: 20%;
+} 
+
+.projets-recents .panel .btn:focus{
     box-shadow: none;
 }
 
-.recents .projets .titreProjet{
+.projets-recents .panel .titreProjet{
     border-radius: 8px;
+    text-align: left;
 }
 
-.recents .projets .lienGithub{
+.projets-recents .panel .lienGithub{
     width: 120px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
-.recents .projets a{
+.projets-recents .panel a{
     color: rgba(255, 166, 0, 0.748);
     border-radius: 100%;
     background-color: black;
@@ -315,14 +303,14 @@ ul a{
     text-align: right;
 }
 
-.recents .projets a:hover{
+.projets-recents .panel a:hover{
     height: 40px;
     width: 40px;
     color: rgba(255, 166, 0, 0.748);
     background-color: rgb(221, 207, 207);
 }
 
-.recents .projets h4{
+.projets-recents .panel h4{
     margin-top: 10px;
     padding-bottom: 10px;
     font-size: 25px;
@@ -330,40 +318,41 @@ ul a{
     color: black;
 }
 
-.recents .temoignage{
+.projets-recents .panel .temoignage{
     margin-top: 10px;
     padding: 7px;
     border-radius: 10px;
     background-color: rgb(217, 214, 214);
 }
 
-.recents .temoignage h5{
+.projets-recents .panel .temoignage h5{
     margin: 10px;
     font-weight: 600;
 }
 
-.recents .temoignage .titre2{
+.projets-recents .panel .temoignage .titre2{
     margin: 10px;
     font-weight: 600;
 }
 
-.recents .temoignage .texte{
+.projets-recents .panel .temoignage .texte{
     margin: 10px;
 }
 
-.recents .contribution{
+.projets-recents .contribution{
     border-radius: 15px;
-    padding: 20px;
+    margin: 0px 15px;
+    padding: 15px;
     background-color: rgb(191, 189, 189);
     color: black;
     transition: box-shadow .2s;
 }
 
-.recents .contribution:hover{
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.285);
+.projets-recents .contribution:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
 }
 
-.recents .contribution h2{
+.projets-recents .contribution h2{
     font-size: 30px;
     font-weight: bold;
     text-align: left;
@@ -371,7 +360,7 @@ ul a{
     padding-bottom: 10px;
 }
 
-.recents .contribution p {
+.projets-recents .contribution p {
     margin:10px;
     text-align: left;
     font-size: 20px;
@@ -379,12 +368,17 @@ ul a{
 
 /*-------- TEST -------*/
 .contact{
-    background-color: rgb(117, 117, 2);
     width: 100%;
-    height: 120%;
-    display: flex;
+    height: 100vh;
 }
 
+.contact .left{
+    text-align: center;
+    width: 50%;
+    background-color: red;
+}
+
+/*
 .contact h4{
     font-weight: bold;
 }
@@ -401,20 +395,24 @@ ul a{
     border-right: rgb(222, 222, 7) solid 3px;
     flex: 1;
     transition: 3s ease-in-out;
-}
+} 
+*/
 
-.contact h4,p, button{
+/*.contact h4,p, button{
     text-align: center;
-}
+}*/
 
+/*
 .contact .box:hover {
     flex: 4;
 }
 
 .contact form{
     justify-content: center;
+    margin-top: 5px;
 }
 .contact .membre{
     padding: 15px;
     border-radius: 4px;
 }
+*/
