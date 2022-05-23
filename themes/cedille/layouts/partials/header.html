@@ -19,6 +19,18 @@
           {{ $active = or $active (and (eq .Name "Projets") (eq $current.Section "projets")) }}
           {{ $active = or $active (and (eq .Name "Partenaires") (eq $current.Section "partenaires")) }}
           {{ $active = or $active (and (eq .Name "Contact") (eq $current.Section "contact")) }}
+          <!--
+          {{ if .HasChildren }}
+            <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }}">
+                  <span>{{ .Name }}</span>
+              <ul class="sub-menu">
+              {{ range .Children }}
+            </li>
+          {{ else }}
+            <a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
+          {{ end }}
+          {{ end }}
+          -->
           <li>
             <a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
           </li>
@@ -26,4 +38,34 @@
         </ul>
       </div>
     </div>
-  </nav>
+</nav>
+
+
+<!--
+<nav class="nav">
+  <ul class="menu">
+      {{ $current := .}}
+      {{ range .Site.Menus.main }}
+      {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+      {{ $active = or $active (eq .Name $current.Title) }}
+      {{ $active = or $active (and (eq .Name "Équipe") (eq $current.Section "équipe")) }}                
+      {{ $active = or $active (and (eq .Name "Projets") (eq $current.Section "projets")) }}
+      {{ $active = or $active (and (eq .Name "Partenaires") (eq $current.Section "partenaires")) }}
+      {{ $active = or $active (and (eq .Name "Contact") (eq $current.Section "contact")) }}
+      <li class="{{ if $current.HasMenuCurrent "main" . }}active{{ end }}">
+          <a href="{{ .URL }}"><span>{{ .Name }}</span></a>
+          {{ if .HasChildren }}
+          <span class="drop-icon" for="{{ .Name }}">▾</span>
+          <ul class="sub-menu">
+              {{ range .Children }}
+              <li class="{{ if $current.HasMenuCurrent "main" . }}active{{ end }}">
+                  <a href="{{ .URL }}"><span>{{ .Name }}</span></a>
+              </li>
+              {{ end }}
+          </ul>
+         {{ end }}
+      </li>
+      {{ end }}
+  </ul>
+</nav>
+-->

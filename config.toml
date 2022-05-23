@@ -18,6 +18,16 @@ theme = 'cedille'
         url = "/projets"
         weight = 3
     [[menu.main]]    
+        name = "Projets en continu"
+        url = "/recents"
+        parent = "projets"
+        weight = 1
+    [[menu.main]]    
+        name = "Anciens projets"
+        url = "/anciens"
+        parent = "projets"
+        weight = 2
+    [[menu.main]]    
         name = "Partenaires"
         url = "/partenaires"
         weight = 4
@@ -29,7 +39,7 @@ theme = 'cedille'
 [params]
     github = "https://github.com/ClubCedille"
     facebook = "https://www.facebook.com/clubcedille"
-    instagram = "https://www.instagram.com/cedilleets/"
+    instagram = "https://www.instagram.com/cedille.etsmtl/"
     linkedin = "https://www.linkedin.com/company/cedille/about/"
     
 
