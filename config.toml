@@ -6,32 +6,38 @@ theme = 'cedille'
 # main menu
 [menu]
     [[menu.main]]
+        identifier = "accueil"
         name = "Accueil"
         url = "/"
         weight = 1 
     [[menu.main]]
+        identifier = "equipe"
         name = "Équipe"
-        url = "/équipe"
+        url = "/equipe"
         weight = 2
-    [[menu.main]]    
+    [[menu.main]]
+        identifier = "projets"    
         name = "Projets"
-        url = "/projets"
         weight = 3
-    [[menu.main]]    
-        name = "Projets en continu"
+    [[menu.main]]  
+        identifier = "projets1"  
+        name = "Projets en cours"
         url = "/recents"
         parent = "projets"
         weight = 1
-    [[menu.main]]    
-        name = "Anciens projets"
+    [[menu.main]]   
+        identifier = "projets2" 
+        name = "Projets terminés"
         url = "/anciens"
         parent = "projets"
         weight = 2
-    [[menu.main]]    
+    [[menu.main]]   
+        identifier = "partenaires" 
         name = "Partenaires"
         url = "/partenaires"
         weight = 4
-    [[menu.main]]   
+    [[menu.main]]  
+        identifier = "contact" 
         name = "Contact"
         url = "/contact"
         weight = 5    
