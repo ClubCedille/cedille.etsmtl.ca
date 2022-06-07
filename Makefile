@@ -8,4 +8,4 @@ dev:
 	@docker-compose -f docker-compose.yml up --build
 
 dev-hugo: 
-	@hugo serve --source=./ -D
+	@hugo serve --source=./ -D --disableFastRender
