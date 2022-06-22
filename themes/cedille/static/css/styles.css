@@ -6,12 +6,13 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:rgb(217, 214, 214);
-    height: 100vh;
+    background-color:
+    rgb(217, 214, 214);
+    /* height: 100vh; */
 }
 
 /*--------------- HEADER SECTION -----------------*/
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,6 +21,10 @@ body{
     position: sticky;
     z-index: 2;
     top: 0;
+} */
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.822);
 }
 
 .navbar .navbar-nav-a{
@@ -30,11 +35,6 @@ body{
 img{
     height: 110px;
     font-size: 1.5rem;
-}
-
-.navbar-collapse ul{
-    display: flex;
-    justify-content: space-around;
 }
 
 .navbar-collapse ul li{
@@ -64,16 +64,19 @@ img{
     color: white;
 }
 
-/* .navbar-nav .menu-link .item{
-    display: none;  
-} */
-
-.navbar-nav .item{
-    position: relative;
-    float: left;
-    line-break: auto;
-    
+.navbar-collapse .dropdown-menu{
+    background-color: rgba(11, 11, 11, 0.721);
 }
+
+.navbar-collapse .nav-link{
+    color: rgba(255, 166, 0, 0.748);
+    padding: 9px 15px!important;
+}
+
+.navbar-collapse .dropdown-menu .item{
+    margin: 10px 0px;
+}
+
 /*-------------  BURGER ICON ---------------*/
 
 .navbar-toggler{
@@ -151,7 +154,6 @@ img{
 
     .navbar-collapse ul li a{
         color: rgba(255, 166, 0, 0.748);
-        text-align: center;
         text-decoration: none;
         padding: 8px 8px;
         font-size: 18px;
@@ -159,6 +161,19 @@ img{
         transition: all 0.3s ease;
         opacity: none;
     }
+
+    .navbar-collapse .dropdown-menu{
+        background-color: transparent;
+        margin-top: -5px;
+        margin-bottom: -5px;
+        border: none;
+    }
+
+    .navbar-collapse .nav-link{
+        padding: 0px 8px!important;
+        margin-bottom: 1px;
+    }
+
 }
 
 /*---------------- FOOTER SECTION -------------*/

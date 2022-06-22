@@ -18,17 +18,18 @@ theme = 'cedille'
     [[menu.main]]
         identifier = "projets"    
         name = "Projets"
+        url = "/projets"
         weight = 3
     [[menu.main]]  
         identifier = "recents"  
         name = "Projets en cours"
-        url = "/projets/recents"
+        url = "/projets/recents/recents"
         parent = "projets"
         weight = 1
     [[menu.main]]   
         identifier = "anciens" 
         name = "Projets terminés"
-        url = "/projets/anciens"
+        url = "/projets/anciens/anciens"
         parent = "projets"
         weight = 2
     [[menu.main]]   

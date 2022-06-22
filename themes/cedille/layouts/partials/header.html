@@ -47,7 +47,7 @@
   </div>
 </nav>  */}}
 
-<nav class="menu navbar navbar-expand-lg px-5 navbar-light">
+{{/*  <nav class="menu navbar navbar-expand-lg px-5 navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand" href = "{{ relref . "/" }}" >
       <img src="/images/cedille-logo-orange.png" alt="logoets">
@@ -94,6 +94,61 @@
       </ul>
     </div>
   </div>
+</nav>  */}}
+
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg px-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href = "{{ relref . "/" }}" >
+        <img src="/images/cedille-logo-orange.png" alt="logoets">
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          {{ $current := .}}
+          {{ range .Site.Menus.main }}
+          {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+          {{ $active = or $active (eq .Name $current.Title) }}
+          {{ $active = or $active (and (eq .Name "Équipe") (eq $current.Section "equipe")) }}                
+          {{ $active = or $active (and (eq .Name "Projets") ( eq $current.Parent "projets")) }}
+          {{ $active = or $active (and (eq .Name "Projets en cours") (eq $current.Section "recents")) }}
+          {{ $active = or $active (and (eq .Name "Projets terminés") (eq $current.Section "anciens")) }}
+          {{ $active = or $active (and (eq .Name "Partenaires") (eq $current.Section "partenaires")) }}
+          {{ $active = or $active (and (eq .Name "Contact") (eq $current.Section "contact")) }}
+          {{ if .HasChildren }}
+          <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }} nav-item dropdown">
+            <a class="{{ if $active }}active{{ end }}nav-link" href="{{ .URL }}" id="navbarDropdown" data-bs-toggle="dropdown">
+              {{ .Name }}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              {{ range .Children }}
+              <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }}">
+                <a class="{{ if $active }}active{{ end }}dropdown-item" href="{{ .URL | relURL }}">
+                  {{ .Name }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </li>
+          {{ else }}
+          <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }} nav-item">
+            <a class="{{ if $active }}active{{ end }} nav-item" href="{{ .URL | relURL }}">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
 	{{/*  <ul class="menu__list">
 		{{- $currentNode := . }}
 		{{- range .Site.Menus.main }}
@@ -131,7 +186,6 @@
 		{{- end }}
 		{{- end }}
 	</ul>  */}}
-</nav>
 
         {{/*  <li class="{{ if $current.HasMenuCurrent "main" . }}active{{ end }}">
             <a href="{{ .URL }}" class="{{ if $active }}active{{ end }}">{{ .Name }}</a>
