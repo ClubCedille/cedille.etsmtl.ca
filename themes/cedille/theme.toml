@@ -13,10 +13,3 @@ min_version = "0.41.0"
 [author]
   name = "Cedille"
   homepage = "https://github.com/ClubCedille"
-
-# If porting an existing theme
-# Actually, we are not. Let's keep this anyway I guess...
-[original]
-  name = ""
-  homepage = ""
-  repo = ""

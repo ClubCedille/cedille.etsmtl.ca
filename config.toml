@@ -6,30 +6,47 @@ theme = 'cedille'
 # main menu
 [menu]
     [[menu.main]]
+        identifier = "accueil"
         name = "Accueil"
         url = "/"
         weight = 1 
     [[menu.main]]
+        identifier = "equipe"
         name = "Équipe"
-        url = "/équipe"
+        url = "/equipe/"
         weight = 2
-    [[menu.main]]    
+    [[menu.main]]
+        identifier = "projets"    
         name = "Projets"
         url = "/projets"
         weight = 3
-    [[menu.main]]    
-        name = "Partenaires"
-        url = "/partenaires"
-        weight = 4
+    [[menu.main]]  
+        identifier = "recents"  
+        name = "Projets en cours"
+        url = "/projets/recents"
+        parent = "projets"
+        weight = 1
     [[menu.main]]   
+        identifier = "anciens" 
+        name = "Projets terminés"
+        url = "/projets/anciens"
+        parent = "projets"
+        weight = 2
+    [[menu.main]]   
+        identifier = "partenaires" 
+        name = "Partenaires"
+        url = "/partenaires/"
+        weight = 4
+    [[menu.main]]  
+        identifier = "contact" 
         name = "Contact"
-        url = "/contact"
-        weight = 5    
+        url = "/contact/"
+        weight = 5
+        
+    [params]
+        github = "https://github.com/ClubCedille"
+        facebook = "https://www.facebook.com/clubcedille"
+        instagram = "https://www.instagram.com/cedille.etsmtl/"
+        linkedin = "https://www.linkedin.com/company/cedille/about/"
 
-[params]
-    github = "https://github.com/ClubCedille"
-    facebook = "https://www.facebook.com/clubcedille"
-    instagram = "https://www.instagram.com/cedilleets/"
-    linkedin = "https://www.linkedin.com/company/cedille/about/"
-    
 
