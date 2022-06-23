@@ -163,9 +163,7 @@ img{
     }
 
     .navbar-collapse .dropdown-menu{
-        background-color: transparent;
-        margin-top: -5px;
-        margin-bottom: -5px;
+        background-color: grey;
         border: none;
     }
 
@@ -401,7 +399,6 @@ img{
 /*-------- TEST -------*/
 .contact{
     display: flex;
-    background-color: orange;
 }
 
 .contact .left{
@@ -417,11 +414,21 @@ img{
     padding-bottom: 10px;
 }
 
-.contact .left:hover{
+.contact .left .panel .btn-close{
+    margin-left: 55%;
+    margin-top: -5%;
+    background-color: rgb(64, 44, 7);
+}
+
+#btn-close1{
+    visibility: hidden;
+}
+
+/* .contact .left:hover{
     z-index: 1;
     margin-right: -50%;
     width: 100%;
-}
+} */
 
 .contact .right{
     width: 50%;
@@ -430,10 +437,18 @@ img{
     transition: all 1s ease-in-out;
 }
 
-.contact .right:hover{
-    z-index: 1;
-    margin-left: -50%;
-    width: 100%;
+.contact .right .panel .btn-close{
+    margin-right: 55%;
+    margin-top: -5%;
+    background-color: rgb(109, 74, 8);
+}
+
+#btn-close2{
+    visibility: hidden;
+}
+
+#test2{
+    transition: all 0.5s ease-in-out;
 }
 
 .contact h4{
@@ -459,82 +474,6 @@ img{
     border-radius: 4px;
 }
 
-/* Main menu */
-  
-  /* .menu__list{
-    display: flex;
-  }
-  .menu__item .list{
-      visibility: hidden;
-      opacity: 0;
-  }
-  
-  .menu__item:hover > a {
-    color: #ffa500;
-  }
-  
-  .menu__item:first-child {
-    border: 0;
-  }
-  
-  .menu__item--active {
-    background: #e22d30;
-  }
-  
-  .menu__link {
-    display: flex;
-    padding: 10px 15px;
-    padding: 0.625rem 0.9375rem;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-  }
-  
-    .submenu__list {
-    background: #2a2a2a;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    max-width: 15rem;
-    transition: all 0.5s ease;
-    border-top: 5px solid #e22d30;
-
-  }
-  
-  .menu__list .menu__item:hover > .submenu__list,
-  .menu__list .menu__item:focus-within > .submenu__list,
-  .menu__list .menu__item .submenu__list:hover,
-  .menu__list .menu__item .submenu__list:focus {
-    visibility: visible;
-    opacity: 1;
-    
-  }
-  
-  .menu__link:hover {
-    color: #fff;
-  }
-  
-   .js .menu__list {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    visibility: visible;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-  }
-  
-   .menu__list--active {
-    visibility: visible;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    color: red;
-  }
-  
-  .menu__list--transition {
-    transition: visibility 0.15s ease, transform 0.15s ease,
-      -webkit-transform 0.15s ease;
-  } */
+.contact .btn-collapse{
+    padding-bottom: 10px;
+}

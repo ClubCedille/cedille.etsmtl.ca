@@ -1,9 +1,10 @@
 <div class="contact">
-  <div class="left">
+  <div class="left" id="left">
     <div class="panel">
+      <button onclick="closeSlideLeft()" class="btn-close" id="btn-close1"></button>
       <h4>Devenir membre</h4>
       <p>Texte implication</p>
-      <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#test1" aria-expanded="false" aria-controls="test1">
+      <button onClick="slideRight()" class="btn" data-bs-toggle="collapse" data-bs-target="#test1" aria-expanded="false" aria-controls="test1">
         Appliquer
       </button>
     </div>
@@ -65,11 +66,12 @@
       </form>
     </div>
   </div>
-  <div class="right">
+  <div class="right" id="right">
     <div class="panel">
+      <button onclick="closeSlideRight()" class="btn-close" id="btn-close2"></button>
       <h4>Devenir partenaire</h4>
       <p>Texte implication</p>
-      <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#test2" aria-expanded="false" aria-controls="test2">
+      <button onClick="slideLeft()" class="btn" data-bs-toggle="collapse" data-bs-target="#test2" aria-expanded="false" aria-controls="test2">
         Appliquer
       </button>
     </div>
@@ -106,3 +108,4 @@
     </div>
   </div>
 </div>
+
