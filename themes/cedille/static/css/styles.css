@@ -12,16 +12,6 @@ body{
 }
 
 /*--------------- HEADER SECTION -----------------*/
-/* .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 90%;
-    background-color: rgb(12, 12, 12);
-    position: sticky;
-    z-index: 2;
-    top: 0;
-} */
 
 .navbar{
     background-color: rgba(0, 0, 0, 0.822);
@@ -412,6 +402,16 @@ img{
     padding-top: 20px;
     padding-bottom: 10px;
 }
+.contact .left .panel .btn-close{
+    display: none;
+    margin-left: 55%;
+    margin-top: -5%;
+    background-color: rgb(70, 51, 14);
+}
+
+.contact .left .panel .btn-close:focus{
+    box-shadow: none;
+}
 
 #btn-close1{
     display: none;
@@ -429,11 +429,15 @@ img{
 }
 
 .contact .right .panel .btn-close{
+    display: none;
     margin-right: 55%;
     margin-top: -5%;
     background-color: rgb(109, 74, 8);
 }
 
+.contact .right .panel .btn-close:focus{
+    box-shadow: none;
+}
 
 #test2{
     transition: all 0.2s ease-in-out;
