@@ -405,7 +405,6 @@ img{
     width: 50%;
     background-color: rgb(101, 76, 30);
     padding: 10% 0%;
-    transition: all 1s ease-in-out;
 }
 
 .contact .panel{
@@ -414,21 +413,13 @@ img{
     padding-bottom: 10px;
 }
 
-.contact .left .panel .btn-close{
-    margin-left: 55%;
-    margin-top: -5%;
-    background-color: rgb(64, 44, 7);
-}
-
 #btn-close1{
-    visibility: hidden;
+    display: none;
 }
 
-/* .contact .left:hover{
-    z-index: 1;
-    margin-right: -50%;
-    width: 100%;
-} */
+#btn-close2{
+    display: none;
+}
 
 .contact .right{
     width: 50%;
@@ -443,12 +434,9 @@ img{
     background-color: rgb(109, 74, 8);
 }
 
-#btn-close2{
-    visibility: hidden;
-}
 
 #test2{
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .contact h4{

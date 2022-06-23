@@ -12,9 +12,11 @@
         document.getElementById("left").style.width = "100%";
         document.getElementById("left").style.zIndex = "2";
         document.getElementById("right").style.zIndex = "0";
-        document.getElementById("btn-close1").style.visibility = "visible";
-        document.getElementById("left").style.transition = "all 1.5s ease-in-out";
-        document.getElementById("test1").style.transition = "all 2s ease-in";
+        document.getElementById("btn-open1").style.display = "none";
+        document.getElementById("btn-close1").style.display = "inline-flex";
+        document.getElementById("left").style.transitionTimingFunction = "ease-out";
+        document.getElementById("left").style.transitionDuration = "1s";
+        
     }
 
     function slideLeft(){
@@ -22,9 +24,9 @@
         document.getElementById("right").style.width = "100%";
         document.getElementById("right").style.zIndex = "2";
         document.getElementById("left").style.zIndex = "0";
-        document.getElementById("btn-close2").style.visibility = "visible";
+        document.getElementById("btn-open2").style.display = "none";
+        document.getElementById("btn-close2").style.display = "inline-flex";
         document.getElementById("right").style.transition = "all 1.5s ease-in-out";
-        document.getElementById("test2").style.transition = "all 2s ease-in";
     }
 
     function closeSlideLeft(){
@@ -32,9 +34,9 @@
         document.getElementById("left").style.width = "50%";
         document.getElementById("left").style.zIndex = "1";
         document.getElementById("right").style.zIndex = "0";
-        document.getElementById("btn-close1").style.visibility = "hidden";
-        document.getElementById("left").style.transition = "all 1.5s ease-in-out";
-        document.getElementById("test1").style.transition = "all 2s ease-in";
+        document.getElementById("btn-close1").style.display = "none";
+        document.getElementById("btn-open1").style.display = "inline-flex";
+        document.getElementById("left").style.transition = "all 3s ease-in-out";
     }
 
     function closeSlideRight(){
@@ -42,9 +44,9 @@
         document.getElementById("right").style.width = "50%";
         document.getElementById("right").style.zIndex = "1";
         document.getElementById("left").style.zIndex = "0";
-        document.getElementById("btn-close2").style.visibility = "hidden";
-        document.getElementById("right").style.transition = "all 1.5s ease-in-out";
-        document.getElementById("test2").style.transition = "all 2s ease-in";
+        document.getElementById("btn-close2").style.display = "none";
+        document.getElementById("btn-open2").style.display = "inline-flex";
+        document.getElementById("right").style.transition = "all 3s ease-in-out";
     }
 </script>
 
