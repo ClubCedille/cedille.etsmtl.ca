@@ -471,20 +471,18 @@ img{
 }
 
 /*----------- HOME PAGE ---------*/
-.accueil .container h3{
+.accueil  h3{
     margin-top: 10px;
     display: flex;
     justify-content: center;
 }
 
 .accueil .slider{
-    margin: auto;
     height: 250px;
     position: relative;
-    width: 90%;
+    width: 100%;
     display: grid;
     place-items: center;
-    overflow: hidden;
 }
 
 .accueil .slider .slide-track{
@@ -512,14 +510,13 @@ img{
     display: flex;
     align-items: center;
     padding: 30px;
-    perspective: 100px;
 }
 
 .accueil .slider .slide-track .slide img{
     width: auto;
-    transform: 2s;
 }
 
 .accueil .slider .slide-track .slide img:hover{
-    transform: translateZ(20px);
+    height: 65%;
+    width: 65%;
 }
