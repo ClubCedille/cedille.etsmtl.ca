@@ -507,7 +507,7 @@ img{
 .accueil .slider{
     height: 250px;
     position: relative;
-    width: 100%;
+    max-width: 100%;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -515,7 +515,7 @@ img{
 
 .accueil .slider .slide-track{
     display: flex;
-    width: calc(250px*8);
+    width: calc(250px*12);
     animation: scroll 5s linear infinite;
 }
 
@@ -528,7 +528,7 @@ img{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-250px*4));
+        transform: translateX(calc(-250px*2));
     }
 }
 
