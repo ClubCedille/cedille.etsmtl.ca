@@ -1,15 +1,63 @@
 <div class="accueil">
-    <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/images/keyboard1.jpg" class="d-block w-100 h-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/keyboard2.jpg" class="d-block w-100 h-50" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/keyboard1.jpg" class="d-block w-100 h-100" alt="...">
-          </div>
+    <section class="presentation">
+        <img src="/images/cedille-logo-orange.png" alt="logoets">
+        <div class="text-club">
+            <p>Club d’expérimentation DevOps et d’intégration de logiciels libres de l'ÉTS</p>
+        </div>
+        <div class="social-links">
+            <div class="fa-2x">
+                <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
+                <a href={{ .Site.Params.facebook }}><i class="fa-brands fa-facebook-square"></i></a>
+                <a href={{ .Site.Params.instagram }}><i class="fab fa-instagram"></i></a>
+                <a href={{ .Site.Params.linkedin }}><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="container"> 
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="fa-3x">
+                        <i class="fa-regular fa-copyright"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Logiciels libres</h4>
+                        <p class="card-text">Notre mission est de démontrer les possibilités qu'offrent les logiciels libres par la réalisation de projets d'ingénierie variés. L'industrie adopte massivement la philosophie du libre (Open Source software & hardware), considérant qu'elle est un moteur favorisant l'accélération de l'innovation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="fa-3x">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Syst&egravemes embarqu&eacutes</h4>
+                        <p class="card-text">
+                            Plusieurs de nos projets sont réalisés à l'aide de systèmes embarqués 
+                            (circuits électroniques et microcontrôleurs). Nous avons utilisé, à titre 
+                            d'exemple, des technologies ouvertes tels que les plateforme de développement 
+                            Arduino et Raspberry Pi, pour divers projets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="fa-3x">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Transfert de connaissance</h4>
+                        <p class="card-text">
+                            Notre club scientifique intègre aussi une mission éducative. Nous sommes toujours 
+                            à l'affut de conférences et d'événements qui enrichissent nos connaissances aux 
+                            alentours des logiciels libres et de technologies telles que l'infrastructure 
+                            infonuagique, le DevOps, la programmation, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="sites-heberges">
