@@ -533,12 +533,12 @@ img{
 
 .accueil .presentation .text-club{
     text-align: center;
-    padding: 5px 0px;
+    padding-top: 10px;
 }
 
 .accueil .presentation .social-links{
     text-align: center;
-    padding: 10px 0px;
+    margin-top: 50px;
 }
 
 .accueil .presentation .social-links a{
@@ -554,6 +554,10 @@ img{
     padding: 20px 0px;
 }
 
+.accueil .row{
+    margin: 30px 0px;
+}
+
 .accueil .card{
     border-radius: 10px;
     background-color: rgb(191, 189, 189);
@@ -567,6 +571,7 @@ img{
 
 .accueil .sites-heberges{
     padding-top: 10px;
+    background-color: rgba(206, 203, 203, 0.562);
 }
 
 .accueil  h3{
