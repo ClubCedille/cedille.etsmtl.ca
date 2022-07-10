@@ -623,3 +623,26 @@ img{
     height: 65%;
     width: 65%;
 }
+
+/*---------------- TEAM PAGE ---------------- */
+.equipe .becoming-member{
+    padding: 50px 0px;
+}
+
+.equipe .panel {
+    display: flex;
+    justify-content: center;
+}
+
+.equipe .panel a {
+    border-radius: 15px;
+    background-color: rgb(191, 189, 189);
+    padding: 35px 30px;
+    text-decoration: none;
+    color: black;
+    transition: box-shadow .2s;
+}
+
+.equipe .panel a:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
