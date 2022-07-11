@@ -6,5 +6,4 @@ draft: false
 
 
 
-h
-# sdddsdsd
+{{< equipe >}}

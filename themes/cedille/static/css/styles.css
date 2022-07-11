@@ -386,6 +386,188 @@ img{
     font-size: 20px;
 }
 
+
+
+
+
+
+/* -------- Partenaire ----------*/
+
+.partenaires .titre{
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.partenaires .partenaire{
+    border-radius: 15px;
+    background-color: rgb(191, 189, 189);
+    padding: 10px 15px;
+    transition: box-shadow .2s;
+    margin: 10px 15px;
+}
+
+.partenaires .partenaire:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+
+
+.partenaires .partenaire{
+    border-radius: 8px;
+    text-align: left;
+}
+
+.partenaires .partenaire a .bnc{
+    width: 240px;
+    height: 200px;
+}
+
+.partenaires .partenaire a .ets{
+    width: 300px;
+    height: 200px;
+}
+
+/* sestion devenir partenaire */
+
+
+.partenaires .devenir-partenaire-panel{
+    border-radius: 15px;
+    background-color: rgb(191, 189, 189);
+    padding: 10px 15px;
+    transition: box-shadow .2s;
+    margin: 10px 15px;
+}
+
+.partenaires .devenir-partenaire-panel:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+.partenaires .devenir-partenaire-panel button{
+    text-align: left;
+    padding-right: 30%;
+} 
+
+.partenaires .devenir-partenaire-panel .btn:focus{
+    box-shadow: none;
+}
+
+
+
+.partenaires .devenir-partenaire-panel a:hover{
+    height: 40px;
+    width: 40px;
+    color: rgba(255, 166, 0, 0.748);
+    background-color: rgb(221, 207, 207);
+}
+
+.partenaires .devenir-partenaire-panel h2{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.partenaires .devenir-partenaire-panel .contenu{
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: rgb(217, 214, 214);
+}
+
+.partenaires .devenir-partenaire-panel .contenu h4{
+    margin: 10px;
+    font-weight: 300;
+}
+
+
+
+.partenaires .devenir-partenaire-panel .contenu .texte{
+    margin: 10px;
+}
+
+.partenaires .contenu a{
+    color: black;
+    text-decoration : none;
+    }
+
+.partenaires .contenu{
+    border-radius: 15px;
+    margin: 0px 15px;
+    padding: 15px;
+    background-color: rgb(191, 189, 189);
+    color: black;
+    transition: box-shadow .2s;
+}
+
+.partenaires .contenu:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+.partenaires .contenu h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+.partenaires .contenu p {
+    margin:10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+
+/* sestion faire un don*/
+.partenaires .faire-don{
+    border-radius: 15px;
+    margin: 0px 15px;
+    padding: 15px;
+    background-color: rgb(191, 189, 189);
+    color: black;
+    transition: box-shadow .2s;
+}
+
+.partenaires .faire-don a{
+    color: black;
+    text-decoration : none;
+    }
+
+.partenaires .faire-don {
+    margin-bottom: 20px;
+}
+
+ .partenaires .faire-don:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+.partenaires .faire-don h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+
+.cercle {
+
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: rgb(60, 59, 59);
+
+}
+
+
+/*----------  Fin partenaires ----------*/
+
+
+
 /*-------- TEST -------*/
 .contact{
     display: flex;
