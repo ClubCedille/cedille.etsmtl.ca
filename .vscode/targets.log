@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Sun Jul 10 15:04:14 2022
+# Make data base, printed on Mon Jul 11 15:56:41 2022
 
 # Variables
 
@@ -29,7 +29,7 @@ CURDIR := /Users/bayesdiarra/Documents/Projets/Projets Cedille/cedille.etsmtl.ca
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"575d78304484aa5fa0cbb32d34fd883d.fr","_translationsConfigFile":"/Users/bayesdiarra/Library/Application Support/Code/clp/575d78304484aa5fa0cbb32d34fd883d.fr/tcf.json","_cacheRoot":"/Users/bayesdiarra/Library/Application Support/Code/clp/575d78304484aa5fa0cbb32d34fd883d.fr","_resolvedLanguagePackCoreLocation":"/Users/bayesdiarra/Library/Application Support/Code/clp/575d78304484aa5fa0cbb32d34fd883d.fr/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9","_corruptedFile":"/Users/bayesdiarra/Library/Application Support/Code/clp/575d78304484aa5fa0cbb32d34fd883d.fr/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"13937c2d711ee67d0a12bab7770373d5.fr","_translationsConfigFile":"/Users/bayesdiarra/Library/Application Support/Code/clp/13937c2d711ee67d0a12bab7770373d5.fr/tcf.json","_cacheRoot":"/Users/bayesdiarra/Library/Application Support/Code/clp/13937c2d711ee67d0a12bab7770373d5.fr","_resolvedLanguagePackCoreLocation":"/Users/bayesdiarra/Library/Application Support/Code/clp/13937c2d711ee67d0a12bab7770373d5.fr/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9","_corruptedFile":"/Users/bayesdiarra/Library/Application Support/Code/clp/13937c2d711ee67d0a12bab7770373d5.fr/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 1)
@@ -47,8 +47,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
- 
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.7jokTLTwai/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Tv70uyBRgZ/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -70,7 +69,7 @@ VSCODE_CODE_CACHE_PATH = /Users/bayesdiarra/Library/Application Support/Code/Cac
 # environment
 LOGNAME = bayesdiarra
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -82,6 +81,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
+ 
 SHLVL = 1
 # default
 MAKE_VERSION := 3.81
@@ -140,7 +140,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 94740
+VSCODE_PID = 1281
 # variable set hash-table stats:
 # Load=63/1024=6%, Rehash=0, Collisions=1/87=1%
 
@@ -150,9 +150,9 @@ VSCODE_PID = 94740
 
 # Directories
 
-# . (device 16777234, inode 4369544): 23 files, no impossibilities.
+# . (device 16777231, inode 4369544): 24 files, no impossibilities.
 
-# 23 files, no impossibilities in 1 directories.
+# 24 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -238,6 +238,6 @@ nginx:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sun Jul 10 15:04:14 2022
+# Finished Make data base on Mon Jul 11 15:56:41 2022
 
  

@@ -444,10 +444,7 @@ img{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
 }
 
-.partenaires .devenir-partenaire-panel button{
-    text-align: left;
-    padding-right: 30%;
-} 
+
 
 .partenaires .devenir-partenaire-panel .btn:focus{
     box-shadow: none;
@@ -461,10 +458,13 @@ img{
     color: rgba(255, 166, 0, 0.748);
     background-color: rgb(221, 207, 207);
 }
+.partenaires .devenir-partenaire-panel .titre-devenir-partenaire{
+
+    width: 100%;
+}
 
 .partenaires .devenir-partenaire-panel h2{
     margin-top: 10px;
-    padding-bottom: 10px;
     font-size: 25px;
     font-weight: bold;
     color: black;
@@ -548,9 +548,7 @@ img{
 .partenaires .faire-don h2{
     font-size: 25px;
     font-weight: bold;
-    text-align: left;
     margin: 5px;
-    padding-bottom: 10px;
 }
 
 
@@ -565,6 +563,179 @@ img{
 
 
 /*----------  Fin partenaires ----------*/
+
+
+
+
+/*--------------------------------- Début équipe ---------------------------------------*/
+
+
+.equipe .memberCarousel{
+    width: auto;
+    height: 600px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom:  30px;
+    padding: 15px;
+    background-color: rgb(191, 189, 189);
+    transition: box-shadow .2s;
+
+}
+
+.equipe .memberCarousel:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+.membres{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.membres .membre-row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.membres .membre-serapateur{
+    height: 50px;
+}
+.membres .membre{
+    justify-content: center;
+}
+
+.membres .membre .image-background {
+    width: 270px;
+    height: 270px;
+    border-radius: 135px;
+    background: rgb(227, 227, 227);
+    margin-bottom: 15px;
+    margin-left: 70px;
+    z-index: -2000;
+}
+
+
+
+
+ .membres .membre .image-background .image{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+
+.membres .membre .image-background .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 125px;
+    overflow: hidden;
+    display:inline-block;
+    vertical-align:middle;
+    
+}
+
+ .membres .membre .nomPrenom{
+    color: rgba(255, 166, 0, 0.748);
+}
+
+ .membres .membre .role {
+    color:gray;
+}
+ .membres .membre .role h5{
+    font-size: 18px;
+}
+
+ /*.membres .membre .social-links {
+    width: 100px;
+    height: 100px;
+}*/
+
+
+
+.membres .membre .social-links a{
+    color: rgba(255, 166, 0, 0.748);
+    border-radius: 100%;
+    background-color: black;
+    display: inline-flex;
+    height: 35px;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    text-align: right;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.membres .membre .social-links a:hover{
+    color: rgba(255, 166, 0, 0.748);
+    background-color: rgb(221, 207, 207);
+}
+
+
+
+
+
+
+
+/****** Devenir membre *******/
+
+.devenir-membre .btn-membre{
+    border-radius: 15px;
+    margin: 0px 15px;
+    padding: 15px;
+    background-color: rgb(191, 189, 189);
+    color: black;
+    transition: box-shadow .2s;
+}
+
+.devenir-membre .btn-membre a{
+    color: black;
+    text-decoration : none;
+    }
+
+.devenir-membre .btn-membre {
+    margin-bottom: 20px;
+}
+
+ .equipe .devenir-membre .btn-membre:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+.devenir-membre .btn-membre h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.devenir-membre {
+    margin-top:15; 
+    margin-bottom:30
+
+}
+
+/*----------------------------------- Fin équipe ----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
