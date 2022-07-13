@@ -431,6 +431,306 @@ img{
     font-size: 20px;
 }
 
+
+
+
+
+
+/* -------- Partenaire ----------*/
+
+.partenaires .titre{
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.partenaires .partenaire{
+    border-radius: 15px;
+    background-color: rgb(191, 189, 189);
+    padding: 10px 15px;
+    transition: box-shadow .2s;
+    margin: 10px 15px;
+}
+
+.partenaires .partenaire:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+
+
+.partenaires .partenaire{
+    border-radius: 8px;
+    text-align: center;
+}
+
+.partenaires .partenaire a .bnc{
+    width: 240px;
+    height: 200px;
+}
+
+.partenaires .partenaire a .ets{
+    width: 290px;
+    height: 200px;
+}
+
+/* sestion devenir partenaire */
+
+
+.partenaires .devenir-partenaire-panel{
+    border-radius: 15px;
+    background-color: rgb(191, 189, 189);
+    padding: 10px 15px;
+    transition: box-shadow .2s;
+    margin: 10px 15px;
+}
+
+.partenaires .devenir-partenaire-panel:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+
+
+.partenaires .devenir-partenaire-panel .btn:focus{
+    box-shadow: none;
+}
+
+
+.partenaires .devenir-partenaire-panel .panel{
+    display: flex;
+    justify-content: center;
+}
+
+.partenaires .devenir-partenaire-panel a{
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: rgb(217, 214, 214);
+    padding: 20px 25px;
+    text-decoration: none;
+    color: black;
+    transition: box-shadow .2s;
+}
+
+.partenaires .devenir-partenaire-panel a:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+.partenaires .devenir-partenaire-panel .titre-devenir-partenaire{
+
+    width: 100%;
+}
+
+.partenaires .devenir-partenaire-panel h2{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.partenaires .devenir-partenaire-panel .contenu{
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: rgb(217, 214, 214);
+}
+
+.partenaires .devenir-partenaire-panel .contenu h4{
+    margin: 10px;
+    font-weight: 300;
+}
+
+
+
+.partenaires .devenir-partenaire-panel .contenu .texte{
+    margin: 10px;
+}
+
+.partenaires .contenu a{
+    color: black;
+    text-decoration : none;
+    }
+
+.partenaires .contenu{
+    border-radius: 15px;
+    margin: 0px 15px;
+    padding: 15px;
+    background-color: rgb(191, 189, 189);
+    color: black;
+    transition: box-shadow .2s;
+}
+
+.formulaire{
+    margin-bottom: 25px;
+}
+
+.partenaires .contenu:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+
+
+.partenaires .contenu h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+.partenaires .contenu p {
+    margin:10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+
+/* section faire un don*/
+.partenaires .faire-don{
+    border-radius: 15px;
+    margin: 0px 15px;
+    padding: 15px;
+    background-color: rgb(191, 189, 189);
+    color: black;
+    transition: box-shadow .2s;
+}
+
+.partenaires .faire-don a{
+    color: black;
+    text-decoration : none;
+    }
+
+.partenaires .faire-don {
+    margin-bottom: 20px;
+}
+
+ .partenaires .faire-don:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+.partenaires .faire-don h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+
+.cercle {
+
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: rgb(60, 59, 59);
+
+}
+
+
+/*----------  Fin partenaires ----------*/
+
+
+
+
+/*--------------------------------- Début équipe ---------------------------------------*/
+.equipe .members{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.equipe .members h3{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.equipe .img-container{
+    position: relative;
+}
+
+.equipe .img-container img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-bottom: 10px;
+}
+
+.equipe .img-container .middle{
+    opacity: 0;
+    position: absolute;
+    transition: .5s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.equipe .img-container:hover img{
+    opacity: 0.3;
+}
+
+.equipe .img-container:hover .middle{
+    opacity: 1;
+}
+
+.equipe .img-container .middle .social-links a{
+    background-color: rgba(255, 166, 0, 0.748);
+    border-radius: 100%;
+    padding: 30% 30%;
+    transition: all 0.5s ease;
+    color: rgba(242, 238, 238, 0.941);
+}
+
+.equipe .img-container .middle .social-links a:hover{
+    color: rgba(255, 166, 0, 0.748);
+    background-color: rgb(221, 207, 207);
+}
+
+.equipe .becoming-member{
+    padding: 20px 0px;
+}
+
+.equipe .becoming-member .panel {
+    display: flex;
+    justify-content: center;
+}
+
+.equipe .becoming-member .panel a {
+    border-radius: 15px;
+    background-color: rgb(191, 189, 189);
+    padding: 25px 30px;
+    text-decoration: none;
+    color: black;
+    transition: box-shadow .2s;
+}
+
+.equipe .becoming-member .panel a:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
+}
+
+/*----------------------------------- Fin équipe ----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------- TEST -------*/
 /*------------- CONTACT PAGE ------------*/
 .contact{
     display: flex;
