@@ -43,10 +43,11 @@ theme = 'cedille'
         url = "/contact/"
         weight = 5
         
-    [params]
-        github = "https://github.com/ClubCedille"
-        facebook = "https://www.facebook.com/clubcedille"
-        instagram = "https://www.instagram.com/cedille.etsmtl/"
-        linkedin = "https://www.linkedin.com/company/cedille/about/"
+[params]
+
+    github = "https://github.com/ClubCedille"
+    facebook = "https://www.facebook.com/clubcedille"
+    instagram = "https://www.instagram.com/cedille.etsmtl/"
+    linkedin = "https://www.linkedin.com/company/cedille/about/"
 
 

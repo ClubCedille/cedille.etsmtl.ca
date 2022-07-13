@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
     {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
+    <body onload="myFunction()" id="body">
+        <div id="loader"></div>
+        <div style="display: none;" id="myDiv">
+            {{- partial "header.html" . -}}
+            <div id="content">
+            {{- block "main" . }}{{- end }}
+            </div>
+            {{- partial "footer.html" . -}}
         </div>
-        {{- partial "footer.html" . -}}
     </body>
 </html>

@@ -6,51 +6,5 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script>
-    function slideRight(){
-        document.getElementById("left").style.marginRight = "-50%";
-        document.getElementById("left").style.width = "100%";
-        document.getElementById("left").style.zIndex = "2";
-        document.getElementById("right").style.zIndex = "0";
-        document.getElementById("btn-open1").style.display = "none";
-        document.getElementById("btn-close1").style.display = "inline-flex";
-        document.getElementById("left").style.transitionTimingFunction = "ease-out";
-        document.getElementById("left").style.transitionDuration = "1s";
-        document.getElementById("btn-closeXLeft").style.display = "inline-flex";
-        
-    }
-
-    function slideLeft(){
-        document.getElementById("right").style.marginLeft = "-50%";
-        document.getElementById("right").style.width = "100%";
-        document.getElementById("right").style.zIndex = "2";
-        document.getElementById("left").style.zIndex = "0";
-        document.getElementById("btn-open2").style.display = "none";
-        document.getElementById("btn-close2").style.display = "inline-flex";
-        document.getElementById("right").style.transition = "all 1.5s ease-in-out";
-        document.getElementById("btn-closeXRight").style.display = "inline-flex";
-    }
-
-    function closeSlideLeft(){
-        document.getElementById("left").style.marginRight = "0%";
-        document.getElementById("left").style.width = "50%";
-        document.getElementById("left").style.zIndex = "1";
-        document.getElementById("right").style.zIndex = "0";
-        document.getElementById("btn-close1").style.display = "none";
-        document.getElementById("btn-open1").style.display = "inline-flex";
-        document.getElementById("left").style.transition = "all 3s ease-in-out";
-        document.getElementById("btn-closeXLeft").style.display = "none";
-    }
-
-    function closeSlideRight(){
-        document.getElementById("right").style.marginLeft = "0%";
-        document.getElementById("right").style.width = "50%";
-        document.getElementById("right").style.zIndex = "1";
-        document.getElementById("left").style.zIndex = "0";
-        document.getElementById("btn-close2").style.display = "none";
-        document.getElementById("btn-open2").style.display = "inline-flex";
-        document.getElementById("right").style.transition = "all 3s ease-in-out";
-        document.getElementById("btn-closeXRight").style.display = "none";
-    }
-</script>
+<script src="{{ .Site.BaseURL }}/js/main.js"></script>
 
