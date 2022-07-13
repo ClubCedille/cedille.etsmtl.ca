@@ -1,5 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/bayesdiarra/Documents/Projets/Projets Cedille/cedille.etsmtl.ca'
-docker-compose -f docker-compose-prod.yml up --build
-make: Leaving directory `/Users/bayesdiarra/Documents/Projets/Projets Cedille/cedille.etsmtl.ca'
- 
