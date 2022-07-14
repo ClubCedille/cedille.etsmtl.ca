@@ -1,0 +1,58 @@
+name: Build and Deploy to GKE
+
+on:
+  push:
+    tags:
+      - "*"
+env:
+  PROJECT_ID: ${{ secrets.GKE_PROJECT }}
+  GKE_CLUSTER: sre-cedille-production-cluster
+  GKE_REGION: northamerica-northeast1-a
+  DEPLOYMENT_NAME: site-cedille
+  IMAGE: site-cedille
+  NAMESPACE: site-cedille
+  CONTAINER: site-cedille
+
+jobs:
+  setup-build-publish-deploy:
+    name: Setup, Build, Publish, and Deploy
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # Setup gcloud CLI
+      - uses: google-github-actions/setup-gcloud@v0.2.0
+        with:
+          service_account_key: ${{ secrets.GKE_SA_KEY }}
+          project_id: ${{ secrets.GKE_PROJECT }}
+
+      # Configure Docker to use the gcloud command-line tool as a credential
+      # helper for authentication
+      - run: |-
+          gcloud --quiet auth configure-docker
+      # set GKE project
+      - run: |-
+          gcloud config set project "$PROJECT_ID"
+      # Get the GKE credentials so we can deploy to the cluster
+      - run: |-
+          gcloud container clusters get-credentials "$GKE_CLUSTER" --region "$GKE_REGION"
+      # Parse version from tag in GITHUB_REF
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
+
+      # Build the Docker image
+      - name: Build
+        run: |-
+          docker build \
+           --tag "us.gcr.io/$PROJECT_ID/$IMAGE:${{ steps.get_version.outputs.VERSION }}" \
+           --build-arg GITHUB_SHA="$GITHUB_SHA" \
+           --build-arg GITHUB_REF="$GITHUB_REF" \
+           -f dockerfile.prod \
+           .
+      # Push the Docker image to Google Container Registry
+      - name: Publish
+        run: |-
+          docker push "us.gcr.io/$PROJECT_ID/$IMAGE:${{ steps.get_version.outputs.VERSION }}"
