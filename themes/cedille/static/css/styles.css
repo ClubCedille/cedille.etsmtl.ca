@@ -643,24 +643,26 @@ img{
     justify-content: center;
 }
 
-.equipe .carousel-inner .carousel-image{
+/*.equipe .carousel-inner .carousel-image{
     max-width: 100%;
     height: auto;
 }
 
-.equipe .img-container{
-    position: relative;
-}
+
 .equipe .img-container .carousel-item{
 
     width: auto;
     height: auto;
     margin-right: 20px;
 
+}*/
+
+.equipe .img-container{
+    position: relative;
 }
 .equipe .img-container img{
     width: 14rem;
-    height: auto;
+    height: 14rem;
     border-radius: 100%;
     opacity: 1;
     transition: .5s ease;
