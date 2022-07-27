@@ -451,27 +451,28 @@ img{
     padding: 10px 15px;
     transition: box-shadow .2s;
     margin: 10px 15px;
+    align-content: center;
 }
 
 .partenaires .partenaire:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
-}
-
-
-
-.partenaires .partenaire{
-    border-radius: 8px;
-    text-align: center;
+    
 }
 
 .partenaires .partenaire a .bnc{
     width: 240px;
     height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .partenaires .partenaire a .ets{
     width: 290px;
     height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 /* sestion devenir partenaire */
@@ -624,6 +625,28 @@ img{
 
 }
 
+@media screen and (max-width:768px){
+
+    .partenaires .partenaire a .bnc{
+        width: 170px;
+        height: 100px;
+    }
+    
+    .partenaires .partenaire a .ets{
+        width: 190px;
+        height: 100px;
+    }
+}
+
+
+@media screen and (max-width:575px){
+
+    .partenaires .partenaire{
+        align-content: center;
+    }
+
+}
+
 
 /*----------  Fin partenaires ----------*/
 
@@ -643,10 +666,23 @@ img{
     justify-content: center;
 }
 
+/*.equipe .carousel-inner .carousel-image{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.equipe .img-container .carousel-item{
+
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+
+}*/
+
 .equipe .img-container{
     position: relative;
 }
-
 .equipe .img-container img{
     width: 14rem;
     height: 14rem;
@@ -655,6 +691,7 @@ img{
     transition: .5s ease;
     backface-visibility: hidden;
     margin-bottom: 10px;
+    
 }
 
 .equipe .img-container .middle{
@@ -709,6 +746,30 @@ img{
 .equipe .becoming-member .panel a:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
 }
+
+
+
+@media screen and (max-width:768px){
+
+    
+
+    .equipe .img-container img{
+        width: 11rem;
+        height: 11rem;
+        
+    }
+
+    .members .img-container {
+        margin-right: 20px;
+    }
+
+
+
+
+}
+
+
+
 
 /*----------------------------------- Fin équipe ----------------------------------------*/
 
