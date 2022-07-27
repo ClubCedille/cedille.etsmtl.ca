@@ -624,6 +624,19 @@ img{
 
 }
 
+@media screen and (max-width:768px){
+
+    .partenaires .partenaire a .bnc{
+        width: 170px;
+        height: 100px;
+    }
+    
+    .partenaires .partenaire a .ets{
+        width: 190px;
+        height: 100px;
+    }
+}
+
 
 @media screen and (max-width:575px){
 
@@ -748,6 +761,7 @@ img{
     .members .img-container {
         margin-right: 20px;
     }
+
 
 
 
