@@ -625,6 +625,15 @@ img{
 }
 
 
+@media screen and (max-width:575px){
+
+    .partenaires .partenaire{
+        align-content: center;
+    }
+
+}
+
+
 /*----------  Fin partenaires ----------*/
 
 
@@ -723,6 +732,29 @@ img{
 .equipe .becoming-member .panel a:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
 }
+
+
+
+@media screen and (max-width:768px){
+
+    
+
+    .equipe .img-container img{
+        width: 11rem;
+        height: 11rem;
+        
+    }
+
+    .members .img-container {
+        margin-right: 20px;
+    }
+
+
+
+}
+
+
+
 
 /*----------------------------------- Fin équipe ----------------------------------------*/
 
