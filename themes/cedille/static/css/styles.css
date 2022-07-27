@@ -451,27 +451,28 @@ img{
     padding: 10px 15px;
     transition: box-shadow .2s;
     margin: 10px 15px;
+    align-content: center;
 }
 
 .partenaires .partenaire:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
-}
-
-
-
-.partenaires .partenaire{
-    border-radius: 8px;
-    text-align: center;
+    
 }
 
 .partenaires .partenaire a .bnc{
     width: 240px;
     height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .partenaires .partenaire a .ets{
     width: 290px;
     height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 /* sestion devenir partenaire */
