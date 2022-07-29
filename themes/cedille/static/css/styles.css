@@ -316,6 +316,9 @@ img{
     font-weight: bold;
     text-align: center;
     margin-top: 5px;
+    border-bottom: solid 2px grey;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .projets-recents .col{
@@ -441,8 +444,10 @@ img{
 .partenaires .titre{
     color: black;
     font-weight: 600;
-    text-align: center;
     margin-top: 15px;
+    border-bottom: solid 2px grey;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .partenaires .partenaire{
@@ -585,7 +590,6 @@ img{
 }
 
 
-
 /* section faire un don*/
 .partenaires .faire-don{
     border-radius: 15px;
@@ -664,21 +668,10 @@ img{
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
+    border-bottom: solid 2px grey;
+    margin-left: 5%;
+    margin-right: 5%; 
 }
-
-/*.equipe .carousel-inner .carousel-image{
-    max-width: 100%;
-    height: auto;
-}
-
-
-.equipe .img-container .carousel-item{
-
-    width: auto;
-    height: auto;
-    margin-right: 20px;
-
-}*/
 
 .equipe .img-container{
     position: relative;
@@ -911,7 +904,7 @@ img{
     color: white;
 }
 
-.accueil .container{
+.accueil .description{
     padding: 20px 0px;
 }
 
@@ -936,9 +929,10 @@ img{
 }
 
 .accueil  h3{
-    margin-top: 10px;
     display: flex;
     justify-content: center;
+    border-bottom:solid 2px grey ;
+    margin: 0% 5%;
 }
 
 .accueil .slider{
