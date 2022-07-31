@@ -301,7 +301,7 @@ img{
 
 /*---------------- PROJECT PAGES -----------------*/
 .projets-recents{
-    min-height: calc(100% - 136px - 163px);
+    min-height: 100vh
 }
 
 .projets-recents .container{
@@ -439,7 +439,7 @@ img{
 
 /* -------- Partenaire ----------*/
 .partenaires{
-    min-height: calc(100% - 136px - 163px);
+    min-height: 100vh;
 }
 
 .partenaires .titre{
@@ -658,7 +658,7 @@ img{
 
 /*--------------------------------- Début équipe ---------------------------------------*/
 .equipe{
-    min-height: calc(100% - 136px - 163px);
+    min-height: 100vh;
 }
 
 .equipe .members{
@@ -767,7 +767,7 @@ img{
 /*------------- CONTACT PAGE ------------*/
 .contact{
     display: flex;
-    min-height: calc(100% - 136px - 163px);
+    min-height: 100vh;
 }
 
 .contact .left{
@@ -851,7 +851,7 @@ img{
 
 /*----------- HOME PAGE ---------*/
 .accueil{
-    min-height: calc(100% - 136px - 163px);
+    min-height: 100vh;
 }
 
 .accueil .presentation{
