@@ -10,32 +10,6 @@ body{
 }
 
 /*--------------- LOADING SECTION ----------------*/
-
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #ffffff;
-    -webkit-animation: spin 4s linear infinite;
-    animation: spin 4s linear infinite;
-  }
-
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-}
-  
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}  
-
 #myDiv{
     display: none;
 }
@@ -889,6 +863,7 @@ img{
 
 .accueil .description{
     padding: 20px 0px;
+    position: inherit;
 }
 
 .accueil .row{
@@ -909,13 +884,14 @@ img{
 .accueil .sites-heberges{
     padding-top: 10px;
     background-color: rgba(206, 203, 203, 0.562);
+    min-width: 100%;
 }
 
 .accueil  h3{
     display: flex;
-    justify-content: left;
-    border-bottom:solid 2px grey ;
-    margin:0rem 0.75rem ;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 700; /*A VERIFIER LE FONT-WEIGHT POUR PLUS*/
 }
 
 .accueil .slider{
@@ -963,6 +939,12 @@ img{
 }
 
 /*---------------- TEAM PAGE ---------------- */
+.equipe .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
 .equipe .becoming-member{
     padding: 50px 0px;
 }
