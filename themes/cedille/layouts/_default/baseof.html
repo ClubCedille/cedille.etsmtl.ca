@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
     {{- partial "head.html" . -}}
-    <body onload="myFunction()" id="body">
-        <div id="loader"></div>
-        <div style="display: none;" id="myDiv">
+    <body>
+        <div>
             {{- partial "header.html" . -}}
             <div id="content">
             {{- block "main" . }}{{- end }}
