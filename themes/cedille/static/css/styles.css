@@ -418,9 +418,6 @@ img{
     }
 }
 
-
-
-
 /* -------- Partenaire ----------*/
 .partenaires{
     min-height: 100vh;
@@ -490,7 +487,7 @@ img{
     justify-content: center;
 }
 
-.partenaires .devenir-partenaire-panel a{
+.partenaires .devenir-partenaire-panel .devenir-partenaire-link{
     margin-top: 15px;
     border-radius: 15px;
     background-color: rgb(217, 214, 214);
@@ -528,16 +525,9 @@ img{
     font-weight: 300;
 }
 
-
-
 .partenaires .devenir-partenaire-panel .contenu .texte{
     margin: 10px;
 }
-
-.partenaires .contenu a{
-    color: black;
-    text-decoration : none;
-    }
 
 .partenaires .contenu{
     border-radius: 15px;
@@ -556,8 +546,6 @@ img{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
 }
 
-
-
 .partenaires .contenu h2{
     font-size: 25px;
     font-weight: bold;
@@ -574,34 +562,24 @@ img{
 
 
 /* section faire un don*/
-.partenaires .faire-don{
+.partenaires .faire-don-panel{
     border-radius: 15px;
-    margin: 0px 15px;
-    padding: 15px;
     background-color: rgb(191, 189, 189);
-    color: black;
+    padding: 10px 15px;
     transition: box-shadow .2s;
+    margin: 10px 15px;
 }
 
-.partenaires .faire-don a{
-    color: black;
-    text-decoration : none;
-    }
-
-.partenaires .faire-don {
-    margin-bottom: 20px;
-}
-
- .partenaires .faire-don:hover{
+.partenaires .faire-don-panel:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
 }
 
-.partenaires .faire-don h2{
+.partenaires .faire-don-panel a{
+    text-decoration: none;
+    color: black;
     font-size: 25px;
     font-weight: bold;
-    margin: 5px;
 }
-
 
 .cercle {
 
