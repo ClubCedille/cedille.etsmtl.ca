@@ -17,33 +17,14 @@
           {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
           {{ $active = or $active (eq .Name $current.Title) }}
           {{ $active = or $active (and (eq .Name "Équipe") (eq $current.Section "equipe")) }}                
-          {{ $active = or $active (and (eq .Name "Projets") ( eq $current.Parent "projets")) }}
-          {{ $active = or $active (and (eq .Name "Projets en cours") (eq $current.Section "recents")) }}
-          {{ $active = or $active (and (eq .Name "Projets terminés") (eq $current.Section "anciens")) }}
+          {{ $active = or $active (and (eq .Name "Projets") ( eq $current.Section "projets")) }}
           {{ $active = or $active (and (eq .Name "Partenaires") (eq $current.Section "partenaires")) }}
           {{ $active = or $active (and (eq .Name "Contact") (eq $current.Section "contact")) }}
-          {{ if .HasChildren }}
-          <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }} nav-item dropdown">
-            <a class="{{ if $active }}active{{ end }}nav-link" href="{{ .URL }}" id="navbarDropdown" data-bs-toggle="dropdown">
-              {{ .Name }}
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {{ range .Children }}
-              <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }}">
-                <a class="{{ if $active }}active{{ end }}dropdown-item" href="{{ .URL | relURL }}">
-                  {{ .Name }}
-                </a>
-              </li>
-              {{ end }}
-            </ul>
-          </li>
-          {{ else }}
           <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }} nav-item">
             <a class="{{ if $active }}active{{ end }} nav-item" href="{{ .URL | relURL }}">
               {{ .Name }}
             </a>
           </li>
-          {{ end }}
           {{ end }}
         </ul>
       </div>

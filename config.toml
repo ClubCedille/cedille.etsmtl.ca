@@ -20,18 +20,6 @@ theme = 'cedille'
         name = "Projets"
         url = "/projets"
         weight = 3
-    [[menu.main]]  
-        identifier = "recents"  
-        name = "Projets en cours"
-        url = "/projets/recents"
-        parent = "projets"
-        weight = 1
-    [[menu.main]]   
-        identifier = "anciens" 
-        name = "Projets terminés"
-        url = "/projets/anciens"
-        parent = "projets"
-        weight = 2
     [[menu.main]]   
         identifier = "partenaires" 
         name = "Partenaires"
