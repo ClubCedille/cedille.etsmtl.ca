@@ -278,6 +278,23 @@ img{
     min-height: 100vh
 }
 
+.projets-recents .open-button{
+    padding: 10px 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.822);
+    z-index: 1;
+    color: rgba(255, 166, 0, 0.748);
+    border: none;
+    text-decoration: none;
+    position: fixed;
+    right: 0px;
+}
+
+.projets-recents .open-button:hover{
+    color: rgba(255, 255, 255, 0.787);
+    transition: 0.2s all ease-in-out;
+}
+
 .projets-recents .container{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -377,6 +394,19 @@ img{
 
 .projets-recents .panel .temoignage .texte{
     margin: 10px;
+}
+
+.projets-recents .titre-bouton{
+    color: black;
+    margin-top: 5px;
+    border-bottom: solid 2px grey;
+    margin-bottom: -5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.projets-recents .btn:focus{
+    box-shadow: none;
 }
 
 .projets-recents .contribution{

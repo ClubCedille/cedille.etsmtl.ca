@@ -3,6 +3,17 @@ function myFunction() {
     setTimeout(showPage, 3000);
 }
 
+function hideButtonDown() {
+    document.getElementById("button-down").style.display = "none";
+    document.getElementById("button-up").style.display = "block";
+
+}
+
+function hideButtonUp() {
+    document.getElementById("button-up").style.display = "none";
+    document.getElementById("button-down").style.display = "block";
+}
+
 function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("myDiv").style.display = "block";
