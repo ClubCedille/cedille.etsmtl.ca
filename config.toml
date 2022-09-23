@@ -30,9 +30,10 @@ theme = 'cedille'
         name = "Contact"
         url = "/contact/"
         weight = 5
-        
+
 [params]
 
+    logo = "images/cedille-logo-orange.png"
     github = "https://github.com/ClubCedille"
     facebook = "https://www.facebook.com/clubcedille"
     instagram = "https://www.instagram.com/cedille.etsmtl/"
