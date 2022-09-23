@@ -1,0 +1,41 @@
+{{ with .Site.Data.membres}}
+{{ if .enable}}
+<section class="members">
+    <div class="container">
+        <h3>{{ .title }}</h3>
+        {{ range .membres}}
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <div class="member-description">
+                    <div class="img-container">
+                        <img src="{{ .image | absURL }}" alt="image">
+                        <div class="middle text-center">
+                            <div class="social-links d-flex justify-content-center">
+                                <a href="{{.github}}" class="me-3"><i class="fab fa-github"></i></a>
+                                <a href="{{.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-information">
+                        <h4>{{.name}}</h4>
+                        <h5>{{.post}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{end}}
+    </div>
+</section>
+<section class="becoming-member">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="panel">
+                    <a href="/contact"><h4>Devenir membre</h4></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{end}}
+{{end}}
