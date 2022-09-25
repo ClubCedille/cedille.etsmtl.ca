@@ -38,9 +38,29 @@ theme = 'cedille'
     facebook = "https://www.facebook.com/clubcedille"
     instagram = "https://www.instagram.com/cedille.etsmtl/"
     linkedin = "https://www.linkedin.com/company/cedille/about/"
-
+    
+    #Contact Information Params
     [params.address]
     title = "Adresse"
     address = "1219 rue William, Montréal (Québec), H3C 1R1, Local D-2020"
     email = "cedille@etsmtl.net"
     phone = "514 396-8800, poste 7302"
+    
+    #Social Params
+    [[params.social]]
+    icon = "fab fa-github"
+    url = "https://github.com/ClubCedille"
+    weight = 1
+    [[params.social]]
+    icon = "fab fa-facebook-f"
+    url = "https://www.facebook.com/clubcedille"
+    weight = 2
+    [[params.social]]
+    icon = "fab fa-instagram"
+    url = "https://www.instagram.com/cedille.etsmtl/"
+    weight = 3
+    [[params.social]]
+    icon = "fab fa-linkedin-in"
+    url = "https://www.linkedin.com/company/cedille/about/"
+    weight = 4
+
