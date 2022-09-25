@@ -34,15 +34,14 @@ theme = 'cedille'
 [params]
 
     logo = "images/cedille-logo-orange.png"
-    github = "https://github.com/ClubCedille"
-    facebook = "https://www.facebook.com/clubcedille"
-    instagram = "https://www.instagram.com/cedille.etsmtl/"
-    linkedin = "https://www.linkedin.com/company/cedille/about/"
+    titleFollowUs = "Suivez-nous"
+    copyleft = "©"
+    year = "2022"
     
     #Contact Information Params
     [params.address]
     title = "Adresse"
-    address = "1219 rue William, Montréal (Québec), H3C 1R1, Local D-2020"
+    address = "1219 rue William <br>Montréal (Québec) <br>H3C 1R1 <br>Local D-2020"
     email = "cedille@etsmtl.net"
     phone = "514 396-8800, poste 7302"
     
