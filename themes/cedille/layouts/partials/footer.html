@@ -3,27 +3,25 @@
         <div class="row">
             <div class="footer-col">
                 <div class="name-address">
-                    <h3>Adresse</h3>
+                    <h3>{{ .Site.Params.address.title }}</h3>
                 </div>
                 <div class="adresse">
-                    1219 Rue William
-                    <br>Montr&eacuteal (Qu&eacutebec) 
-                    <br>H3C 1R1
-                    <br>Local D-2020 
+                    {{ .Site.Params.address.address | safeHTML }} 
                 </div>     
             </div>
+
+            {{ $socialIcons := .Site.Params.social }}
             <div class="footer-col">
                 <div class="follow-us">
-                    <h3>Suivez-nous</h3>
+                    <h3>{{ .Site.Params.titleFollowUs }}</h3>
                 </div>
                 <div class="social-links">
-                    <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
-                    <a href={{ .Site.Params.facebook }}><i class="fab fa-facebook-f"></i></a>
-                    <a href={{ .Site.Params.instagram }}><i class="fab fa-instagram"></i></a>
-                    <a href={{ .Site.Params.linkedin }}><i class="fab fa-linkedin-in"></i></a>
+                    {{ range $socialIcons }}
+                    <a target="_blank" href={{ .url }}><i class="{{ .icon }}"></i></a>
+                    {{ end }}
                 </div>
                 <div class="year">    
-                    <span class="copyleft">&copy;</span> 2022 | {{ site.Title }}</span>
+                    <span class="copyleft">{{ .Site.Params.copyleft }}</span> {{ .Site.Params.year }} | {{ site.Title }}
                 </div>
             </div>
         </div>
