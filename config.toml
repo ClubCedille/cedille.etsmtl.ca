@@ -32,11 +32,14 @@ theme = 'cedille'
         weight = 5
 
 [params]
-
-    logo = "images/cedille-logo-orange.png"
+    
     titleFollowUs = "Suivez-nous"
-    copyleft = "©"
+    copyright = "©"
     year = "2022"
+    text = "Club d’expérimentation DevOps et d’intégration de logiciels libres de l'ÉTS"
+
+    [params.accueil]
+    logoCedille = "images/cedille-logo-orange.png"
     
     #Contact Information Params
     [params.address]
@@ -56,7 +59,7 @@ theme = 'cedille'
     weight = 2
     [[params.social]]
     icon = "fab fa-instagram"
-    url = "https://www.instagram.com/cedille.etsmtl/"
+    url = "https://www.instagram.com/cedille.etsmtl"
     weight = 3
     [[params.social]]
     icon = "fab fa-linkedin-in"
