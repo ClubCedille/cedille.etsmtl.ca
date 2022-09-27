@@ -1,0 +1,20 @@
+{{with .Site.Data.presentation }}
+{{ if .enable }}
+<div class="accueil">
+    <section class="presentation">
+        <img src="{{ .logoCedille }}" alt="{{ .title }}">
+        <div class="text-club">
+            {{ .text }}
+        </div>
+        {{ $socialIcons := .social}}
+        <div class="social-links">
+            <div class="fa-2x">
+                {{ range $socialIcons }}
+                <a target="_blank" href={{ .url }}><i class="{{ .icon }}"></i></a>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}
+{{ end }}
+    

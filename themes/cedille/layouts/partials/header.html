@@ -15,7 +15,7 @@
           {{ $current := .}}
           {{ range .Site.Menus.main }}
           {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-          {{ $active = or $active (eq .Name $current.Title) }}
+          {{ $active = or $active (eq .Name $current.Title) }}   
           {{ $active = or $active (and (eq .Name "Équipe") (eq $current.Section "equipe")) }}                
           {{ $active = or $active (and (eq .Name "Projets") ( eq $current.Section "projets")) }}
           {{ $active = or $active (and (eq .Name "Partenaires") (eq $current.Section "partenaires")) }}
