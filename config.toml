@@ -36,9 +36,9 @@ theme = 'cedille'
     titleFollowUs = "Suivez-nous"
     copyright = "©"
     year = "2022"
-    text = "Club d’expérimentation DevOps et d’intégration de logiciels libres de l'ÉTS"
 
-    [params.accueil]
+    #General Params
+    [params.general]
     logoCedille = "images/cedille-logo-orange.png"
     
     #Contact Information Params

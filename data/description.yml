@@ -1,4 +1,30 @@
 ---
 enable: true
 title: "Qui sommes-nous"
+application:
+  - icon: "fa-regular fa-copyright"
+    system: "title-logiciel"
+    name: "Logiciels libres"
+    type: "logiciel"
+    description: >
+                Notre mission est de démontrer les possibilités qu'offrent les logiciels libres 
+                par la réalisation de projets d'ingénierie variés. L'industrie adopte massivement 
+                la philosophie du libre (Open Source software & hardware), considérant qu'elle est 
+                un moteur favorisant l'accélération de l'innovation.
+  - icon: "fas fa-code-branch"
+    name: "Systèmes embarqués"
+    type: "system"
+    description: > 
+                Plusieurs de nos projets sont réalisés à l'aide de systèmes embarqués 
+                (circuits électroniques et microcontrôleurs). Nous avons utilisé, à titre 
+                d'exemple, des technologies ouvertes tels que les plateforme de développement 
+                Arduino et Raspberry Pi, pour divers projets.
+  - icon: "fas fa-code"
+    name: "Transfert de connaissance"
+    type: "knowledge"
+    description: >
+                Notre club scientifique intègre aussi une mission éducative. Nous sommes toujours 
+                à l'affut de conférences et d'événements qui enrichissent nos connaissances aux 
+                alentours des logiciels libres et de technologies telles que l'infrastructure 
+                infonuagique, le DevOps, la programmation, etc.
 ---

@@ -1,46 +1,20 @@
+{{with .Site.Data.sitesHeberges }}    
+{{ if .enable }}
     <section class="sites-heberges">
         <div class="container">
-            <h3>Sites heberg&eacutes</h3>
+            <h3>{{ .title }}</h3>
         </div>
         <div class="slider">
+            {{ $logo := .logos}}
             <div class="slide-track">
+                {{ range $logo }}
                 <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-blanc.png" alt="logoets"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-new.png" alt="logoets"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-blanc.png" alt="logoets"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-new.png" alt="logoets"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-blanc.png" alt="logoets"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-new.png" alt="logoets"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-blanc.png" alt="logoets"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-new.png" alt="logoets"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-blanc.png" alt="logoets"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-new.png" alt="logoets"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-blanc.png" alt="logoets"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="/images/cedille-logo-new.png" alt="logoets"></a>
-                </div>
+                    <a href="#"><img src="{{ .image }}" alt="{{ .alt }}"></a>
+                </div>   
+                {{ end }}
             </div>
         </div>
     </section>
 </div>
+{{ end }}
+{{ end }}
