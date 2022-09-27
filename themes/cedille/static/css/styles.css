@@ -701,7 +701,7 @@ img{
     background-color: rgba(255, 166, 0, 0.748);
     border-radius: 100%;
     padding: 30% 30%;
-    transition: all 0.5s ease;
+    transition: transform ease 0.5s;
     color: rgba(242, 238, 238, 0.941);
 }
 

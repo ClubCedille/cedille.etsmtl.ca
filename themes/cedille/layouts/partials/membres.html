@@ -3,19 +3,25 @@
 <section class="members">
     <div class="container">
         <h3>{{ .title }}</h3>
-        
         <div class="row text-center">
             {{ range .membres}}
             <div class="col-sm-4">
                 <div class="member-description">
                     <div class="img-container">
-                        <img src="{{ .image | relURL }}" alt="image">
+                        {{ if .image }}
+                        <img src="{{ .image | relURL }}" alt="{{.name}}">
+                        {{ else }}
+                        <img src="{{ .Site.baseurl }}/images/membres/anonyme.jpg" alt="{{.name}}">
+                        {{ end }}
+                        {{ if .social }}
                         <div class="middle text-center">
                             <div class="social-links d-flex justify-content-center">
-                                <a href="{{.github}}" class="me-3"><i class="fab fa-github"></i></a>
-                                <a href="{{.linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                                {{ range .social}}
+                                <a href="{{.url}}" class="me-3"><i class="fab fa-{{ .title }}"></i></a>
+                                {{end}}
                             </div>
                         </div>
+                        {{ end }}
                     </div>
                     <div class="member-information">
                         <h4>{{.name}}</h4>
