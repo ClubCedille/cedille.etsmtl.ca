@@ -15,9 +15,11 @@
                         {{ end }}
                         {{ if .social }}
                         <div class="middle text-center">
-                            <div class="social-links d-flex justify-content-center">
+                            <div class="social-links row d-flex">
                                 {{ range .social}}
-                                <a href="{{.url}}" class="me-3"><i class="fab fa-{{ .title }}"></i></a>
+                                <div class="col-sm-6 p-4">
+                                    <a href="{{.url}}"><i class="fab fa-{{ .title }}"></i></a>
+                                </div>
                                 {{end}}
                             </div>
                         </div>

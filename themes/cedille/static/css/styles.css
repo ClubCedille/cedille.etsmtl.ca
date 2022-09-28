@@ -666,16 +666,18 @@ img{
 }
 
 .equipe .img-container{
-    position: relative;
+    position: relative; 
+    border-radius: 100%;
+    margin: 0px 100px;
+
 }
 .equipe .img-container img{
-    width: 14rem;
-    height: 14rem;
+    width: 13.5rem;
+    height: 13.5rem;
     border-radius: 100%;
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
-    margin-bottom: 10px;
     
 }
 
@@ -700,7 +702,7 @@ img{
 .equipe .img-container .middle .social-links a{
     background-color: rgba(255, 166, 0, 0.748);
     border-radius: 100%;
-    padding: 30% 30%;
+    padding: 50% 50%;
     transition: transform ease 0.5s;
     color: rgba(242, 238, 238, 0.941);
 }
