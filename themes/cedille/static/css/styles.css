@@ -667,7 +667,6 @@ img{
 
 .equipe .img-container{
     position: relative; 
-    background-color: red;
     border-radius: 100%;
     margin: 0px 100px;
 
@@ -761,10 +760,51 @@ img{
 
 @media screen and (max-width:575.5px){
     .equipe .img-container{
-        margin: 0px 162px;
+        margin: 0px 167px;
     }
 }
 
+@media screen and (max-width:426px){
+    .equipe .img-container{
+        margin: 0px 94px;
+    }
+}
+
+@media screen and (max-width:414.5px){
+    .equipe .img-container{
+        margin: 0px 88px;
+    }
+}
+
+@media screen and (max-width:394px){
+    .equipe .img-container{
+        margin: 0px 76.5px;
+    }
+}
+
+@media screen and (max-width:390.5px){
+    .equipe .img-container{
+        margin: 0px 75px;
+    }
+}
+
+@media screen and (max-width:375.5px){
+    .equipe .img-container{
+        margin: 0px 67px;
+    }
+}
+
+@media screen and (max-width:360.5px){
+    .equipe .img-container{
+        margin: 0px 60px;
+    }
+}
+
+@media screen and (max-width:320.5px){
+    .equipe .img-container{
+        margin: 0px 40px;
+    }
+}
 /*-------- TEST -------*/
 /*------------- CONTACT PAGE ------------*/
 .contact{
