@@ -1,0 +1,20 @@
+{{with .Site.Data.sitesHeberges }}    
+{{ if .enable }}
+    <section class="sites-heberges">
+        <div class="container">
+            <h3>{{ .title }}</h3>
+        </div>
+        <div class="slider">
+            {{ $logo := .logos}}
+            <div class="slide-track">
+                {{ range $logo }}
+                <div class="slide">
+                    <a href="{{ .url }}"><img src="{{ .image }}" alt="{{ .alt }}"></a>
+                </div>   
+                {{ end }}
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}
+{{ end }}
