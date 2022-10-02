@@ -669,7 +669,6 @@ img{
     position: relative; 
     border-radius: 100%;
     margin: 0px 100px;
-
 }
 .equipe .img-container img{
     width: 13.5rem;
@@ -686,7 +685,7 @@ img{
     position: absolute;
     transition: .5s ease;
     top: 50%;
-    left: 50%;
+    left: 52%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -701,9 +700,9 @@ img{
 
 .equipe .img-container .middle .social-links a{
     background-color: rgba(255, 166, 0, 0.748);
-    border-radius: 100%;
-    padding: 50% 50%;
     transition: transform ease 0.5s;
+    border-radius: 100%;
+    padding: 0.6rem;
     color: rgba(242, 238, 238, 0.941);
 }
 
@@ -762,6 +761,20 @@ img{
     .equipe .img-container{
         margin: 0px 167px;
     }
+
+    .equipe .img-container .middle{
+        left: 56%;
+    }
+
+    .equipe .img-container .middle .social-links a{
+        margin: 0px 5px;
+    }
+}
+
+@media screen and (max-width:541px){
+    .equipe .img-container{
+        margin: 0px 150px;
+    }
 }
 
 @media screen and (max-width:426px){
@@ -803,6 +816,12 @@ img{
 @media screen and (max-width:320.5px){
     .equipe .img-container{
         margin: 0px 40px;
+    }
+}
+
+@media screen and (max-width:281px){
+    .equipe .img-container{
+        margin: 0px 20px;
     }
 }
 /*-------- TEST -------*/

@@ -14,10 +14,10 @@
                         <img src="{{ .Site.baseurl }}/images/membres/anonyme.jpg" alt="{{.name}}">
                         {{ end }}
                         {{ if .social }}
-                        <div class="middle text-center">
-                            <div class="social-links row d-flex">
+                        <div class="row middle">
+                            <div class="social-links d-inline-flex mx-2">
                                 {{ range .social}}
-                                <div class="col-sm-6 p-4">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <a href="{{.url}}"><i class="fab fa-{{ .title }}"></i></a>
                                 </div>
                                 {{end}}
