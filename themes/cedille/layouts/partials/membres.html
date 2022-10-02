@@ -9,7 +9,7 @@
                 <div class="member-description">
                     <div class="img-container">
                         {{ if .image }}
-                        <img class="align-items-center" src="{{ .image | relURL }}" alt="{{.name}}">
+                        <img src="{{ .image | relURL }}" alt="{{.name}}">
                         {{ else }}
                         <img src="{{ .Site.baseurl }}/images/membres/anonyme.jpg" alt="{{.name}}">
                         {{ end }}
