@@ -1,0 +1,10 @@
+{{ with .Site.Data.commentContribuer }}
+{{ if .enable }}
+<div class="container">
+    <div class="contribution mb-3" id="contribute">
+        <h2>{{ .title }}</h2>
+        <p>{{ .description }}</p>
+    </div>
+</div>
+{{ end }}
+{{ end }}
