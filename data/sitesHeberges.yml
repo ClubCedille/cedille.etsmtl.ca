@@ -2,9 +2,9 @@
 enable: true
 title: "Sites hébergés"
 logos:
-  - image: /images/cedille-logo-blanc.png
-    url: "#"
-    alt: logoets
+  - image: /images/sitesHeberges/synapse.png
+    url: "https://synapsets.etsmtl.ca/"
+    alt: logoSynapse
   - image: /images/cedille-logo-new.png
     url: "#"
     alt: logoets
