@@ -1,202 +1,66 @@
+{{ with .Site.Data.projetsEnCours }}
+{{ if .enable }}
     <a href="#contribute" class="open-button">Comment contribuer</a>
     <div class="container">
         <h2 class="titre">Projets en cours</h2>
         <div class="row">
             <div class="col-sm-6">
+                {{ range .leftSection }}
                 <div class="panel">
                     <div class="row">
                         <div class="col-sm-9 titreProjet">
-                            <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#PROJET1">
+                            <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#{{ .projectTarget }}">
                                 <div class="row align-items-center">
                                     <div class="col titreProjet">
-                                        <h4>Titre projet 1</h4>
-                                        <p>Brève description</p>
+                                        <h4>{{ .title }}</h4>
+                                        <p>{{ .smDescription }}</p>
                                     </div>
                                 </div>
                             </button>
                         </div>
                         <div class="col-sm-3 lienGithub">
-                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
+                            <a href={{ .url }}><i class="{{ .icon }}"></i></a>
                         </div>
                     </div>
-                    <div class="btn-collapse collapse" id="PROJET1">
+                    <div class="btn-collapse collapse" id="{{ .projectTarget }}">
                         <div class="temoignage">
-                            <h5>Auteur: </h5>
-                            <p class="titre2">T&eacutemoignage sur le projet:</p>
-                            <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life.Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
+                            <h5>Auteur: {{ .name }}</h5>
+                            <p class="titre2">{{ .subTitle }}</p>
+                            <p class="texte">{{ .review }}</p>
                         </div>
                     </div>
                 </div>
-                <div class="panel">
-                    <div class="row">
-                        <div class="col-sm-9 titreProjet">
-                            <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#PROJET2">
-                                <div class="row">
-                                    <div class="col titreProjet">
-                                        <h4>Titre projet 2</h4>
-                                        <p>Brève description</p>
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                        <div class="col-sm-3 lienGithub">
-                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="btn-collapse collapse" id="PROJET2">
-                        <div class="temoignage">
-                            <h5>Auteur: </h5>
-                            <p class="titre2">T&eacutemoignage sur le projet:</p>
-                            <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life.Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel">
-                    <div class="row">
-                        <div class="col-sm-9 titreProjet">
-                            <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#PROJET3">
-                                <div class="row">
-                                    <div class="col titreProjet">
-                                        <h4>Titre projet 3</h4>
-                                        <p>Brève description</p>
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                        <div class="col-sm-3 lienGithub">
-                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="btn-collapse collapse" id="PROJET3">
-                        <div class="temoignage">
-                            <h5>Auteur: </h5>
-                            <p class="titre2">T&eacutemoignage sur le projet:</p>
-                            <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life.Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel">
-                    <div class="row">
-                        <div class="col-sm-9 titreProjet">
-                            <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#PROJET4">
-                                <div class="row">
-                                    <div class="col titreProjet">
-                                        <h4>Titre projet 4</h4>
-                                        <p>Brève description</p>
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                        <div class="col-sm-3 lienGithub">
-                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="btn-collapse collapse" id="PROJET4">
-                        <div class="temoignage">
-                            <h5>Auteur: </h5>
-                            <p class="titre2">T&eacutemoignage sur le projet:</p>
-                            <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life.Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
-                        </div>
-                    </div>
-                </div>
+                {{ end }}
             </div>
             <div class="col-sm-6">
+                {{ range .rightSection }}
                 <div class="panel">
                     <div class="row">
                         <div class="col-sm-9 titreProjet">
-                            <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#PROJET5">
+                            <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#{{ .projectTarget }}">
                                 <div class="row">
                                     <div class="col titreProjet">
-                                        <h4>Titre projet 5</h4>
-                                        <p>Brève description</p>
+                                        <h4>{{ .title }}</h4>
+                                        <p>{{ .smDescription }}</p>
                                     </div>
                                 </div>
                             </button>
                         </div>
                         <div class="col-sm-3 lienGithub">
-                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
+                            <a href={{ .url }}><i class="{{ .icon }}"></i></a>
                         </div>
                     </div>
-                    <div class="btn-collapse collapse" id="PROJET5">
+                    <div class="btn-collapse collapse" id="{{ .projectTarget }}">
                         <div class="temoignage">
-                            <h5>Auteur: </h5>
-                            <p class="titre2">T&eacutemoignage sur le projet:</p>
-                            <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life.Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
+                            <h5>Auteur: {{ .name }}</h5>
+                            <p class="titre2">{{ .subTitle }}</p>
+                            <p class="texte">{{ .review }}</p>
                         </div>
                     </div>
                 </div>
-                <div class="panel">
-                    <div class="row">
-                        <div class="col-sm-9 titreProjet">
-                            <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#PROJET6">
-                                <div class="row align-items-center">
-                                    <div class="col titreProjet">
-                                        <h4>Titre projet 6</h4>
-                                        <p>Brève description</p>
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                        <div class="col-sm-3 lienGithub">
-                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="btn-collapse collapse" id="PROJET6">
-                        <div class="temoignage">
-                            <h5>Auteur: </h5>
-                            <p class="titre2">T&eacutemoignage sur le projet:</p>
-                            <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life.Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel">
-                    <div class="row">
-                        <div class="col-sm-9 titreProjet">
-                            <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#PROJET7">
-                                <div class="row">
-                                    <div class="col titreProjet">
-                                        <h4>Titre projet 7</h4>
-                                        <p>Brève description</p>
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                        <div class="col-sm-3 lienGithub">
-                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="btn-collapse collapse" id="PROJET7">
-                        <div class="temoignage">
-                            <h5>Auteur: </h5>
-                            <p class="titre2">T&eacutemoignage sur le projet:</p>
-                            <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life.Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel">
-                    <div class="row">
-                        <div class="col-sm-9 titreProjet">
-                            <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#PROJET8">
-                                <div class="row">
-                                    <div class="col titreProjet">
-                                        <h4>Titre projet 8</h4>
-                                        <p>Brève description</p>
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                        <div class="col-sm-3 lienGithub">
-                            <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="btn-collapse collapse" id="PROJET8">
-                        <div class="temoignage">
-                            <h5>Auteur: </h5>
-                            <p class="titre2">T&eacutemoignage sur le projet:</p>
-                            <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life.Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
-                        </div>
-                    </div>
-                </div>
+                {{ end }}
             </div>   
         </div>
     </div>
+{{ end }}
+{{ end }}

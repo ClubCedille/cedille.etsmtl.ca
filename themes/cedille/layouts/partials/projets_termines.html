@@ -23,7 +23,7 @@
                 </div>
                 <div class="btn-collapse collapse" id="{{ .projectTarget }}">
                     <div class="temoignage">
-                        <h5>Auteur: </h5>
+                        <h5>Auteur: {{ .name }}</h5>
                         <p class="titre2">{{ .subTitle }}</p>
                         <p class="texte">{{ .review }}</p>
                     </div>
@@ -33,58 +33,34 @@
         {{ end }}
     </div>
     <div class="row btn-collapse collapse" id="PROJETS-APPARITION">
+        {{ range .secondSection}}
         <div class="col-sm-6">
             <div class="panel">
                 <div class="row">
                     <div class="col-sm-9 titreProjet">
-                        <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#PROJET2-TERMINES">
+                        <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#{{ .projectTarget }}">
                             <div class="row">
                                 <div class="col titreProjet">
-                                    <h4>Titre projet 2</h4>
-                                    <p>Brève description</p>
+                                    <h4>{{ .title }}</h4>
+                                    <p>{{ .smDescription }}</p>
                                 </div>
                             </div>
                         </button>
                     </div>
                     <div class="col-sm-3 lienGithub">
-                        <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
+                        <a href={{ .url }}><i class="{{ .icon }}"></i></a>
                     </div>
                 </div>
-                <div class="btn-collapse collapse" id="PROJET2-TERMINES">
+                <div class="btn-collapse collapse" id="{{ .projectTarget }}">
                     <div class="temoignage">
-                        <h5>Auteur: </h5>
-                        <p class="titre2">T&eacutemoignage sur le projet:</p>
-                        <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life.Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
+                        <h5>Auteur: {{ .name }}</h5>
+                        <p class="titre2">{{ .subTitle }}</p>
+                        <p class="texte">{{ .review }}</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
-            <div class="panel">
-                <div class="row">
-                    <div class="col-sm-9 titreProjet">
-                        <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#PROJET4-TERMINES">
-                            <div class="row align-items-center">
-                                <div class="col titreProjet">
-                                    <h4>Titre projet 4</h4>
-                                    <p>Brève description</p>
-                                </div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="col-sm-3 lienGithub">
-                        <a href={{ .Site.Params.github }}><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="btn-collapse collapse" id="PROJET4-TERMIMES">
-                    <div class="temoignage">
-                        <h5>Auteur: </h5>
-                        <p class="titre2">T&eacutemoignage sur le projet:</p>
-                        <p class="texte">Anim pariatur cliche reprehenderit, enim eiusmod high life.Anim pariatur cliche reprehenderit, enim eiusmod high life</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{ end }}
     </div>
 </div>
 <div class="container">
