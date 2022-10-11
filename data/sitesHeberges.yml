@@ -2,40 +2,70 @@
 enable: true
 title: "Sites hébergés"
 logos:
+  - image: /images/sitesHeberges/canoeBeton.png
+    url: "https://canoe.etsmtl.ca/"
+    alt: logoCanoeBeton
+  - image: /images/sitesHeberges/reseauEts.png
+    url: "https://reseau-ets.cedille.club/"
+    alt: logoReseauEts
+  - image: /images/sitesHeberges/cosseCa.png
+    url: "https://cosse-ca.cedille.club/"
+    alt: logoCosseCa
   - image: /images/sitesHeberges/synapse.png
     url: "https://synapsets.etsmtl.ca/"
     alt: logoSynapse
-  - image: /images/cedille-logo-new.png
-    url: "#"
-    alt: logoets
+  - image: /images/sitesHeberges/plasticLoop.png
+    url: "https://plasticloop.etsmtl.ca/"
+    alt: logoPlastic
+  - image: /images/sitesHeberges/retsEts.png
+    url: "https://www.etsmtl.ca/activites-et-services-aux-etudiants/clubs-etudiants/rets"
+    alt: logoRetsEts
+  - image: /images/sitesHeberges/preci.png
+    url: "hhttps://preci.etsmtl.ca/"
+    alt: logoPreci
+  - image: /images/sitesHeberges/geniAle.png
+    url: "https://geniale.ca/fr/"
+    alt: logoGeniAle
+  - image: /images/sitesHeberges/sonia.png
+    url: "https://wiki.sonia.etsmtl.ca/hardware/overview"
+    alt: logoSonia
+  - image: /images/sitesHeberges/capra.png
+    url: "https://wiki.capra.etsmtl.ca/"
+    alt: logoCapra
+  - image: /images/sitesHeberges/serreEts.png
+    url: "https://serreets.com/"
+    alt: logSerreEts
+  - image: /images/sitesHeberges/canoeBeton.png
+    url: "https://canoe.etsmtl.ca/"
+    alt: logoCanoeBeton
+  - image: /images/sitesHeberges/reseauEts.png
+    url: "https://reseau-ets.cedille.club/"
+    alt: logoReseauEts
+  - image: /images/sitesHeberges/cosseCa.png
+    url: "https://cosse-ca.cedille.club/"
+    alt: logoCosseCa
   - image: /images/sitesHeberges/synapse.png
     url: "https://synapsets.etsmtl.ca/"
     alt: logoSynapse
-  - image: /images/cedille-logo-new.png
-    url: "#"
-    alt: logoets
-  - image: /images/sitesHeberges/synapse.png
-    url: "https://synapsets.etsmtl.ca/"
-    alt: logoSynapse
-  - image: /images/cedille-logo-new.png
-    url: "#"
-    alt: logoets
-  - image: /images/sitesHeberges/synapse.png
-    url: "https://synapsets.etsmtl.ca/"
-    alt: logoSynapse
-  - image: /images/cedille-logo-new.png
-    url: "#"
-    alt: logoets
-  - image: /images/sitesHeberges/synapse.png
-    url: "https://synapsets.etsmtl.ca/"
-    alt: logoSynapse
-  - image: /images/cedille-logo-new.png
-    url: "#"
-    alt: logoets
-  - image: /images/sitesHeberges/synapse.png
-    url: "https://synapsets.etsmtl.ca/"
-    alt: logoSynapse
-  - image: /images/cedille-logo-new.png
-    url: "#"
-    alt: logoets
+  - image: /images/sitesHeberges/plasticLoop.png
+    url: "https://plasticloop.etsmtl.ca/"
+    alt: logoPlastic
+  - image: /images/sitesHeberges/retsEts.png
+    url: "https://www.etsmtl.ca/activites-et-services-aux-etudiants/clubs-etudiants/rets"
+    alt: logoRetsEts
+  - image: /images/sitesHeberges/preci.png
+    url: "hhttps://preci.etsmtl.ca/"
+    alt: logoPreci
+  - image: /images/sitesHeberges/geniAle.png
+    url: "https://geniale.ca/fr/"
+    alt: logoGeniAle
+  - image: /images/sitesHeberges/sonia.png
+    url: "https://wiki.sonia.etsmtl.ca/hardware/overview"
+    alt: logoSonia
+  - image: /images/sitesHeberges/capra.png
+    url: "https://wiki.capra.etsmtl.ca/"
+    alt: logoCapra
+  - image: /images/sitesHeberges/serreEts.png
+    url: "https://serreets.com/"
+    alt: logoSerreEts
 ---

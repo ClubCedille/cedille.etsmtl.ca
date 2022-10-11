@@ -996,8 +996,8 @@ img{
 
 .accueil .slider .slide-track{
     display: flex;
-    width: calc(250px*12);
-    animation: scroll 5s linear infinite;
+    width: calc(250px*22);
+    animation: scroll 10s linear infinite;
 }
 
 .accueil .slider .slide-track:hover{
@@ -1009,7 +1009,7 @@ img{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-250px*2));
+        transform: translateX(calc(-250px*11));
     }
 }
 
