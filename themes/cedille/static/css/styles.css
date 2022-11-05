@@ -841,6 +841,7 @@ img{
   height: 200px;
   color: white;
   background-color: rgba(0, 0, 0, 0.822);
+  opacity: 1;
   background-image:
     linear-gradient(to bottom left, transparent 50%, rgb(217, 214, 214) 0),
     linear-gradient(to top left, rgb(217, 214, 214) 50%, transparent 0);
