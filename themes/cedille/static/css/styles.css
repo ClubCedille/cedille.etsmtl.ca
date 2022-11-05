@@ -827,8 +827,26 @@ img{
 /*-------- TEST -------*/
 /*------------- CONTACT PAGE ------------*/
 .contact{
-    display: flex;
     min-height: 100vh;
+}
+
+.contact .rectangle{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+.contact .triangle {
+  width: 100%;
+  height: 200px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.822);
+  background-image:
+    linear-gradient(to bottom left, transparent 50%, rgb(217, 214, 214) 0),
+    linear-gradient(to top left, rgb(217, 214, 214) 50%, transparent 0);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: left, right;
 }
 
 .contact .left{
