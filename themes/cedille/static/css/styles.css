@@ -850,6 +850,10 @@ img{
   background-position: left, right;
 }
 
+.contact .hide-section{
+    height: 300px;
+}
+
 .contact .left{
     width: 50%;
     background-color: rgb(101, 76, 30);
