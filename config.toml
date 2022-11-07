@@ -47,6 +47,10 @@ theme = 'cedille'
     address = "1219 rue William <br>Montréal (Québec) <br>H3C 1R1 <br>Local D-2020"
     email = "cedille@etsmtl.net"
     phone = "514 396-8800, poste 7302"
+
+    [params.map]
+    latitude = "45.49382"
+    longitude = "-73.56233"
     
     #Social Params
     [[params.social]]

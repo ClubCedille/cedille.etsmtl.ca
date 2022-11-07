@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $address := .Site.Params.address }}
 <div class="contact">
   <div class="figure w-100" >
     <section class="rectangle"></section>
@@ -7,9 +8,35 @@
     </section>
   </div>
   <div class="formulaire">
-  </div>
-  <div class="map">
     
+  </div>
+  <div class="container-fulid">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div id="map">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="contact-info">
+          <h3>
+            {{ $address.address | safeHTML}}
+          </h3>
+          <ul>
+            <li>
+              <a href="mailto: {{ $address.email }}">
+                {{ $address.email }}
+              </a>
+            </li>
+            <li>
+              <a href="tel: {{ $address.phone }}">
+                {{ $address.phone }}
+              </a>
+            </li>
+          </ul>
+          <p>Texte à mettre</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
     {{/*  <div class="left" id="left">

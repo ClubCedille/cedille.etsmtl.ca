@@ -850,9 +850,46 @@ img{
   background-position: left, right;
 }
 
-.contact .hide-section{
-    height: 300px;
+#map{
+    height: 100%;
 }
+.contact .contact-info{
+    background-color: #222029;
+    padding: 80px;
+}
+
+.contact .contact-info h3{
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.contact .contact-info ul{
+    padding: 0;
+    margin: 30px 0;
+}
+
+.contact .contact-info ul li{
+    list-style: none;
+}
+
+.contact .contact-info ul li a{
+    color: #fff;
+    line-height: 32px;
+    font-size: 19px;
+    font-weight: 300;
+    text-decoration: underline;
+    font-family: system-ui;
+}
+
+.contact .contact-info p{
+    color: #fff;
+    font-weight: 300;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
 
 .contact .left{
     width: 50%;
