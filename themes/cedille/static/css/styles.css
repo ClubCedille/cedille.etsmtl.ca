@@ -853,6 +853,7 @@ img{
 #map{
     height: 100%;
 }
+
 .contact .contact-info{
     background-color: #222029;
     padding: 80px;
@@ -890,6 +891,11 @@ img{
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767px){
+    #map{
+        height: 400px;
+    }
+}
 
 .contact .left{
     width: 50%;
