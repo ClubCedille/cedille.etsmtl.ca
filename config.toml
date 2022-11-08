@@ -32,7 +32,6 @@ theme = 'cedille'
         weight = 5
 
 [params]
-    
     titleFollowUs = "Suivez-nous"
     copyright = "©"
     year = "2022"
@@ -49,6 +48,7 @@ theme = 'cedille'
     phone = "514 396-8800, poste 7302"
 
     [params.map]
+    APIkey="AIzaSyBbdrK23GFc0JJpng1dX8O_FA_kJv8zhOE"
     latitude = "45.49382"
     longitude = "-73.56233"
     
