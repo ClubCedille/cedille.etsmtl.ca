@@ -45,7 +45,7 @@ theme = 'cedille'
     title = "Adresse"
     address = "1219 rue William <br>Montréal (Québec) <br>H3C 1R1 <br>Local D-2020"
     email = "cedille@etsmtl.net"
-    phone = "514 396-8800, poste 7302"
+    phone = "514 396-8800 poste 7302"
 
     [params.map]
     APIkey="AIzaSyBbdrK23GFc0JJpng1dX8O_FA_kJv8zhOE"
