@@ -827,8 +827,74 @@ img{
 /*-------- TEST -------*/
 /*------------- CONTACT PAGE ------------*/
 .contact{
-    display: flex;
     min-height: 100vh;
+}
+
+.contact .rectangle{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+.contact .triangle {
+  width: 100%;
+  height: 200px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.822);
+  opacity: 1;
+  background-image:
+    linear-gradient(to bottom left, transparent 50%, rgb(217, 214, 214) 0),
+    linear-gradient(to top left, rgb(217, 214, 214) 50%, transparent 0);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: left, right;
+}
+
+#map{
+    height: 100%;
+}
+
+.contact .contact-info{
+    background-color: #222029;
+    padding: 80px;
+}
+
+.contact .contact-info h3{
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.contact .contact-info ul{
+    padding: 0;
+    margin: 30px 0;
+}
+
+.contact .contact-info ul li{
+    list-style: none;
+}
+
+.contact .contact-info ul li a{
+    color: #fff;
+    line-height: 32px;
+    font-size: 19px;
+    font-weight: 300;
+    text-decoration: underline;
+    font-family: system-ui;
+}
+
+.contact .contact-info p{
+    color: #fff;
+    font-weight: 300;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px){
+    #map{
+        height: 400px;
+    }
 }
 
 .contact .left{
