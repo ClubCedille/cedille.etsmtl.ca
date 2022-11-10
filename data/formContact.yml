@@ -1,0 +1,9 @@
+---
+enable: true
+navTabsTitle:
+  membershipRequest: "Demande d'adhésion"
+  collaborationRequest: "Demande de collaboration"
+  informationRequest: "Demande d'information"
+button:
+  submit: "Soumettre"
+---

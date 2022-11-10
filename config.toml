@@ -32,8 +32,8 @@ theme = 'cedille'
         weight = 5
 
 [params]
-    
     titleFollowUs = "Suivez-nous"
+    titleContactPage = "Pour nous contacter"
     copyright = "©"
     year = "2022"
 
@@ -41,14 +41,16 @@ theme = 'cedille'
     [params.general]
     logoCedille = "images/cedille-logo-orange.png"
     
-    #Contact Information Params
+    #Address Information Params
     [params.address]
     title = "Adresse"
     address = "1219 rue William <br>Montréal (Québec) <br>H3C 1R1 <br>Local D-2020"
     email = "cedille@etsmtl.net"
+    phoneNumber = "5143968800p7302"
     phone = "514 396-8800, poste 7302"
 
     [params.map]
+    APIkey="AIzaSyBbdrK23GFc0JJpng1dX8O_FA_kJv8zhOE"
     latitude = "45.49382"
     longitude = "-73.56233"
     

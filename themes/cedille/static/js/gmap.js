@@ -10,12 +10,3 @@ function initMap() {
         title: 'Club Cedille'
     });
 }
-
-$('#contact .form-selector').on('click', 'a', function(){
-    var t = $(this).data('target');
-    $('#contact-form, #adhesion-form').not(t).addClass('hidden');
-    $(t).removeClass('hidden');
-
-    $('#contact .form-selector .active').removeClass('active');
-    $(this).addClass('active');
-})
