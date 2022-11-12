@@ -12,113 +12,111 @@
         {{ .navTabsTitle.informationRequest }}
       </button>
     </div>
-  </nav>
-  <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-member" role="tabpanel" aria-labelledby="nav-member-tab">
-      <form class="row g-3 px-2 mt-2">
-        <div class="col-md-6">
-          <label for="nameMember" class="form-label">Votre nom/prénom</label>
-          <input type="text" class="form-control" id="nameMember">
-        </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="formation" class="form-label">Formation</label>
-          <select class="form-select" id="specificSizeSelect">
-            <option selected>Choisissez une formation</option>
-            <option value="1">Baccalauréat</option>
-            <option value="2">Maîtrise</option>
-            <option value="3">Doctorat</option>
-            <option value="4">Autre</option>
-          </select>
-        </div>
-        <div class="col-md-6">
-          <label for="programme" class="form-label">Programme d'études</label>
-          <select class="form-select" id="specificSizeSelect">
-            <option selected>Choissisez un programme</option>
-            <option value="1">Génie des technologies de l'information</option>
-            <option value="2">Génie électrique</option>
-            <option value="3">Génie mécanique</option>
-            <option value="4">Génie logiciel</option>
-            <option value="5">Génie des opérations et de la logistique</option>
-            <option value="6">Génie de la construction</option>
-            <option value="7">Génie de la production automatisée</option>
-            <option value="8">Autre</option>
-          </select>
-        </div>
-        <div class="col-md-6">
-          <label class="form-label">Intérêts</label>
-                    <textarea name="interets" class="form-control"></textarea>
-        </div>    
-      </form>
-      <div class="text-end mt-2 me-2">
-        <button type="submit" class="btn py-2 px-5">
-          {{ .button.submit }}
-        </button> 
-      </div>   
-    </div>
-    <div class="tab-pane fade" id="nav-collab" role="tabpanel" aria-labelledby="nav-collaboration-tab">
-      <form class="row g-3 px-2 mt-2">
-        <div class="col-md-6">
-          <label for="formGroupExampleInput" class="form-label">Votre nom/prénom</label>
-          <input type="text" class="form-control" id="formGroupExampleInput">
-        </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Courriel</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="formation" class="form-label">Formation</label>
-          <select class="form-select" id="specificSizeSelect">
-            <option selected>Choisissez un club</option>
-            <option value="1">Test1</option>
-            <option value="2">Test2</option>
-            <option value="3">Test3</option>
-            <option value="4">Autre</option>
-          </select>
-        </div>
-        <div class="col-md-6">
-          <label for="website" class="form-label">Site web</label>
-          <input type="url" class="form-control" id="inputWebsite">
-        </div>
-        <div class="col-md-6">
-          <label class="form-label">Projet à proposer</label>
-                    <textarea name="projectToPropose" class="form-control"></textarea>
-        </div>
-      </form>
-      <div class="text-end mt-2 me-2">
-        <button type="submit" class="btn py-2 px-5">
-            {{ .button.submit }}
-        </button>  
-      </div> 
-    </div>
-    <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
-      <form class="row g-3 px-2 mt-2">
-        <div class="col-md-6">
-          <label for="formGroupExampleInput" class="form-label">Votre nom/prénom</label>
-          <input type="text" class="form-control" id="formGroupExampleInput">
-        </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Courriel:</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="formGroupExampleInput" class="form-label">Compagnie:</label>
-          <input type="text" class="form-control" id="formGroupExampleInput">
-        </div>
-        <div class="col-md-6">
-          <label class="form-label">Message</label>
-                    <textarea name="messageCompagnie" class="form-control"></textarea>
-        </div>
-      </form>
-      <div class="text-end mt-2 me-2">
-        <button type="submit" class="btn py-2 px-5">
-            {{ .button.submit }}
-        </button> 
-      </div> 
-    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <!-- member tab section -->
+  {{ $navMember := .navMember }}
+  <div class="tab-pane fade show active" id="nav-member" role="tabpanel" aria-labelledby="nav-member-tab">
+    <form class="row g-3 px-2 mt-2">
+      <div class="col-md-6">
+        <label for="nameMember" class="form-label">{{ $navMember.name }}</label>
+        <input type="text" class="form-control" id="nameMember">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">{{ $navMember.email }}</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="formation" class="form-label">{{ $navMember.education }}</label>
+        <select class="form-select" id="specificSizeSelect">
+          <option selected>{{ $navMember.selectedEducation }}</option>
+          {{ range $navMember.optionValueEducation }}
+          <option value="{{ .value }}">{{ .choice }}</option>
+          {{ end }}
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="programme" class="form-label">{{ $navMember.program }}</label>
+        <select class="form-select" id="specificSizeSelect">
+          <option selected>{{ $navMember.selectedProgram }}</option>
+          {{ range $navMember.optionValueProgram }}
+          <option value="{{ .value }}">{{ .choice }}</option>
+          {{ end }}
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">{{ $navMember.interests }}</label>
+        <textarea name="interets" class="form-control"></textarea>
+      </div>    
+    </form>
+    <div class="text-end mt-2 me-2">
+      <button type="submit" class="btn py-2 px-5">
+        {{ .button.submit }}
+      </button> 
+    </div>   
   </div>
+  <!-- collab tab section -->
+  {{ $navCollab := .navCollab }}
+  <div class="tab-pane fade" id="nav-collab" role="tabpanel" aria-labelledby="nav-collaboration-tab">
+    <form class="row g-3 px-2 mt-2">
+      <div class="col-md-6">
+        <label for="formGroupExampleInput" class="form-label">{{ $navCollab.name }}</label>
+        <input type="text" class="form-control" id="formGroupExampleInput">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">{{ $navCollab.email }}</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="formation" class="form-label">{{ $navCollab.club }}</label>
+        <select class="form-select" id="specificSizeSelect">
+          <option selected>{{ $navCollab.selectedClub }}</option>
+          {{ range $navCollab.optionValueClub }}
+          <option value="{{ .value }}">{{ .choice }}</option>
+          {{ end }}
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="website" class="form-label">{{ $navCollab.website }}</label>
+        <input type="url" class="form-control" id="inputWebsite">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">{{ $navCollab.projectToPropose }}</label>
+        <textarea name="projectToPropose" class="form-control"></textarea>
+      </div>
+    </form>
+    <div class="text-end mt-2 me-2">
+      <button type="submit" class="btn py-2 px-5">
+          {{ .button.submit }}
+      </button>  
+    </div> 
+  </div>
+  <!-- info tab section -->
+  <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+    <form class="row g-3 px-2 mt-2">
+      <div class="col-md-6">
+        <label for="formGroupExampleInput" class="form-label">Votre nom/prénom</label>
+        <input type="text" class="form-control" id="formGroupExampleInput">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Courriel:</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="formGroupExampleInput" class="form-label">Compagnie:</label>
+        <input type="text" class="form-control" id="formGroupExampleInput">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Message</label>
+                  <textarea name="messageCompagnie" class="form-control"></textarea>
+      </div>
+    </form>
+    <div class="text-end mt-2 me-2">
+      <button type="submit" class="btn py-2 px-5">
+          {{ .button.submit }}
+      </button> 
+    </div> 
+  </div>
+</div>
 {{ end }}
 {{ end }}
