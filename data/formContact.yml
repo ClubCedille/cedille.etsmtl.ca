@@ -1,0 +1,58 @@
+---
+enable: true
+navTabsTitle:
+  membershipRequest: "Demande d'adhésion"
+  collaborationRequest: "Demande de collaboration"
+  informationRequest: "Demande d'information"
+navMember:
+  name: "Nom:"
+  email: "Courriel:"
+  interests: "Intérêts:"
+  education: "Formation:"
+  program: "Programme d'études:"
+  selectedEducation: "Choissisez une formation"
+  selectedProgram: "Choissisez un programme"
+  optionValueEducation:
+    - value: "1"
+      choice: "Baccalauréat"
+    - value: "2"
+      choice: "Maîtrise"
+    - value: "3"
+      choice: "Doctorat"
+    - value: "4"
+      choice: "Autre"
+  optionValueProgram:
+    - value: "1"
+      choice: "Génie des technologies de l'information"
+    - value: "2"
+      choice: "Génie électrique"
+    - value: "3"
+      choice: "Génie mécanique"
+    - value: "4"
+      choice: "Génie logiciel"
+    - value: "5"
+      choice: "Génie des opérations et de la logistique"
+    - value: "6"
+      choice: "Génie de la construction"
+    - value: "7"
+      choice: "Génie de la production automatisée"
+    - value: "8"
+      choice: "Autre"
+navCollab:
+  name: "Nom:"
+  email: "Courriel:"
+  website: "Site web:"
+  projectToPropose: "Projet à proposer:"
+  club: "Club:"
+  selectedClub: "Choissisez un club"
+  optionValueClub:
+    - value: "1"
+      choice: "Test"
+navInfo:
+  name: "Nom:"
+  email: "Courriel:"
+  company: "Compagnie:"
+  message: "Message:"
+button:
+  submit: "Soumettre"
+---

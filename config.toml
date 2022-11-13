@@ -33,6 +33,7 @@ theme = 'cedille'
 
 [params]
     titleFollowUs = "Suivez-nous"
+    titleContactPage = "Pour nous contacter"
     copyright = "©"
     year = "2022"
 
@@ -40,7 +41,7 @@ theme = 'cedille'
     [params.general]
     logoCedille = "images/cedille-logo-orange.png"
     
-    #Contact Information Params
+    #Address Information Params
     [params.address]
     title = "Adresse"
     address = "1219 rue William <br>Montréal (Québec) <br>H3C 1R1 <br>Local D-2020"

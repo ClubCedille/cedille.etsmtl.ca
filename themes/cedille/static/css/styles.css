@@ -850,6 +850,34 @@ img{
   background-position: left, right;
 }
 
+.contact .container.form-contact{
+    background-color: #bdbcbc;
+}
+
+.contact .nav-tabs .nav-link{
+    color: #fff;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.contact .nav-tabs .nav-link.active{
+    border-color: black;
+}
+
+.contact .btn{
+    color: #fff;
+    background-color: #C08314;
+    border-radius: 10px;
+}
+
+.contact .btn:hover{
+    background-color: #bd7c05;
+}
+
+.contact .btn:focus{
+    box-shadow: none;
+}
+
 #map{
     height: 100%;
 }
@@ -897,84 +925,6 @@ img{
     }
 }
 
-.contact .left{
-    width: 50%;
-    background-color: rgb(101, 76, 30);
-    padding: 10% 0%;
-}
-
-.contact .panel{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-.contact .left .panel .btn-close{
-    display: none;
-    margin-left: 55%;
-    margin-top: -5%;
-    background-color: rgb(70, 51, 14);
-}
-
-.contact .left .panel .btn-close:focus{
-    box-shadow: none;
-}
-
-#btn-close1{
-    display: none;
-}
-
-#btn-close2{
-    display: none;
-}
-
-.contact .right{
-    width: 50%;
-    background-color: orange;
-    padding: 10% 0%;
-    transition: all 1s ease-in-out;
-}
-
-.contact .right .panel .btn-close{
-    display: none;
-    margin-right: 55%;
-    margin-top: -5%;
-    background-color: rgb(109, 74, 8);
-}
-
-.contact .right .panel .btn-close:focus{
-    box-shadow: none;
-}
-
-#test2{
-    transition: all 0.2s ease-in-out;
-}
-
-.contact h4{
-    font-weight: bold;
-}
-
-.contact .btn{
-    border-radius: 4px;
-    background-color: rgb(117, 116, 116);
-}
-
-.contact .btn:focus{
-    box-shadow: none;
-}
-
-.contact .membre{
-    margin: 0% 20%;
-    border-radius: 4px;
-}
-
-.contact .partenaire{
-    margin: 0% 20%;
-    border-radius: 4px;
-}
-
-.contact .btn-collapse{
-    padding-bottom: 10px;
-}
 
 /*----------- HOME PAGE ---------*/
 .accueil{

@@ -1,0 +1,123 @@
+{{ with .Site.Data.formContact }}
+{{ if .enable }}
+<nav>
+    <div class="nav nav-tabs row" id="nav-tab" role="tablist">
+      <button class="nav-link col-4 active" id="nav-member-tab" data-bs-toggle="tab" data-bs-target="#nav-member" type="button" role="tab" aria-controls="nav-member" aria-selected="true" style="background-color: #D7A64D;">
+        {{ .navTabsTitle.membershipRequest }}
+      </button>
+      <button class="nav-link col-4" id="nav-collaboration-tab" data-bs-toggle="tab" data-bs-target="#nav-collab" type="button" role="tab" aria-controls="nav-collaboration" aria-selected="false" style="background-color: #C08314;">
+        {{ .navTabsTitle.collaborationRequest }}
+      </button>
+      <button class="nav-link col-4" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info" aria-selected="false" style="background-color: #D7A64D;">
+        {{ .navTabsTitle.informationRequest }}
+      </button>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <!-- member tab section -->
+  {{ $navMember := .navMember }}
+  <div class="tab-pane fade show active" id="nav-member" role="tabpanel" aria-labelledby="nav-member-tab">
+    <form class="row g-3 px-2 mt-2">
+      <div class="col-md-6">
+        <label for="nameMember" class="form-label">{{ $navMember.name }}</label>
+        <input type="text" class="form-control" id="nameMember">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">{{ $navMember.email }}</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="formation" class="form-label">{{ $navMember.education }}</label>
+        <select class="form-select" id="specificSizeSelect">
+          <option selected>{{ $navMember.selectedEducation }}</option>
+          {{ range $navMember.optionValueEducation }}
+          <option value="{{ .value }}">{{ .choice }}</option>
+          {{ end }}
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="programme" class="form-label">{{ $navMember.program }}</label>
+        <select class="form-select" id="specificSizeSelect">
+          <option selected>{{ $navMember.selectedProgram }}</option>
+          {{ range $navMember.optionValueProgram }}
+          <option value="{{ .value }}">{{ .choice }}</option>
+          {{ end }}
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">{{ $navMember.interests }}</label>
+        <textarea name="interets" class="form-control"></textarea>
+      </div>    
+    </form>
+    <div class="text-end mt-2 me-2">
+      <button type="submit" class="btn py-2 px-5">
+        {{ .button.submit }}
+      </button> 
+    </div>   
+  </div>
+  <!-- collab tab section -->
+  {{ $navCollab := .navCollab }}
+  <div class="tab-pane fade" id="nav-collab" role="tabpanel" aria-labelledby="nav-collaboration-tab">
+    <form class="row g-3 px-2 mt-2">
+      <div class="col-md-6">
+        <label for="formGroupExampleInput" class="form-label">{{ $navCollab.name }}</label>
+        <input type="text" class="form-control" id="formGroupExampleInput">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">{{ $navCollab.email }}</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="formation" class="form-label">{{ $navCollab.club }}</label>
+        <select class="form-select" id="specificSizeSelect">
+          <option selected>{{ $navCollab.selectedClub }}</option>
+          {{ range $navCollab.optionValueClub }}
+          <option value="{{ .value }}">{{ .choice }}</option>
+          {{ end }}
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="website" class="form-label">{{ $navCollab.website }}</label>
+        <input type="url" class="form-control" id="inputWebsite">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">{{ $navCollab.projectToPropose }}</label>
+        <textarea name="projectToPropose" class="form-control"></textarea>
+      </div>
+    </form>
+    <div class="text-end mt-2 me-2">
+      <button type="submit" class="btn py-2 px-5">
+          {{ .button.submit }}
+      </button>  
+    </div> 
+  </div>
+  <!-- info tab section -->
+  {{ $navInfo := .navInfo }}
+  <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+    <form class="row g-3 px-2 mt-2">
+      <div class="col-md-6">
+        <label for="formGroupExampleInput" class="form-label">{{ $navInfo.name }}</label>
+        <input type="text" class="form-control" id="formGroupExampleInput">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">{{ $navInfo.email }}</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="formGroupExampleInput" class="form-label">{{ $navInfo.company }}</label>
+        <input type="text" class="form-control" id="formGroupExampleInput">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">{{ $navInfo.message }}</label>
+        <textarea name="messageCompagnie" class="form-control"></textarea>
+      </div>
+    </form>
+    <div class="text-end mt-2 me-2">
+      <button type="submit" class="btn py-2 px-5">
+          {{ .button.submit }}
+      </button> 
+    </div> 
+  </div>
+</div>
+{{ end }}
+{{ end }}
