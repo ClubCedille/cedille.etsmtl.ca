@@ -48,6 +48,11 @@ navCollab:
   optionValueClub:
     - value: "1"
       choice: "Test"
+navInfo:
+  name: "Nom:"
+  email: "Courriel:"
+  company: "Compagnie:"
+  message: "Message:"
 button:
   submit: "Soumettre"
 ---

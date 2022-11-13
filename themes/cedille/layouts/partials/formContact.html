@@ -92,23 +92,24 @@
     </div> 
   </div>
   <!-- info tab section -->
+  {{ $navInfo := .navInfo }}
   <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
     <form class="row g-3 px-2 mt-2">
       <div class="col-md-6">
-        <label for="formGroupExampleInput" class="form-label">Votre nom/prénom</label>
+        <label for="formGroupExampleInput" class="form-label">{{ $navInfo.name }}</label>
         <input type="text" class="form-control" id="formGroupExampleInput">
       </div>
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Courriel:</label>
+        <label for="inputEmail4" class="form-label">{{ $navInfo.email }}</label>
         <input type="email" class="form-control" id="inputEmail4">
       </div>
       <div class="col-md-6">
-        <label for="formGroupExampleInput" class="form-label">Compagnie:</label>
+        <label for="formGroupExampleInput" class="form-label">{{ $navInfo.company }}</label>
         <input type="text" class="form-control" id="formGroupExampleInput">
       </div>
       <div class="col-md-6">
-        <label class="form-label">Message</label>
-                  <textarea name="messageCompagnie" class="form-control"></textarea>
+        <label class="form-label">{{ $navInfo.message }}</label>
+        <textarea name="messageCompagnie" class="form-control"></textarea>
       </div>
     </form>
     <div class="text-end mt-2 me-2">
