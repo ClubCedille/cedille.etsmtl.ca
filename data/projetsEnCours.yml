@@ -1,6 +1,11 @@
 ---
 enable: true
 titleProjects: "Projets en cours"
+projects:
+  - repo: "cedille.etsmtl.ca"
+  - repo: "cedille.etsmtl.ca"
+  - repo: "cedille.etsmtl.ca"
+  - repo: "cedille.etsmtl.ca"
 leftSection:
   - projectTarget: "PROJET1"
     title: "Titre projet 1"

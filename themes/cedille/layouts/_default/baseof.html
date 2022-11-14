@@ -10,6 +10,7 @@
             {{- partial "footer.html" . -}}
             <script src="{{ .Site.BaseURL }}/js/gmap.js"></script>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.map.APIkey }}&callback=initMap"></script>
+            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
         </div>
     </body>
 </html>
