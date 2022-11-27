@@ -1,14 +1,14 @@
 <header>
-  <nav class="navbar navbar-expand-lg px-5">
-    <div class="container-fluid">
-      <a class="navbar-brand" href = "{{ relref . "/" }}" >
-        <img src="/images/cedille-logo-orange.png" alt="logoets">
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a class="navbar-brand" href="{{ relref . "/" }}">
+        {{ .Site.Title | upper }} $ <span class="blink">&#9608;</span>
       </a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="toggler-icon top-bar"></span>
-      <span class="toggler-icon middle-bar"></span>
-      <span class="toggler-icon bottom-bar"></span>
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
       </button>
       <div class="navbar-collapse collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center">
@@ -19,11 +19,17 @@
           {{ $active = or $active (and (eq .Name "Équipe") (eq $current.Section "equipe")) }}                
           {{ $active = or $active (and (eq .Name "Projets") ( eq $current.Section "projets")) }}
           {{ $active = or $active (and (eq .Name "Partenaires") (eq $current.Section "partenaires")) }}
-          {{ $active = or $active (and (eq .Name "Contact") (eq $current.Section "contact")) }}
+          {{ $active = or $active (and (eq .Name "Joignez l'équipe") (eq $current.Section "contact")) }}
           <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }} nav-item">
+            {{ if eq .Name "Joignez l'équipe" }}
+            <a class="link-navbar btn p-1 {{ if $active }}active{{ end }} nav-item" href="{{ .URL | relURL }}">
+              {{ .Name }}
+            </a>
+            {{ else }}
             <a class="{{ if $active }}active{{ end }} nav-item" href="{{ .URL | relURL }}">
               {{ .Name }}
             </a>
+            {{ end }}
           </li>
           {{ end }}
         </ul>

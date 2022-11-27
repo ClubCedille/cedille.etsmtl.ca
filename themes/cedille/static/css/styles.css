@@ -9,10 +9,6 @@ body{
     background-color:rgb(217, 214, 214);
 }
 
-/*--------------- LOADING SECTION ----------------*/
-#myDiv{
-    display: none;
-}
 /*--------------- SCROLLBAR SECTION --------------*/
 ::-webkit-scrollbar{
     width: 17px;
@@ -32,8 +28,9 @@ body{
 }
 
 /*--------------- HEADER SECTION -----------------*/
-.navbar{
+header{
     background-color: rgba(0, 0, 0, 0.822);
+    color: white;
 }
 
 .navbar .navbar-nav-a{
@@ -41,9 +38,31 @@ body{
     justify-content: center;
 }
 
-img{
-    height: 110px;
-    font-size: 1.5rem;
+.navbar-brand{
+    color: rgba(255, 166, 0, 0.748); 
+}
+
+.navbar-brand:hover{
+    color: white; 
+}
+
+.navbar-brand .blink{
+    animation: blinker 0.6s linear infinite;
+}
+
+@keyframes blinker{
+    50% {
+        opacity: 0;
+    }
+}
+
+.navbar .link-navbar{
+    background-color: white;
+    color: black !important;
+}
+
+.navbar .link-navbar:hover{
+    color: rgba(255, 166, 0, 0.748) !important;
 }
 
 .navbar-collapse ul li{
@@ -51,7 +70,7 @@ img{
 }
 
 .navbar-collapse ul li a{
-    color: rgba(255, 166, 0, 0.748);
+    color: white;
     text-align: center;
     text-decoration: none;
     padding: 15px;
@@ -63,27 +82,15 @@ img{
 }
 
 .navbar-collapse a.active{
-    border-radius: 4px;
-    background-color: rgba(255, 166, 0, 0.748);
-    color: white;
+    color: rgba(255, 166, 0, 0.748); 
 }
 
 .navbar-collapse a:hover{
-    background-color: rgba(255, 166, 0, 0.925);
-    color: white;
+    color: rgba(255, 166, 0, 0.748); 
 }
 
 .navbar-collapse .dropdown-menu{
     background-color: rgba(11, 11, 11, 0.721);
-}
-
-.navbar-collapse .nav-link{
-    color: rgba(255, 166, 0, 0.748);
-    padding: 9px 15px!important;
-}
-
-.navbar-collapse .dropdown-menu .item{
-    margin: 10px 0px;
 }
 
 /*-------------  BURGER ICON ---------------*/
@@ -162,23 +169,13 @@ img{
     }
 
     .navbar-collapse ul li a{
-        color: rgba(255, 166, 0, 0.748);
+        color: white;
         text-decoration: none;
         padding: 8px 8px;
         font-size: 18px;
         line-height: 38px;
         transition: all 0.3s ease;
         opacity: none;
-    }
-
-    .navbar-collapse .dropdown-menu{
-        background-color: grey;
-        border: none;
-    }
-
-    .navbar-collapse .nav-link{
-        padding: 0px 8px!important;
-        margin-bottom: 1px;
     }
 
 }
@@ -837,42 +834,17 @@ img{
 
 
 /*----------- HOME PAGE ---------*/
+.hero-section{
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+}
+
+.hero-section h1 b{
+    font-size: 2.7rem;
+}
+
 .accueil{
     min-height: 100vh;
-}
-
-.accueil .presentation{
-    background-color: rgba(0, 0, 0, 0.822);
-    padding: 20px 0px;
-    color: white;
-    min-height: 60vh;
-}
-
-.accueil .presentation img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height: 35vh;
-}
-
-.accueil .presentation .text-club{
-    text-align: center;
-    padding-top: 10px;
-}
-
-.accueil .presentation .social-links{
-    text-align: center;
-    margin-top: 50px;
-}
-
-.accueil .presentation .social-links a{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin: 0px 6px;
-    color: white;
 }
 
 .accueil .description{

@@ -27,7 +27,7 @@ theme = 'cedille'
         weight = 4
     [[menu.main]]  
         identifier = "contact" 
-        name = "Contact"
+        name = "Joignez l'équipe"
         url = "/contact/"
         weight = 5
 
