@@ -56,6 +56,15 @@ header{
     }
 }
 
+.navbar .link-navbar{
+    background-color: white;
+    color: black !important;
+}
+
+.navbar .link-navbar:hover{
+    color: rgba(255, 166, 0, 0.748) !important;
+}
+
 .navbar-collapse ul li{
     list-style: none;
 }
@@ -830,6 +839,9 @@ header{
     color: white;
 }
 
+.hero-section h1 b{
+    font-size: 2.7rem;
+}
 
 .accueil{
     min-height: 100vh;
