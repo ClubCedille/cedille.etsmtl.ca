@@ -839,6 +839,10 @@ header{
     color: white;
 }
 
+.hero-section h1 b{
+    font-size: 2.7rem;
+}
+
 .accueil{
     min-height: 100vh;
 }
