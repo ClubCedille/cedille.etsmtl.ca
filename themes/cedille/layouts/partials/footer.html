@@ -1,29 +1,58 @@
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col">
-                <div class="name-address">
-                    <h3>{{ .Site.Params.address.title }}</h3>
+<footer>
+    {{ $info := .Site.Params.footer }}
+    <div class="container py-5">
+        <div class="row mb-5">
+            <div class="col-8">
+                <div class="row g-0">
+                    <div class="col-3">
+                        <img style="width: 160px; height: 200px" src="{{ .Site.Params.general.logoCedille | absURL }}" alt="cedille-logo">
+                    </div>
+                    <div class="col-9">
+                        <div class="container my-4">
+                            <div class="row">
+                                <h6>{{ $info.addressTitle }}</h6>
+                                <p class="info">{{ $info.address }}</p>
+                                <h6>{{$info.contactTitle}}</h6>
+                                <p class="info"><a href="mailto: {{ $info.email }}">{{ $info.email }}</a></p>
+                                <ul class="list-unstyled list-inline">
+                                    {{ range .Site.Params.Footer.social }}
+                                    <li class="list-inline-item px-1">
+                                        <a target="_blank" href={{ .url }}><i class="{{ .icon }} fa-lg"></i></a>
+                                    </li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="adresse">
-                    {{ .Site.Params.address.address | safeHTML }} 
-                </div>     
             </div>
-
-            {{ $socialIcons := .Site.Params.social }}
-            <div class="footer-col">
-                <div class="follow-us">
-                    <h3>{{ .Site.Params.titleFollowUs }}</h3>
+            <div class="col-4">
+                <div class="row text-end mt-4">
+                    <ul class="list-unstyled">
+                        {{ range .Site.Params.footer.menu }}
+                        <li class="mb-2">
+                            <a href="{{ .url | relURL }}" style="text-decoration: none;">{{ .name }}</a>
+                        </li> 
+                        {{ end }}
+                    </ul>
                 </div>
-                <div class="social-links">
-                    {{ range $socialIcons }}
-                    <a target="_blank" href={{ .url }}><i class="{{ .icon }}"></i></a>
-                    {{ end }}
-                </div>
-                <div class="year">    
-                    <span class="copyleft">{{ .Site.Params.copyright }}</span> {{ .Site.Params.year }} | {{ site.Title }}
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-8 text-start">
+                <p>{{ $info.allRightsReserved }}</p>
+            </div>
+            <div class="col-4 text-end">
+                <div class="row g-0">
+                    <div class="col-6">
+                        <a href="#">{{ $info.privacyPolicy }}</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#">{{ $info.termsOfService }}</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>               
+</footer>
