@@ -53,22 +53,53 @@ theme = 'cedille'
     APIkey="AIzaSyBbdrK23GFc0JJpng1dX8O_FA_kJv8zhOE"
     latitude = "45.49382"
     longitude = "-73.56233"
-    
-    #Social Params
-    [[params.social]]
-    icon = "fab fa-github"
-    url = "https://github.com/ClubCedille"
+
+    ############ Footer section #############
+    [params.footer]
+    addressTitle = "Adresse:"
+    address = "1219 rue William, Montréal QC, H3C 1R1, Local D-2020"
+    contactTitle = "Contact:"
+    email = "cedille@etsmtl.net"
+    allRightsReserved = "2021 Cédille - Tous droits réservés"
+    privacyPolicy = "Politique de confidentialité"
+    termsOfService = "Conditions de service"
+
+    [[params.footer.menu]]
+    name = "Accueil"
+    url = "/"
     weight = 1
-    [[params.social]]
+    [[params.footer.menu]]
+    name = "Équipe"
+    url = "/equipe/"
+    weight = 2
+    [[params.footer.menu]]
+    name = "Nos projets"
+    url = "/projets"
+    weight = 3
+    [[params.footer.menu]]
+    name = "Partenaires"
+    url = "/partenaires/"
+    weight = 4
+    [[params.footer.menu]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5 
+
+    [[params.footer.social]]
     icon = "fab fa-facebook-f"
     url = "https://www.facebook.com/clubcedille"
-    weight = 2
-    [[params.social]]
+    weight = 1
+    [[params.footer.social]]
     icon = "fab fa-instagram"
     url = "https://www.instagram.com/cedille.etsmtl"
+    weight = 2
+    [[params.footer.social]]
+    icon = "fab fa-github"
+    url = "https://github.com/ClubCedille"
     weight = 3
-    [[params.social]]
-    icon = "fab fa-linkedin-in"
+    [[params.footer.social]]
+    icon = "fa-brands fa-linkedin"
     url = "https://www.linkedin.com/company/cedille/about/"
     weight = 4
+
 

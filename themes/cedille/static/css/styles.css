@@ -183,96 +183,6 @@ img{
 
 }
 
-/*---------------- FOOTER SECTION -------------*/
-
-.footer{
-    background-color: rgb(14, 14, 14);
-    opacity: 85%;
-    padding: 15px 0;
-    color: rgba(255, 166, 0, 0.748);
-    font-size: 15px;
-    z-index: 2;
-}
-
-.footer .row{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.footer .row .footer-col{
-    width: 50%;
-    padding: 0px 15px;
-    text-align: center;
-}
-
-.footer .row .footer-col h3{
-    font-size: 19px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.footer .footer-col .name-address h3::before{
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    height: 1px;
-    box-sizing: border-box;
-    background-color: rgba(255, 166, 0, 0.748);
-    width: 62px;
-    margin-left: 4px;
-    text-align: center;
-}
-
-.footer .row .footer-col .follow-us h3::before{
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    height: 1px;
-    box-sizing: border-box;
-    background-color: rgba(255, 166, 0, 0.748);
-    width: 90px;
-    margin-left: 8px;
-    text-align: center;
-}
-
-.footer .row .footer-col .social-links a{
-    display: inline-flex;
-    background-color: rgba(255, 166, 0, 0.748);
-    border-radius: 100%;
-    height: 35px;
-    width: 35px;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: all 0.5s ease;
-    color: rgba(242, 238, 238, 0.941);
-}
-
-.footer .row .footer-col .social-links a:hover{
-    color: rgba(255, 166, 0, 0.748);
-    background-color: rgb(221, 207, 207);
-}
-
-.footer .row .footer-col .social-links i{
-    vertical-align: text-top;
-    justify-content: center;
-}
-
-.footer .row .footer-col .adresse{
-    color: white;
-}
-
-.footer .row .footer-col .year{
-    color: white;
-    margin-top: 10px;
-}
-
-.footer .row .footer-col .year .copyleft{
-    display: inline-block;
-    transform: rotateY(180deg);
-}
-
 /*---------------- PROJECT PAGES -----------------*/
 .projets-recents{
     min-height: 100vh
@@ -1122,3 +1032,28 @@ img{
 .equipe .panel a:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
 }
+
+/*---------------- FOOTER SECTION -------------*/
+
+footer{
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+}
+
+footer .info{
+    font-size: 14px;
+}
+
+footer hr{
+    background-color: white;
+    opacity: inherit !important;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: rgba(255, 166, 0, 0.748);
+}
+
