@@ -1,0 +1,66 @@
+{{with .Site.Data.introduction }}
+{{ if .enable }}
+<!-- Introduction section -->
+<div class="container py-5">
+    <div class="row py-3 text-center">
+        <h2>{{ .intro.title }}</h2>
+        <p>{{ .intro.text }}</p>
+    </div>
+</div>
+<!-- end intro section-->
+
+<!-- Practice section -->
+<div class="container py-4">
+    <div class="row g-0">
+        <div class="col-6">
+            <p>{{ .practice.subtitle | upper }}</p>
+            <h3>{{ .practice.title }}</h3>
+        </div>
+        <div class="col-6">
+            <div class="row mt-2">
+                <p>{{ .practice.summary }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        {{ range .practice.content }}
+        <div class="col-3">
+            <i class="fa-solid fa-cube fa-xl"></i>
+            <h5 class="my-3">{{ .title }}</h5>
+            <p>{{ .description }}</p>
+        </div>
+        {{ end }}
+    </div>
+    <div class="my-3">
+        <a href="#">
+            {{ .practice.learnMore }} <i class="fa-solid fa-chevron-right"></i>
+        </a>
+    </div>
+</div>
+<!--end practice section -->
+
+    {{/*  <section class="description"> 
+        <div class="container">
+            <h3>{{ .title }}</h3>
+            <div class="row text-center">
+                {{ range .application }}
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="fa-3x">
+                            <i class="{{ .icon }}"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title {{ .system }}">{{ .name }}</h5>
+                            <p class="card-text {{ .type }}">
+                                {{ .description }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>  */}}
+<div class="accueil">
+{{ end }}
+{{ end }}
