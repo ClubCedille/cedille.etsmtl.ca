@@ -56,6 +56,19 @@ header{
     }
 }
 
+.navbar .link-navbar{
+    background-color: white;
+    color: black !important;
+}
+
+.navbar .link-navbar:hover{
+    color: rgba(255, 166, 0, 0.748) !important;
+}
+
+.navbar .link-navbar.active{
+    color: rgba(255, 166, 0, 0.748) !important;
+}
+
 .navbar-collapse ul li{
     list-style: none;
 }
