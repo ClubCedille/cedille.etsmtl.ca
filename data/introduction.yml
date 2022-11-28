@@ -7,6 +7,7 @@ practice:
   title: "Practice makes perfect"
   subtitle: "opportunities in all fields"
   summary: "Are you learning if you are not doing something with all that knowledge you get at school? No, you are not. Fear not thought, here are some of the areas where you can hope to start getting things done at Cédille."
+  url: "/projets"
   content:
     - title: "Web development"
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
