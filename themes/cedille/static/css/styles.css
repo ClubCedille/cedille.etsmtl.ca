@@ -833,7 +833,7 @@ header{
 }
 
 
-/*--------------- HOME PAGE --------------*/
+/*----------------- HOME PAGE SECTION ----------------*/
 
 /*---------- HERO SECTION ----------*/
 .hero-section{
@@ -855,6 +855,15 @@ header{
 }
 
 .practice a{
+    color: black;
+    text-decoration: none;
+}
+
+/*----- MINDSET SECTION ----*/
+.mindset h3 b{
+    font-size: 40px;
+}
+.mindset a{
     color: black;
     text-decoration: none;
 }

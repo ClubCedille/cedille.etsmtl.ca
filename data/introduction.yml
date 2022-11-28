@@ -18,4 +18,14 @@ practice:
     - title: "SRE"
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
   learnMore: "Learn more about the kind of things you could be doing with us"
+mindset: 
+  title: "Mindset matters"
+  subtitle: "Amazing values"
+  summary: "Being a good engineer isn't only about being good at writing code. At Cédille, we are convinced that working on our mindset is as important. Here are some of the paradigms you might learn to appreciate if you join us:"
+  url: "/équipe"
+  list:
+    - paradigm: "DevOps"
+    - paradigm: "Agile software development"
+    - paradigm: "Open Source" 
+  learnMore: "Learn more about the core values we try to cultivate"
 ---
