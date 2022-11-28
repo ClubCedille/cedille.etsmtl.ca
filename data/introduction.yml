@@ -1,0 +1,21 @@
+---
+enable: true
+intro:
+  title: "Introducing Cedille"
+  text: "A home for all aspiring software & IT engineers thirsting for more knowledge."
+practice:
+  title: "Practice makes perfect"
+  subtitle: "opportunities in all fields"
+  summary: "Are you learning if you are not doing something with all that knowledge you get at school? No, you are not. Fear not thought, here are some of the areas where you can hope to start getting things done at Cédille."
+  url: "/projets"
+  content:
+    - title: "Web development"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    - title: "Software Development"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    - title: "CI/CD"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    - title: "SRE"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+  learnMore: "Learn more about the kind of things you could be doing with us"
+---

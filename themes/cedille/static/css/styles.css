@@ -833,7 +833,9 @@ header{
 }
 
 
-/*----------- HOME PAGE ---------*/
+/*--------------- HOME PAGE --------------*/
+
+/*---------- HERO SECTION ----------*/
 .hero-section{
     background-color: rgba(0, 0, 0, 0.822);
     color: white;
@@ -843,32 +845,26 @@ header{
     font-size: 2.7rem;
 }
 
+/*----- INFO AND PRACTICE SECTION ----*/
+.info h3 b{
+    font-size: 40px;
+}
+
+.practice h3 b{
+    font-size: 40px;
+}
+
+.practice a{
+    color: black;
+    text-decoration: none;
+}
+
 .accueil{
     min-height: 100vh;
 }
 
-.accueil .description{
-    padding: 20px 0px;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-}
-
 .accueil .row{
     margin: 30px 0px;
-}
-
-.accueil .card{
-    border-radius: 10px;
-    background-color: rgb(191, 189, 189);
-    border: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
-}
-.accueil .card-body h5{
-    margin-bottom: 15px;
-}
-
-.accueil .fa-copyright{
-    transform: rotateY(180deg);
 }
 
 .accueil .sites-heberges{
