@@ -9,7 +9,7 @@
         </div>
     </div>
 </div>
-<!-- end intro section-->
+<!-- end intro section -->
 
 <!-- Practice section -->
 <div class="practice">
@@ -42,6 +42,34 @@
     </div>
 </div>
 <!--end practice section -->
+
+<!-- Mindset section -->
+<div class="mindset">
+    <div class="container py-5">
+        <div class="row py-2">
+            <div class="col-6">
+                <p><b>{{ .mindset.subtitle | upper }}</b></p>
+                <h3><b>{{ .mindset.title }}</b></h3>
+            </div>
+            <div class="col-6">
+                <div class="row mt-2">
+                    <p>{{ .mindset.summary }}</p>
+                    <ul class="list-unstyled">
+                        {{ range .mindset.list }}
+                        <li class="mb-2"><i class="fa-solid fa-cube fa-xs pe-2"></i> {{ .paradigm }}</li>
+                        {{ end }}
+                    </ul>
+                    <div class="mt-4">
+                        <a href="{{ .mindset.url | absURL }}">
+                            {{ .mindset.learnMore }} <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end mindset section-->
 
 <div class="accueil">
 {{ end }}
