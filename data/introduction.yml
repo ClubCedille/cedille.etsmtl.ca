@@ -22,7 +22,7 @@ mindset:
   title: "Mindset matters"
   subtitle: "Amazing values"
   summary: "Being a good engineer isn't only about being good at writing code. At Cédille, we are convinced that working on our mindset is as important. Here are some of the paradigms you might learn to appreciate if you join us:"
-  url: "/équipe"
+  url: "/equipe"
   list:
     - paradigm: "DevOps"
     - paradigm: "Agile software development"
