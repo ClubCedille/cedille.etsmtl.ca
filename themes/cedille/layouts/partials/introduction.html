@@ -1,40 +1,44 @@
 {{with .Site.Data.introduction }}
 {{ if .enable }}
 <!-- Introduction section -->
-<div class="container py-5">
-    <div class="row py-3 text-center">
-        <h2>{{ .intro.title }}</h2>
-        <p>{{ .intro.text }}</p>
+<div class="info">
+    <div class="container py-5">
+        <div class="row py-3 text-center">
+            <h3><b>{{ .intro.title }}</b></h3>
+            <p>{{ .intro.text }}</p>
+        </div>
     </div>
 </div>
 <!-- end intro section-->
 
 <!-- Practice section -->
-<div class="container py-4">
-    <div class="row g-0">
-        <div class="col-6">
-            <p>{{ .practice.subtitle | upper }}</p>
-            <h3>{{ .practice.title }}</h3>
-        </div>
-        <div class="col-6">
-            <div class="row mt-2">
-                <p>{{ .practice.summary }}</p>
+<div class="practice">
+    <div class="container py-5">
+        <div class="row g-0 pb-4">
+            <div class="col-6">
+                <p><b>{{ .practice.subtitle | upper }}</b></p>
+                <h3><b>{{ .practice.title }}</b></h3>
+            </div>
+            <div class="col-6">
+                <div class="row mt-2">
+                    <p>{{ .practice.summary }}</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row mt-5">
-        {{ range .practice.content }}
-        <div class="col-3">
-            <i class="fa-solid fa-cube fa-xl"></i>
-            <h5 class="my-3">{{ .title }}</h5>
-            <p>{{ .description }}</p>
+        <div class="row mt-5">
+            {{ range .practice.content }}
+            <div class="col-3">
+                <i class="fa-solid fa-cube fa-xl"></i>
+                <h5 class="my-3"><b>{{ .title }}</b></h5>
+                <p class="mt-2">{{ .description }}</p>
+            </div>
+            {{ end }}
         </div>
-        {{ end }}
-    </div>
-    <div class="my-3">
-        <a href="#">
-            {{ .practice.learnMore }} <i class="fa-solid fa-chevron-right"></i>
-        </a>
+        <div class="mt-5 mb-2">
+            <a href="#">
+                {{ .practice.learnMore }} <i class="fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
     </div>
 </div>
 <!--end practice section -->
