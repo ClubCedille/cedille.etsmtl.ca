@@ -1,0 +1,22 @@
+---
+enable: true
+contribute: 
+  title: "Contribute what you can, when you can"
+  subtitle: "A club, not a job"
+  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+mentoring:
+  title: "Together we go far"
+  subtitle: "Peer mentoring"
+  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+network:
+  title: "Didn't they say good things come in threes ?"
+  subtitle: "Networking opportunities"
+  summary: "Two of our members managed to find career opportunities during social events of ours. That’s why we make a point to keep spinning out more of those throughout the year. That and they happen to be amazing tools to help facilitate knowledge transfer. That said, finding career opportunities through fateful encounters is a rare thing. But... all we are saying is if it happened twice who’s to say you won’t be the third."
+  members:
+    - name: "Name Surname"
+      image: "test"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero."
+    - name: "Name Surname"
+      image: "test"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero."
+---
