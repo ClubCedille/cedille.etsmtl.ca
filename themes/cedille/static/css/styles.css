@@ -889,6 +889,40 @@ header{
     height: 56px;
 }
 
+/*-------- FAQ SECTION --------*/
+.faq h3 b{
+    font-size: 40px;
+}
+
+.faq .accordion-flush{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.faq .accordion-item{
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+}
+
+.faq .accordion-button{
+    background-color: transparent;
+}
+
+.faq .accordion-button:focus{
+    box-shadow: none;
+}
+
+.faq .accordion-button:not(.collapsed){
+    color: black;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.faq .accordion-body{
+    border-top: 1;
+}
+
 .accueil{
     min-height: 100vh;
 }

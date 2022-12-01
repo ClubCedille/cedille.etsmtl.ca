@@ -1,0 +1,11 @@
+---
+enable: true
+title: "FAQs"
+questionTitle: "Still have a question ?"
+text: 
+  first: "Joining a club during your studies can be a scary decision. We know. To help you make a choice, we thought we’d share with you some of the most common questions we get."
+  second: "Reach out. We will be pleased know more about you and answer any questions you might have."
+button:
+  contactUs: "Contact us"
+  url: "/contact"
+--- 
