@@ -1,0 +1,71 @@
+{{with .Site.Data.description }}
+{{ if .enable }}
+<!-- Contribute section -->
+<div class="contribute">
+    <div class="container py-5">
+        <div class="row py-2">
+            <div class="col-6">
+                <p><b>{{ .contribute.subtitle | upper }}</b></p>
+                <h3><b>{{ .contribute.title }}</b></h3>
+            </div>
+            <div class="col-6">
+                <div class="row mt-2">
+                    <p>{{ .contribute.summary }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end contribute section -->
+
+<!-- Mentoring section -->
+<div class="mentoring">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="row mt-2">
+                    <p>{{ .mentoring.summary }}</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <p><b>{{ .mentoring.subtitle | upper }}</b></p>
+                <h3><b>{{ .mentoring.title }}</b></h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end mentoring section -->
+
+<!-- Network section-->
+<div class="network">
+    <div class="container py-5">
+        <div class="row text-center mx-5 py-2">
+            <div class="col mx-5">
+                <p><b>{{ .network.subtitle | upper }}</b></p>
+                <h3><b>{{ .network.title }}</b></h3>
+                <div class="row">
+                    <div class="col mx-5">
+                        <p class="mt-2">{{ .network.summary }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            {{ range .network.members }}
+            <div class="col mx-5">
+                <div class="row text-center align-center">
+                    <p><b>« {{ .text }} »</b></p>
+                    <div class="col">
+                        <img src="{{ .image }}" alt="test">
+                    </div>
+                    <p class="mt-2">{{ .name }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+<!-- end network section -->
+<div class="accueil">
+{{ end }}
+{{ end }}

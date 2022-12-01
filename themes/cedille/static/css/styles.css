@@ -859,13 +859,34 @@ header{
     text-decoration: none;
 }
 
-/*----- MINDSET SECTION ----*/
+/*---------- MINDSET SECTION ---------*/
 .mindset h3 b{
     font-size: 40px;
 }
 .mindset a{
     color: black;
     text-decoration: none;
+}
+
+/*-------- CONTRIBUTE SECTION --------*/
+.contribute h3 b{
+    font-size: 40px;
+}
+
+/*-------- MENTORING SECTION --------*/
+.mentoring h3 b{
+    font-size: 40px;
+}
+
+/*-------- NETWORK SECTION --------*/
+.network h3 b{
+    font-size: 40px;
+}
+
+.network img{
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
 }
 
 .accueil{
