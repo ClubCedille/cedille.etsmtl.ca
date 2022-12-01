@@ -40,16 +40,24 @@
 <div class="network">
     <div class="container py-5">
         <div class="row text-center mx-5 py-2">
-            <p><b>{{ .network.subtitle | upper }}</b></p>
-            <h3><b>{{ .network.title }}</b></h3>
-            <p class="mt-2">{{ .network.summary }}</p>
+            <div class="col mx-5">
+                <p><b>{{ .network.subtitle | upper }}</b></p>
+                <h3><b>{{ .network.title }}</b></h3>
+                <div class="row">
+                    <div class="col mx-5">
+                        <p class="mt-2">{{ .network.summary }}</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row mt-4 py-2">
+        <div class="row mt-4">
             {{ range .network.members }}
-            <div class="col-6">
-                <div class="row text-center">
+            <div class="col mx-5">
+                <div class="row text-center align-center">
                     <p><b>« {{ .text }} »</b></p>
-                    <img src="#" alt="test">
+                    <div class="col">
+                        <img src="{{ .image }}" alt="test">
+                    </div>
                     <p class="mt-2">{{ .name }}</p>
                 </div>
             </div>

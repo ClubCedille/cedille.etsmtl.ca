@@ -873,14 +873,20 @@ header{
     font-size: 40px;
 }
 
-/*-------- CONTRIBUTE SECTION --------*/
+/*-------- MENTORING SECTION --------*/
 .mentoring h3 b{
     font-size: 40px;
 }
 
-/*-------- CONTRIBUTE SECTION --------*/
+/*-------- NETWORK SECTION --------*/
 .network h3 b{
     font-size: 40px;
+}
+
+.network img{
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
 }
 
 .accueil{
