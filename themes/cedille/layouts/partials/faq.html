@@ -1,0 +1,40 @@
+{{with .Site.Data.faq }}
+{{ if .enable }}
+<!-- FAQ section -->
+<div class="faq">
+    <div class="container py-5">
+        <div class="row py-3 mb-4">
+            <h3><b>{{ .title }}</b></h3>
+            <div class="mt-2 col-5">
+                <p>{{ .text.first }}</p>
+            </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFaq">
+          {{ range .accordion }}
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="{{ .idHeader }}">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ .target }}" aria-expanded="false" aria-controls="{{ .target }}">
+                <b>
+                  {{ .question }}
+                </b>
+              </button>
+            </h2>
+            <div id="{{ .target }}" class="accordion-collapse collapse" aria-labelledby="{{ .idHeader }}" data-bs-parent="#{{ .idParent }}">
+              <div class="accordion-body">{{ .response }}</div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+        <div class="row py-3 mt-5">
+            <div class="col-5">
+                <h4><b>{{ .questionTitle }}</b></h4>
+                <p class="mt-3">{{ .text.second }}</p>
+                <a class="btn py-2 px-4" href="{{ .button.url }}">{{ .button.contactUs }}</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end faq section -->
+<div class="accueil">
+{{ end }}
+{{ end }}
