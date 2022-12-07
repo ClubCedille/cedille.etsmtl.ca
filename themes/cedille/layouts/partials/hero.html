@@ -4,13 +4,16 @@
 <div class="hero-section py-4">
     <div class="container py-5">
         <div class="row g-0 mt-4 mx-5">
-            <div class="col-5 my-auto">
+            <div class="col-12 mb-3 text-center d-block d-md-none">
+                <img style="width: 300px; height: 370px; object-fit: fill;" src="{{ .logoCedille }}" alt="logo-cedille">
+            </div>
+            <div class="col-12 col-lg-5 col-md-5 text-center text-lg-start text-md-start my-auto">
                 <div class="container">
                     <h1 class="mb-4"><b>{{ .content.title }}</b></h1>
                     <p>{{ .content.text }}</p>
                 </div>
             </div>
-            <div class="col-7 text-center">
+            <div class="col-lg-7 col-md-7 text-center d-none d-md-block">
                 <img style="width: 420px; height: 530px;" src="{{ .logoCedille }}" alt="logo-cedille">
             </div>
         </div>

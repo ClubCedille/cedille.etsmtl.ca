@@ -13,28 +13,28 @@
 
 <!-- Practice section -->
 <div class="practice">
-    <div class="container py-5">
+    <div class="container text-center py-5">
         <div class="row g-0 pb-4">
-            <div class="col-6">
+            <div class="col-12 col-lg-6 col-md-6 text-lg-start text-md-start">
                 <p><b>{{ .practice.subtitle | upper }}</b></p>
                 <h3><b>{{ .practice.title }}</b></h3>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6 col-md-6 text-lg-start text-md-start">
                 <div class="row mt-2">
                     <p>{{ .practice.summary }}</p>
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row text-lg-start text-md-start mt-5">
             {{ range .practice.content }}
-            <div class="col-3">
+            <div class="col-6 col-lg-3 col-md-3">
                 <i class="fa-solid fa-cube fa-xl"></i>
                 <h5 class="my-3"><b>{{ .title }}</b></h5>
                 <p class="mt-2">{{ .description }}</p>
             </div>
             {{ end }}
         </div>
-        <div class="mt-5 mb-2">
+        <div class="text-lg-start text-md-start mt-5 mb-2">
             <a href="{{ .practice.url | absURL }}">
                 {{ .practice.learnMore }} <i class="fa-solid fa-chevron-right"></i>
             </a>
@@ -45,13 +45,13 @@
 
 <!-- Mindset section -->
 <div class="mindset">
-    <div class="container py-5">
-        <div class="row py-2">
-            <div class="col-6">
+    <div class="container text-center py-5">
+        <div class="row text-lg-start text-md-start py-2">
+            <div class="col-12 col-lg-6 col-md-6">
                 <p><b>{{ .mindset.subtitle | upper }}</b></p>
                 <h3><b>{{ .mindset.title }}</b></h3>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6 col-md-6">
                 <div class="row mt-2">
                     <p>{{ .mindset.summary }}</p>
                     <ul class="list-unstyled">
