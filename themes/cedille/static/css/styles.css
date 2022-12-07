@@ -903,6 +903,7 @@ header{
 }
 
 .motivation .slider .slide-track .slide{
+    height: 150px;
     width: 250px;
     display: flex;
     align-items: center;
