@@ -1,14 +1,14 @@
 <footer>
     {{ $info := .Site.Params.footer }}
-    <div class="container py-5">
-        <div class="row mb-5">
+    <div class="container text-center py-5">
+        <div class="row text-start mb-5">
             <div class="col-8">
                 <div class="row g-0">
-                    <div class="col-3">
+                    <div class="col-3 d-none d-lg-block">
                         <img style="width: 160px; height: 200px" src="{{ .Site.Params.general.logoCedille | relURL }}" alt="cedille-logo">
                     </div>
                     <div class="col-9">
-                        <div class="container my-4">
+                        <div class="container my-4 footer-right-col">
                             <div class="row">
                                 <h6>{{ $info.addressTitle }}</h6>
                                 <p class="info">{{ $info.address }}</p>
@@ -40,10 +40,10 @@
         </div>
         <hr>
         <div class="row mt-3">
-            <div class="col-8 text-start">
+            <div class="col-12 col-lg-8 col-md-8 text-lg-start text-md-start">
                 <p>{{ $info.allRightsReserved }}</p>
             </div>
-            <div class="col-4 text-end">
+            <div class="col-12 col-lg-4 col-md-4 text-lg-end text-md-end">
                 <div class="row g-0">
                     <div class="col-6">
                         <a href="#">{{ $info.privacyPolicy }}</a>
