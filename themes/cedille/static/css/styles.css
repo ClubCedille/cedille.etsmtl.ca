@@ -883,23 +883,6 @@ header{
     overflow: hidden;
 }
 
-.motivation .slider::before,
-.motivation .slider::after{
-    background: linear-gradient(ro right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-    position: absolute;
-    z-index: 2;
-}
-
-.motivation .slider::before{
-    left: 0;
-    top: 0;
-}
-.motivation .slider::after{
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
-
 .motivation .slider .slide-track{
     display: flex;
     width: calc(250px*22);
@@ -920,7 +903,6 @@ header{
 }
 
 .motivation .slider .slide-track .slide{
-    height: 200px;
     width: 250px;
     display: flex;
     align-items: center;
