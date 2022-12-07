@@ -868,17 +868,69 @@ header{
     text-decoration: none;
 }
 
-/*-------- CONTRIBUTE SECTION --------*/
+/*--------- MOTIVATION SECTION --------*/
+.motivation{
+    color: white;
+}
+
+.motivation h3 b{
+    font-size: 40px;
+}
+
+.motivation .slider{
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.motivation .slider .slide-track{
+    display: flex;
+    width: calc(250px*22);
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*11));
+    }
+}
+
+.motivation .slider .slide-track:hover{
+    animation-play-state: paused;
+}
+
+.motivation .slider .slide-track .slide{
+    height: 150px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.motivation .slider .slide-track .slide img{
+    width: 100px;
+    height: 100px;
+}
+
+.motivation .slider .slide-track .slide img:hover{
+    height: 120px;
+    width: 120px;
+}
+
+/*--------- CONTRIBUTE SECTION --------*/
 .contribute h3 b{
     font-size: 40px;
 }
 
-/*-------- MENTORING SECTION --------*/
+/*--------- MENTORING SECTION ---------*/
 .mentoring h3 b{
     font-size: 40px;
 }
 
-/*-------- NETWORK SECTION --------*/
+/*---------- NETWORK SECTION ----------*/
 .network h3 b{
     font-size: 40px;
 }
@@ -889,7 +941,7 @@ header{
     height: 56px;
 }
 
-/*-------- FAQ SECTION --------*/
+/*----------- FAQs SECTION ------------*/
 .faq h3 b{
     font-size: 40px;
 }
@@ -932,119 +984,6 @@ header{
 .faq .btn:hover{
     color: rgba(255, 166, 0, 0.748);
     background-color: black;
-}
-
-.accueil{
-    min-height: 100vh;
-}
-
-.accueil .row{
-    margin: 30px 0px;
-}
-
-.accueil .sites-heberges{
-    padding-top: 3vh;
-    background-color: rgba(206, 203, 203, 0.562);
-    max-width: 100%;
-}
-
-.accueil  h3{
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-    font-weight: 700; /*A VERIFIER LE FONT-WEIGHT POUR PLUS*/
-}
-
-.accueil .slider{
-    min-height: 20vh;
-    position: relative;
-    max-width: 100%;
-    place-items: center;
-    overflow: hidden;
-}
-
-.accueil .slider .slide-track{
-    display: flex;
-    width: calc(250px*22);
-    animation: scroll 10s linear infinite;
-}
-
-.accueil .slider .slide-track:hover{
-    animation-play-state: paused;
-}
-
-@keyframes scroll{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-250px*11));
-    }
-}
-
-.accueil .slider .slide-track .slide{
-    height: 200px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    padding: 30px;
-}
-
-.accueil .slider .slide-track .slide img{
-    width: auto;
-}
-
-.accueil .slider .slide-track .slide img:hover{
-    height: 65%;
-    width: 65%;
-} 
-@media screen and (max-width: 1399.5px){
-    .accueil .description .card-body .system{
-        padding-bottom: 24px;
-    }
-}
-
-@media screen and (max-width: 1199.5px){
-    .accueil .description .card-body .system{
-        padding-bottom: 0px;
-    }
-}
-
-@media screen and (max-width: 991.5px) {
-    .accueil .description .card-body .title-logiciel{
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .accueil .description .card-body .system{
-        padding-bottom: 72px;
-    }
-
-    .accueil .description .card-body .knowledge{
-        padding-bottom: 24px;
-    }
-}
-
-@media screen and (max-width: 767.5px) {
-    .accueil .description .card-body .title-logiciel{
-        margin: 0px 0px;
-        margin-bottom: 15px;
-    }
-
-    .accueil .description .card-body .logiciel{
-        padding-bottom: 48px;
-    }
-
-    .accueil .description .card{
-        margin: 0px -5px
-    }
-
-}
-
-@media screen and (max-width: 575.5px) {
-    .accueil .description .card{
-        margin: 15px 0px;
-    }
 }
 
 /*---------------- TEAM PAGE ---------------- */
