@@ -6,16 +6,18 @@ jobs:
     name: Fetch projects information
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
         with:
-          name: ClubCedille/tiret     
-          ref: refs/heads/release
-          python-version: 3.8 #install the python needed
+          repository: ClubCedille/tiret     
+          path: './'
+          python-version: 3.8 
       - name: Install dependencies
         run: |
             python -m pip install --upgrade pip
             pip install -r requirements.txt
       - name: execute py script 
-        run: |
-          python write_repository.py -o clubcedille -r repo -u user -t pat -y output.yaml # We have to call this for every project.. I think we need all projects in a single file..
+        run: | #We have to call this for every project.. I think we need all projects in a single file..
+          python write_repository.py -o clubcedille -r repo -u user -t pat -y output.yaml 
+         
