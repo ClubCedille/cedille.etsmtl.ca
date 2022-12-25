@@ -20,10 +20,8 @@ jobs:
           git config --local user.email "cedille@etsmtl.net"
           git config --local user.name "svc-cedille-user"
           git add .
-          git commit -m "updating projects information"
-          git push
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+          git commit -m ""
+          git push 
         with:
           branch : ${GITHUB_REF##*/}
           github_token: ${{ secrets.PAT_TOKEN }}
