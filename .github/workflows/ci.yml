@@ -21,7 +21,7 @@ jobs:
           git config --local user.email "cedille@etsmtl.net"
           git config --local user.name "svc-cedille-user"
           git add .
-          git commit -m "updating projects information"
+          git commit -m "updating projects yaml files"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
