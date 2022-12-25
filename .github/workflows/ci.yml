@@ -13,15 +13,17 @@ jobs:
           token: ${{ secrets.PAT_TOKEN }}
 
       - name: Fetch projects informations
-        run: make build-projects PAT_TOKEN=${{ secrets.PAT_TOKEN }}
+        run: make build-projects PAT_TOKEN=${{ secrets.PAT_TOKEN }}  
 
       - name: Commit and push changes
         run: |
           git config --local user.email "cedille@etsmtl.net"
           git config --local user.name "svc-cedille-user"
           git add .
-          git commit -m ""
+          git commit -m "updating projects information"
           git push 
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
           branch : ${GITHUB_REF##*/}
           github_token: ${{ secrets.PAT_TOKEN }}
