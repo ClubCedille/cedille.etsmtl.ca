@@ -1,5 +1,9 @@
 name: CI
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
 
 jobs:
   fetchProjects:
@@ -22,7 +26,15 @@ jobs:
           git config --local user.name "svc-cedille-user"
           git add .
           git commit -m "updating projects yaml files"
-      - name: Push changes
+      - if : github.ref != 'refs/heads/master'
+        name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch : ${{ github.head_ref }}
+          github_token: ${{ secrets.PAT_TOKEN }}
+          force: true
+      - if : github.ref == 'refs/heads/master'
+        name: Push changes
         uses: ad-m/github-push-action@master
         with:
           branch : ${{ github.ref_name }}
