@@ -8,6 +8,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          submodules: 'true'
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Fetch projects informations
         run: make build-projects PAT_TOKEN=${{ secrets.PAT_TOKEN }}
