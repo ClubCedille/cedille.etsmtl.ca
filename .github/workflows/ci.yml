@@ -22,4 +22,9 @@ jobs:
           git config --local user.name "svc-cedille-user"
           git add .
           git commit -m "updating projects information"
-          git push origin HEAD:${GITHUB_REF##*/}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch : ${GITHUB_REF##*/}
+          github_token: ${{ secrets.PAT_TOKEN }}
+          force: true
