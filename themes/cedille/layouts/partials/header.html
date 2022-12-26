@@ -1,9 +1,15 @@
 <header>
   <nav class="navbar navbar-expand-lg py-3">
     <div class="container">
+      {{ if in .Name "Accueil" }}
+      <a class="navbar-brand d-none" href="{{ relref . "/" }}">
+        {{ .Site.Title | upper }} $ <span class="blink">&#9608;</span>
+      </a>
+      {{ else }}
       <a class="navbar-brand" href="{{ relref . "/" }}">
         {{ .Site.Title | upper }} $ <span class="blink">&#9608;</span>
       </a>
+      {{ end }}
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="toggler-icon top-bar"></span>
