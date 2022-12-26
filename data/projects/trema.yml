@@ -1,11 +1,1 @@
-commits: 19
-contributors:
-- GRV96
-- SonOfLope
-- polocto
-description: Robot logiciel pour le serveur Discord des clubs étudiants de l'ÉTS
-languages:
-- Python
-- Dockerfile
-name: trema
-stars: 2
+
