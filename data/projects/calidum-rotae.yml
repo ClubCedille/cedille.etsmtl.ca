@@ -1,0 +1,14 @@
+commits: 39
+contributors:
+- ThomasCardin
+- cguertin14
+- renovate[bot]
+- vyacheslav31
+description: Microservices that allow an admission request to be routed to various
+  messaging platforms.
+languages:
+- Go
+- Dockerfile
+- Makefile
+name: calidum-rotae
+stars: 3

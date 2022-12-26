@@ -1,0 +1,36 @@
+commits: 661
+contributors:
+- EdvinHonda
+- RikuAvelar
+- notarock
+- AXDOOMER
+- ygotame
+- SonOfLope
+- jalilbengoufa
+- BernardClaing
+- plaurin84
+- bayes-diarra
+- cguertin14
+- JulienRobitaille
+- samdidos
+- dependabot[bot]
+- Angry-Russian
+- ThomasCardin
+- maximest-pierre
+- DarkPyroM
+- BinaryTiger
+- berbiche
+- waffle-iron
+- mikefaille
+- vyacheslav31
+- dkahn-ets
+description: Site web du club CEDILLE
+languages:
+- HTML
+- CSS
+- JavaScript
+- Makefile
+- Dockerfile
+- Nix
+name: cedille.etsmtl.ca
+stars: 1
