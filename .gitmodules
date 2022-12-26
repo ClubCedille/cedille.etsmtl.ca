@@ -1,0 +1,3 @@
+[submodule "tiret"]
+	path = tiret
+	url = https://github.com/ClubCedille/tiret
