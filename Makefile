@@ -9,3 +9,15 @@ dev:
 
 dev-hugo: 
 	@hugo serve --source=./ -D --disableFastRender
+
+DIR = ./data/projects
+
+build-projects: 
+	$(foreach file, $(wildcard $(DIR)/*), \
+		@python tiret/write_repository.py -o clubcedille -r $(basename $(notdir $(file))) -u svc-cedille-user -t $(PAT_TOKEN) -y $(file) $(newline) \
+	)
+
+define newline
+
+
+endef
