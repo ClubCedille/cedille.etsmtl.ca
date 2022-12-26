@@ -12,7 +12,7 @@ dev-hugo:
 
 DIR = ./data/projects
 
-build-projects: 
+fetch-projects: 
 	$(foreach file, $(wildcard $(DIR)/*), \
 		@python tiret/write_repository.py -o clubcedille -r $(basename $(notdir $(file))) -u svc-cedille-user -t $(PAT_TOKEN) -y $(file) $(newline) \
 	)
