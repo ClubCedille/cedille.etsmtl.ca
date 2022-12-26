@@ -1,0 +1,17 @@
+commits: 120
+contributors:
+- SonOfLope
+- Jackdamiel
+- EdvinHonda
+- ClubSynapsETS
+- renovate[bot]
+description: Site web du club SynapsÉTS
+languages:
+- SCSS
+- HTML
+- JavaScript
+- CSS
+- Makefile
+- Dockerfile
+name: synapsets.etsmtl.ca
+stars: 2
