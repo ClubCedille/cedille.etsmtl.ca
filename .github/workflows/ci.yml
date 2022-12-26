@@ -24,7 +24,7 @@ jobs:
         id: verify-changed-files
         with:
           files: |
-             ./data/projects/*.yml
+             *.yml
 
       - name: Commit and push changes
         if: steps.verify-changed-files.outputs.files_changed == 'true'
