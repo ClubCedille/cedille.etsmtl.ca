@@ -1,8 +1,8 @@
-commits: 719
+commits: 723
 contributors:
 - EdvinHonda
-- RikuAvelar
 - SonOfLope
+- RikuAvelar
 - notarock
 - AXDOOMER
 - ygotame
@@ -13,9 +13,9 @@ contributors:
 - cguertin14
 - JulienRobitaille
 - samdidos
+- svc-cedille-user
 - dependabot[bot]
 - Angry-Russian
-- svc-cedille-user
 - ThomasCardin
 - maximest-pierre
 - DarkPyroM
@@ -34,4 +34,4 @@ languages:
 - Dockerfile
 - Nix
 name: cedille.etsmtl.ca
-stars: 1
+stars: 2
