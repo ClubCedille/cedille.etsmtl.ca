@@ -33,12 +33,12 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v3
         with:
-          context: ./
+          context: .
           file: ./Dockerfile.prod
           push: true
           tags: ${{ secrets.DOCKER_HUB_REPOSITORY }}:latest
           cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache-new
+          cache-to: type=local,mode=max,dest=/tmp/.buildx-cache-new
 
       - name: Refresh Cache
         run: |
