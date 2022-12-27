@@ -7,7 +7,7 @@ on:
 
 jobs:
   fetchProjects:
-    name: Fetch projects information
+    name: Update projects information
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
