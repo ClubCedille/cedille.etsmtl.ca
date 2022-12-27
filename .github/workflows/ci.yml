@@ -1,0 +1,49 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  fetchProjects:
+    name: Update projects information
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: 'true'
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Fetch projects informations
+        run: make fetch-projects PAT_TOKEN=${{ secrets.PAT_TOKEN }}  
+
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v13
+        id: verify-changed-files
+        with:
+          files: |
+             ./data/projects/*.yml
+
+      - name: Commit and push changes
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        run: |
+          git config --local user.email "cedille@etsmtl.net"
+          git config --local user.name "svc-cedille-user"
+          git add .
+          git commit -m "updating projects yaml files"
+      - if : github.ref != 'refs/heads/master' && steps.verify-changed-files.outputs.files_changed == 'true'
+        name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch : ${{ github.head_ref }}
+          github_token: ${{ secrets.PAT_TOKEN }}
+          force: true
+      - if : github.ref == 'refs/heads/master' && steps.verify-changed-files.outputs.files_changed == 'true'
+        name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch : ${{ github.ref_name }}
+          github_token: ${{ secrets.PAT_TOKEN }}
+          force: true
