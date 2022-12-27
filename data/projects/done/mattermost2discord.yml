@@ -1,0 +1,15 @@
+commits: 56
+contributors:
+- SonOfLope
+- Vboivin
+- cguertin14
+- notarock
+- dependabot[bot]
+description: Forward messages from Mattermost to Discord.
+languages:
+- Go
+- Dockerfile
+- Makefile
+- Shell
+name: mattermost2discord
+stars: 3
