@@ -46,67 +46,75 @@
             <h2 style="border-bottom: solid 2px grey;"><b>Projets terminés</b></h2>
         </div>
         <div class="row">
-            {{ range $.Site.Data.projects.done }}
-                <div class="col-6">
-                    <div class="card my-2" style="background-color: rgb(191, 189, 189); height: 250px">
-                        <div class="card-body mt-1">
-                            <div class="row mb-3">
-                                <div class="col-8">
-                                    <h5><b>{{ .name }}</b></h5>
+            {{ $index := 0}}
+            {{ range .Site.Data.projects.done }}
+                {{ if or (eq $index 0) (eq $index 1)}}
+                    {{ $index = add $index 1 }}
+                    <div class="col-6">
+                        <div class="card my-2" style="background-color: rgb(191, 189, 189); height: 250px">
+                            <div class="card-body mt-1">
+                                <div class="row mb-3">
+                                    <div class="col-8">
+                                        <h5><b>{{ .name }}</b></h5>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <a href="https://github.com/ClubCedille/{{ .name }}"><i class="fab fa-github"></i></a>
+                                    </div>
                                 </div>
-                                <div class="col-4 text-center">
-                                    <a href="https://github.com/ClubCedille/{{ .name }}"><i class="fab fa-github"></i></a>
-                                </div>
+                                <p class="mb-2">{{ .description }}</p>
+                                <p>Languages: 
+                                    {{ $length := sub (.languages | len) 1 }}
+                                    {{ range $index, $language := .languages }}{{$language}}{{ if not (eq $index $length) }}, {{ end }}{{end}}
+                                </p>
                             </div>
-                            <p class="mb-2">{{ .description }}</p>
-                            <p>Languages: 
-                                {{ $length := sub (.languages | len) 1 }}
-                                {{ range $index, $language := .languages }}{{$language}}{{ if not (eq $index $length) }}, {{ end }}{{end}}
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <ul class="list-unstyled list-inline">
-                                <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
-                                <li class="list-inline-item"><b>{{ .stars }}</b> étoiles</li>
-                                <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
-                            </ul>
+                            <div class="card-footer">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
+                                    <li class="list-inline-item"><b>{{ .stars }}</b> étoiles</li>
+                                    <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
+                {{ end }}
             {{ end }}
         </div>
     </div>
 </div>
 <!--end finished projects section-->
 
-{{/*  <div class="row btn-collapse collapse" id="PROJETS-APPARITION">
-    {{ range .secondSection}}
-    <div class="col-sm-6">
-        <div class="panel">
-            <div class="row">
-                <div class="col-sm-9 titreProjet">
-                    <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#{{ .projectTarget }}">
-                        <div class="row">
-                            <div class="col titreProjet">
-                                <h4>{{ .title }}</h4>
-                                <p>{{ .smDescription }}</p>
+<div class="row btn-collapse collapse" id="PROJETS-APPARITION">
+    {{ $index := 0}}
+    {{ range .Site.Data.projects.done }}
+        {{ if not (eq $index 0) }} {{ if not (eq $index 1) }} 
+            <div class="col-6">
+                <div class="card my-2" style="background-color: rgb(191, 189, 189); height: 250px">
+                    <div class="card-body mt-1">
+                        <div class="row mb-3">
+                            <div class="col-8">
+                                <h5><b>{{ .name }}</b></h5>
+                            </div>
+                            <div class="col-4 text-center">
+                                <a href="https://github.com/ClubCedille/{{ .name }}"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                    </button>
-                </div>
-                <div class="col-sm-3 lienGithub">
-                    <a href={{ .url }}><i class="{{ .icon }}"></i></a>
+                        <p class="mb-2">{{ .description }}</p>
+                        <p>Languages: 
+                            {{ $length := sub (.languages | len) 1 }}
+                            {{ range $index, $language := .languages }}{{$language}}{{ if not (eq $index $length) }}, {{ end }}{{end}}
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
+                            <li class="list-inline-item"><b>{{ .stars }}</b> étoiles</li>
+                            <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="btn-collapse collapse" id="{{ .projectTarget }}">
-                <div class="temoignage">
-                    <h5>Auteur: {{ .name }}</h5>
-                    <p class="titre2">{{ .subTitle }}</p>
-                    <p class="texte">{{ .review }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
+        {{ end }}{{ end }}
+        {{ $index = add $index 1 }}
     {{ end }}
 </div>
 </div>
@@ -123,7 +131,7 @@
         <button onclick="hideButtonUp()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION"><i class="fa-solid fa-angles-up"></i></button>         
     </div>
 </div>
-</div>  */}}
+</div>
 
 <!-- Contribution project section-->
 <div class="contribution-projects">
