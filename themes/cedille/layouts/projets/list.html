@@ -1,11 +1,141 @@
 {{ define "main" }}
-<div class="projets-recents">
-    {{ partial "projets_en_cours.html" . }}
-    {{ partial "projets_termines.html" . }}
-    <div class="container">
-        <div class="contribution mb-3" id="contribute">
-            <p>{{ .Content }}</p>
+<!-- Progress project section -->
+<div class="progress-projects">
+    <div class="container my-3">
+        <div class="row">
+            <h2 style="border-bottom: solid 2px grey;"><b>Projets en cours</b></h2>
+        </div>
+        <div class="row">
+            {{ range $.Site.Data.projects.inProgress }}
+                <div class="col-6">
+                    <div class="card my-2" style="background-color: rgb(191, 189, 189); height: 250px">
+                        <div class="card-body mt-1">
+                            <div class="row mb-3">
+                                <div class="col-8">
+                                    <h5><b>{{ .name }}</b></h5>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <a href="https://github.com/ClubCedille/{{ .name }}"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <p class="mb-2">{{ .description }}</p>
+                            <p>Languages: 
+                                {{ $length := sub (.languages | len) 1 }}
+                                {{ range $index, $language := .languages }}{{$language}}{{ if not (eq $index $length) }}, {{ end }}{{end}}
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
+                                <li class="list-inline-item"><b>{{ .stars }}</b> étoiles</li>
+                                <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
         </div>
     </div>
 </div>
+<!-- end progress project section -->
+
+<!-- Finished projects section -->
+<div class="finished-projects">
+    <div class="container my-3">
+        <div class="row">
+            <h2 style="border-bottom: solid 2px grey;"><b>Projets terminés</b></h2>
+        </div>
+        <div class="row">
+            {{ range $.Site.Data.projects.done }}
+                <div class="col-6">
+                    <div class="card my-2" style="background-color: rgb(191, 189, 189); height: 250px">
+                        <div class="card-body mt-1">
+                            <div class="row mb-3">
+                                <div class="col-8">
+                                    <h5><b>{{ .name }}</b></h5>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <a href="https://github.com/ClubCedille/{{ .name }}"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <p class="mb-2">{{ .description }}</p>
+                            <p>Languages: 
+                                {{ $length := sub (.languages | len) 1 }}
+                                {{ range $index, $language := .languages }}{{$language}}{{ if not (eq $index $length) }}, {{ end }}{{end}}
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
+                                <li class="list-inline-item"><b>{{ .stars }}</b> étoiles</li>
+                                <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+<!--end finished projects section-->
+
+{{/*  <div class="row btn-collapse collapse" id="PROJETS-APPARITION">
+    {{ range .secondSection}}
+    <div class="col-sm-6">
+        <div class="panel">
+            <div class="row">
+                <div class="col-sm-9 titreProjet">
+                    <button class="accordion-toggle btn" data-bs-toggle="collapse" data-parent="#accordion" data-bs-target="#{{ .projectTarget }}">
+                        <div class="row">
+                            <div class="col titreProjet">
+                                <h4>{{ .title }}</h4>
+                                <p>{{ .smDescription }}</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-sm-3 lienGithub">
+                    <a href={{ .url }}><i class="{{ .icon }}"></i></a>
+                </div>
+            </div>
+            <div class="btn-collapse collapse" id="{{ .projectTarget }}">
+                <div class="temoignage">
+                    <h5>Auteur: {{ .name }}</h5>
+                    <p class="titre2">{{ .subTitle }}</p>
+                    <p class="texte">{{ .review }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
+</div>
+<div class="container">
+<div class="d-flex-row text-center" id="button-down" style="display: block">
+    <h6 class="titre-bouton">Voir plus</h6>
+    <div class="fa-2x">
+        <button onclick="hideButtonDown()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION"><i class="fa-solid fa-angles-down"></i></button>         
+    </div>
+</div>
+<div class="d-flex-row text-center" id="button-up" style="display: none">
+    <h6 class="titre-bouton">Voir moins</h6>
+    <div class="fa-2x">
+        <button onclick="hideButtonUp()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION"><i class="fa-solid fa-angles-up"></i></button>         
+    </div>
+</div>
+</div>  */}}
+
+<!-- Contribution project section-->
+<div class="contribution-projects">
+    <div class="container my-3">
+        <div class="card" style="background-color: rgb(191, 189, 189);">
+            <div class="card-body">
+                <div class="row mb-1" id="contribute">
+                    <p>{{ .Content }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end contribution project section -->
 {{ end }}
