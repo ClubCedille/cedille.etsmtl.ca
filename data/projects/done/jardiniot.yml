@@ -1,0 +1,24 @@
+commits: 268
+contributors:
+- AXDOOMER
+- notarock
+- berbiche
+- aubguillemette
+- dependabot[bot]
+- cguertin14
+- AlexBrochu
+- CedrickGauthier
+- xavsavage
+- mikefaille
+- ygotame
+description: Système pour des buckets autonomes servant à faire pousser des plantes
+languages:
+- C++
+- Python
+- JavaScript
+- CSS
+- Shell
+- Dockerfile
+- HTML
+name: jardiniot
+stars: 13

@@ -1,0 +1,20 @@
+commits: 49
+contributors:
+- jdupl
+- AXDOOMER
+- notarock
+- gzsierra
+- starcraft66
+- berbiche
+- ygotame
+- Quardah
+- purema4
+- mikefaille
+- Perceval62
+- rodriguemouche
+description: Scripts to clone various mirrors for Cedille
+languages:
+- Shell
+- HTML
+name: mirrors
+stars: 1
