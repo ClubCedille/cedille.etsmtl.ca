@@ -1,0 +1,11 @@
+commits: 20
+contributors:
+- JulienRobitaille
+- notarock
+- AXDOOMER
+description: Raspberry Pi Zero W camera recording for a rocket ! 🚀
+languages:
+- Shell
+- PHP
+name: RocketCam
+stars: 12

@@ -4,8 +4,8 @@ contributors:
 - cguertin14
 - renovate[bot]
 - vyacheslav31
-description: Microservices that allow an admission request to be routed to various
-  messaging platforms.
+description: Microservices permettant de router une demande d'admission vers différentes
+  plateformes de messagerie.
 languages:
 - Go
 - Dockerfile

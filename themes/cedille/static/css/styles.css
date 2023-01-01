@@ -1015,6 +1015,37 @@ header{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
 }
 
+/*---------------------- PROJECT PAGE SECTION ----------------*/
+/*-------------- PROGRESS SECTION -----------------*/
+.progress-projects a{
+    color: rgba(255, 166, 0, 0.748);
+    border-radius: 100%;
+    background-color: black;
+    padding: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.progress-projects a:hover{
+    padding: 10px;
+    background-color: rgb(221, 207, 207);
+}
+
+/*-------------- FINISHED SECTION -----------------*/
+.finished-projects a{
+    color: rgba(255, 166, 0, 0.748);
+    border-radius: 100%;
+    background-color: black;
+    padding: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.finished-projects a:hover{
+    padding: 10px;
+    background-color: rgb(221, 207, 207);
+}
+
 /*---------------------- FOOTER SECTION ---------------------*/
 
 footer{
