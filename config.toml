@@ -18,7 +18,7 @@ theme = 'cedille'
     [[menu.main]]
         identifier = "projets"    
         name = "Projets"
-        url = "/projets"
+        url = "/projets/"
         weight = 3
     [[menu.main]]   
         identifier = "partenaires" 
