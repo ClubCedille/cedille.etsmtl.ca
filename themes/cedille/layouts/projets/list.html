@@ -1,7 +1,7 @@
 {{ define "main" }}
 <!-- Progress project section -->
 <div class="progress-projects">
-    <div class="container my-3">
+    <div class="container my-5">
         <div class="row">
             <h2 style="border-bottom: solid 2px grey;"><b>Projets en cours</b></h2>
         </div>
@@ -41,7 +41,7 @@
 
 <!-- Finished projects section -->
 <div class="finished-projects">
-    <div class="container my-3">
+    <div class="container my-5">
         <div class="row">
             <h2 style="border-bottom: solid 2px grey;"><b>Projets terminés</b></h2>
         </div>
@@ -114,16 +114,12 @@
             {{ end }}
         </div>
         <div class="row text-center mt-2" id="button-down" style="display: block">
-            <h6 class="titre-bouton">Voir plus</h6>
-            <div class="fa-2x">
-                <button onclick="hideButtonDown()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION"><i class="fa-solid fa-angles-down"></i></button>         
-            </div>
+            <h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir plus</h6>
+            <button onclick="hideButtonDown()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION"><i class="fa-solid fa-angles-down"></i></button> 
         </div>
         <div class="row text-center mt-2" id="button-up" style="display: none">
-            <h6 class="titre-bouton">Voir moins</h6>
-            <div class="fa-2x">
-                <button onclick="hideButtonUp()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION"><i class="fa-solid fa-angles-up"></i></button>         
-            </div>
+            <h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir moins</h6>
+            <button onclick="hideButtonUp()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION"><i class="fa-solid fa-angles-up"></i></button>
         </div>
     </div>
 </div>
@@ -131,7 +127,7 @@
 
 <!-- Contribution project section-->
 <div class="contribution-projects">
-    <div class="container my-3">
+    <div class="container my-5">
         <div class="card" style="background-color: rgb(191, 189, 189);">
             <div class="card-body">
                 <div class="row mb-1" id="contribute">
