@@ -1,0 +1,17 @@
+commits: 168
+contributors:
+- canoeets
+- fxleblanc
+- DarkPyroM
+- BinaryTiger
+- jalilbengoufa
+- notarock
+- SonOfLope
+description: 'Site web du club étudiant canoë de béton de l''ÉTS '
+languages:
+- HTML
+- SCSS
+- JavaScript
+- Dockerfile
+name: canoe-beton
+stars: 0
