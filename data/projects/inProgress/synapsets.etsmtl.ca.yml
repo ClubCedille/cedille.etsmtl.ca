@@ -1,10 +1,11 @@
-commits: 143
+commits: 157
 contributors:
 - SonOfLope
 - EdvinHonda
 - Jackdamiel
 - ClubSynapsETS
 - renovate[bot]
+- Maerakk
 description: Site web du club SynapsÉTS
 languages:
 - SCSS

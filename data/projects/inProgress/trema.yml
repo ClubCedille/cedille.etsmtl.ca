@@ -1,8 +1,9 @@
-commits: 19
+commits: 24
 contributors:
-- GRV96
 - SonOfLope
+- GRV96
 - polocto
+- dadatmmmm
 description: Robot logiciel pour le serveur Discord des clubs étudiants de l'ÉTS
 languages:
 - Python

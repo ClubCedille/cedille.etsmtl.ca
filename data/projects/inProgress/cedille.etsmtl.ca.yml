@@ -1,4 +1,4 @@
-commits: 748
+commits: 753
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -34,4 +34,4 @@ languages:
 - Dockerfile
 - Nix
 name: cedille.etsmtl.ca
-stars: 2
+stars: 1
