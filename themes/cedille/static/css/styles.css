@@ -986,6 +986,29 @@ header{
     background-color: black;
 }
 
+/*-------------- ABOUT US PAGE ---------------*/
+
+.about-us-section .sidebar a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.about-us-section .sidebar a:hover{
+    color: rgba(255, 166, 0, 0.748);
+}
+
+.about-us-section .btn{
+    border: 1px solid black !important;
+    border-radius: 0 !important;
+    transition: all 0.4s ease-in-out;
+}
+
+.about-us-section .btn:hover{
+    color: rgba(255, 166, 0, 0.748);
+    background-color: black;
+}
+
 /*---------------- TEAM PAGE ---------------- */
 .equipe .carousel-indicators button{
     width: 10px;

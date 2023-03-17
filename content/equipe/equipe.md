@@ -1,5 +1,5 @@
 ---
-title: "Membres"
+title: "About us"
 date: 2021-12-21T20:09:16-05:00
 sliderImage:
   - image: "images/membres/evenement/1.png"

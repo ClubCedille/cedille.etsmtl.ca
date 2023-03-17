@@ -1,5 +1,10 @@
 {{ define "main"}}
-<div class="equipe">
+<div class="about-us-section">
+  <div class="container d-flex my-5 py-5">
+    {{ partial "aboutUs.html" . }}
+  </div>
+</div>
+{{/*  <div class="equipe">
   <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -27,5 +32,5 @@
     </button>
   </section>
   {{ partial "membres.html" . }}
-</div>
+</div>  */}}
 {{end}}
