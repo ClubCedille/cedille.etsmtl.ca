@@ -1,0 +1,29 @@
+{{ with .Site.Data.aboutUs }}
+{{ if .enable }}
+<div class="row">
+    <div class="sidebar col-2">
+      <nav class="sticky-top text-end">
+        <h6 class="mb-2"><b>{{ .title }}</b></h6>
+        <ul class="list-unstyled list">
+            {{ range .sections }}
+            <li class="mb-1"><a href="#{{ .title }}">{{ .title }}</a></li>
+            {{ end }}
+        </ul>
+      </nav>
+    </div>
+    <div class="col-10">
+      <div class="d-flex flex-column mx-4">
+        {{ range .sections }}
+        <div class="mb-4" id="{{ .title }}">
+            <h3><b>{{ .subtitle }}</b></h3>
+            {{ .text | safeHTML }}
+        </div>
+        {{ end }}
+      </div>
+      <div class="mx-4">
+        <a class="btn py-2 px-4" href="{{ .button.url }}">{{ .button.getInvolved }}</a>
+      </div>
+    </div>
+  </div>
+{{ end }}
+{{ end }}

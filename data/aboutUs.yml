@@ -1,0 +1,23 @@
+---
+enable: true
+title: "About us"
+button:
+  getInvolved: "Get Involved"
+  url: "/contact"
+sections:
+  - title: "Cedille's vision"
+    subtitle: "Empowering Students to Excel In The Industry"
+    text: "<p>At Cédille, we believe that learning should never stop. As software and IT engineers, we understand that the industry is constantly evolving and that the skills and knowledge we gain in the classroom may not always be enough to secure our dream job or keep up with the latest developments. The truth is there is no denying that real-world experience is key for students to excel in their chosen fields.</p> 
+           <p>That's why we exist - to bridge the gap between what we learn in school and the real-world skills and experience we need to excel in the industry. Our mission is to provide opportunities for students to practice and perfect their skills, develop a strong mindset and values, and make a difference through various projects that contribute to the community. </p>"
+  - title: "Our Approach"
+    subtitle: "Supporting Student Success Beyond The Classroom"
+    text: "<p>We understand that learning doesn't stop in the classroom. Thus, we aim to provide a wide range of opportunities for students to practice and perfect their skills in software and IT engineering. Whether it's through working on projects, participating in hackathons, or attending workshops, our club provides hands-on experience that helps students develop the skills they need to excel in the industry.</p>
+           <p>We believe that developing a strong mindset and values is just as important as technical skills. That's why we provide mentoring and guidance through industry professionals, as well as exposing students to the latest practices and trends. Our goal is to help students not only become better engineers but also become better individuals.</p>
+           <p> Our club is also about making a difference. Through the projects we work on, we actively try to help clubs and organisations around us. At the end of the day it's not just about personal growth, we believe that by making a difference, we can motivate students to not only achieve their career goals but also leave a positive impact on the community.</p>"
+  - title: "Areas of Expertise"
+    subtitle: "Our Main Focus"
+    text: "<p>As mentioned earlier we provide opportunities for students to practice and perfect their skills in various fields of software and IT engineering. Concretely, here are some of the areas where you can hope to start getting things done at Cédille:</p>"
+  - title: "Get involved"
+    subtitle: "Embark On Your Path To Success"
+    text: "<p>If our vision resonates with you and you're passionate about software and IT engineering, we invite you to join the community. By becoming a member, you'll have the opportunity to grow, learn, and make a difference alongside like-minded individuals. It all starts with a click of a button.</p>"
+---
