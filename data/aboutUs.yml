@@ -37,9 +37,11 @@ sections:
                <p>By joining our team, you'll have the opportunity to work with cutting-edge tools like CircleCI, Github Actions, and ArgoCD, while gaining valuable experience in the DevOps field. So, whether you're an experienced DevOps professional or just starting out, we welcome you to join our team and be part of a community dedicated to pushing the boundaries of DevOps.</p>"
       - title: "SRE"
         name: "sre"
-        text: "<p>Our SRE projects focus on maintaining and scaling the infrastructure that powers our applications and services.</p>
-               <p>If SRE is a field you are interested in, expect to be using tools such as <b>Terraform</b>, <b>Grafana</b>, <b>Kubernetes</b>, and the <b>GCloud SDK</b> to manage and monitor our infrastructure.</p>
-               <p>Whether you're interested in learning about infrastructure as code or monitoring and scaling systems, we have a place for you on our team.</p>"
+        text: "<p>Our SRE projects focus on creating a highly reliable and scalable environment for the infrastructure that powers our applications and services. We use a variety of tools to achieve this, such as <b>Prometheus</b> for storing metrics and <b>Grafana</b> for visualizing them. By using these tools, we can provide monitoring and alerting of our cloud-native environments, helping us to identify and resolve issues quickly.
+</p>
+               <p>We also make use of <b>Groundcover</b>, which leverages eBPF to provide a better observability platform of Kubernetes. This tool allows us to monitor network traffic, system calls, and other kernel-level events in real-time, giving us greater insight into the performance of our Kubernetes clusters.</p>
+               <p>Whether you're interested in working with tools like Prometheus, Grafana and Groundcover or simply learning about monitoring and scaling systems,
+we have a place for you on our team.</p>"
   - title: "Get involved"
     subtitle: "Embark On Your Path To Success"
     text: "<p>If our vision resonates with you and you're passionate about software and IT engineering, we invite you to join the community. By becoming a member, you'll have the opportunity to grow, learn, and make a difference alongside like-minded individuals. It all starts with a click of a button.</p>"
