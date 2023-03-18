@@ -29,11 +29,12 @@ sections:
         name: "software"
         text: "<p>Our software development projects are designed to give students a chance to work with a variety of languages and tools.</p>
                <p>From <b>Python</b> to <b>Go</b> and <b>Rust</b>, we use a wide range of technologies to tackle different types of projects. We also place a strong emphasis on containerization and use technologies like <b>Docker</b> to develop efficient and scalable solutions.</p>"
-      - title: "CI/CD"
-        name: "cicd"
-        text: "<p>Our CI/CD projects focus on automating the software development process and ensuring the quality of our code.</p>
-               <p>If CI/CD is a field you are interested in, expect to be using tools such as <b>CircleCI</b>, <b>GitHub Actions</b>, and <b>ArgoCD</b> to create efficient and reliable workflows for our development teams.</p>
-               <p>Whether you're interested in learning about continuous integration or continuous delivery, we have a place for you on our team.</p>"
+      - title: "DevOps"
+        name: "devops"
+        text: "<p>We specialize in DevOps, a methodology that aims to streamline the software development process through automation and collaboration. We are focused on developing and implementing several Continuous Integration/Continuous Deployment (CI/CD) projects that automate the build, test, and deployment processes, while ensuring high-quality code using <b>CircleCI</b>, <b>Github Actions</b>, and <b>ArgoCD</b>.</p>
+               <p>We also use <b>Terraform</b>, an infrastructure-as-code (IAC) tool, to automate the management of our Infrastructure-as-a-Service (IaaS). This allows us to quickly and efficiently provision and manage our infrastructure resources, such as virtual machines, storage, and networking, with greater consistency and scalability.</p>
+               <p>Furthermore, we utilize <b>Kubernetes</b>, a container orchestration platform, to simplify the deployment, scaling, and management of containerized applications. By leveraging Kubernetes, we can ensure that our applications are highly available, scalable, and reliable.</p>
+               <p>By joining our team, you'll have the opportunity to work with cutting-edge tools like CircleCI, Github Actions, and ArgoCD, while gaining valuable experience in the DevOps field. So, whether you're an experienced DevOps professional or just starting out, we welcome you to join our team and be part of a community dedicated to pushing the boundaries of DevOps.</p>"
       - title: "SRE"
         name: "sre"
         text: "<p>Our SRE projects focus on maintaining and scaling the infrastructure that powers our applications and services.</p>
