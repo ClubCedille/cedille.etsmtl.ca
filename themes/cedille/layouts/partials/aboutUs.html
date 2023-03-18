@@ -1,29 +1,62 @@
 {{ with .Site.Data.aboutUs }}
 {{ if .enable }}
 <div class="row">
-    <div class="sidebar col-2">
-      <nav class="sticky-top text-end">
-        <h6 class="mb-2"><b>{{ .title }}</b></h6>
-        <ul class="list-unstyled list">
-            {{ range .sections }}
-            <li class="mb-1"><a href="#{{ .title }}">{{ .title }}</a></li>
-            {{ end }}
-        </ul>
-      </nav>
+  <!-- Sidebar section -->
+  <div class="sidebar col-2">
+    <nav class="sticky-top text-end">
+      <h6 class="mb-2"><b>{{ .title }}</b></h6>
+      <ul class="list-unstyled list">
+          {{ range .sections }}
+          <li class="mb-1"><a href="#{{ .title }}">{{ .title }}</a></li>
+          {{ end }}
+      </ul>
+    </nav>
+  </div>
+  <!-- end sidebar section -->
+
+  <!-- Aside section -->
+  <div class="aside col-10">
+    <div class="d-flex flex-column mx-4">
+      {{ range .sections }}
+      <div class="mb-4" id="{{ .title }}">
+          <h3><b>{{ .subtitle }}</b></h3>
+          {{ .text | safeHTML }}
+          {{ if .descriptionAreas }}
+            <div class="card" style="background-color: #FFB76B;">
+              <div class="card-body">
+                <nav class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                  {{ range .descriptionAreas }}
+                    {{ if .active }}
+                    <button class="nav-link {{ .active }}" id="pills-{{ .name }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ .name }}" type="button" role="tab" aria-controls="nav-{{ .name }}" aria-selected="true"><b>{{ .title }}</b></button>
+                    {{ else }}
+                    <button class="nav-link" id="pills-{{ .name }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ .name }}" type="button" role="tab" aria-controls="nav-{{ .name }}" aria-selected="true"><b>{{ .title }}</b></button>
+                    {{ end }}
+                  {{ end }}
+                </nav>
+                <div class="tab-content m-4" id="pills-tabContent">
+                  {{ range .descriptionAreas }}
+                    {{ if .showActive }}
+                    <div class="tab-pane fade {{ .showActive }}" id="pills-{{ .name }}" role="tabpanel" aria-labelledby="pills-{{ .name }}-tab">
+                      {{ .text | safeHTML }}
+                    </div>
+                    {{ else }}
+                    <div class="tab-pane fade" id="pills-{{ .name }}" role="tabpanel" aria-labelledby="pills-{{ .name }}-tab">
+                      {{ .text | safeHTML }}
+                    </div>
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          {{ end }}
+      </div>
+      {{ end }}
     </div>
-    <div class="col-10">
-      <div class="d-flex flex-column mx-4">
-        {{ range .sections }}
-        <div class="mb-4" id="{{ .title }}">
-            <h3><b>{{ .subtitle }}</b></h3>
-            {{ .text | safeHTML }}
-        </div>
-        {{ end }}
-      </div>
-      <div class="mx-4">
-        <a class="btn py-2 px-4" href="{{ .button.url }}">{{ .button.getInvolved }}</a>
-      </div>
+    <div class="mx-4">
+      <a class="btn py-2 px-4" href="{{ .button.url }}">{{ .button.getInvolved }}</a>
     </div>
   </div>
+  <!-- end aside section -->
+</div>
 {{ end }}
 {{ end }}

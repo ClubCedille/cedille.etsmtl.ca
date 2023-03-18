@@ -986,8 +986,8 @@ header{
     background-color: black;
 }
 
-/*-------------- ABOUT US PAGE ---------------*/
-
+/*--------------------- ABOUT US PAGE ----------------------*/
+/*------------- SIDEBAR SECTION -------------*/
 .about-us-section .sidebar a {
     text-decoration: none;
     color: black;
@@ -996,6 +996,21 @@ header{
 
 .about-us-section .sidebar a:hover{
     color: rgba(255, 166, 0, 0.748);
+}
+
+/*------------- ASIDE SECTION -------------*/
+.about-us-section .card {
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.285);
+}
+
+.about-us-section .nav-pills .nav-link {
+    color: black;
+}
+
+.about-us-section .nav-pills .nav-link.active {
+    background-color: #FFD2A4;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.285);
 }
 
 .about-us-section .btn{
@@ -1008,7 +1023,6 @@ header{
     color: rgba(255, 166, 0, 0.748);
     background-color: black;
 }
-
 /*---------------- TEAM PAGE ---------------- */
 .equipe .carousel-indicators button{
     width: 10px;
