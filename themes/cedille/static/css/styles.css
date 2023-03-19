@@ -6,7 +6,8 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:rgb(217, 214, 214);
+    /* background-color:rgb(217, 214, 214); */
+    background-color: #F2F2F2;
 }
 
 /*--------------- SCROLLBAR SECTION --------------*/
@@ -29,7 +30,8 @@ body{
 
 /*--------------- HEADER SECTION -----------------*/
 header{
-    background-color: rgba(0, 0, 0, 0.822);
+    /* background-color: rgba(0, 0, 0, 0.822); */
+    background-color: #080808;
     color: white;
 }
 
@@ -991,6 +993,8 @@ header{
 .about-us-section .sidebar a {
     text-decoration: none;
     color: black;
+    font-size: small;
+    font-weight: 600;
     transition: all 0.2s ease-in-out;
 }
 
@@ -1086,7 +1090,8 @@ header{
 /*---------------------- FOOTER SECTION ---------------------*/
 
 footer{
-    background-color: rgba(0, 0, 0, 0.822);
+    /* background-color: rgba(0, 0, 0, 0.822); */
+    background-color: #080808;
     color: white;
 }
 
