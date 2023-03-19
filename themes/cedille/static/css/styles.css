@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:rgb(217, 214, 214);
+    background-color: #F2F2F2;
 }
 
 /*--------------- SCROLLBAR SECTION --------------*/
@@ -29,7 +29,7 @@ body{
 
 /*--------------- HEADER SECTION -----------------*/
 header{
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: #080808;
     color: white;
 }
 
@@ -731,7 +731,7 @@ header{
         margin: 0px 20px;
     }
 }
-/*-------- TEST -------*/
+
 /*------------- CONTACT PAGE ------------*/
 .contact{
     min-height: 100vh;
@@ -740,18 +740,18 @@ header{
 .contact .rectangle{
     width: 100%;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: #080808;
 }
 
 .contact .triangle {
   width: 100%;
   height: 200px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.822);
+  background-color: #080808;
   opacity: 1;
   background-image:
-    linear-gradient(to bottom left, transparent 50%, rgb(217, 214, 214) 0),
-    linear-gradient(to top left, rgb(217, 214, 214) 50%, transparent 0);
+    linear-gradient(to bottom left, transparent 50%, #F2F2F2 0),
+    linear-gradient(to top left, #F2F2F2 50%, transparent 0);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: left, right;
@@ -837,7 +837,7 @@ header{
 
 /*---------- HERO SECTION ----------*/
 .hero-section{
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: #080808;
     color: white;
 }
 
@@ -986,6 +986,45 @@ header{
     background-color: black;
 }
 
+/*--------------------- ABOUT US PAGE ----------------------*/
+/*------------- SIDEBAR SECTION -------------*/
+.about-us-section .sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.about-us-section .sidebar a:hover{
+    color: rgba(255, 166, 0, 0.748);
+}
+
+/*------------- ASIDE SECTION -------------*/
+.about-us-section .card {
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.285);
+}
+
+.about-us-section .nav-pills .nav-link {
+    color: black;
+}
+
+.about-us-section .nav-pills .nav-link.active {
+    background-color: #FFD2A4;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.285);
+}
+
+.about-us-section .btn{
+    border: 1px solid black !important;
+    border-radius: 0 !important;
+    transition: all 0.4s ease-in-out;
+}
+
+.about-us-section .btn:hover{
+    color: rgba(255, 166, 0, 0.748);
+    background-color: black;
+}
 /*---------------- TEAM PAGE ---------------- */
 .equipe .carousel-indicators button{
     width: 10px;
@@ -1049,7 +1088,7 @@ header{
 /*---------------------- FOOTER SECTION ---------------------*/
 
 footer{
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: #080808;
     color: white;
 }
 
