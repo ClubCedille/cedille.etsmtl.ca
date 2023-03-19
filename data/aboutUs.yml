@@ -39,7 +39,7 @@ sections:
         name: "sre"
         text: "<p>Our SRE projects focus on creating a highly reliable and scalable environment for the infrastructure that powers our applications and services. We use a variety of tools to achieve this, such as <b>Prometheus</b> for storing metrics and <b>Grafana</b> for visualizing them. By using these tools, we can provide monitoring and alerting of our cloud-native environments, helping us to identify and resolve issues quickly.
 </p>
-               <p>We also make use of <b>Groundcover</b>, which leverages eBPF to provide a better observability platform of Kubernetes. This tool allows us to monitor network traffic, system calls, and other kernel-level events in real-time, giving us greater insight into the performance of our Kubernetes clusters.</p>
+               <p>We also make use of <b>Groundcover</b>, which leverages eBPF to provide a better observability platform of Kubernetes. This tool allows us to monitor network traffic, system calls, and other kernel-level events in real-time, giving us greater insight into the performance of our Kubernetes cluster.</p>
                <p>Whether you're interested in working with tools like Prometheus, Grafana and Groundcover or simply learning about monitoring and scaling systems,
 we have a place for you on our team.</p>"
   - title: "Get involved"
