@@ -6,7 +6,6 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    /* background-color:rgb(217, 214, 214); */
     background-color: #F2F2F2;
 }
 
@@ -30,7 +29,6 @@ body{
 
 /*--------------- HEADER SECTION -----------------*/
 header{
-    /* background-color: rgba(0, 0, 0, 0.822); */
     background-color: #080808;
     color: white;
 }
@@ -733,7 +731,7 @@ header{
         margin: 0px 20px;
     }
 }
-/*-------- TEST -------*/
+
 /*------------- CONTACT PAGE ------------*/
 .contact{
     min-height: 100vh;
@@ -742,18 +740,18 @@ header{
 .contact .rectangle{
     width: 100%;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: #080808;
 }
 
 .contact .triangle {
   width: 100%;
   height: 200px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.822);
+  background-color: #080808;
   opacity: 1;
   background-image:
-    linear-gradient(to bottom left, transparent 50%, rgb(217, 214, 214) 0),
-    linear-gradient(to top left, rgb(217, 214, 214) 50%, transparent 0);
+    linear-gradient(to bottom left, transparent 50%, #F2F2F2 0),
+    linear-gradient(to top left, #F2F2F2 50%, transparent 0);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: left, right;
@@ -839,7 +837,7 @@ header{
 
 /*---------- HERO SECTION ----------*/
 .hero-section{
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: #080808;
     color: white;
 }
 
@@ -1090,7 +1088,6 @@ header{
 /*---------------------- FOOTER SECTION ---------------------*/
 
 footer{
-    /* background-color: rgba(0, 0, 0, 0.822); */
     background-color: #080808;
     color: white;
 }
