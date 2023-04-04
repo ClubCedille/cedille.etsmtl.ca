@@ -1,6 +1,7 @@
 ---
 enable: true
 title: "Partenaires"
+pdf: "/documents/Plan_de_partenariat_2022-2023_-_Club_CEDILLE_commandites-3.pdf"
 partnerships:
   - name: "Banque Nationale"
     img: "/images/Partenaire/banque-nationale-logo-transparent.png"
