@@ -1,20 +1,19 @@
 ---
 enable: true
 title: "Partenaires"
-pdf: "/documents/Plan_de_partenariat_2022-2023_-_Club_CEDILLE_commandites-3.pdf"
 partnerships:
   - name: "Banque Nationale"
     img: "/images/Partenaire/banque-nationale-logo-transparent.png"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+    imageSide: "Right"
   - name: "Arctiq"
     img: "/images/Partenaire/arctiq.svg"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
-    imageSide: "Right"
   - name: "Sidero"
     img: "/images/Partenaire/Sidero.webp"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+    imageSide: "Right"
   - name: "École de Technologie Supérieure"
     img: "/images/Partenaire/Logo_ETS_TypoBlanche_D_FR.png"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
-    imageSide: "Right"
 ---

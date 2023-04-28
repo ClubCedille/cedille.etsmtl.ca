@@ -1,5 +1,6 @@
 {{ define "main" }}
     {{ with $.Site.Data.partenaires }}
+    {{ $pdf := resources.Get "/documents/Plan_de_partenariat_2022-2023_-_Club_CEDILLE_commandites-3.pdf"}}
         <div class="partenaires-section my-5">
             <div class="container">
                 <div class="row">
@@ -7,22 +8,21 @@
                 </div>
                 <div class="row mx-5">
                     {{ range .partnerships }}
-                    <div class="card my-3" style="flex-direction: row;">
+                    <div class="card my-2 border-0" style="flex-direction: row; background-color:rgb(242, 242, 242);">
                         {{ if .imageSide }}
                         <div class="card-body d-flex align-items-center">
                             <div class="row ms-3 me-5">
-                                <img src="/images/Partenaire/banque-nationale-logo-transparent.png" alt="" style="width:150px; height:130px;">
+                                <img class="my-2" src="{{ .img }}" alt="{{ .name }}" style="width:150px; height:110px;">
                                 <p>{{ .text }}</p>
                             </div>
                             <img src="/images/Partenaire/banque-nationale-logo-transparent.png" alt="" width="450px">
                         </div>
                         {{ else }}
-                        <img src="/images/Partenaire/banque-nationale-logo-transparent.png" alt="" width="450px">
                         <div class="card-body d-flex align-items-center">
+                            <img src="/images/Partenaire/banque-nationale-logo-transparent.png" alt="" width="450px">
                             <div class="row ms-3 me-5">
-                                <img src="/images/Partenaire/banque-nationale-logo-transparent.png" alt="" style="width:150px; height:130px;">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-                            
+                                <img src="{{ .img }}" alt="{{ .name }}" style="width:150px; height:110px;">
+                                <p>{{ .text }}</p>
                             </div>
                         </div>
                         {{ end }}
@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="col text-start">
                                     <div class="mt-2">
-                                        <a target="_blank" href="{{ .pdf | relURL }}" style="text-decoration: none; color:black;">
+                                        <a target="_blank" href="{{ $pdf.Permalink }}" style="text-decoration: none; color:black;">
                                             See our partnership formulas
                                             <i class="fa-solid fa-chevron-right"></i>
                                         </a>
