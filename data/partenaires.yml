@@ -1,6 +1,11 @@
 ---
 enable: true
 title: "Partenaires"
+partnerLink:
+  title: "Help us blablabla"
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+  buttonContactLink: "Become a partner"
+  buttonFormulas: "See our partnership formulas"
 partnerships:
   - name: "Banque Nationale"
     img: "/images/Partenaire/banque-nationale-logo-transparent.png"

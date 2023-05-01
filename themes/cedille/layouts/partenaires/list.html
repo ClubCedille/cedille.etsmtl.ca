@@ -1,59 +1,69 @@
 {{ define "main" }}
     {{ with $.Site.Data.partenaires }}
     {{ $pdf := resources.Get "/documents/Plan_de_partenariat_2022-2023_-_Club_CEDILLE_commandites-3.pdf"}}
+    <!-- Partnership section -->
         <div class="partenaires-section my-5">
             <div class="container">
                 <div class="row">
                     <h2 style="border-bottom: solid 2px grey;"><b>{{ .title }}</b></h2>
                 </div>
-                <div class="row mx-5">
-                    {{ range .partnerships }}
-                    <div class="card my-2 border-0" style="flex-direction: row; background-color:rgb(242, 242, 242);">
+
+                <!-- Partnership card section -->
+                {{ range .partnerships }}
+                <div class="card border-0 mt-2 d-lg-flex d-md-flex d-none" style="background-color:rgb(242, 242, 242);">
+                    <div class="row">
                         {{ if .imageSide }}
-                        <div class="card-body d-flex align-items-center">
-                            <div class="row ms-3 me-5">
-                                <img class="my-2" src="{{ .img }}" alt="{{ .name }}" style="width:150px; height:110px;">
-                                <p>{{ .text }}</p>
-                            </div>
-                            <img src="/images/Partenaire/banque-nationale-logo-transparent.png" alt="" width="450px">
+                        <div class="col-md-7 d-flex align-items-center">
+                            <div class="d-block me-5">
+                                <img class="mb-4" src="{{ .img }}" alt="{{ .name }}" style="width: 150px;">
+                                <p class="card-text"><b>{{ .text }}</b></p>        
+                            </div>                            
                         </div>
+                        <img class="col-md-5" src="/images/Partenaire/banque-nationale-logo-transparent.png" alt="test" width="400px">
                         {{ else }}
-                        <div class="card-body d-flex align-items-center">
-                            <img src="/images/Partenaire/banque-nationale-logo-transparent.png" alt="" width="450px">
-                            <div class="row ms-3 me-5">
-                                <img src="{{ .img }}" alt="{{ .name }}" style="width:150px; height:110px;">
-                                <p>{{ .text }}</p>
-                            </div>
+                        <img class="col-md-5" src="/images/Partenaire/banque-nationale-logo-transparent.png" alt="test" width="400px">
+                        <div class="col-md-7 d-flex align-items-center">
+                            <div class="d-block ms-5">
+                                <img class="mb-4" src="{{ .img }}" alt="{{ .name }}" style="width: 150px;">
+                                <p class="card-text"><b>{{ .text }}</b></p>        
+                            </div>                            
                         </div>
                         {{ end }}
                     </div>
-                    {{ end }}
                 </div>
+                {{ end }}
+                <!-- end partnership card section -->
+
+                <!-- Formulas link section -->
                 <div class="row m-5 text-center">
-                    
-                        <h4><b>Help us blablabla</b></h4>
-                        <div class="col mx-5">
-                            <div class="row">
-                                <div class="col mx-5 mt-2">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-                                </div>
+                    <h4><b>{{ .partnerLink.title }}</b></h4>
+                    <div class="col mx-5">
+                        <div class="row">
+                            <div class="col mx-5 mt-2">
+                                <p>{{ .partnerLink.text }}</p>
                             </div>
-                            <div class="row mt-2 mx-5 px-5">
-                                <div class="col text-end">
-                                    <a class="btn py-2 px-4" href="/contact">Become a partner</a>
-                                </div>
-                                <div class="col text-start">
-                                    <div class="mt-2">
-                                        <a target="_blank" href="{{ $pdf.Permalink }}" style="text-decoration: none; color:black;">
-                                            See our partnership formulas
-                                            <i class="fa-solid fa-chevron-right"></i>
-                                        </a>
-                                    </div>
+                        </div>
+                        <div class="row mt-2 mx-5 px-5">
+                            <div class="col text-end">
+                                <a class="btn py-2 px-4" href="/contact">
+                                    {{ .partnerLink.buttonContactLink }}
+                                </a>
+                            </div>
+                            <div class="col text-start">
+                                <div class="mt-2">
+                                    <a target="_blank" href="{{ $pdf.Permalink }}" style="text-decoration: none; color:black;">
+                                        {{ .partnerLink.buttonFormulas }}
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
+                <!-- end formulas link section -->
+
             </div>
         </div>
+    <!-- end partnership section -->
     {{ end }}
 {{ end }}
