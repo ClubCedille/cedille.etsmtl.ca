@@ -15,7 +15,7 @@ partnerships:
     img: "/images/Partenaire/arctiq.svg"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
   - name: "Sidero"
-    img: "/images/Partenaire/Sidero.webp"
+    img: "/images/Partenaire/Sidero/Sidero.png"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
     imageSide: "Right"
   - name: "École de Technologie Supérieure"
