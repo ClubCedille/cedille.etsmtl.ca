@@ -17,29 +17,29 @@
                         <p class="card-text"><b>{{ .text }}</b></p>   
                     </div>
                 </div>
-                <div class="card border-0 mt-5 d-lg-flex d-md-flex d-none" style="background-color:rgb(242, 242, 242);">
+                <div class="card border-0 py-5 d-lg-flex d-md-flex d-none" style="background-color:rgb(242, 242, 242);">
                     <div class="row">
                         {{ if .imageSide }}
                         <div class="col-md-7 d-flex align-items-center">
                             <div class="d-block me-5">
                                 <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-                                <p class="card-text"><b>{{ .text }}</b></p>        
+                                <p class="card-text">{{ .text }}</p>        
                             </div>                            
                         </div>
-                        <img class="col-md-5" src="{{ .imageCard }}" alt="test" width="392px" height="392px">
+                        <img class="col-md-5" src="{{ .imageCard }}" alt="test" width="auto">
                         {{ else }}
-                        <img class="col-md-5" src="{{ .imageCard }}" alt="{{ .name }}" width="392px" height="392px">
+                        <img class="col-md-5" src="{{ .imageCard }}" alt="{{ .name }}" width="auto">
                         <div class="col-md-7 d-flex align-items-center">
                             <div class="d-block ms-5">
                                 {{ if .isEts }}
                                 <div class="row">
-                                    <img class="col-8 mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-                                    <h3 class="col-4 mt-3"><b>{{ .nameEts }}</b></h3>
+                                    <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                    <h3 class="col-6 mt-3">{{ .nameEts }}</h3>
                                 </div>
                                 {{ else }}
-                                <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                <img class="mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
                                 {{ end }}
-                                <p class="card-text"><b>{{ .text }}</b></p>        
+                                <p class="card-text">{{ .text }}</p>        
                             </div>                            
                         </div>
                         {{ end }}
