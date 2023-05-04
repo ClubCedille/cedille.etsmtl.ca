@@ -885,7 +885,7 @@ header{
 
 .motivation .slider .slide-track{
     display: flex;
-    width: calc(250px*22);
+    width: calc(250px*20);
     animation: scroll 10s linear infinite;
 }
 
@@ -894,7 +894,7 @@ header{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-250px*11));
+        transform: translateX(calc(-250px*10));
     }
 }
 
@@ -1054,7 +1054,20 @@ header{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
 }
 
-/*---------------------- PROJECT PAGE SECTION ----------------*/
+/*---------------------- PARTNERSHIP PAGE -----------------*/
+/*---------------- PARTNERSHIP SECTION --------------*/
+.partenaires-section .btn {
+    border: 1px solid black !important;
+    border-radius: 0 !important;
+    transition: all 0.4s ease-in-out;
+}
+
+.partenaires-section .btn:hover {
+    color: rgba(255, 166, 0, 0.748);
+    background-color: black;
+}
+
+/*----------------------- PROJECT PAGE --------------------*/
 /*-------------- PROGRESS SECTION -----------------*/
 .progress-projects a{
     color: rgba(255, 166, 0, 0.748);

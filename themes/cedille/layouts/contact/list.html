@@ -1,11 +1,16 @@
 {{ define "main" }}
 {{ $address := .Site.Params.address }}
-<div class="contact">
-  <div class="figure w-100" >
+<div class="contact mt-5">
+  {{/*  <div class="figure w-100" >
     <section class="rectangle"></section>
     <section class="triangle text-center">
       <h2>{{ .Site.Params.titleContactPage }}</h2>
     </section>
+  </div>  */}}
+  <div class="container">
+    <div class="row">
+      <h2 style="border-bottom: solid 2px grey;"><b>Contact</b></h2>
+    </div>
   </div>
   <div class="container form-contact mt-4 mb-5 pb-4">
     {{ partial "formContact.html" . }}

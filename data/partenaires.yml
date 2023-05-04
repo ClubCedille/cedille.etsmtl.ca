@@ -1,0 +1,34 @@
+---
+enable: true
+title: "Partenaires"
+partnerLink:
+  title: "Help us blablabla"
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+  buttonContactLink: "Become a partner"
+  buttonFormulas: "See our partnership formulas"
+partnerships:
+  - name: "Banque Nationale"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+    logo: "/images/Partenaire/Banque_nationale_du_Canada_Logo.png"
+    imageCard: "/images/membres/evenement/3.png"
+    imageSide: "Right"
+    width: "210"
+  - name: "Arctiq"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+    logo: "/images/Partenaire/arctiq.svg"
+    imageCard: "/images/membres/evenement/3.png"
+    width: "240"
+  - name: "Sidero"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+    logo: "/images/Partenaire/Sidero/Sidero.png"
+    imageCard: "/images/membres/evenement/3.png"
+    imageSide: "Right"
+    width: "200"
+  - name: "École de Technologie Supérieure"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+    logo: "/images/Partenaire/Logo_ETS_SansTypo_FR.png"
+    imageCard: "/images/membres/evenement/3.png"
+    isEts: true
+    nameEts: "École de Technologie Supérieure"
+    width: "150"
+---

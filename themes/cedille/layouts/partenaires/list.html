@@ -1,0 +1,83 @@
+{{ define "main" }}
+    {{ with $.Site.Data.partenaires }}
+    {{ $pdf := resources.Get "/documents/Plan_de_partenariat_2022-2023_-_Club_CEDILLE_commandites-3.pdf"}}
+    <!-- Partnership section -->
+        <div class="partenaires-section my-5">
+            <div class="container">
+                <div class="row">
+                    <h2 style="border-bottom: solid 2px grey;"><b>{{ .title }}</b></h2>
+                </div>
+
+                <!-- Partnership card section -->
+                {{ range .partnerships }}
+                <div class="card mt-5 d-flex d-lg-none d-md-none" style="background-color:rgb(242, 242, 242);">
+                    <img src="{{ .imageCard }}" class="card-img-top" alt="{{ .name }}">
+                    <div class="card-body">
+                        <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                        <p class="card-text"><b>{{ .text }}</b></p>   
+                    </div>
+                </div>
+                <div class="card border-0 py-5 d-lg-flex d-md-flex d-none" style="background-color:rgb(242, 242, 242);">
+                    <div class="row">
+                        {{ if .imageSide }}
+                        <div class="col-md-7 d-flex align-items-center">
+                            <div class="d-block me-5">
+                                <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                <p class="card-text">{{ .text }}</p>        
+                            </div>                            
+                        </div>
+                        <img class="col-md-5" src="{{ .imageCard }}" alt="test" width="auto">
+                        {{ else }}
+                        <img class="col-md-5" src="{{ .imageCard }}" alt="{{ .name }}" width="auto">
+                        <div class="col-md-7 d-flex align-items-center">
+                            <div class="d-block ms-5">
+                                {{ if .isEts }}
+                                <div class="row">
+                                    <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                    <h3 class="col-6 mt-3">{{ .nameEts }}</h3>
+                                </div>
+                                {{ else }}
+                                <img class="mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                {{ end }}
+                                <p class="card-text">{{ .text }}</p>        
+                            </div>                            
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+                <!-- end partnership card section -->
+
+                <!-- Formulas link section -->
+                <div class="row m-5 text-center">
+                    <h4><b>{{ .partnerLink.title }}</b></h4>
+                    <div class="col mx-md-5">
+                        <div class="row">
+                            <div class="col mt-2 mx-md-5">
+                                <p>{{ .partnerLink.text }}</p>
+                            </div>
+                        </div>
+                        <div class="row mt-2 mx-md-5 px-md-5">
+                            <div class="col-12 col-md-6 text-md-end">
+                                <a class="btn py-2 px-4" href="/contact">
+                                    {{ .partnerLink.buttonContactLink }}
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 text-md-start">
+                                <div class="mt-2">
+                                    <a target="_blank" href="{{ $pdf.Permalink }}" style="text-decoration: none; color:black;">
+                                        {{ .partnerLink.buttonFormulas }}
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end formulas link section -->
+
+            </div>
+        </div>
+    <!-- end partnership section -->
+    {{ end }}
+{{ end }}

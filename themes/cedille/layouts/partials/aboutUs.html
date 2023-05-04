@@ -1,7 +1,7 @@
 {{ with .Site.Data.aboutUs }}
 {{ if .enable }}
-<div class="row">
-  <!-- Sidebar section -->
+<div class="row mt-4">
+  {{/*  <!-- Sidebar section -->
   <div class="sidebar col-2">
     <nav class="sticky-top text-end py-2">
       <h6 class="mb-2"><b>{{ .title }}</b></h6>
@@ -12,11 +12,9 @@
       </ul>
     </nav>
   </div>
-  <!-- end sidebar section -->
+  <!-- end sidebar section -->  */}}
 
   <!-- Aside section -->
-  <div class="aside col-10">
-    <div class="d-flex flex-column mx-4">
       {{ range .sections }}
       <div class="mb-4" id="{{ .title }}">
           <h3><b>{{ .subtitle }}</b></h3>
@@ -52,10 +50,7 @@
       </div>
       {{ end }}
     </div>
-    <div class="mx-4">
-      <a class="btn py-2 px-4" href="{{ .button.url }}">{{ .button.getInvolved }}</a>
-    </div>
-  </div>
+    <a class="btn py-2 px-4" href="{{ .button.url }}">{{ .button.getInvolved }}</a>
   <!-- end aside section -->
 </div>
 {{ end }}
