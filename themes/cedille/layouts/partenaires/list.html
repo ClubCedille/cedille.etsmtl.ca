@@ -7,16 +7,8 @@
                 <div class="row">
                     <h2 style="border-bottom: solid 2px grey;"><b>{{ .title }}</b></h2>
                 </div>
-
                 <!-- Partnership card section -->
                 {{ range .partnerships }}
-                <div class="card mt-5 d-flex d-lg-none d-md-none" style="background-color:rgb(242, 242, 242);">
-                    <img src="{{ .imageCard }}" class="card-img-top" alt="{{ .name }}">
-                    <div class="card-body">
-                        <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-                        <p class="card-text"><b>{{ .text }}</b></p>   
-                    </div>
-                </div>
                 <div class="card border-0 py-5 d-lg-flex d-md-flex d-none" style="background-color:rgb(242, 242, 242);">
                     <div class="row">
                         {{ if .imageSide }}
@@ -26,7 +18,7 @@
                                 <p class="card-text">{{ .text }}</p>        
                             </div>                            
                         </div>
-                        <img class="col-md-5" src="{{ .imageCard }}" alt="test" width="auto">
+                        <img class="col-md-5 " src="{{ .imageCard }}" alt="{{ .name }}" width="auto">
                         {{ else }}
                         <img class="col-md-5" src="{{ .imageCard }}" alt="{{ .name }}" width="auto">
                         <div class="col-md-7 d-flex align-items-center">

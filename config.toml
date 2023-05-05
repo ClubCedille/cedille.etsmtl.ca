@@ -12,7 +12,7 @@ theme = 'cedille'
         weight = 1 
     [[menu.main]]
         identifier = "equipe"
-        name = "Équipe"
+        name = "À propos"
         url = "/equipe/"
         weight = 2
     [[menu.main]]
@@ -69,7 +69,7 @@ theme = 'cedille'
     url = "/"
     weight = 1
     [[params.footer.menu]]
-    name = "Équipe"
+    name = "À propos"
     url = "/equipe/"
     weight = 2
     [[params.footer.menu]]
