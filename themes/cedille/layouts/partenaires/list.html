@@ -9,7 +9,16 @@
                 </div>
                 <!-- Partnership card section -->
                 {{ range .partnerships }}
-                <div class="card border-0 py-5 d-lg-flex d-md-flex d-none" style="background-color:rgb(242, 242, 242);">
+                <!-- version mobile -->
+                <div class="card mt-5 d-flex d-lg-none d-md-none" style="background-color:rgb(242, 242, 242);">
+                    <img src="{{ .imageCard }}" class="card-img-top" alt="{{ .name }}">
+                    <div class="card-body">
+                        <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                        <p class="card-text"><b>{{ .text }}</b></p>   
+                    </div>
+                </div>
+                <!-- end mobile version -->
+                <div class="card border-0 py-5 d-lg-flex d-md-flex d-none" style="background-color:rgb(242, 242, 242); ">
                     <div class="row">
                         {{ if .imageSide }}
                         <div class="col-md-7 d-flex align-items-center">
@@ -18,9 +27,9 @@
                                 <p class="card-text">{{ .text }}</p>        
                             </div>                            
                         </div>
-                        <img class="col-md-5 " src="{{ .imageCard }}" alt="{{ .name }}" width="auto">
+                        <img class="col-md-5 p-0" src="{{ .imageCard }}" alt="{{ .name }}" width="auto" style="box-shadow: 0px 10px 10px 0px black;">
                         {{ else }}
-                        <img class="col-md-5" src="{{ .imageCard }}" alt="{{ .name }}" width="auto">
+                        <img class="col-md-5 p-0" src="{{ .imageCard }}" alt="{{ .name }}" width="auto" style="box-shadow: 0px 10px 10px 0px black;">
                         <div class="col-md-7 d-flex align-items-center">
                             <div class="d-block ms-5">
                                 {{ if .isEts }}
