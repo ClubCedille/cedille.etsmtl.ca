@@ -1,8 +1,5 @@
 ---
 enable: true
-intro:
-  title: "Introducing Cedille"
-  text: "A home for all aspiring software & IT engineers thirsting for more knowledge."
 practice:
   title: "Practice makes perfect"
   subtitle: "opportunities in all fields"
