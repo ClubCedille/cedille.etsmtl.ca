@@ -1,31 +1,24 @@
 ---
 enable: true
-intro:
-  title: "Introducing Cedille"
-  text: "A home for all aspiring software & IT engineers thirsting for more knowledge."
 practice:
-  title: "Practice makes perfect"
-  subtitle: "opportunities in all fields"
-  summary: "Are you learning if you are not doing something with all that knowledge you get at school? No, you are not. Fear not thought, here are some of the areas where you can hope to start getting things done at Cédille."
-  url: "/projets"
+  title: "Préparez-vous pour l'Industrie"
+  subtitle: "Mettez en pratique vos connaissances théoriques"
+  summary: "Chez Cédille, nous croyons en l'importance d'outiller les étudiants pour exceller dans l'industrie du logiciel et de l'ingénierie informatique. Nous proposons une expérience pratique, cultivons un esprit fort et créons un impact positif sur la communauté. Nous comprenons l'importance de l'expérience réelle et notre club se consacre à combler le fossé entre l'apprentissage en classe et les exigences de l'industrie."
   content:
-    - title: "Web development"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
-    - title: "Software Development"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
-    - title: "CI/CD"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    - title: "Développement Web"
+      description: "Acquérez une expérience pratique avec les dernières technologies et outils de développement web et apprenez à créer des sites web rapides, réactifs et conviviaux. Nous couvrons tout, du développement front-end au back-end et full-stack."
+    - title: "Développement de logiciels"
+      description: "Développez des compétences essentielles pour concevoir, construire, tester et déployer des logiciels de haute qualité. Notre club offre des opportunités pour apprendre et appliquer les meilleures pratiques dans divers langages de programmation."
+    - title: "DevOps"
+      description: "Maîtrisez les principes de DevOps pour rationaliser le développement de logiciels, le déploiement et les opérations. Apprenez à automatiser les processus et à améliorer la collaboration en utilisant des outils et des pratiques de pointe."
     - title: "SRE"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
-  learnMore: "Learn more about the kind of things you could be doing with us"
+      description: "Découvrez les principes de l'ingénierie de fiabilité du site (SRE) et apprenez à construire des systèmes hautement disponibles et tolérants aux pannes. Notre club offre des opportunités pour explorer la surveillance, la journalisation et la planification de capacité."
 mindset: 
-  title: "Mindset matters"
-  subtitle: "Amazing values"
-  summary: "Being a good engineer isn't only about being good at writing code. At Cédille, we are convinced that working on our mindset is as important. Here are some of the paradigms you might learn to appreciate if you join us:"
-  url: "/equipe"
+  title: "Cultiver des Valeurs Fondamentales"
+  subtitle: "Plus qu'un Code, C'est une Question de Mentalité"
+  summary: "Chez Cédille, nous formons des ingénieurs avec plus que du code. Plongez dans DevOps et les méthodologies Agile, embrassez le pouvoir des logiciels open-source, et cultivez des valeurs essentielles dans le paysage technologique en évolution."
   list:
     - paradigm: "DevOps"
-    - paradigm: "Agile software development"
+    - paradigm: "Développement logicielle Agile"
     - paradigm: "Open Source" 
-  learnMore: "Learn more about the core values we try to cultivate"
 ---
