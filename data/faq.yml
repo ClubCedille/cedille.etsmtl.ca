@@ -13,7 +13,7 @@ accordion:
     idParent: "accordionFaq"
     target: "flush-collapseOne"
     question: "Je n'ai pas beaucoup de temps. Quel type de responsabilités/charge de travail puis-je attendre en tant que membre ?"
-    response: "Nous comprenons que tu puisses avoir un emploi du temps chargé. Chez nous, nous accueillons tous les membres, peu importe le temps qu'ils peuvent consacrer. Nous valorisons ta participation et nous adaptons aux disponibilités de chacun afin que tu puisses contribuer selon tes possibilités et trouver un équilibre entre tes engagements."
+    response: "Nous comprenons que tu puisses avoir un emploi du temps chargé. C'est pourquoi, nous accueillons tous les membres, peu importe le temps qu'ils peuvent consacrer. Nous valorisons ta participation et nous nous adaptons autant que possible aux disponibilités de chacun afin que tu puisses contribuer selon tes possibilités et trouver un équilibre entre tes engagements."
   - idHeader: "flush-headingTwo"
     idParent: "accordionFaq"
     target: "flush-collapseTwo"
