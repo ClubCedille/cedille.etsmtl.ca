@@ -15,7 +15,7 @@ practice:
       description: "Découvrez les principes de l'ingénierie de fiabilité du site (SRE) et apprenez à construire des systèmes hautement disponibles et tolérants aux pannes. Notre club offre des opportunités pour explorer la surveillance, la journalisation et la planification de capacité."
 mindset: 
   title: "Cultiver des Valeurs Fondamentales"
-  subtitle: "Plus qu'un Code, C'est une Question de Mentalité"
+  subtitle: "Plus que du Code, C'est une Question de Mentalité"
   summary: "Chez Cédille, nous formons des ingénieurs avec plus que du code. Plongez dans DevOps et les méthodologies Agile, embrassez le pouvoir des logiciels open-source, et cultivez des valeurs essentielles dans le paysage technologique en évolution."
   list:
     - paradigm: "DevOps"
