@@ -26,12 +26,16 @@ contributors:
 - vyacheslav31
 - dkahn-ets
 description: Site web du club CEDILLE
+forks: 0
 languages:
-- HTML
-- CSS
-- JavaScript
-- Makefile
-- Dockerfile
-- Nix
+  CSS: 0.2662899188348631
+  Dockerfile: 0.0017825988014867633
+  HTML: 0.6821284988242433
+  JavaScript: 0.04221345672456952
+  Makefile: 0.0059419960049558775
+  Nix: 0.0016435308098814128
 name: cedille.etsmtl.ca
-stars: 1
+open_issues: 0
+owner: ClubCedille
+pulls: 1
+stargazers_count: 1
