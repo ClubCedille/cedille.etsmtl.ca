@@ -6,6 +6,8 @@ on:
     branches:
       - master
   push:
+    branches:
+      - master
     tags:
       - 'v*.*.*'
 
@@ -98,7 +100,7 @@ jobs:
 
       - name: Get Tag Version
         id: tag
-        run: "echo ::set-output name=version::${GITHUB_REF#refs/*/}"
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
 
       - name: Cache Docker layers
         uses: actions/cache@v3
@@ -107,12 +109,19 @@ jobs:
           key: ${{ runner.os }}-buildx-${{ github.sha }}
           restore-keys: ${{ runner.os }}-buildx
 
+      - name: Get Tag Version
+        id: tag2
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/v}
+          echo "Version to be used: $VERSION"
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./Dockerfile.prod
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_REPOSITORY }}:${{ steps.tag.outputs.version }}
           cache-from: type=local,src=/tmp/.buildx-cache
