@@ -1,10 +1,6 @@
 name: Docker
 
 on:
-  pull_request:
-    types: [closed]
-    branches:
-      - master
   push:
     branches:
       - master
@@ -13,8 +9,8 @@ on:
 
 jobs:
   build-and-tag-on-merge:
-    if: github.event.pull_request.merged == 'true'
-    environment: deployment
+    if: github.ref == 'refs/heads/master'
+    environment : deployment
     runs-on: ubuntu-latest
     steps:
       - name: Check Out Repo
@@ -30,19 +26,20 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
-      - name: Get Latest Tag Version
-        id: latest_tag
-        run: |
-          LATEST_TAG=$(git describe --tags --abbrev=0)
-          echo ::set-output name=latest_tag::$LATEST_TAG
-
+      - uses: oprypin/find-latest-tag@v1
+        with:
+          repository: ${{ github.repository }}
+          releases-only: true  
+        id: octokit  
+          
       - name: Increment Version
         id: new_tag
         run: |
-          LATEST_TAG=${{ steps.latest_tag.outputs.latest_tag }}
-          NEW_TAG=$(echo $LATEST_TAG | awk -F. '{$NF = $NF + 1;} 1' OFS=.)
-          echo ::set-output name=new_tag::${NEW_TAG}
-
+          LATEST_TAG=${{ steps.octokit.outputs.tag }}
+          VERSION=$(echo $LATEST_TAG | awk -F. -v OFS=. '{$NF++;print}')
+          echo "NEW_TAG=${VERSION}" >> $GITHUB_ENV
+          echo "New tag: ${VERSION}"
+          
       - name: Set Git Config
         run: |
           git config --global user.name "github-actions"
@@ -50,8 +47,8 @@ jobs:
   
       - name: Create and Push Git Tag
         run: |
-          git tag ${{ steps.new_tag.outputs.new_tag }}
-          git push origin ${{ steps.new_tag.outputs.new_tag }}
+          git tag ${{ env.NEW_TAG }}
+          git push origin ${{ env.NEW_TAG }}
 
       - name: Cache Docker layers
         uses: actions/cache@v3
@@ -65,11 +62,11 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./Dockerfile.prod
+          file: ./Dockerfile
           push: true
           tags: |
             ${{ secrets.DOCKER_HUB_REPOSITORY }}:latest
-            ${{ secrets.DOCKER_HUB_REPOSITORY }}:${{ steps.new_tag.outputs.new_tag }}
+            ${{ secrets.DOCKER_HUB_REPOSITORY }}:${{ env.NEW_TAG }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,mode=max,dest=/tmp/.buildx-cache-new
 
@@ -82,7 +79,8 @@ jobs:
         run: echo ${{ steps.docker_build.outputs.digest }}
 
   build-on-release:
-    if: github.event_name == 'push'
+    if: startsWith(github.ref, 'refs/tags/')
+    environment : deployment
     runs-on: ubuntu-latest
     steps:
       - name: Check Out Repo
@@ -123,7 +121,9 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_REPOSITORY }}:${{ steps.tag.outputs.version }}
+          tags: |
+            ${{ secrets.DOCKER_HUB_REPOSITORY }}:${{ env.VERSION }}
+            ${{ secrets.DOCKER_HUB_REPOSITORY }}:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,mode=max,dest=/tmp/.buildx-cache-new
 
