@@ -1,5 +1,8 @@
 {{ with .Site.Data.aboutUs }}
 {{ if .enable }}
+<div class="row">
+  <h2 style="border-bottom: solid 2px grey;"><b>{{ .title }}</b></h2>
+</div>
 <div class="row mt-4">
   {{/*  <!-- Sidebar section -->
   <div class="sidebar col-2">
@@ -17,7 +20,7 @@
   <!-- Aside section -->
       {{ range .sections }}
       <div class="mb-4" id="{{ .title }}">
-          <h3><b>{{ .subtitle }}</b></h3>
+          <h2><b>{{ .subtitle }}</b></h2>
           {{ .text | safeHTML }}
           {{ if .descriptionAreas }}
             <div class="card" style="background-color: #FFB76B;">

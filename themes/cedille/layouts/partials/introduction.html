@@ -1,16 +1,5 @@
 {{with .Site.Data.introduction }}
 {{ if .enable }}
-<!-- Introduction section -->
-<div class="info">
-    <div class="container py-5">
-        <div class="row py-3 text-center">
-            <h3><b>{{ .intro.title }}</b></h3>
-            <p>{{ .intro.text }}</p>
-        </div>
-    </div>
-</div>
-<!-- end intro section -->
-
 <!-- Practice section -->
 <div class="practice">
     <div class="container text-center py-5">
@@ -34,11 +23,6 @@
             </div>
             {{ end }}
         </div>
-        <div class="text-lg-start text-md-start mt-5 mb-2">
-            <a href="{{ .practice.url | absURL }}">
-                {{ .practice.learnMore }} <i class="fa-solid fa-chevron-right"></i>
-            </a>
-        </div>
     </div>
 </div>
 <!--end practice section -->
@@ -59,11 +43,6 @@
                         <li class="mb-2"><i class="fa-solid fa-cube fa-xs pe-2"></i> {{ .paradigm }}</li>
                         {{ end }}
                     </ul>
-                    <div class="mt-4">
-                        <a href="{{ .mindset.url | absURL }}">
-                            {{ .mindset.learnMore }} <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>

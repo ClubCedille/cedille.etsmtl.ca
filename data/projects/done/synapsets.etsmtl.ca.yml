@@ -1,0 +1,22 @@
+commits: 188
+contributors:
+- SonOfLope
+- EdvinHonda
+- ClubSynapsETS
+- Jackdamiel
+- renovate[bot]
+- Maerakk
+description: Site web du club SynapsÉTS
+forks: 0
+languages:
+  CSS: 0.008020868315617654
+  Dockerfile: 0.00037227658848858306
+  HTML: 0.060079714049926715
+  JavaScript: 0.037105302207886534
+  Makefile: 0.0005388898868331237
+  SCSS: 0.8938829489512474
+name: synapsets.etsmtl.ca
+open_issues: 1
+owner: ClubCedille
+pulls: 3
+stargazers_count: 2

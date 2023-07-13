@@ -1,48 +1,35 @@
 ---
 enable: true
-title: "About us"
+title: "À propos"
 button:
-  getInvolved: "Get Involved"
+  getInvolved: "Rejoindre l'équipe"
   url: "/contact"
 sections:
   - title: "Cedille's vision"
-    subtitle: "Empowering Students to Excel In The Industry"
-    text: "<p>At Cédille, we believe that learning should never stop. As software and IT engineers, we understand that the industry is constantly evolving and that the skills and knowledge we gain in the classroom may not always be enough to secure our dream job or keep up with the latest developments. The truth is there is no denying that real-world experience is key for students to excel in their chosen fields.</p> 
-           <p>That's why we exist - to bridge the gap between what we learn in school and the real-world skills and experience we need to excel in the industry. Our mission is to provide opportunities for students to practice and perfect their skills, develop a strong mindset and values, and make a difference through various projects that contribute to the community. </p>"
+    subtitle: "Faire le pont entre l'éducation et l'industrie"
+    text: "<p>Chez Cédille, nous croyons en l'autonomisation des étudiants pour qu'ils excellent au-delà de la salle de classe, en nourrissant leur passion pour l'ingénierie logicielle et informatique et en les aidant à avoir un impact positif sur la communauté. Nous comprenons que l'industrie technologique en rapide évolution exige plus que de simples connaissances théoriques; elle demande de l'expérience pratique, de l'adaptabilité et un solide système de valeurs.</p>"
   - title: "Our Approach"
-    subtitle: "Supporting Student Success Beyond The Classroom"
-    text: "<p>We understand that learning doesn't stop in the classroom. Thus, we aim to provide a wide range of opportunities for students to practice and perfect their skills in software and IT engineering. Whether it's through working on projects, participating in hackathons, or attending workshops, our club provides hands-on experience that helps students develop the skills they need to excel in the industry.</p>
-           <p>We believe that developing a strong mindset and values is just as important as technical skills. That's why we provide mentoring and guidance through industry professionals, as well as exposing students to the latest practices and trends. Our goal is to help students not only become better engineers but also become better individuals.</p>
-           <p>Our club is also about making a difference. Through the projects we work on, we actively try to help clubs and organisations around us. At the end of the day it's not just about personal growth, we believe that by making a difference, we can motivate students to not only achieve their career goals but also leave a positive impact on the community.</p>"
+    subtitle: "Une communauté d'apprentissage pour les étudiants par les étudiants"
+    text: "<p>Pour accomplir notre mission, nous travaillons fort pour créer un environnement de soutien où les étudiants peuvent pratiquer et perfectionner leurs compétences, développer une mentalité solide et apprendre auprès de professionnels de l'industrie. Grâce à divers projets, ateliers et événements, nous visons à exposer les étudiants aux dernières pratiques et tendances dans les domaines de l'ingénierie logicielle et informatique.</p><h4><b>Projets avec un but</b></h4><p>Chez Cédille, nous croyons que le travail que nous faisons doit avoir un impact significatif. Nous collaborons sur des projets qui contribuent non seulement à la croissance personnelle des étudiants, mais aussi à améliorer la vie des autres. En travaillant ensemble sur des projets qui comptent, nous favorisons un esprit de camaraderie et un engagement à créer un monde meilleur.</p><h4><b>Mentorat et accompagnement</b></h4><p>Nous reconnaissons que le chemin vers le succès peut être difficile, et c'est pourquoi nous offrons du mentorat et des conseils de professionnels de l'industrie. En mettant les étudiants en relation avec des ingénieurs expérimentés, nous facilitons l'échange de connaissances, d'expériences et de perspicacité qui aident les étudiants à devenir de meilleurs ingénieurs et individus.</p>"
   - title: "Areas of Expertise"
-    subtitle: "Our Main Focus Areas"
-    text: "<p>As mentioned earlier we provide opportunities for students to practice and perfect their skills in various fields of software and IT engineering. Concretely, here are some of the areas where you can hope to start getting things done at Cédille:</p>"
+    subtitle: "Diverses opportunités de croissance et de développement"
+    text: "<p>Cédille propose un large éventail d'opportunités pour les étudiants de développer leurs compétences dans divers domaines de l'ingénierie logicielle et informatique. Nos domaines d'activité comprennent :</p>"
     descriptionAreas: 
-      - title: "Web development"
+      - title: "Développement Web"
         name: "web"
         active: "active"
         showActive: "show active"
-        text: "<p>The web development field encompasses a wide range of areas, from design and UI/UX to front-end and back-end development, as well as content management. We provide opportunities for students to gain hands-on experience in all of these areas.</p>
-               <p>If web development is a field you are interested in, expect to be using tools such as <b>Figma</b> for design and UI/UX, <b>Bootstrap</b> and <b>React</b> for front-end development, and <b>WordPress</b> and <b>Ghost</b> for content management. </p>
-               <p>Our projects also involve using back-end technologies such as <b>Hugo</b>, <b>Python</b>, and <b>Go</b> to create dynamic and responsive web applications.</p>"
-      - title: "Software development"
+        text: "<p>Nous offrons une expérience pratique dans divers aspects du développement web, notamment le design, l'UI/UX, le développement front-end et back-end. Les étudiants travailleront avec des outils tels que Figma pour la création de designs conviviaux, <b>Hugo</b>, <b>Bootstrap</b> et <b>React</b> pour développer des interfaces utilisateur réactives et interactives, et <b>WordPress</b> et <b>Ghost</b> pour gérer efficacement le contenu. Nos projets intègrent également des technologies back-end telles que <b>Python</b> et <b>Go</b> pour créer des applications web dynamiques et performantes.</p>"
+      - title: "Développement logiciel"
         name: "software"
-        text: "<p>Our software development projects are designed to give students a chance to work with a variety of languages and tools.</p>
-               <p>From <b>Python</b> to <b>Go</b> and <b>Rust</b>, we use a wide range of technologies to tackle different types of projects. We also place a strong emphasis on containerization and use technologies like <b>Docker</b> to develop efficient and scalable solutions.</p>"
+        text: "<p>Nos projets de développement logiciel permettent aux étudiants de travailler avec une variété de langages de programmation et d'outils. <b>Python</b>, <b>Go</b> et <b>Rust</b> sont utilisés pour développer des solutions adaptées aux différents types de projets. Nous mettons également l'accent sur la conteneurisation avec <b>Docker</b>, qui permet de créer des applications isolées et facilement déployables, garantissant ainsi des solutions efficaces et évolutives.</p>"
       - title: "DevOps"
         name: "devops"
-        text: "<p>We specialize in DevOps, a methodology that aims to streamline the software development process through automation and collaboration. We are focused on developing and implementing several Continuous Integration/Continuous Deployment (CI/CD) projects that automate the build, test, and deployment processes, while ensuring high-quality code using <b>CircleCI</b>, <b>Github Actions</b>, and <b>ArgoCD</b>.</p>
-               <p>We also use <b>Terraform</b>, an infrastructure-as-code (IAC) tool, to automate the management of our Infrastructure-as-a-Service (IaaS). This allows us to quickly and efficiently provision and manage our infrastructure resources, such as virtual machines, storage, and networking, with greater consistency and scalability.</p>
-               <p>Furthermore, we utilize <b>Kubernetes</b>, a container orchestration platform, to simplify the deployment, scaling, and management of containerized applications. By leveraging Kubernetes, we can ensure that our applications are highly available, scalable, and reliable.</p>
-               <p>By joining our team, you'll have the opportunity to work with cutting-edge tools like CircleCI, Github Actions, and ArgoCD, while gaining valuable experience in the DevOps field. So, whether you're an experienced DevOps professional or just starting out, we welcome you to join our team and be part of a community dedicated to pushing the boundaries of DevOps.</p>"
+        text: "<p>Cédille se spécialise dans le <b>DevOps</b>, une méthodologie qui vise à rationaliser le processus de développement logiciel grâce à l'automatisation et la collaboration. Les étudiants travailleront avec des outils de pointe tels que <b>CircleCI</b> et <b>Github Actions</b> pour automatiser les processus de construction, de test et de déploiement, <b>ArgoCD</b> pour gérer les déploiements dans des environnements <b>Kubernetes</b> et <b>Terraform</b> pour automatiser la gestion des ressources d'infrastructure. Ces technologies permettent une meilleure intégration entre les équipes de développement et d'exploitation, accélérant ainsi la livraison de logiciels de qualité.</p>"
       - title: "SRE"
         name: "sre"
-        text: "<p>Our SRE projects focus on creating a highly reliable and scalable environment for the infrastructure that powers our applications and services. We use a variety of tools to achieve this, such as <b>Prometheus</b> for storing metrics and <b>Grafana</b> for visualizing them. By using these tools, we can provide monitoring and alerting of our cloud-native environments, helping us to identify and resolve issues quickly.
-</p>
-               <p>We also make use of <b>Groundcover</b>, which leverages eBPF to provide a better observability platform of Kubernetes. This tool allows us to monitor network traffic, system calls, and other kernel-level events in real-time, giving us greater insight into the performance of our Kubernetes cluster.</p>
-               <p>Whether you're interested in working with tools like Prometheus, Grafana and Groundcover or simply learning about monitoring and scaling systems,
-we have a place for you on our team.</p>"
+        text: "<p>En tant que <b>SRE</b> au sein du club, nos membres visent à créer une infrastructure fiable et évolutive pour nos applications et services. Les étudiants utiliseront des outils tels que <b>Prometheus</b> pour collecter des métriques, <b>Grafana</b> pour les visualiser et <b>Groundcover</b> pour améliorer la surveillance des clusters Kubernetes. Ces outils permettent une meilleure compréhension des performances et de la fiabilité de nos systèmes, contribuant ainsi à garantir la disponibilité et la scalabilité des applications que nous développons.</p>"
   - title: "Get involved"
-    subtitle: "Embark On Your Path To Success"
-    text: "<p>If our vision resonates with you and you're passionate about software and IT engineering, we invite you to join the community. By becoming a member, you'll have the opportunity to grow, learn, and make a difference alongside like-minded individuals. It all starts with a click of a button.</p>"
+    subtitle: "Rejoignez la communauté Cédille"
+    text: "<p>Si vous partagez notre passion pour l'ingénierie logicielle et informatique et souhaitez avoir un impact positif sur la communauté, nous vous invitons à rejoindre Cédille. En devenant membre, vous aurez l'occasion de grandir, d'apprendre et de collaborer avec des personnes partageant les mêmes idées sur votre chemin vers le succès. Embarquez dans ce voyage avec nous - votre avenir vous attend.</p>"
 ---

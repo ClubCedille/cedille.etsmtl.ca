@@ -1,22 +1,22 @@
 ---
 enable: true
 contribute: 
-  title: "Contribute what you can, when you can"
-  subtitle: "A club, not a job"
-  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+  title: "Complément à vos études"
+  subtitle: "Un environnement d'apprentissage flexible et solidaire"
+  summary: "Notre club est conçu comme un complément à vos études, offrant un espace flexible et ouvert d'esprit où vous pouvez apprendre, réseauter et développer de nouvelles compétences sans vous sentir débordé."
 mentoring:
-  title: "Together we go far"
-  subtitle: "Peer mentoring"
-  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+  title: "Ensemble, nous allons loin"
+  subtitle: "Apprendre et grandir en tant que communauté"
+  summary: "Cédille est un environnement solidaire et inclusif où les membres de tous les niveaux de compétence peuvent partager leurs connaissances et s'aider mutuellement à apprendre. Notre communauté dynamique favorise l'épanouissement professionnel et encourage l'échange d'idées novatrices, permettant à chacun de se développer et d'atteindre de nouveaux sommets."
 network:
-  title: "Didn't they say good things come in threes ?"
-  subtitle: "Networking opportunities"
-  summary: "Two of our members managed to find career opportunities during social events of ours. That’s why we make a point to keep spinning out more of those throughout the year. That and they happen to be amazing tools to help facilitate knowledge transfer. That said, finding career opportunities through fateful encounters is a rare thing. But... all we are saying is if it happened twice who’s to say you won’t be the third."
+  title: "Connectez, Apprenez, Réussissez"
+  subtitle: "Le pouvoir du réseautage"
+  summary: "Chez Cédille, nos membres bénéficient d'une expérience de réseautage enrichissante et fluide grâce à notre variété d'événements sociaux captivants, tels que des ateliers, conférences et rencontres de réseautage animés par des experts chevronnés de l'industrie. Ils élargissent leur réseau professionnel, découvrent des perspectives uniques et restent à jour avec les tendances du secteur. Parfois, il arrive même que nous facilitions des opportunités de carrière exceptionnelles pour un développement professionnel optimal."
   members:
-    - name: "Name Surname"
-      image: "images/membres/anonyme.jpg"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero."
-    - name: "Name Surname"
-      image: "images/membres/anonyme.jpg"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero."
+    # - name: "Thomas Cardin"
+    #   image: "images/membres/tcardin.jpg"
+    #   text: "L'expérience que j'ai acquise en intégrant le Club CEDILLE a eu un impact significatif sur ma trajectoire professionnelle. Grâce à leur expertise en DevOps et à une panoplie d'activités pratiques, j'ai pu décrocher un stage en tant qu'ingénieur de fiabilité du site (SRE). Je recommande fortement le Club pour toute personne désireuse de transformer son apprentissage en opportunités concrètes."
+    # - name: "Simon Boyer"
+    #   image: "images/membres/simon-boyer.jpg"
+    #   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero."
 ---

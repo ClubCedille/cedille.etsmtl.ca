@@ -20,7 +20,7 @@
               </button>
             </h2>
             <div id="{{ .target }}" class="accordion-collapse collapse" aria-labelledby="{{ .idHeader }}" data-bs-parent="#{{ .idParent }}">
-              <div class="accordion-body">{{ .response }}</div>
+              <div class="accordion-body">{{ .response | safeHTML }}</div>
             </div>
           </div>
           {{ end }}

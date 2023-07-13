@@ -19,15 +19,21 @@
                                 </div>
                             </div>
                             <p class="mb-2">{{ .description }}</p>
+                            {{if .languages}}
                             <p>Languages: 
-                                {{ $length := sub (.languages | len) 1 }}
-                                {{ range $index, $language := .languages }}{{$language}}{{ if not (eq $index $length) }}, {{ end }}{{end}}
+                                {{ $.Scratch.Set "languages" slice }}
+                                {{ range $language, $ratio := .languages }}
+                                    {{ $.Scratch.Add "languages" $language }}
+                                {{ end }}
+                                {{ $languages := $.Scratch.Get "languages" }}
+                                {{ delimit $languages ", " }}
                             </p>
+                            {{end}}
                         </div>
                         <div class="card-footer">
                             <ul class="list-unstyled list-inline">
                                 <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
-                                <li class="list-inline-item"><b>{{ .stars }}</b> étoiles</li>
+                                <li class="list-inline-item"><b>{{ .stargazers_count }}</b> étoiles</li>
                                 <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
                             </ul>
                         </div>
@@ -63,14 +69,18 @@
                                 </div>
                                 <p class="mb-2">{{ .description }}</p>
                                 <p>Languages: 
-                                    {{ $length := sub (.languages | len) 1 }}
-                                    {{ range $index, $language := .languages }}{{$language}}{{ if not (eq $index $length) }}, {{ end }}{{end}}
+                                    {{ $.Scratch.Set "languages" slice }}
+                                    {{ range $language, $ratio := .languages }}
+                                        {{ $.Scratch.Add "languages" $language }}
+                                    {{ end }}
+                                    {{ $languages := $.Scratch.Get "languages" }}
+                                    {{ delimit $languages ", " }}
                                 </p>
                             </div>
                             <div class="card-footer">
                                 <ul class="list-unstyled list-inline">
                                     <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
-                                    <li class="list-inline-item"><b>{{ .stars }}</b> étoiles</li>
+                                    <li class="list-inline-item"><b>{{ .stargazers_count }}</b> étoiles</li>
                                     <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
                                 </ul>
                             </div>
@@ -96,14 +106,18 @@
                                 </div>
                                 <p class="mb-2">{{ .description }}</p>
                                 <p>Languages: 
-                                    {{ $length := sub (.languages | len) 1 }}
-                                    {{ range $index, $language := .languages }}{{$language}}{{ if not (eq $index $length) }}, {{ end }}{{end}}
+                                    {{ $.Scratch.Set "languages" slice }}
+                                    {{ range $language, $ratio := .languages }}
+                                        {{ $.Scratch.Add "languages" $language }}
+                                    {{ end }}
+                                    {{ $languages := $.Scratch.Get "languages" }}
+                                    {{ delimit $languages ", " }}
                                 </p>
                             </div>
                             <div class="card-footer">
                                 <ul class="list-unstyled list-inline">
                                     <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
-                                    <li class="list-inline-item"><b>{{ .stars }}</b> étoiles</li>
+                                    <li class="list-inline-item"><b>{{ .stargazers_count }}</b> étoiles</li>
                                     <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
                                 </ul>
                             </div>
