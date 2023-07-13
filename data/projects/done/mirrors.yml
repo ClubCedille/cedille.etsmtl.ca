@@ -13,12 +13,8 @@ contributors:
 - Perceval62
 - rodriguemouche
 description: Scripts to clone various mirrors for Cedille
-forks: 5
 languages:
-  HTML: 0.453421368547419
-  Shell: 0.546578631452581
+- Shell
+- HTML
 name: mirrors
-open_issues: 7
-owner: ClubCedille
-pulls: 0
-stargazers_count: 1
+stars: 1

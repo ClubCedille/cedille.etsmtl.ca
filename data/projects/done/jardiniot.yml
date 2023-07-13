@@ -12,17 +12,13 @@ contributors:
 - mikefaille
 - ygotame
 description: Système pour des buckets autonomes servant à faire pousser des plantes
-forks: 11
 languages:
-  C++: 0.3698339780121898
-  CSS: 0.06946861417413752
-  Dockerfile: 0.01067225296703478
-  HTML: 0.004866019513562999
-  JavaScript: 0.14787750826810941
-  Python: 0.35918646751725786
-  Shell: 0.03809515954770761
+- C++
+- Python
+- JavaScript
+- CSS
+- Shell
+- Dockerfile
+- HTML
 name: jardiniot
-open_issues: 18
-owner: ClubCedille
-pulls: 0
-stargazers_count: 13
+stars: 13

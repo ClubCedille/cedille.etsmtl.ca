@@ -1,11 +1,7 @@
-commits: 1
+commits: 2
 contributors:
 - SonOfLope
 description: Nouvelle infra du club Cédille
-forks: 0
-languages: {}
-name: InfraCedille
-open_issues: 0
-owner: ClubCedille
-pulls: 0
-stargazers_count: 0
+languages: []
+name: Plateforme-Cedille
+stars: 3

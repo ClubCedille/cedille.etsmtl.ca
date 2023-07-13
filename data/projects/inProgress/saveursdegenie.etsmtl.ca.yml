@@ -1,15 +1,12 @@
-commits: 3
+commits: 10
 contributors:
+- EdvinHonda
 - SonOfLope
 description: null
-forks: 0
 languages:
-  CSS: 0.03254591161175184
-  HTML: 0.7541086746149017
-  JavaScript: 0.13454384459546517
-  SCSS: 0.07880156917788128
+- HTML
+- JavaScript
+- SCSS
+- CSS
 name: saveursdegenie.etsmtl.ca
-open_issues: 0
-owner: ClubCedille
-pulls: 1
-stargazers_count: 0
+stars: 0

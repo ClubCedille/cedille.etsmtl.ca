@@ -8,14 +8,10 @@ contributors:
 - notarock
 - SonOfLope
 description: 'Site web du club étudiant canoë de béton de l''ÉTS '
-forks: 9
 languages:
-  Dockerfile: 0.0055354020031506985
-  HTML: 0.5651168504574294
-  JavaScript: 0.16698703588617017
-  SCSS: 0.2623607116532497
+- HTML
+- SCSS
+- JavaScript
+- Dockerfile
 name: canoe-beton
-open_issues: 13
-owner: ClubCedille
-pulls: 7
-stargazers_count: 0
+stars: 0
