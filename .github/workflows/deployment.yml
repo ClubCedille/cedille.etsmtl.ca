@@ -7,8 +7,8 @@ on:
     tags:
       - 'v*.*.*'
     paths-ignore: 
-      - ./data/projets/done
-      - ./data/projets/inProgress
+      - data/projets/done/**
+      - data/projets/inProgress/**
 
 jobs:     
   build-and-tag-on-merge:
