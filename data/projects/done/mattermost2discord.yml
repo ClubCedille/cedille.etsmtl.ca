@@ -6,10 +6,14 @@ contributors:
 - notarock
 - dependabot[bot]
 description: Forward messages from Mattermost to Discord.
+forks: 0
 languages:
-- Go
-- Dockerfile
-- Makefile
-- Shell
+  Dockerfile: 0.05043975043223333
+  Go: 0.9136285048485304
+  Makefile: 0.030820115763361647
+  Shell: 0.005111628955874615
 name: mattermost2discord
-stars: 4
+open_issues: 3
+owner: ClubCedille
+pulls: 4
+stargazers_count: 4
