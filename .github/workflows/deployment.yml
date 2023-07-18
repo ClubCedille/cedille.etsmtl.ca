@@ -6,13 +6,10 @@ on:
       - master
     tags:
       - 'v*.*.*'
-    paths-ignore: 
-      - data/projects/done/**
-      - data/projects/inProgress/**
 
 jobs:     
   build-and-tag-on-merge:
-    if: github.ref == 'refs/heads/master'
+    if: ${{ github.ref == 'refs/heads/master' && github.event.head_commit.committer.name != 'svc-cedille-user' }}
     environment : deployment
     runs-on: ubuntu-latest
     steps:
@@ -82,7 +79,7 @@ jobs:
         run: echo ${{ steps.docker_build.outputs.digest }}
 
   build-on-release:
-    if: startsWith(github.ref, 'refs/tags/')
+    if: ${{ startsWith(github.ref, 'refs/tags/') && github.event.head_commit.committer.name != 'svc-cedille-user' }}
     environment : deployment
     runs-on: ubuntu-latest
     steps:
