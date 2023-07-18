@@ -7,6 +7,7 @@ on:
 jobs:
   fetchProjects:
     name: Update projects information
+    if: ${{ github.event.head_commit.committer.name != 'svc-cedille-user' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
