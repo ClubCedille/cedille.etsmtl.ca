@@ -102,4 +102,6 @@ baseURL = 'https://cedille.etsmtl.ca'
     url = "https://www.linkedin.com/company/cedille/about/"
     weight = 4
 
+    [[params.formEndpoint]]
+    link = "https://formspree.io/f/mbjvlgqb"
 

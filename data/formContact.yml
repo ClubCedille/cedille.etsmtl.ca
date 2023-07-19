@@ -2,7 +2,7 @@
 enable: true
 navTabsTitle:
   membershipRequest: "Demande d'adhésion"
-  collaborationRequest: "Demande de collaboration"
+  # collaborationRequest: "Demande de collaboration"
   informationRequest: "Demande d'information"
 navMember:
   name: "Nom:"
@@ -38,16 +38,16 @@ navMember:
       choice: "Génie de la production automatisée"
     - value: "8"
       choice: "Autre"
-navCollab:
-  name: "Nom:"
-  email: "Courriel:"
-  website: "Site web:"
-  projectToPropose: "Projet à proposer:"
-  club: "Club:"
-  selectedClub: "Choissisez un club"
-  optionValueClub:
-    - value: "1"
-      choice: "Test"
+# navCollab:
+#   name: "Nom:"
+#   email: "Courriel:"
+#   website: "Site web:"
+#   projectToPropose: "Projet à proposer:"
+#   club: "Club:"
+#   selectedClub: "Choissisez un club"
+#   optionValueClub:
+#     - value: "1"
+#       choice: "Test"
 navInfo:
   name: "Nom:"
   email: "Courriel:"

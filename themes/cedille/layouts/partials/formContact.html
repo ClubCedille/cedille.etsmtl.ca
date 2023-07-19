@@ -5,9 +5,9 @@
       <button class="nav-link col-4 active" id="nav-member-tab" data-bs-toggle="tab" data-bs-target="#nav-member" type="button" role="tab" aria-controls="nav-member" aria-selected="true" style="background-color: #D7A64D;">
         {{ .navTabsTitle.membershipRequest }}
       </button>
-      <button class="nav-link col-4" id="nav-collaboration-tab" data-bs-toggle="tab" data-bs-target="#nav-collab" type="button" role="tab" aria-controls="nav-collaboration" aria-selected="false" style="background-color: #C08314;">
+      {{/*  <button class="nav-link col-4" id="nav-collaboration-tab" data-bs-toggle="tab" data-bs-target="#nav-collab" type="button" role="tab" aria-controls="nav-collaboration" aria-selected="false" style="background-color: #C08314;">
         {{ .navTabsTitle.collaborationRequest }}
-      </button>
+      </button>  */}}
       <button class="nav-link col-4" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info" aria-selected="false" style="background-color: #D7A64D;">
         {{ .navTabsTitle.informationRequest }}
       </button>
@@ -17,18 +17,18 @@
   <!-- member tab section -->
   {{ $navMember := .navMember }}
   <div class="tab-pane fade show active" id="nav-member" role="tabpanel" aria-labelledby="nav-member-tab">
-    <form class="row g-3 px-2 mt-2">
+    <form class="row g-3 px-2 mt-2" action={{ .Site.Params.formEndpoint.link }} method="POST">
       <div class="col-md-6">
         <label for="nameMember" class="form-label">{{ $navMember.name }}</label>
-        <input type="text" class="form-control" id="nameMember">
+        <input type="text" class="form-control" id="nameMember" name="nameMember">
       </div>
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">{{ $navMember.email }}</label>
-        <input type="email" class="form-control" id="inputEmail4">
+        <input type="email" class="form-control" id="inputEmail4" name="Email">
       </div>
       <div class="col-md-6">
         <label for="formation" class="form-label">{{ $navMember.education }}</label>
-        <select class="form-select" id="specificSizeSelect">
+        <select class="form-select" id="specificSizeSelect" name="formation">
           <option selected>{{ $navMember.selectedEducation }}</option>
           {{ range $navMember.optionValueEducation }}
           <option value="{{ .value }}">{{ .choice }}</option>
@@ -37,7 +37,7 @@
       </div>
       <div class="col-md-6">
         <label for="programme" class="form-label">{{ $navMember.program }}</label>
-        <select class="form-select" id="specificSizeSelect">
+        <select class="form-select" id="specificSizeSelect" name="programme">
           <option selected>{{ $navMember.selectedProgram }}</option>
           {{ range $navMember.optionValueProgram }}
           <option value="{{ .value }}">{{ .choice }}</option>
@@ -47,16 +47,16 @@
       <div class="col-md-6">
         <label class="form-label">{{ $navMember.interests }}</label>
         <textarea name="interets" class="form-control"></textarea>
+      </div>   
+      <div class="text-end mt-2 me-2">
+        <button type="submit" class="btn py-2 px-5">
+          {{ .button.submit }}
+        </button> 
       </div>    
     </form>
-    <div class="text-end mt-2 me-2">
-      <button type="submit" class="btn py-2 px-5">
-        {{ .button.submit }}
-      </button> 
-    </div>   
   </div>
   <!-- collab tab section -->
-  {{ $navCollab := .navCollab }}
+  {{/*  {{ $navCollab := .navCollab }}
   <div class="tab-pane fade" id="nav-collab" role="tabpanel" aria-labelledby="nav-collaboration-tab">
     <form class="row g-3 px-2 mt-2">
       <div class="col-md-6">
@@ -90,33 +90,33 @@
           {{ .button.submit }}
       </button>  
     </div> 
-  </div>
+  </div>  */}}
   <!-- info tab section -->
   {{ $navInfo := .navInfo }}
   <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
-    <form class="row g-3 px-2 mt-2">
+    <form class="row g-3 px-2 mt-2" action={{ .Site.Params.formEndpoint.link }} method="POST">
       <div class="col-md-6">
         <label for="formGroupExampleInput" class="form-label">{{ $navInfo.name }}</label>
-        <input type="text" class="form-control" id="formGroupExampleInput">
+        <input type="text" class="form-control" id="formGroupExampleInput" name="Nom">
       </div>
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">{{ $navInfo.email }}</label>
-        <input type="email" class="form-control" id="inputEmail4">
+        <input type="email" class="form-control" id="inputEmail4" name="Email">
       </div>
       <div class="col-md-6">
         <label for="formGroupExampleInput" class="form-label">{{ $navInfo.company }}</label>
-        <input type="text" class="form-control" id="formGroupExampleInput">
+        <input type="text" class="form-control" id="formGroupExampleInput" name="Company">
       </div>
       <div class="col-md-6">
         <label class="form-label">{{ $navInfo.message }}</label>
-        <textarea name="messageCompagnie" class="form-control"></textarea>
+        <textarea name="messageCompagnie" class="form-control" name="Message"></textarea>
       </div>
-    </form>
-    <div class="text-end mt-2 me-2">
-      <button type="submit" class="btn py-2 px-5">
-          {{ .button.submit }}
-      </button> 
-    </div> 
+      <div class="text-end mt-2 me-2">
+        <button type="submit" class="btn py-2 px-5">
+            {{ .button.submit }}
+        </button> 
+      </div>
+    </form> 
   </div>
 </div>
 {{ end }}
