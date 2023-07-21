@@ -6,7 +6,7 @@ text:
   first: "Rejoindre un club pendant tes études peut être une décision effrayante. Nous le comprenons. Pour t'aider à faire un choix, nous avons pensé partager avec toi quelques-unes des questions les plus fréquentes que nous recevons."
   second: "N'hésite pas à nous contacter. Nous serons ravis d'en savoir plus sur toi et de répondre à toutes les questions que tu pourrais avoir."
 button:
-  contactUs: "Contacte-nous"
+  contactUs: "Contactez-nous"
   url: "/contact"
 accordion:
   - idHeader: "flush-headingOne"
@@ -32,7 +32,7 @@ accordion:
   - idHeader: "flush-headingFive"
     idParent: "accordionFaq" 
     target: "flush-collapseFive"
-    question: "Je ne suis pas en génie logiciel/informatique, est-ce que je peux quand même rejoindre ?"
+    question: "Je ne suis pas en génie logiciel/informatique, est-ce que je peux quand même joindre ?"
     response: "Notre club est ouvert à tous les étudiants, indépendamment de leur domaine d'études. Nous croyons en la valeur de la diversité et nous encourageons les membres provenant de différents horizons à se joindre à nous. Que tu sois en génie mécanique, en génie électrique, en génie civil ou dans tout autre domaine, tu es le bienvenu dans notre club. Nous offrons un environnement d'apprentissage inclusif où tu pourras contribuer avec tes connaissances et tes perspectives."
   - idHeader: "flush-headingSix"
     idParent: "accordionFaq" 
