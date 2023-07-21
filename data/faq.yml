@@ -17,7 +17,7 @@ accordion:
   - idHeader: "flush-headingTwo"
     idParent: "accordionFaq"
     target: "flush-collapseTwo"
-    question: "Je viens tout juste de commencer à coder récemment... Est-ce que je vais vraiment m'en sortir ?"
+    question: "Je viens de commencer à coder récemment... Est-ce que je vais m'en sortir ?"
     response: "<p>Certes ! Nous accueillons des étudiants de tous les niveaux de compétences en programmation, y compris les débutants. Il est tout à fait normal de se sentir submergé au début, surtout lorsque l'on débute sans aucune expérience. Chez nous, l'objectif principal est l'apprentissage progressif et le développement de compétences. Nous comprenons parfaitement que certaines de nos activités puissent sembler extrêmement intimidantes au départ.</p><p>Il est essentiel que tu comprennes que notre objectif ultime est d'apprendre et de construire lentement nos compétences. Tu ne dois pas te sentir obligés de contribuer immédiatement à nos projets complexes. Si tu te concentres sur l'apprentissage pas à pas, jour après jour, avec suffisamment de volonté, tu atteindras éventuellement un niveau où tu pourras activement contribuer à toutes sortes de projets complexes.</p><p>Chez Cédille, nous croyons fermement en la progression par étapes. Nous t'encourageons à te concentrer sur ton propre apprentissage, en tirant parti des ressources, du soutien et des opportunités d'apprentissage que nous offrons. Avec le temps, tu gagneras en confiance et en compétences, et tu constateras que tu pourras apporter une contribution précieuse à notre communauté. Souviens-toi toujours que chaque petit pas compte dans ton parcours d'apprentissage.</p>"
   - idHeader: "flush-headingThree"
     idParent: "accordionFaq" 
