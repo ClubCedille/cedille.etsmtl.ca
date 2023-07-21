@@ -1,12 +1,12 @@
-commits: 851
+commits: 853
 contributors:
 - EdvinHonda
 - SonOfLope
 - RikuAvelar
 - notarock
 - AXDOOMER
-- ygotame
 - svc-cedille-user
+- ygotame
 - jalilbengoufa
 - BernardClaing
 - plaurin84
@@ -35,7 +35,7 @@ languages:
   Makefile: 0.005928654321610576
   Nix: 0.001639840557041223
 name: cedille.etsmtl.ca
-open_issues: 0
+open_issues: 2
 owner: ClubCedille
-pulls: 0
+pulls: 2
 stargazers_count: 1
