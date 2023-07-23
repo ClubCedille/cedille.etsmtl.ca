@@ -13,15 +13,12 @@ logos:
   - image: /images/sitesHeberges/synapse.png
     url: "https://synapsets.etsmtl.ca/"
     alt: logoSynapse
-  - image: /images/sitesHeberges/retsEts.png
-    url: "https://www.etsmtl.ca/activites-et-services-aux-etudiants/clubs-etudiants/rets"
-    alt: logoRetsEts
+  # - image: /images/sitesHeberges/retsEts.png
+  #   url: "https://www.etsmtl.ca/activites-et-services-aux-etudiants/clubs-etudiants/rets"
+  #   alt: logoRetsEts
   - image: /images/sitesHeberges/preci.png
     url: "https://preci.etsmtl.ca/"
     alt: logoPreci
-  - image: /images/sitesHeberges/geniAle.png
-    url: "https://geniale.ca/fr/"
-    alt: logoGeniAle
   - image: /images/sitesHeberges/sonia.png
     url: "https://wiki.sonia.etsmtl.ca/hardware/overview"
     alt: logoSonia
@@ -43,15 +40,12 @@ logos:
   - image: /images/sitesHeberges/synapse.png
     url: "https://synapsets.etsmtl.ca/"
     alt: logoSynapse
-  - image: /images/sitesHeberges/retsEts.png
-    url: "https://www.etsmtl.ca/activites-et-services-aux-etudiants/clubs-etudiants/rets"
-    alt: logoRetsEts
+  # - image: /images/sitesHeberges/retsEts.png
+  #   url: "https://www.etsmtl.ca/activites-et-services-aux-etudiants/clubs-etudiants/rets"
+  #   alt: logoRetsEts
   - image: /images/sitesHeberges/preci.png
     url: "https://preci.etsmtl.ca/"
     alt: logoPreci
-  - image: /images/sitesHeberges/geniAle.png
-    url: "https://geniale.ca/fr/"
-    alt: logoGeniAle
   - image: /images/sitesHeberges/sonia.png
     url: "https://wiki.sonia.etsmtl.ca/hardware/overview"
     alt: logoSonia

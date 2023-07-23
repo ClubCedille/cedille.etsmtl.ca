@@ -54,13 +54,17 @@ baseURL = 'https://cedille.etsmtl.ca'
     latitude = "45.49382"
     longitude = "-73.56233"
 
+    #Form endpoint
+    [params.form]
+    link = "https://formspree.io/f/mbjvlgqb"
+
     ############ Footer section #############
     [params.footer]
     addressTitle = "Adresse:"
     address = "1219 rue William, Montréal QC, H3C 1R1, Local D-2020"
     contactTitle = "Contact:"
     email = "cedille@etsmtl.net"
-    allRightsReserved = "2021 Cédille - Tous droits réservés"
+    allRightsReserved = "2023 | Club Cédille"
     privacyPolicy = "Politique de confidentialité"
     termsOfService = "Conditions de service"
 

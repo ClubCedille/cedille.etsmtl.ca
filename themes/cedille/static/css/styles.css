@@ -885,7 +885,7 @@ header{
 
 .motivation .slider .slide-track{
     display: flex;
-    width: calc(250px*20);
+    width: calc(250px*16);
     animation: scroll 10s linear infinite;
 }
 
@@ -894,7 +894,7 @@ header{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-250px*10));
+        transform: translateX(calc(-250px*8));
     }
 }
 
@@ -1120,6 +1120,11 @@ footer a{
 
 footer a:hover{
     color: rgba(255, 166, 0, 0.748);
+}
+
+footer .copyleft {
+    display: inline-block;
+    transform: rotateY(180deg);
 }
 
 @media only screen and (max-width:1199px){
