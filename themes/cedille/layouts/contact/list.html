@@ -37,13 +37,4 @@
     </div>
   </div>
 </div>
-<script>
-
-  jQuery(document).ready(function test() {
-    let selectedTab = location.hash.replace(/^#/, ''); 
-
-    $('.nav-link[id="' + selectedTab +'"]' ).trigger('click');
-    console.log(selectedTab);
-  })
-</script>
 {{ end }}
