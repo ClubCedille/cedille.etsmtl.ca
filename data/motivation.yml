@@ -19,9 +19,6 @@ logos:
   - image: /images/sitesHeberges/preci.png
     url: "https://preci.etsmtl.ca/"
     alt: logoPreci
-  - image: /images/sitesHeberges/geniAle.png
-    url: "https://geniale.ca/fr/"
-    alt: logoGeniAle
   - image: /images/sitesHeberges/sonia.png
     url: "https://wiki.sonia.etsmtl.ca/hardware/overview"
     alt: logoSonia
@@ -49,9 +46,6 @@ logos:
   - image: /images/sitesHeberges/preci.png
     url: "https://preci.etsmtl.ca/"
     alt: logoPreci
-  - image: /images/sitesHeberges/geniAle.png
-    url: "https://geniale.ca/fr/"
-    alt: logoGeniAle
   - image: /images/sitesHeberges/sonia.png
     url: "https://wiki.sonia.etsmtl.ca/hardware/overview"
     alt: logoSonia
