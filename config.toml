@@ -78,7 +78,7 @@ baseURL = 'https://cedille.etsmtl.ca'
     weight = 2
     [[params.footer.menu]]
     name = "Nos projets"
-    url = "/projets"
+    url = "/projets/"
     weight = 3
     [[params.footer.menu]]
     name = "Partenaires"
