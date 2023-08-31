@@ -768,7 +768,7 @@ header{
 }
 
 .contact .nav-tabs .nav-link.active{
-    border-color: black;
+    border: 2px solid black;
 }
 
 .contact .btn{
@@ -885,7 +885,7 @@ header{
 
 .motivation .slider .slide-track{
     display: flex;
-    width: calc(250px*16);
+    width: calc(250px*18);
     animation: scroll 10s linear infinite;
 }
 
@@ -894,7 +894,7 @@ header{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-250px*8));
+        transform: translateX(calc(-250px*9));
     }
 }
 

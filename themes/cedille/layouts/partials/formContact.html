@@ -20,15 +20,15 @@
     <form action="{{ $.Site.Params.form.link }}" method="POST" class="row g-3 px-2 mt-2" id="member-form">
       <div class="col-md-6">
         <label for="nameMember" class="form-label">{{ $navMember.name }}</label>
-        <input type="text" class="form-control" id="nameMember" required>
+        <input name="nom" type="text" class="form-control" id="nameMember" required>
       </div>
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">{{ $navMember.email }}</label>
-        <input type="email" class="form-control" id="inputEmail4" required>
+        <input name="courriel" type="email" class="form-control" id="inputEmail4" required>
       </div>
       <div class="col-md-6">
         <label for="formation" class="form-label">{{ $navMember.education }}</label>
-        <select class="form-select" id="specificSizeSelect">
+        <select name="formation" class="form-select" id="specificSizeSelect">
           <option selected>{{ $navMember.selectedEducation }}</option>
           {{ range $navMember.optionValueEducation }}
           <option value="{{ .value }}">{{ .choice }}</option>
@@ -37,7 +37,7 @@
       </div>
       <div class="col-md-6">
         <label for="programme" class="form-label">{{ $navMember.program }}</label>
-        <select class="form-select" id="specificSizeSelect">
+        <select name="programme" class="form-select" id="specificSizeSelect">
           <option selected>{{ $navMember.selectedProgram }}</option>
           {{ range $navMember.optionValueProgram }}
           <option value="{{ .value }}">{{ .choice }}</option>
@@ -94,18 +94,18 @@
   <!-- info tab section -->
   {{ $navInfo := .navInfo }}
   <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
-    <form action="https://formspree.io/f/mbjvlgqb" method="POST" class="row g-3 px-2 mt-2" id="info-form">
+    <form action="{{ $.Site.Params.form.link }}" method="POST" class="row g-3 px-2 mt-2" id="info-form">
       <div class="col-md-6">
         <label for="formGroupExampleInput" class="form-label">{{ $navInfo.name }}</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" required>
+        <input name="nom" type="text" class="form-control" id="formGroupExampleInput" required>
       </div>
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">{{ $navInfo.email }}</label>
-        <input type="email" class="form-control" id="inputEmail4" required>
+        <input name="courriel" type="email" class="form-control" id="inputEmail4" required>
       </div>
       <div class="col-md-6">
         <label for="formGroupExampleInput" class="form-label">{{ $navInfo.company }}</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" required>
+        <input name="compagnie" type="text" class="form-control" id="formGroupExampleInput" required>
       </div>
       <div class="col-md-6">
         <label class="form-label">{{ $navInfo.message }}</label>
