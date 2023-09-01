@@ -34,7 +34,7 @@ navMember:
       choice: "Génie des opérations et de la logistique"
     - value: "génie construction"
       choice: "Génie de la construction"
-    - value: "génie automatisé"
+    - value: "génie production automatisée"
       choice: "Génie de la production automatisée"
     - value: "autre"
       choice: "Autre"
