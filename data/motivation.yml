@@ -33,7 +33,10 @@ logos:
     alt: logoPontAcier
   - image: /images/sitesHeberges/integrale.png
     url: "https://integrale.etsmtl.ca/"
-    alt: integrale
+    alt: logoIntegrale
+  - image: /images/sitesHeberges/saveursGenie.png
+    url: "#"
+    alt: logoSaveursGenie 
   - image: /images/sitesHeberges/canoeBeton.png
     url: "https://canoe.etsmtl.ca/"
     alt: logoCanoeBeton
@@ -63,5 +66,8 @@ logos:
     alt: logoPontAcier
   - image: /images/sitesHeberges/integrale.png
     url: "https://integrale.etsmtl.ca/"
-    alt: integrale
+    alt: logoIntegrale
+  - image: /images/sitesHeberges/saveursGenie.png
+    url: "#"
+    alt: logoSaveursGenie  
 ---
