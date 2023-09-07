@@ -36,7 +36,10 @@ logos:
     alt: logoIntegrale
   - image: /images/sitesHeberges/saveursGenie.png
     url: "#"
-    alt: logoSaveursGenie 
+    alt: logoSaveursGenie
+  - image: /images/sitesHeberges/dronoLab.png
+    url: "https://wiki.dronolab.etsmtl.ca/"
+    alt: logoDronoLab 
   - image: /images/sitesHeberges/canoeBeton.png
     url: "https://canoe.etsmtl.ca/"
     alt: logoCanoeBeton
@@ -69,5 +72,8 @@ logos:
     alt: logoIntegrale
   - image: /images/sitesHeberges/saveursGenie.png
     url: "#"
-    alt: logoSaveursGenie  
+    alt: logoSaveursGenie
+  - image: /images/sitesHeberges/dronoLab.png
+    url: "https://wiki.dronolab.etsmtl.ca/"
+    alt: logoDronoLab  
 ---
