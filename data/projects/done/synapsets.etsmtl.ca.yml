@@ -1,4 +1,4 @@
-commits: 195
+commits: 209
 contributors:
 - SonOfLope
 - EdvinHonda
@@ -9,12 +9,12 @@ contributors:
 description: Site web du club SynapsÉTS
 forks: 0
 languages:
-  CSS: 0.008020868315617654
-  Dockerfile: 0.00037227658848858306
-  HTML: 0.060079714049926715
-  JavaScript: 0.037105302207886534
-  Makefile: 0.0005388898868331237
-  SCSS: 0.8938829489512474
+  CSS: 0.0080286226521295
+  Dockerfile: 0.000372636494402635
+  HTML: 0.06027590735683462
+  JavaScript: 0.03679980820946861
+  Makefile: 0.0005394108695198983
+  SCSS: 0.8939836144176447
 name: synapsets.etsmtl.ca
 open_issues: 1
 owner: ClubCedille

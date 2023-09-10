@@ -1,16 +1,18 @@
-commits: 10
+commits: 26
 contributors:
 - EdvinHonda
 - SonOfLope
+- dependabot[bot]
 description: null
 forks: 0
 languages:
-  CSS: 0.03569705015237096
-  HTML: 0.7300455684631957
-  JavaScript: 0.14757055895410529
-  SCSS: 0.08668682243032806
+  CSS: 0.03679392057323143
+  Dockerfile: 0.00032076910203246743
+  HTML: 0.7211152847251923
+  JavaScript: 0.15210188990336637
+  SCSS: 0.08966813569617742
 name: saveursdegenie.etsmtl.ca
 open_issues: 0
 owner: ClubCedille
-pulls: 2
+pulls: 0
 stargazers_count: 0

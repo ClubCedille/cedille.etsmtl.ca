@@ -1,11 +1,11 @@
-commits: 868
+commits: 874
 contributors:
 - EdvinHonda
 - SonOfLope
 - RikuAvelar
 - notarock
-- AXDOOMER
 - svc-cedille-user
+- AXDOOMER
 - ygotame
 - jalilbengoufa
 - BernardClaing
@@ -28,12 +28,12 @@ contributors:
 description: Site web du club CEDILLE
 forks: 0
 languages:
-  CSS: 0.29703763010408324
-  Dockerfile: 0.0019805317938561377
-  HTML: 0.6783110699085584
-  JavaScript: 0.014242973326029244
-  Makefile: 0.006601772646187125
-  Nix: 0.0018260222212858005
+  CSS: 0.29704750400314633
+  Dockerfile: 0.0019805039750540776
+  HTML: 0.6783015422647976
+  JavaScript: 0.014242773267410176
+  Makefile: 0.006601679916846926
+  Nix: 0.0018259965727448941
 name: cedille.etsmtl.ca
 open_issues: 0
 owner: ClubCedille
