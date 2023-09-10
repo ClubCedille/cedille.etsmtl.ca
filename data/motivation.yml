@@ -33,7 +33,13 @@ logos:
     alt: logoPontAcier
   - image: /images/sitesHeberges/integrale.png
     url: "https://integrale.etsmtl.ca/"
-    alt: integrale
+    alt: logoIntegrale
+  - image: /images/sitesHeberges/saveursGenie.png
+    url: "https://saveursdegenie.etsmtl.ca"
+    alt: logoSaveursGenie
+  - image: /images/sitesHeberges/dronoLab.png
+    url: "https://wiki.dronolab.etsmtl.ca/"
+    alt: logoDronoLab 
   - image: /images/sitesHeberges/canoeBeton.png
     url: "https://canoe.etsmtl.ca/"
     alt: logoCanoeBeton
@@ -63,5 +69,11 @@ logos:
     alt: logoPontAcier
   - image: /images/sitesHeberges/integrale.png
     url: "https://integrale.etsmtl.ca/"
-    alt: integrale
+    alt: logoIntegrale
+  - image: /images/sitesHeberges/saveursGenie.png
+    url: "https://saveursdegenie.etsmtl.ca"
+    alt: logoSaveursGenie
+  - image: /images/sitesHeberges/dronoLab.png
+    url: "https://wiki.dronolab.etsmtl.ca/"
+    alt: logoDronoLab  
 ---
