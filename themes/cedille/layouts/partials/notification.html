@@ -1,23 +1,7 @@
 <div class="notification py-2" id="notification-bar" style="background-color: rgba(255, 166, 0, 0.748);">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-0 col-md-2"></div>
-            <div class="col-10 col-md-8 text-center">
-                <p class="m-0">🛑 Attention : En raison d'une demande exceptionnellement élevée, nous ne pouvons temporairement plus accepter de nouvelles demandes pour développer des sites web pour d'autres clubs. Pendant ce temps, nous continuons d'assurer l'hébergement. Pour toute question ou mise à jour,  veuillez nous rejoindre sur Discord.</p>
-            </div>
-            <div class="col-2 col-md-2 d-flex justify-content-end align-items-center">
-                <p class="btn m-0" onclick="buttonCloseNotif()">x</p>
-            </div>
+    <div class="container">
+        <div class="row text-center">
+            <p class="m-0">🛑 Attention : En raison d'une demande exceptionnellement élevée, nous ne pouvons temporairement plus accepter de nouvelles demandes pour développer des sites web pour d'autres clubs. Pendant ce temps, nous continuons d'assurer l'hébergement. Pour toute question ou mise à jour,  veuillez nous rejoindre sur Discord.</p>
         </div>
     </div>
 </div>
-
-<script>
-    let notification = document.getElementById("notification-bar");
-
-    function buttonCloseNotif() {
-        if( notification !== null) {
-            notification.style.display = "none";
-        }
-    };
-</script>
