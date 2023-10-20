@@ -1,0 +1,264 @@
+name: CI and deploy
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  fetchProjects:
+    name: Update projects information
+    if: ${{ github.event.head_commit.committer.name != 'svc-cedille-user' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: "true"
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Fetch projects informations
+        run: make fetch-projects PAT_TOKEN=${{ secrets.PAT_TOKEN }}
+
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v13
+        id: verify-changed-files
+        with:
+          files: |
+            ./data/projects/done/*.yml
+            ./data/projects/inProgress/*.yml
+
+      - name: Commit and push changes
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        run: |
+          git config --local user.email "cedille@etsmtl.net"
+          git config --local user.name "svc-cedille-user"
+          git add .
+          git commit -m "updating projects yaml files"
+      - if: steps.verify-changed-files.outputs.files_changed == 'true'
+        name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ github.head_ref }}
+          github_token: ${{ secrets.PAT_TOKEN }}
+          force: true
+  build-and-tag-on-merge:
+    if: ${{ github.ref == 'refs/heads/master' && github.event.head_commit.committer.name != 'svc-cedille-user' }}
+    environment: deployment
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Check Out Repo
+        uses: actions/checkout@v2
+
+      - id: release
+        uses: rymndhng/release-on-push-action@master
+        with:
+          bump_version_scheme: patch
+          tag_prefix: v
+
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+      - name: Cache Docker layers
+        uses: actions/cache@v3
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          restore-keys: ${{ runner.os }}-buildx
+
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./Dockerfile.prod
+          push: true
+          tags: |
+            ${{ secrets.DOCKER_HUB_REPOSITORY }}:latest
+            ${{ secrets.DOCKER_HUB_REPOSITORY }}:${{ steps.release.outputs.version }}
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,mode=max,dest=/tmp/.buildx-cache-new
+
+      - name: Refresh Cache
+        run: |
+          rm -rf /tmp/.buildx-cache
+          mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
+
+  build-on-release:
+    if: ${{ startsWith(github.ref, 'refs/tags/') && github.event.head_commit.committer.name != 'svc-cedille-user' }}
+    environment: deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Out Repo
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+      - name: Get Tag Version
+        id: tag
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+      - name: Cache Docker layers
+        uses: actions/cache@v3
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          restore-keys: ${{ runner.os }}-buildx
+
+      - name: Get Tag Version
+        id: tag2
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/v}
+          echo "Version to be used: $VERSION"
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./Dockerfile.prod
+          push: true
+          tags: |
+            ${{ secrets.DOCKER_HUB_REPOSITORY }}:tagname
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,mode=max,dest=/tmp/.buildx-cache-new
+
+      - name: Refresh Cache
+        run: |
+          rm -rf /tmp/.buildx-cache
+          mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
+
+  build-and-tag-on-merge-deploy:
+    if: ${{ github.ref == 'refs/heads/master' && github.event.head_commit.committer.name != 'svc-cedille-user' }}
+    environment: deployment
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+            - name: Check Out Repo
+              uses: actions/checkout@v2
+
+            - id: release
+              uses: rymndhng/release-on-push-action@master
+              with:
+                bump_version_scheme: patch
+                tag_prefix: v
+
+            - name: Set up Docker Buildx
+              id: buildx
+              uses: docker/setup-buildx-action@v2
+
+            - name: Login to Docker Hub
+              uses: docker/login-action@v2
+              with:
+                username: ${{ secrets.DOCKER_HUB_USERNAME }}
+                password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+            - name: Cache Docker layers
+              uses: actions/cache@v3
+              with:
+                path: /tmp/.buildx-cache
+                key: ${{ runner.os }}-buildx-${{ github.sha }}
+                restore-keys: ${{ runner.os }}-buildx
+
+            - name: Build and push
+              id: docker_build
+              uses: docker/build-push-action@v3
+              with:
+                context: .
+                file: ./Dockerfile.prod
+                push: true
+                tags: |
+                  ${{ secrets.DOCKER_HUB_REPOSITORY }}:latest
+                  ${{ secrets.DOCKER_HUB_REPOSITORY }}:${{ steps.release.outputs.version }}
+                cache-from: type=local,src=/tmp/.buildx-cache
+                cache-to: type=local,mode=max,dest=/tmp/.buildx-cache-new
+
+            - name: Refresh Cache
+              run: |
+                rm -rf /tmp/.buildx-cache
+                mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+
+            - name: Image digest
+              run: echo ${{ steps.docker_build.outputs.digest }}
+
+  build-on-release-deploy:
+    if: ${{ startsWith(github.ref, 'refs/tags/') && github.event.head_commit.committer.name != 'svc-cedille-user' }}
+    environment: deployment
+    runs-on: ubuntu-latest
+    steps:
+            - name: Check Out Repo
+              uses: actions/checkout@v2
+
+            - name: Set up Docker Buildx
+              id: buildx
+              uses: docker/setup-buildx-action@v2
+
+            - name: Login to Docker Hub
+              uses: docker/login-action@v2
+              with:
+                username: ${{ secrets.DOCKER_HUB_USERNAME }}
+                password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+            - name: Get Tag Version
+              id: tag
+              run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+            - name: Cache Docker layers
+              uses: actions/cache@v3
+              with:
+                path: /tmp/.buildx-cache
+                key: ${{ runner.os }}-buildx-${{ github.sha }}
+                restore-keys: ${{ runner.os }}-buildx
+
+            - name: Get Tag Version
+              id: tag2
+              run: |
+                VERSION=${GITHUB_REF#refs/tags/v}
+                echo "Version to be used: $VERSION"
+                echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+            - name: Build and push
+              id: docker_build
+              uses: docker/build-push-action@v3
+              with:
+                context: .
+                file: ./Dockerfile.prod
+                push: true
+                tags: |
+                  ${{ secrets.DOCKER_HUB_REPOSITORY }}:tagname
+                cache-from: type=local,src=/tmp/.buildx-cache
+                cache-to: type=local,mode=max,dest=/tmp/.buildx-cache-new
+
+            - name: Refresh Cache
+              run: |
+                rm -rf /tmp/.buildx-cache
+                mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+
+            - name: Image digest
+              run: echo ${{ steps.docker_build.outputs.digest }}
