@@ -1,4 +1,4 @@
-commits: 26
+commits: 28
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -6,11 +6,11 @@ contributors:
 description: Site web du club Saveurs de Génie
 forks: 0
 languages:
-  CSS: 0.03679392057323143
-  Dockerfile: 0.00032076910203246743
-  HTML: 0.7211152847251923
-  JavaScript: 0.15210188990336637
-  SCSS: 0.08966813569617742
+  CSS: 0.03677716544458178
+  Dockerfile: 0.00032062303095638597
+  HTML: 0.7212422825881558
+  JavaScript: 0.152032626103981
+  SCSS: 0.08962730283232499
 name: saveursdegenie.etsmtl.ca
 open_issues: 0
 owner: ClubCedille
