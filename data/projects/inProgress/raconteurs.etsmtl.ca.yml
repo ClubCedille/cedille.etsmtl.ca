@@ -1,4 +1,4 @@
-commits: 49
+commits: 51
 contributors:
 - SonOfLope
 - EdvinHonda
@@ -7,13 +7,13 @@ contributors:
 description: Site web du club étudiant de l'ÉTS Raconteurs d'angle
 forks: 0
 languages:
-  CSS: 0.483746062803147
-  Dockerfile: 0.00285718204135371
-  HTML: 0.21496066231765465
-  JavaScript: 0.0819714098936214
-  SCSS: 0.21646468294422325
+  CSS: 0.47654818037297736
+  Dockerfile: 0.002814668702235072
+  HTML: 0.21659888944431685
+  JavaScript: 0.08075171919964333
+  SCSS: 0.22328654228082737
 name: raconteurs.etsmtl.ca
 open_issues: 1
 owner: ClubCedille
-pulls: 0
+pulls: 1
 stargazers_count: 1

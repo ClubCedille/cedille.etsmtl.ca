@@ -1,11 +1,16 @@
-commits: 2
+commits: 29
 contributors:
+- ThomasCardin
 - SonOfLope
+- Antoine-BL
+- Simon-Boyer
+- mj-sakellaropoulos
 description: Nouvelle infra du club Cédille
 forks: 0
-languages: {}
+languages:
+  Shell: 1.0
 name: Plateforme-Cedille
-open_issues: 3
+open_issues: 22
 owner: ClubCedille
 pulls: 0
-stargazers_count: 3
+stargazers_count: 5
