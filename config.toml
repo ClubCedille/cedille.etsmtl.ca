@@ -54,9 +54,9 @@ baseURL = 'https://cedille.etsmtl.ca'
     latitude = "45.49382"
     longitude = "-73.56233"
 
-    #Form endpoint
     [params.form]
-    link = "https://formspree.io/f/mbjvlgqb"
+    APIkey = "JJ^j6qUYa^t5bCoQ7bfy"
+    link = "https://calidum-rotae.omni.cedille.club"
 
     ############ Footer section #############
     [params.footer]

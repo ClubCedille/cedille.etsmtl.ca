@@ -826,6 +826,24 @@ header{
     margin-bottom: 20px;
 }
 
+.form-success {
+    display: none;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+  }
+
+  .form-error {
+    display: none;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+  }
+
 @media screen and (max-width: 767px){
     #map{
         height: 400px;
