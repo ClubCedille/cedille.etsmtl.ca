@@ -1,19 +1,19 @@
-commits: 53
+commits: 79
 contributors:
 - ThomasCardin
 - renovate[bot]
+- SonOfLope
 - cguertin14
 - vyacheslav31
-- SonOfLope
 description: Microservices permettant de router une demande d'admission vers différentes
   plateformes de messagerie.
 forks: 0
 languages:
-  Dockerfile: 0.08586409650239438
-  Go: 0.8784021337212826
-  Makefile: 0.03573376977632297
+  Dockerfile: 0.06466701112229081
+  Go: 0.9080031544883475
+  Makefile: 0.02732983438936176
 name: calidum-rotae
-open_issues: 7
+open_issues: 3
 owner: ClubCedille
-pulls: 10
+pulls: 2
 stargazers_count: 3
