@@ -5,9 +5,7 @@
       <button class="nav-link col-6 active" id="nav-member-tab" data-bs-toggle="tab" data-bs-target="#nav-member" type="button" role="tab" aria-controls="nav-member" aria-selected="true" style="background-color: #D7A64D;">
         {{ .navTabsTitle.membershipRequest }}
       </button>
-      {{/*  <button class="nav-link col-4" id="nav-collaboration-tab" data-bs-toggle="tab" data-bs-target="#nav-collab" type="button" role="tab" aria-controls="nav-collaboration" aria-selected="false" style="background-color: #C08314;">
-        {{ .navTabsTitle.collaborationRequest }}
-      </button>  */}}
+
       <button class="nav-link col-6" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info" aria-selected="false" style="background-color: #D7A64D;">
         {{ .navTabsTitle.informationRequest }}
       </button>
@@ -17,7 +15,7 @@
   <!-- member tab section -->
   {{ $navMember := .navMember }}
   <div class="tab-pane fade show active" id="nav-member" role="tabpanel" aria-labelledby="nav-member-tab">
-    <form action="{{ $.Site.Params.form.link }}" method="POST" class="row g-3 px-2 mt-2" id="member-form">
+    <form class="row g-3 px-2 mt-2" id="member-form">
       <div class="col-md-6">
         <label for="nameMember" class="form-label">{{ $navMember.name }}</label>
         <input name="nom" type="text" class="form-control" id="nameMember" required>
@@ -50,9 +48,15 @@
       </div>    
     </form>
     <div class="text-end mt-2 me-2">
-      <button type="submit" class="btn py-2 px-5" form="member-form">
+      <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm('member-form');">
         {{ .button.submit }}
-      </button> 
+      </button>
+      <div id="member-form-success" style="display: none;" class="alert alert-success form-success" role="alert">
+        Form submitted successfully!
+      </div>
+      <div id="member-form-error" style="display: none;" class="alert alert-danger form-error" role="alert">
+        There was an error submitting the form.
+      </div>
     </div>   
   </div>
   <!-- collab tab section -->
@@ -94,7 +98,7 @@
   <!-- info tab section -->
   {{ $navInfo := .navInfo }}
   <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
-    <form action="{{ $.Site.Params.form.link }}" method="POST" class="row g-3 px-2 mt-2" id="info-form">
+    <form class="row g-3 px-2 mt-2" id="partnership-form">
       <div class="col-md-6">
         <label for="formGroupExampleInput" class="form-label">{{ $navInfo.name }}</label>
         <input name="nom" type="text" class="form-control" id="formGroupExampleInput" required>
@@ -113,11 +117,19 @@
       </div>
     </form>
     <div class="text-end mt-2 me-2">
-      <button type="submit" class="btn py-2 px-5" form="info-form">
+      <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm('partnership-form');">
           {{ .button.submit }}
       </button> 
+      <div id="partnership-form-success" style="display: none;" class="alert alert-success form-success" role="alert">
+        Form submitted successfully!
+      </div>
+      <div id="partnership-form-error" style="display: none;" class="alert alert-danger form-error" role="alert">
+        There was an error submitting the form.
+      </div>
     </div> 
   </div>
 </div>
+{{ $formJS := resources.Get "js/form-handler.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $formJS.RelPermalink }}" defer></script>
 {{ end }}
 {{ end }}
