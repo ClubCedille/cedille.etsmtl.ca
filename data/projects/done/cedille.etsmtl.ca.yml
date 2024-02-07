@@ -1,10 +1,10 @@
-commits: 889
+commits: 891
 contributors:
 - EdvinHonda
 - SonOfLope
 - RikuAvelar
-- notarock
 - svc-cedille-user
+- notarock
 - AXDOOMER
 - ygotame
 - jalilbengoufa
@@ -12,8 +12,8 @@ contributors:
 - plaurin84
 - bayes-diarra
 - cguertin14
-- JulienRobitaille
 - samdidos
+- JulienRobitaille
 - dependabot[bot]
 - Angry-Russian
 - ThomasCardin
@@ -37,5 +37,5 @@ languages:
 name: cedille.etsmtl.ca
 open_issues: 1
 owner: ClubCedille
-pulls: 0
+pulls: 1
 stargazers_count: 1
