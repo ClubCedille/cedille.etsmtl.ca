@@ -11,25 +11,30 @@ baseURL = 'https://cedille.etsmtl.ca'
         url = "/"
         weight = 1 
     [[menu.main]]
-        identifier = "equipe"
+        identifier = "a-propos"
         name = "À propos"
-        url = "/equipe/"
+        url = "/a-propos/"
         weight = 2
+    [[menu.main]]
+        identifier = "equipe"
+        name = "Équipe"
+        url = "/equipe/"
+        weight = 3
     [[menu.main]]
         identifier = "projets"    
         name = "Projets"
         url = "/projets/"
-        weight = 3
-    [[menu.main]]   
+        weight = 4
+    [[menu.main]]  
         identifier = "partenaires" 
         name = "Partenaires"
         url = "/partenaires/"
-        weight = 4
+        weight = 5
     [[menu.main]]  
         identifier = "contact" 
         name = "Joignez l'équipe"
         url = "/contact/"
-        weight = 5
+        weight = 6
 
 [params]
     titleFollowUs = "Suivez-nous"

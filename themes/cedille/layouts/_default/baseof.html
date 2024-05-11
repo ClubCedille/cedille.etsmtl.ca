@@ -3,9 +3,6 @@
     {{- partial "head.html" . -}}
     <body>
         <div>
-            {{ if in .Name "Accueil" }}
-            {{ partial "notification.html" . }}
-            {{ end }}
             {{- partial "header.html" . -}}
             <div id="content">
             {{- block "main" . }}{{- end }}

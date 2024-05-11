@@ -13,10 +13,10 @@ network:
   subtitle: "Le pouvoir du réseautage"
   summary: "Chez Cédille, nos membres bénéficient d'une expérience de réseautage enrichissante et fluide grâce à notre variété d'événements sociaux captivants, tels que des ateliers, conférences et rencontres de réseautage animés par des experts chevronnés de l'industrie. Ils élargissent leur réseau professionnel, découvrent des perspectives uniques et restent à jour avec les tendances du secteur. Parfois, il arrive même que nous facilitions des opportunités de carrière exceptionnelles pour un développement professionnel optimal."
   members:
-    # - name: "Thomas Cardin"
-    #   image: "images/membres/tcardin.jpg"
-    #   text: "L'expérience que j'ai acquise en intégrant le Club CEDILLE a eu un impact significatif sur ma trajectoire professionnelle. Grâce à leur expertise en DevOps et à une panoplie d'activités pratiques, j'ai pu décrocher un stage en tant qu'ingénieur de fiabilité du site (SRE). Je recommande fortement le Club pour toute personne désireuse de transformer son apprentissage en opportunités concrètes."
-    # - name: "Simon Boyer"
-    #   image: "images/membres/simon-boyer.jpg"
-    #   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero."
+    - name: "Thomas Cardin"
+      image: "images/membres/tcardin.jpg"
+      text: "L'expérience que j'ai acquise en intégrant le Club CEDILLE a eu un impact significatif sur ma trajectoire professionnelle. Grâce à leur expertise en DevOps et à une panoplie d'activités pratiques, j'ai pu décrocher un stage en tant qu'ingénieur de fiabilité du site (SRE). Je recommande fortement le Club pour toute personne désireuse de transformer son apprentissage en opportunités concrètes."
+    - name: "Simon Boyer"
+      image: "images/membres/simon-boyer.jpg"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero."
 ---

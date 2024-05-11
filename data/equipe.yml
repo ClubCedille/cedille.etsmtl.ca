@@ -1,6 +1,9 @@
 ---
 enable: true
-title: "nos membres"
+title: "Équipe"
+button:
+  becomingMember: "Devenir membre"
+  url: "/contact"
 membres:
   - name: "Jonathan Lopez"
     post: "Capitaine"
@@ -14,28 +17,28 @@ membres:
   - name: "Thomas Cardin"
     post: "Co-Capitaine"
     social:
-    - title: linkedin
-      url: "https://ca.linkedin.com/in/thomas-cardin-349056185"
-    - title: github 
-      url: "https://github.com/ThomasCardin"
+      - title: github 
+        url: "https://github.com/ThomasCardin"
+      - title: linkedin
+        url: "https://ca.linkedin.com/in/thomas-cardin-349056185"
     image: "images/membres/tcardin.jpg"
 
   - name: "Simon Boyer"
     post: "Trésorier"
     social:
-    - title: linkedin 
-      url: "https://www.linkedin.com/in/simon-boyer"
-    - title: github 
-      url: "https://github.com/Simon-Boyer"
+      - title: github 
+        url: "https://github.com/Simon-Boyer"
+      - title: linkedin 
+        url: "https://www.linkedin.com/in/simon-boyer"
     image: "images/membres/simon-boyer.jpg"
 
   - name: "Roch D'amour"
     post: "Membre"
     social:
-      - title: linkedin 
-        url: "https://www.linkedin.com/in/notarock/"
       - title: github
         url: "https://github.com/notarock"
+      - title: linkedin 
+        url: "https://www.linkedin.com/in/notarock/"
     image: "images/membres/Roch.jpg"
 
   - name: "guyllaume"
@@ -48,18 +51,18 @@ membres:
   - name: "Edvin Honda"
     post: "Membre"
     social:
+      - title: github 
+        url: "https://github.com/EdvinHonda"
       - title: linkedin 
         url: "https://www.linkedin.com/in/edvin-honda-00b941220/"
-      - title: github 
-        url: "https://github.com/EdvinHonda "
 
   - name: "Bayes Diarra"
     post: "Membre"
     social:
+      - title: github 
+        url: "https://github.com/bayes-diarra"
       - title: linkedin 
         url: "https://www.linkedin.com/in/bayes-diarra-b67537177"
-      - title: github 
-        url: "https://github.com/bayes-diarra "
 
   - name: "Bryan Ndjeutcha"
     post: "Membre"
