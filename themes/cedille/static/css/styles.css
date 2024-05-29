@@ -723,7 +723,7 @@ header{
 
 .motivation .slider .slide-track{
     display: flex;
-    width: calc(250px*24);
+    width: calc(250px*22);
     animation: scroll 10s linear infinite;
 }
 
@@ -732,7 +732,7 @@ header{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-250px*12));
+        transform: translateX(calc(-250px*11));
     }
 }
 

@@ -31,9 +31,9 @@ logos:
   - image: /images/sitesHeberges/pontAcier.png
     url: "https://pontacier.etsmtl.ca/"
     alt: logoPontAcier
-  - image: /images/sitesHeberges/integrale.png
-    url: "https://integrale.etsmtl.ca/"
-    alt: logoIntegrale
+  # - image: /images/sitesHeberges/integrale.png
+  #   url: "https://integrale.etsmtl.ca/"
+  #   alt: logoIntegrale
   - image: /images/sitesHeberges/saveursGenie.png
     url: "https://saveursdegenie.etsmtl.ca"
     alt: logoSaveursGenie
@@ -70,9 +70,9 @@ logos:
   - image: /images/sitesHeberges/pontAcier.png
     url: "https://pontacier.etsmtl.ca/"
     alt: logoPontAcier
-  - image: /images/sitesHeberges/integrale.png
-    url: "https://integrale.etsmtl.ca/"
-    alt: logoIntegrale
+  # - image: /images/sitesHeberges/integrale.png
+  #   url: "https://integrale.etsmtl.ca/"
+  #   alt: logoIntegrale
   - image: /images/sitesHeberges/saveursGenie.png
     url: "https://saveursdegenie.etsmtl.ca"
     alt: logoSaveursGenie
