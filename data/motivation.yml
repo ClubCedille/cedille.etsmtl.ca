@@ -31,15 +31,18 @@ logos:
   - image: /images/sitesHeberges/pontAcier.png
     url: "https://pontacier.etsmtl.ca/"
     alt: logoPontAcier
-  - image: /images/sitesHeberges/integrale.png
-    url: "https://integrale.etsmtl.ca/"
-    alt: logoIntegrale
+  # - image: /images/sitesHeberges/integrale.png
+  #   url: "https://integrale.etsmtl.ca/"
+  #   alt: logoIntegrale
   - image: /images/sitesHeberges/saveursGenie.png
     url: "https://saveursdegenie.etsmtl.ca"
     alt: logoSaveursGenie
   - image: /images/sitesHeberges/dronoLab.png
     url: "https://wiki.dronolab.etsmtl.ca/"
     alt: logoDronoLab 
+  - image: /images/sitesHeberges/raconteursdangles.png
+    url: "https://raconteurs.etsmtl.ca/"
+    alt: logoRaconteursDangles   
   - image: /images/sitesHeberges/canoeBeton.png
     url: "https://canoe.etsmtl.ca/"
     alt: logoCanoeBeton
@@ -67,13 +70,16 @@ logos:
   - image: /images/sitesHeberges/pontAcier.png
     url: "https://pontacier.etsmtl.ca/"
     alt: logoPontAcier
-  - image: /images/sitesHeberges/integrale.png
-    url: "https://integrale.etsmtl.ca/"
-    alt: logoIntegrale
+  # - image: /images/sitesHeberges/integrale.png
+  #   url: "https://integrale.etsmtl.ca/"
+  #   alt: logoIntegrale
   - image: /images/sitesHeberges/saveursGenie.png
     url: "https://saveursdegenie.etsmtl.ca"
     alt: logoSaveursGenie
   - image: /images/sitesHeberges/dronoLab.png
     url: "https://wiki.dronolab.etsmtl.ca/"
     alt: logoDronoLab  
+  - image: /images/sitesHeberges/raconteursdangles.png
+    url: "https://raconteurs.etsmtl.ca/"
+    alt: logoRaconteursDangles
 ---
