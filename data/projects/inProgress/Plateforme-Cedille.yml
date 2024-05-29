@@ -1,0 +1,20 @@
+commits: 415
+contributors:
+- Simon-Boyer
+- SonOfLope
+- mj-sakellaropoulos
+- ThomasCardin
+- Antoine-BL
+- ahenrij
+description: Nouvelle infra du club Cédille
+forks: 0
+languages:
+  HCL: 0.6526105446533791
+  Jinja: 0.21806630117333606
+  Python: 0.05180099400522621
+  Shell: 0.07752216016805862
+name: Plateforme-Cedille
+open_issues: 35
+owner: ClubCedille
+pulls: 4
+stargazers_count: 5
