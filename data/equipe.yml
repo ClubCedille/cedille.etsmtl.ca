@@ -7,66 +7,42 @@ button:
 membres:
   - name: "Jonathan Lopez"
     post: "Capitaine"
-    social: 
+    social:
       - title: github
         url: "https://github.com/SonOfLope"
       - title: linkedin
-        url: "https://www.linkedin.com/in/jonathan-lopez-888996204/"
+        url: "https://www.linkedin.com/in/lopez-jonathan/"
     image: "images/membres/jolopez.jpg"
 
   - name: "Thomas Cardin"
     post: "Co-Capitaine"
     social:
-      - title: github 
+      - title: github
         url: "https://github.com/ThomasCardin"
       - title: linkedin
-        url: "https://ca.linkedin.com/in/thomas-cardin-349056185"
+        url: "https://www.linkedin.com/in/thomas-cardin/"
     image: "images/membres/tcardin.jpg"
 
   - name: "Simon Boyer"
     post: "Trésorier"
     social:
-      - title: github 
+      - title: github
         url: "https://github.com/Simon-Boyer"
-      - title: linkedin 
+      - title: linkedin
         url: "https://www.linkedin.com/in/simon-boyer"
     image: "images/membres/simon-boyer.jpg"
-
-  - name: "Roch D'amour"
-    post: "Membre"
-    social:
-      - title: github
-        url: "https://github.com/notarock"
-      - title: linkedin 
-        url: "https://www.linkedin.com/in/notarock/"
-    image: "images/membres/Roch.jpg"
-
-  - name: "guyllaume"
-    post: "Membre"
-    image: "images/membres/guyllaume.jpg"
-
-  - name: "Tristan Gosselin-Hane"
-    post: "Membre"
 
   - name: "Edvin Honda"
     post: "Membre"
     social:
-      - title: github 
+      - title: github
         url: "https://github.com/EdvinHonda"
-      - title: linkedin 
+      - title: linkedin
         url: "https://www.linkedin.com/in/edvin-honda-00b941220/"
-
-  - name: "Bayes Diarra"
-    post: "Membre"
-    social:
-      - title: github 
-        url: "https://github.com/bayes-diarra"
-      - title: linkedin 
-        url: "https://www.linkedin.com/in/bayes-diarra-b67537177"
 
   - name: "Bryan Ndjeutcha"
     post: "Membre"
     social:
-      - title: github 
+      - title: github
         url: "https://gitlab.com/snakedye"
 ---

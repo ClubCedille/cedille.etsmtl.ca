@@ -16,7 +16,7 @@ network:
     - name: "Thomas Cardin"
       image: "images/membres/tcardin.jpg"
       text: "L'expérience que j'ai acquise en intégrant le Club CEDILLE a eu un impact significatif sur ma trajectoire professionnelle. Grâce à leur expertise en DevOps et à une panoplie d'activités pratiques, j'ai pu décrocher un stage en tant qu'ingénieur de fiabilité du site (SRE). Je recommande fortement le Club pour toute personne désireuse de transformer son apprentissage en opportunités concrètes."
-    - name: "Simon Boyer"
-      image: "images/membres/simon-boyer.jpg"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero."
+    - name: "Jonathan Lopez"
+      image: "images/membres/jolopez.jpg"
+      text: "Rejoindre le Club CEDILLE a été une étape déterminante dans ma carrière. Grâce à des projets innovants et à une expertise approfondie en DevSecOps, j'ai obtenu un stage en tant que spécialiste DevSecOps. J'ai pu appliquer mes compétences en Kubernetes et en automatisation, consolidant ainsi mon savoir-faire en gestion d'infrastructure infonuagique et en sécurité des systèmes."
 ---
