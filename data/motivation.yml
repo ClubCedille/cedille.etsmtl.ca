@@ -40,6 +40,9 @@ logos:
   - image: /images/sitesHeberges/dronoLab.png
     url: "https://wiki.dronolab.etsmtl.ca/"
     alt: logoDronoLab 
+  - image: /images/sitesHeberges/raconteursdangles.png
+    url: "https://raconteurs.etsmtl.ca/"
+    alt: logoRaconteursDangles   
   - image: /images/sitesHeberges/canoeBeton.png
     url: "https://canoe.etsmtl.ca/"
     alt: logoCanoeBeton
@@ -76,4 +79,7 @@ logos:
   - image: /images/sitesHeberges/dronoLab.png
     url: "https://wiki.dronolab.etsmtl.ca/"
     alt: logoDronoLab  
+  - image: /images/sitesHeberges/raconteursdangles.png
+    url: "https://raconteurs.etsmtl.ca/"
+    alt: logoRaconteursDangles
 ---
