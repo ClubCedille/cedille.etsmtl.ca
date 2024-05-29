@@ -1,4 +1,4 @@
-commits: 81
+commits: 83
 contributors:
 - ThomasCardin
 - renovate[bot]
@@ -15,5 +15,5 @@ languages:
 name: calidum-rotae
 open_issues: 3
 owner: ClubCedille
-pulls: 8
+pulls: 12
 stargazers_count: 4
