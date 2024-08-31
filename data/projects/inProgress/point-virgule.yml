@@ -1,14 +1,15 @@
-commits: 18
+commits: 23
 contributors:
 - SonOfLope
 - renovate[bot]
-description: null
+description: Un robot Discord pour enregistrer, transcrire et résumer les discussions
+  de vos canaux vocaux pour garder vos membres informés
 forks: 0
 languages:
-  Dockerfile: 0.05923473142016188
-  Python: 0.9407652685798381
+  Dockerfile: 0.04160717927799307
+  Python: 0.9583928207220069
 name: point-virgule
-open_issues: 1
+open_issues: 2
 owner: ClubCedille
 pulls: 0
 stargazers_count: 1
