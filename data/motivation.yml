@@ -7,15 +7,9 @@ logos:
   - image: /images/sitesHeberges/canoeBeton.png
     url: "https://canoe.etsmtl.ca/"
     alt: logoCanoeBeton
-  - image: /images/sitesHeberges/reseauEts.png
-    url: "https://reseau-ets.cedille.club/"
-    alt: logoReseauEts
   - image: /images/sitesHeberges/synapse.png
     url: "https://synapsets.etsmtl.ca/"
     alt: logoSynapse
-  # - image: /images/sitesHeberges/retsEts.png
-  #   url: "https://www.etsmtl.ca/activites-et-services-aux-etudiants/clubs-etudiants/rets"
-  #   alt: logoRetsEts
   - image: /images/sitesHeberges/preci.png
     url: "https://preci.etsmtl.ca/"
     alt: logoPreci
@@ -31,9 +25,9 @@ logos:
   - image: /images/sitesHeberges/pontAcier.png
     url: "https://pontacier.etsmtl.ca/"
     alt: logoPontAcier
-  # - image: /images/sitesHeberges/integrale.png
-  #   url: "https://integrale.etsmtl.ca/"
-  #   alt: logoIntegrale
+  - image: /images/sitesHeberges/integrale.png
+    url: "https://integrale.etsmtl.ca/"
+    alt: logoIntegrale
   - image: /images/sitesHeberges/saveursGenie.png
     url: "https://saveursdegenie.etsmtl.ca"
     alt: logoSaveursGenie
@@ -46,15 +40,9 @@ logos:
   - image: /images/sitesHeberges/canoeBeton.png
     url: "https://canoe.etsmtl.ca/"
     alt: logoCanoeBeton
-  - image: /images/sitesHeberges/reseauEts.png
-    url: "https://reseau-ets.cedille.club/"
-    alt: logoReseauEts
   - image: /images/sitesHeberges/synapse.png
     url: "https://synapsets.etsmtl.ca/"
     alt: logoSynapse
-  # - image: /images/sitesHeberges/retsEts.png
-  #   url: "https://www.etsmtl.ca/activites-et-services-aux-etudiants/clubs-etudiants/rets"
-  #   alt: logoRetsEts
   - image: /images/sitesHeberges/preci.png
     url: "https://preci.etsmtl.ca/"
     alt: logoPreci
@@ -70,9 +58,9 @@ logos:
   - image: /images/sitesHeberges/pontAcier.png
     url: "https://pontacier.etsmtl.ca/"
     alt: logoPontAcier
-  # - image: /images/sitesHeberges/integrale.png
-  #   url: "https://integrale.etsmtl.ca/"
-  #   alt: logoIntegrale
+  - image: /images/sitesHeberges/integrale.png
+    url: "https://integrale.etsmtl.ca/"
+    alt: logoIntegrale
   - image: /images/sitesHeberges/saveursGenie.png
     url: "https://saveursdegenie.etsmtl.ca"
     alt: logoSaveursGenie

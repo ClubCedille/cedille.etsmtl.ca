@@ -112,6 +112,6 @@ baseURL = 'https://cedille.etsmtl.ca'
     weight = 4
     [[params.footer.social]]
     icon = "fa-brands fa-discord"
-    url = "https://discord.gg/RAhFnbs3"
+    url = "https://discord.gg/kX4rXRTMR6"
     weight = 5
 
