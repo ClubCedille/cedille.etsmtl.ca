@@ -1,11 +1,12 @@
 .PHONY: nginx
 
-
 prod:
-	@docker-compose -f docker-compose-prod.yml up --build
+	@docker build -t clubcedille:prod .
+	@docker run -it --rm -p 80:80 clubcedille:prod
 
 dev:
-	@docker-compose -f docker-compose.yml up --build
+	@docker build -t clubcedille:dev -f Dockerfile.dev .
+	@docker run -it --rm -p 3000:3000 -v $(PWD):/app clubcedille:dev
 
 dev-hugo: 
 	@hugo serve --source=./ -D --disableFastRender

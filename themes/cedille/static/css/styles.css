@@ -40,13 +40,15 @@ header{
 
 .navbar-brand{
     color: rgba(255, 166, 0, 0.748); 
+    margin-right: 0.4rem;
 }
 
 .navbar-brand:hover{
     color: white; 
 }
 
-.navbar-brand .blink{
+.blink{
+    color: rgba(255, 166, 0, 0.748); 
     animation: blinker 0.6s linear infinite;
 }
 
