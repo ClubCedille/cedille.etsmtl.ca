@@ -3,7 +3,7 @@
     <div class="container">
       {{ if in .Name "Accueil" }}
       <a class="navbar-brand d-none" href="{{ relref . "/" }}">
-        {{ .Site.Title | upper }} $ 
+        {{ .Site.Title | upper }} $ <span class="blink">&#9608;</span>
       </a>
       {{ else }}
       <a class="navbar-brand" href="{{ relref . "/" }}">
