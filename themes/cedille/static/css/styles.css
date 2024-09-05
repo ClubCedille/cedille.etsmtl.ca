@@ -47,9 +47,9 @@ header{
     color: white; 
 }
 
-.blink{
-    color: rgba(255, 166, 0, 0.748); 
-    animation: blinker 0.6s linear infinite;
+#editable-underscore{
+    color: rgba(255, 166, 0, 0.748) !important; 
+    animation: blinker 0.6s linear infinite !important;
 }
 
 @keyframes blinker{
