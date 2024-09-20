@@ -3,7 +3,7 @@ enable: true
 practice:
   title: "Préparez-vous pour l'Industrie"
   subtitle: "Mettez en pratique vos connaissances théoriques"
-  summary: "Chez Cédille, nous croyons en l'importance d'outiller les étudiants pour exceller dans l'industrie du logiciel et de l'ingénierie informatique. Nous proposons une expérience pratique, cultivons un esprit fort et créons un impact positif sur la communauté. Nous comprenons l'importance de l'expérience réelle et notre club se consacre à combler le fossé entre l'apprentissage en classe et les exigences de l'industrie."
+  summary: "Chez CEDILLE, nous croyons en l'importance d'outiller les étudiants pour exceller dans l'industrie du logiciel et de l'ingénierie informatique. Nous proposons une expérience pratique, cultivons un esprit fort et créons un impact positif sur la communauté. Nous comprenons l'importance de l'expérience réelle et notre club se consacre à combler le fossé entre l'apprentissage en classe et les exigences de l'industrie."
   content:
     - title: "Développement Web"
       description: "Acquérez une expérience pratique avec les dernières technologies et outils de développement web et apprenez à créer des sites web rapides, réactifs et conviviaux. Nous couvrons tout, du développement front-end au back-end et full-stack."
@@ -16,7 +16,7 @@ practice:
 mindset: 
   title: "Cultiver des Valeurs Fondamentales"
   subtitle: "Plus que du Code, C'est une Question de Mentalité"
-  summary: "Chez Cédille, nous formons des ingénieurs avec plus que du code. Plongez dans DevOps et les méthodologies Agile, embrassez le pouvoir des logiciels open-source, et cultivez des valeurs essentielles dans le paysage technologique en évolution."
+  summary: "Chez CEDILLE, nous formons des ingénieurs avec plus que du code. Plongez dans DevOps et les méthodologies Agile, embrassez le pouvoir des logiciels open-source, et cultivez des valeurs essentielles dans le paysage technologique en évolution."
   list:
     - paradigm: "DevOps"
     - paradigm: "Développement logicielle Agile"

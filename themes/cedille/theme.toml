@@ -4,12 +4,12 @@
 name = "Cedille"
 license = "GPLV3"
 licenselink = "https://github.com/ClubCedille/cedille.etsmtl.ca/blob/master/LICENSE"
-description = "Theme used for Club Cedille's Website"
+description = "Theme used for Club CEDILLE's Website"
 homepage = "https://cedille.etsmtl.ca/"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
-  name = "Cedille"
+  name = "CEDILLE"
   homepage = "https://github.com/ClubCedille"

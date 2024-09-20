@@ -1,5 +1,5 @@
 languageCode = 'fr-ca'
-title = 'Club Cedille'
+title = 'Club CEDILLE'
 theme = 'cedille'
 baseURL = 'https://cedille.etsmtl.ca'
 
@@ -69,7 +69,7 @@ baseURL = 'https://cedille.etsmtl.ca'
     address = "1219 rue William, Montréal QC, H3C 1R1, Local D-2020"
     contactTitle = "Contact:"
     email = "cedille@etsmtl.net"
-    allRightsReserved = "2023 | Club Cédille"
+    allRightsReserved = "2023 | Club CEDILLE"
     privacyPolicy = "Politique de confidentialité"
     termsOfService = "Conditions de service"
 
