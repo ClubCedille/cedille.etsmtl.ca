@@ -7,6 +7,6 @@ function initMap() {
     new google.maps.Marker({
         position: location, 
         map,
-        title: 'Club Cedille'
+        title: 'Club CEDILLE'
     });
 }
