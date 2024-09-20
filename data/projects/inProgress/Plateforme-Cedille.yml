@@ -1,4 +1,4 @@
-commits: 664
+commits: 682
 contributors:
 - SonOfLope
 - Simon-Boyer
@@ -7,10 +7,11 @@ contributors:
 - Antoine-BL
 - cedille-terraform-cloud[bot]
 - ahenrij
-- svc-cedille-user
+- RussellJimmies
 - andrei22131
+- svc-cedille-user
 - lamiphil
-description: Nouvelle infra du club CEDILLE
+description: Nouvelle infra du club Cédille
 forks: 0
 languages:
   CSS: 0.01537968599807754
