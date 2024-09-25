@@ -45,4 +45,11 @@ membres:
     social:
       - title: github
         url: "https://gitlab.com/snakedye"
+  - name: "Alexandre Baudouin Vegas"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/alexvegas22"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/alexandre-baudouin-vegas/"
 ---
