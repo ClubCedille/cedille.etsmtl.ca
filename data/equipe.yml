@@ -30,4 +30,13 @@ membres:
         url: "https://github.com/EdvinHonda"
       - title: linkedin
         url: "https://www.linkedin.com/in/edvin-honda-00b941220/"
+  
+  - name: "James Talbi"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/Endlessflow"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/james-talbi/"
+    image: "images/membres/jamestalbi.jpg"
 ---
