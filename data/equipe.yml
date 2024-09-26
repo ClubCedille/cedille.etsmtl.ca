@@ -14,15 +14,6 @@ membres:
         url: "https://www.linkedin.com/in/lopez-jonathan/"
     image: "images/membres/jolopez.jpg"
 
-  - name: "Thomas Cardin"
-    post: "Co-Capitaine"
-    social:
-      - title: github
-        url: "https://github.com/ThomasCardin"
-      - title: linkedin
-        url: "https://www.linkedin.com/in/thomas-cardin/"
-    image: "images/membres/tcardin.jpg"
-
   - name: "Simon Boyer"
     post: "Trésorier"
     social:
@@ -39,12 +30,6 @@ membres:
         url: "https://github.com/EdvinHonda"
       - title: linkedin
         url: "https://www.linkedin.com/in/edvin-honda-00b941220/"
-
-  - name: "Bryan Ndjeutcha"
-    post: "Membre"
-    social:
-      - title: github
-        url: "https://gitlab.com/snakedye"
   
   - name: "James Talbi"
     post: "Membre"
