@@ -45,4 +45,12 @@ membres:
     social:
       - title: github
         url: "https://gitlab.com/snakedye"
+
+  - name: "Andrei Anton"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/andrei22131"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/andrei-anton-422869292/"
 ---
