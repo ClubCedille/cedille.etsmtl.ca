@@ -45,4 +45,13 @@ membres:
     social:
       - title: github
         url: "https://gitlab.com/snakedye"
+  
+  - name: "James Talbi"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/Endlessflow"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/james-talbi/"
+    image: "images/membres/jamestalbi.jpg"
 ---
