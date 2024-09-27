@@ -39,4 +39,13 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/james-talbi/"
     image: "images/membres/jamestalbi.jpg"
+
+  - name: "Julien Giguère"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/JulienGiguere"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/juliengiguere/"
+    image: "images/membres/julieng.jpg"
 ---
