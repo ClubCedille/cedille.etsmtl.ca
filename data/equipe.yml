@@ -14,15 +14,6 @@ membres:
         url: "https://www.linkedin.com/in/lopez-jonathan/"
     image: "images/membres/jolopez.jpg"
 
-  - name: "Thomas Cardin"
-    post: "Co-Capitaine"
-    social:
-      - title: github
-        url: "https://github.com/ThomasCardin"
-      - title: linkedin
-        url: "https://www.linkedin.com/in/thomas-cardin/"
-    image: "images/membres/tcardin.jpg"
-
   - name: "Simon Boyer"
     post: "Trésorier"
     social:
@@ -39,14 +30,35 @@ membres:
         url: "https://github.com/EdvinHonda"
       - title: linkedin
         url: "https://www.linkedin.com/in/edvin-honda-00b941220/"
-
-  - name: "Bryan Ndjeutcha"
+  
+  - name: "James Talbi"
     post: "Membre"
     social:
       - title: github
-        url: "https://gitlab.com/snakedye"
+        url: "https://github.com/Endlessflow"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/james-talbi/"
+    image: "images/membres/jamestalbi.jpg"
 
-  - name: "Sebastian Perez"
+  - name: "Andrei Anton"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/andrei22131"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/andrei-anton-422869292/"
+    image: "images/membres/andrei-anton.jpg" 
+
+  - name: "Julien Giguère"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/JulienGiguere"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/juliengiguere/"
+    image: "images/membres/julieng.jpg"
+    
+    - name: "Sebastian Perez"
     post: "Membre"
     social:
       - title: github
