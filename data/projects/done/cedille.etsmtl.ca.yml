@@ -1,4 +1,4 @@
-commits: 944
+commits: 963
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -7,29 +7,29 @@ contributors:
 - notarock
 - AXDOOMER
 - ygotame
+- alexvegas22
 - jalilbengoufa
 - BernardClaing
-- cguertin14
-- bayes-diarra
 - plaurin84
+- bayes-diarra
+- cguertin14
 - JulienRobitaille
 - samdidos
-- dependabot[bot]
 - andrei22131
+- dependabot[bot]
 - Angry-Russian
+- RussellJimmies
 - ThomasCardin
 - maximest-pierre
 - DarkPyroM
 - Epsot
-- JulienGiguere
-- berbiche
-- Endlessflow
 - BinaryTiger
-- RussellJimmies
+- Endlessflow
+- berbiche
+- JulienGiguere
 - waffle-iron
 - mikefaille
 - vyacheslav31
-- dkahn-ets
 description: Site web du club CEDILLE
 forks: 2
 languages:
@@ -43,5 +43,5 @@ languages:
 name: cedille.etsmtl.ca
 open_issues: 4
 owner: ClubCedille
-pulls: 2
+pulls: 1
 stargazers_count: 1
