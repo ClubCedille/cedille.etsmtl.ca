@@ -40,15 +40,6 @@ membres:
         url: "https://www.linkedin.com/in/james-talbi/"
     image: "images/membres/jamestalbi.jpg"
 
-  - name: "Alexandre Baudouin Vegas"
-    post: "Membre"
-    social:
-      - title: github
-        url: "https://github.com/alexvegas22"
-      - title: linkedin
-        url: "https://www.linkedin.com/in/alexandre-baudouin-vegas/"
-    image: "images/membres/photoalex.jpg"
-
   - name: "Andrei Anton"
     post: "Membre"
     social:
@@ -75,4 +66,14 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/sebastian-perez-ets/"
     image: "images/membres/sebastianPerez.jpg"
+
+
+  - name: "Alexandre Baudouin Vegas"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/alexvegas22"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/alexandre-baudouin-vegas/"
+    image: "images/membres/photoalex.jpg"
 ---
