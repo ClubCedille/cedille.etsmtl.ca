@@ -30,7 +30,7 @@ membres:
         url: "https://github.com/EdvinHonda"
       - title: linkedin
         url: "https://www.linkedin.com/in/edvin-honda-00b941220/"
-  
+
   - name: "James Talbi"
     post: "Membre"
     social:
@@ -47,7 +47,7 @@ membres:
         url: "https://github.com/andrei22131"
       - title: linkedin
         url: "https://www.linkedin.com/in/andrei-anton-422869292/"
-    image: "images/membres/andrei-anton.jpg" 
+    image: "images/membres/andrei-anton.jpg"
 
   - name: "Julien Giguère"
     post: "Membre"
@@ -57,4 +57,13 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/juliengiguere/"
     image: "images/membres/julieng.jpg"
+
+  - name: "Sebastian Perez"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/Epsot"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/sebastian-perez-ets/"
+    image: "images/membres/sebastianPerez.jpg"
 ---
