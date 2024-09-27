@@ -1,4 +1,4 @@
-commits: 923
+commits: 940
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -9,19 +9,22 @@ contributors:
 - ygotame
 - jalilbengoufa
 - BernardClaing
-- plaurin84
-- bayes-diarra
 - cguertin14
+- bayes-diarra
+- plaurin84
 - JulienRobitaille
 - samdidos
 - dependabot[bot]
+- andrei22131
 - Angry-Russian
 - ThomasCardin
 - maximest-pierre
 - DarkPyroM
-- BinaryTiger
-- Endlessflow
+- Epsot
+- JulienGiguere
 - berbiche
+- Endlessflow
+- BinaryTiger
 - RussellJimmies
 - waffle-iron
 - mikefaille
@@ -38,7 +41,7 @@ languages:
   Nix: 0.0018395619012579773
   Shell: 0.00012735428547170613
 name: cedille.etsmtl.ca
-open_issues: 6
+open_issues: 5
 owner: ClubCedille
-pulls: 4
+pulls: 2
 stargazers_count: 1
