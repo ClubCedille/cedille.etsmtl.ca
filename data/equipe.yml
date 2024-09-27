@@ -23,6 +23,15 @@ membres:
         url: "https://www.linkedin.com/in/simon-boyer"
     image: "images/membres/simon-boyer.jpg"
 
+  - name: "William Lemire"
+    post: "Trésorier"
+    social:
+      - title: github
+        url: "https://github.com/RussellJimmies"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/wlemire"
+    image: "images/membres/williamlemire.jpg"
+
   - name: "Edvin Honda"
     post: "Membre"
     social:
