@@ -49,7 +49,7 @@ membres:
         url: "https://www.linkedin.com/in/alexandre-baudouin-vegas/"
     image: "images/membres/photoalex.jpg"
 
-    - name: "Andrei Anton"
+  - name: "Andrei Anton"
     post: "Membre"
     social:
       - title: github
