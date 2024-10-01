@@ -85,4 +85,12 @@ membres:
         url: "https://www.linkedin.com/in/alexandre-baudouin-vegas/"
     image: "images/membres/photoalex.jpg"
 
+  - name: "Alexander Pan"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/AlexanderPan96"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/alexander-pan-505034177/"  
+    image: "images/membres/alexanderpan.jpg"
 ---
