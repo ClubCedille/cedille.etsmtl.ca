@@ -49,14 +49,14 @@ membres:
         url: "https://www.linkedin.com/in/james-talbi/"
     image: "images/membres/jamestalbi.jpg"
 
-  - name "Michael Sakellaropoulos"
+  - name: "Michael Sakellaropoulos"
     post: "Membre"
     social:
       - title: github
         url: "https://github.com/mj-sakellaropoulos"
       - title: linkedin
         url: "https://www.linkedin.com/in/michael-john-s-9ab93a129/"
-    image: "images/membres/msakellaropoulos.jpg"
+    image: "images/membres/msakellaropoulos.png"
 
   - name: "Andrei Anton"
     post: "Membre"
