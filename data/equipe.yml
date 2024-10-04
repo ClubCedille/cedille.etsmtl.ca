@@ -111,4 +111,13 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/etienne-ouellette-halle/"  
     image: "images/membres/etienneOuelletteHalle.jpg"
+  
+  - name: "Yann Mijatovic"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/Oxsw1ng"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/yann-mijatovic/"
+    image: "images/membres/yannmijatovic.jpg"
 ---
