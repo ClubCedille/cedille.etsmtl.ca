@@ -1,4 +1,4 @@
-FROM yanqd0/hugo as build
+FROM yanqd0/hugo
 
 EXPOSE 3000
 
@@ -6,4 +6,4 @@ WORKDIR /src
 
 COPY . .
 
-CMD [ "hugo", "server", "watch", "--bind", "0.0.0.0", "-p", "3000"]
+ENTRYPOINT [ "hugo", "server","--disableFastRender", "--bind", "0.0.0.0", "-p", "3000"]

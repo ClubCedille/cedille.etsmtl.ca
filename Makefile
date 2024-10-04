@@ -6,7 +6,7 @@ prod:
 
 dev:
 	@docker build -t clubcedille:dev -f Dockerfile.dev .
-	@docker run -it --rm -p 3000:3000 -v $(PWD):/app clubcedille:dev
+	@docker run -it --rm -p 3000:3000 -v $(PWD):/src clubcedille:dev
 
 dev-hugo: 
 	@hugo serve --source=./ -D --disableFastRender
