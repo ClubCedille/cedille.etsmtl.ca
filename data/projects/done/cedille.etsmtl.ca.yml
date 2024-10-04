@@ -1,4 +1,4 @@
-commits: 978
+commits: 983
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -23,13 +23,13 @@ contributors:
 - DarkPyroM
 - maximest-pierre
 - Epsot
+- Oxsw1ng
 - BinaryTiger
 - Endlessflow
 - mj-sakellaropoulos
 - berbiche
 - JulienGiguere
 - etienneoh
-- AlexanderPan96
 description: Site web du club CEDILLE
 forks: 2
 languages:
@@ -43,5 +43,5 @@ languages:
 name: cedille.etsmtl.ca
 open_issues: 4
 owner: ClubCedille
-pulls: 1
+pulls: 0
 stargazers_count: 1
