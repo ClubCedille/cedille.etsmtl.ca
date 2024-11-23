@@ -4,11 +4,11 @@ contributors:
 - cguertin14
 description: Remplissage automatique des demandes de remboursement pour les clubs
   étudiants de l'ÉTS.
-forks: 0
+forks: 1
 languages:
   Python: 1.0
 name: rapport_eirik
 open_issues: 3
 owner: ClubCedille
 pulls: 0
-stargazers_count: 2
+stargazers_count: 3

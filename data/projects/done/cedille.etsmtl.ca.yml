@@ -1,4 +1,4 @@
-commits: 992
+commits: 995
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -16,8 +16,8 @@ contributors:
 - plaurin84
 - JulienRobitaille
 - samdidos
-- dependabot[bot]
 - etienneoh
+- dependabot[bot]
 - ThomasCardin
 - RussellJimmies
 - Angry-Russian
@@ -41,7 +41,7 @@ languages:
   Nix: 0.0018272028335699327
   Shell: 0.00012649865770868765
 name: cedille.etsmtl.ca
-open_issues: 2
+open_issues: 3
 owner: ClubCedille
 pulls: 0
 stargazers_count: 1

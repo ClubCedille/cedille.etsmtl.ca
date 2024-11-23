@@ -1,12 +1,12 @@
-commits: 530
+commits: 531
 contributors:
 - trilby-bot
 - SonOfLope
 - EdvinHonda
 - CloeD
 - dependabot[bot]
-- jeannemas
 - Simon-Boyer
+- jeannemas
 description: Site web du club étudiant de l'ÉTS Raconteurs d'angle
 forks: 0
 languages:
@@ -20,5 +20,5 @@ languages:
 name: raconteurs.etsmtl.ca
 open_issues: 0
 owner: ClubCedille
-pulls: 7
+pulls: 3
 stargazers_count: 2
