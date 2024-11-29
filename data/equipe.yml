@@ -24,7 +24,7 @@ membres:
     image: "images/membres/simon-boyer.jpg"
 
   - name: "William Lemire"
-    post: "Trésorier"
+    post: "Co-Capitaine & Trésorier"
     social:
       - title: github
         url: "https://github.com/RussellJimmies"
