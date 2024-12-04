@@ -1,4 +1,4 @@
-commits: 804
+commits: 810
 contributors:
 - SonOfLope
 - Simon-Boyer
@@ -9,6 +9,7 @@ contributors:
 - andrei22131
 - Epsot
 - ahenrij
+- Oxsw1ng
 - RussellJimmies
 - Endlessflow
 - svc-cedille-user
@@ -25,7 +26,7 @@ languages:
   Python: 0.03397177419354839
   Shell: 0.05084005376344086
 name: Plateforme-Cedille
-open_issues: 67
+open_issues: 68
 owner: ClubCedille
 pulls: 8
 stargazers_count: 8

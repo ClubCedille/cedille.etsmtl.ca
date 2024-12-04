@@ -1,4 +1,4 @@
-commits: 995
+commits: 996
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -41,7 +41,7 @@ languages:
   Nix: 0.0018272028335699327
   Shell: 0.00012649865770868765
 name: cedille.etsmtl.ca
-open_issues: 3
+open_issues: 4
 owner: ClubCedille
-pulls: 0
+pulls: 1
 stargazers_count: 1
