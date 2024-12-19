@@ -1,15 +1,15 @@
-commits: 810
+commits: 850
 contributors:
 - SonOfLope
 - Simon-Boyer
 - mj-sakellaropoulos
 - ThomasCardin
 - Antoine-BL
-- cedille-terraform-cloud[bot]
 - andrei22131
+- cedille-terraform-cloud[bot]
+- Oxsw1ng
 - Epsot
 - ahenrij
-- Oxsw1ng
 - RussellJimmies
 - Endlessflow
 - svc-cedille-user
@@ -28,5 +28,5 @@ languages:
 name: Plateforme-Cedille
 open_issues: 68
 owner: ClubCedille
-pulls: 8
+pulls: 7
 stargazers_count: 8
