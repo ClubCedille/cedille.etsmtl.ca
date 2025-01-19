@@ -1,4 +1,4 @@
-commits: 998
+commits: 999
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -22,7 +22,7 @@ contributors:
 - RussellJimmies
 - Angry-Russian
 - DarkPyroM
-- maximest-pierre
+- maximeconnolly
 - Epsot
 - Oxsw1ng
 - BinaryTiger
@@ -43,5 +43,5 @@ languages:
 name: cedille.etsmtl.ca
 open_issues: 4
 owner: ClubCedille
-pulls: 1
+pulls: 0
 stargazers_count: 1
