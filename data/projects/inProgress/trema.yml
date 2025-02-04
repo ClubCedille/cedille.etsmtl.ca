@@ -1,4 +1,4 @@
-commits: 70
+commits: 71
 contributors:
 - SonOfLope
 - GRV96
@@ -9,8 +9,8 @@ contributors:
 description: Robot logiciel pour le serveur Discord des clubs étudiants de l'ÉTS
 forks: 1
 languages:
-  Dockerfile: 0.0017207236652375367
-  Python: 0.9982792763347624
+  Dockerfile: 0.0016782770938616313
+  Python: 0.9983217229061384
 name: trema
 open_issues: 5
 owner: ClubCedille
