@@ -1,4 +1,4 @@
-FROM yanqd0/hugo
+FROM floryn90/hugo:0.136.5
 
 EXPOSE 3000
 
