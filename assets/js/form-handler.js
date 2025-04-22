@@ -7,7 +7,10 @@ function submitForm(formId) {
     var form = document.getElementById(formId);
     const apiKey = document.querySelector('meta[name="apiKey"]').content;
     const link = document.querySelector('meta[name="link"]').content;
-  
+    var loadingMember = document.getElementById("loading-member");
+    var loadingPartnership = document.getElementById("loading-partnership");
+    var loading = formId === 'member-form' ? loadingMember : loadingPartnership;
+
     if (!form.checkValidity()) {
       form.reportValidity(); 
       return; 
@@ -37,6 +40,7 @@ function submitForm(formId) {
       "RequestDetails": requestDetails
     };
     
+    loading.style.display = 'inline-block';
     fetch(link, {
       method: 'POST',
       headers: {
@@ -61,5 +65,8 @@ function submitForm(formId) {
       console.error('Error submitting form:', error);
       errorMessage.style.display = 'block'; 
       successMessage.style.display = 'none';
+    })
+    .finally(() => {
+      loading.style.display = 'none'; 
     });
   }

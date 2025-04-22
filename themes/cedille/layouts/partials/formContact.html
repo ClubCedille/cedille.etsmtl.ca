@@ -26,7 +26,7 @@
       </div>
       <div class="col-md-6">
         <label for="formation" class="form-label">{{ $navMember.education }}</label>
-        <select name="formation" class="form-select" id="specificSizeSelect">
+        <select name="formation" class="form-select" id="formation">
           <option selected>{{ $navMember.selectedEducation }}</option>
           {{ range $navMember.optionValueEducation }}
           <option value="{{ .value }}">{{ .choice }}</option>
@@ -35,7 +35,7 @@
       </div>
       <div class="col-md-6">
         <label for="programme" class="form-label">{{ $navMember.program }}</label>
-        <select name="programme" class="form-select" id="specificSizeSelect">
+        <select name="programme" class="form-select" id="programme">
           <option selected>{{ $navMember.selectedProgram }}</option>
           {{ range $navMember.optionValueProgram }}
           <option value="{{ .value }}">{{ .choice }}</option>
@@ -43,12 +43,13 @@
         </select>
       </div>
       <div class="col-md-6">
-        <label class="form-label">{{ $navMember.interests }}</label>
-        <textarea name="interets" class="form-control"></textarea>
+        <label for="interests" class="form-label">{{ $navMember.interests }}</label>
+        <textarea name="interets" class="form-control" id="interests"></textarea>
       </div>    
     </form>
     <div class="text-end mt-2 me-2">
       <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm('member-form');">
+        <span id="loading-member" class="spinner-border spinner-border-sm" role="loading" style="display: none;"></span>
         {{ .button.submit }}
       </button>
       <div id="member-form-success" style="display: none;" class="alert alert-success form-success" role="alert">
@@ -100,24 +101,25 @@
   <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
     <form class="row g-3 px-2 mt-2" id="partnership-form">
       <div class="col-md-6">
-        <label for="formGroupExampleInput" class="form-label">{{ $navInfo.name }}</label>
-        <input name="nom" type="text" class="form-control" id="formGroupExampleInput" required>
+        <label for="namePartnership" class="form-label">{{ $navInfo.name }}</label>
+        <input name="nom" type="text" class="form-control" id="namePartnership" required>
       </div>
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">{{ $navInfo.email }}</label>
-        <input name="courriel" type="email" class="form-control" id="inputEmail4" required>
+        <label for="emailPartnership" class="form-label">{{ $navInfo.email }}</label>
+        <input name="courriel" type="email" class="form-control" id="emailPartnership" required>
       </div>
       <div class="col-md-6">
-        <label for="formGroupExampleInput" class="form-label">{{ $navInfo.company }}</label>
-        <input name="compagnie" type="text" class="form-control" id="formGroupExampleInput" required>
+        <label for="companyPartnership" class="form-label">{{ $navInfo.company }}</label>
+        <input name="compagnie" type="text" class="form-control" id="companyPartnership" required>
       </div>
       <div class="col-md-6">
-        <label class="form-label">{{ $navInfo.message }}</label>
-        <textarea name="messageCompagnie" class="form-control"></textarea>
+        <label for="messageCompagnie" class="form-label">{{ $navInfo.message }}</label>
+        <textarea name="messageCompagnie" class="form-control" id="messageCompagnie"></textarea>
       </div>
     </form>
     <div class="text-end mt-2 me-2">
       <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm('partnership-form');">
+        <span id="loading-partnership" class="spinner-border spinner-border-sm" role="loading" style="display: none;"></span>
           {{ .button.submit }}
       </button> 
       <div id="partnership-form-success" style="display: none;" class="alert alert-success form-success" role="alert">
