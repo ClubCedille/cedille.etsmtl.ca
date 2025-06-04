@@ -5,14 +5,32 @@ button:
   becomingMember: "Devenir membre"
   url: "/contact"
 membres:
-  - name: "Alexandre Baudouin Vegas"
-    post: "Capitaine"
+    - name: "Alexandre Baudouin Vegas"
+    post: "Membre"
     social:
       - title: github
         url: "https://github.com/alexvegas22"
       - title: linkedin
         url: "https://www.linkedin.com/in/alexandre-baudouin-vegas/"
     image: "images/membres/photoalex.jpg"
+
+  - name: "Jonathan Lopez"
+    post: "Exec"
+    social:
+      - title: github
+        url: "https://github.com/SonOfLope"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/lopez-jonathan/"
+    image: "images/membres/jolopez.jpg"
+
+  - name: "Simon Boyer"
+    post: "Exec"
+    social:
+      - title: github
+        url: "https://github.com/Simon-Boyer"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/simon-boyer"
+    image: "images/membres/simon-boyer.jpg"
 
   - name: "William Lemire"
     post: "Trésorier"
@@ -23,23 +41,14 @@ membres:
         url: "https://www.linkedin.com/in/wlemire"
     image: "images/membres/williamlemire.jpg"
 
-  - name: "Jonathan Lopez"
-    post: "exec"
+  - name: "Michael Sakellaropoulos"
+    post: "Membre"
     social:
       - title: github
-        url: "https://github.com/SonOfLope"
+        url: "https://github.com/mj-sakellaropoulos"
       - title: linkedin
-        url: "https://www.linkedin.com/in/lopez-jonathan/"
-    image: "images/membres/jolopez.jpg"
-
-  - name: "Simon Boyer"
-    post: "exec"
-    social:
-      - title: github
-        url: "https://github.com/Simon-Boyer"
-      - title: linkedin
-        url: "https://www.linkedin.com/in/simon-boyer"
-    image: "images/membres/simon-boyer.jpg"
+        url: "https://www.linkedin.com/in/michael-john-s-9ab93a129/"
+    image: "images/membres/msakellaropoulos.png"
 
   - name: "Edvin Honda"
     post: "Membre"
@@ -91,9 +100,9 @@ membres:
       - title: github
         url: "https://github.com/etienneoh"
       - title: linkedin
-        url: "https://www.linkedin.com/in/etienne-ouellette-halle/"  
+        url: "https://www.linkedin.com/in/etienne-ouellette-halle/"
     image: "images/membres/etienneOuelletteHalle.jpg"
-  
+
   - name: "Yann Mijatovic"
     post: "Membre"
     social:
@@ -102,5 +111,4 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/yann-mijatovic/"
     image: "images/membres/yannmijatovic.jpg"
-
 ---
