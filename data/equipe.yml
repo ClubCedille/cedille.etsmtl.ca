@@ -5,7 +5,7 @@ button:
   becomingMember: "Devenir membre"
   url: "/contact"
 membres:
-    - name: "Alexandre Baudouin Vegas"
+  - name: "Alexandre Baudouin Vegas"
     post: "Capitaine"
     social:
       - title: github
