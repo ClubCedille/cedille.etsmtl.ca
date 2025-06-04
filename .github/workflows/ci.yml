@@ -1,5 +1,7 @@
 name: CI
 on:
+  schedule:
+    - cron: '0 8 4,19 * *' #At 8:00AM every 4th and 19th of the month 
   push:
     branches:
     - master

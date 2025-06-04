@@ -13,9 +13,9 @@
                 <div class="member">
                     <div class="image mb-4">
                         {{ if .image }}
-                        <img src="{{ .image | relURL }}" alt="{{.name}}" style="box-shadow: 0px 10px 10px 0px black;">
+                        <img src="{{ .image | relURL }}" alt="{{.name}}" class="member-image">
                         {{ else }}
-                        <img src="{{ .Site.baseurl }}/images/membres/anonyme.jpg" alt="{{.name}}" style="box-shadow: 0px 10px 10px 0px black;">
+                        <img src="{{ .Site.baseurl }}/images/membres/anonyme.jpg" alt="{{.name}}" class="member-image">
                         {{ end }}
                     </div>
                     <div class="member-information">
@@ -52,3 +52,49 @@
 </div>
 {{end}}
 {{end}}
+
+<style>
+.members .member {
+    text-align: center;
+}
+
+.member-image {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.member-information h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.member-information h5 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #555;
+}
+
+.social-links a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.becoming-member {
+    text-align: center;
+}
+
+.becoming-member a {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+</style>

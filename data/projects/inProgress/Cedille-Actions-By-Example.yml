@@ -1,14 +1,16 @@
-commits: 13
+commits: 21
 contributors:
 - SonOfLope
+- andrei22131
 description: null
 forks: 0
 languages:
-  Dockerfile: 0.3011507156890261
-  Go: 0.30732528767892225
-  Shell: 0.3915239966320516
+  Dockerfile: 0.283038776048536
+  Go: 0.28884199419678186
+  JavaScript: 0.060142442627275125
+  Shell: 0.367976787127407
 name: Cedille-Actions-By-Example
 open_issues: 0
 owner: ClubCedille
-pulls: 0
+pulls: 2
 stargazers_count: 0

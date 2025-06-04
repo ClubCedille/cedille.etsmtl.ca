@@ -16,12 +16,12 @@
                                 <p class="info"><a href="mailto: {{ $info.email }}">{{ $info.email }}</a></p>
                                 <ul class="list-unstyled list-inline">
                                     {{ range .Site.Params.Footer.social }}
-                                    <li class="list-inline-item px-1">
+                                    <li class="list-inline-item px-md-1">
                                         <a target="_blank" href={{ .url }}><i class="{{ .icon }} fa-lg"></i></a>
                                     </li>
                                     {{ end }}
                                 </ul>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </div>

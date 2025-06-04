@@ -1,8 +1,9 @@
-commits: 459
+commits: 664
 contributors:
 - trilby-bot
 - SonOfLope
 - EdvinHonda
+- CloeD
 - dependabot[bot]
 - jeannemas
 - Simon-Boyer
@@ -19,5 +20,5 @@ languages:
 name: raconteurs.etsmtl.ca
 open_issues: 0
 owner: ClubCedille
-pulls: 7
-stargazers_count: 2
+pulls: 5
+stargazers_count: 3
