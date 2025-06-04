@@ -6,7 +6,7 @@ button:
   url: "/contact"
 membres:
     - name: "Alexandre Baudouin Vegas"
-    post: "Membre"
+    post: "Capitaine"
     social:
       - title: github
         url: "https://github.com/alexvegas22"
