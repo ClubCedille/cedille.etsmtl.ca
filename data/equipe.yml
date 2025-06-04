@@ -5,8 +5,17 @@ button:
   becomingMember: "Devenir membre"
   url: "/contact"
 membres:
-  - name: "Jonathan Lopez"
+  - name: "Alexandre Baudouin Vegas"
     post: "Capitaine"
+    social:
+      - title: github
+        url: "https://github.com/alexvegas22"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/alexandre-baudouin-vegas/"
+    image: "images/membres/photoalex.jpg"
+
+  - name: "Jonathan Lopez"
+    post: "Exec"
     social:
       - title: github
         url: "https://github.com/SonOfLope"
@@ -15,7 +24,7 @@ membres:
     image: "images/membres/jolopez.jpg"
 
   - name: "Simon Boyer"
-    post: "Trésorier"
+    post: "Exec"
     social:
       - title: github
         url: "https://github.com/Simon-Boyer"
@@ -85,33 +94,15 @@ membres:
         url: "https://www.linkedin.com/in/juliengiguere/"
     image: "images/membres/julieng.jpg"
 
-  - name: "Alexandre Baudouin Vegas"
-    post: "Membre"
-    social:
-      - title: github
-        url: "https://github.com/alexvegas22"
-      - title: linkedin
-        url: "https://www.linkedin.com/in/alexandre-baudouin-vegas/"
-    image: "images/membres/photoalex.jpg"
-
-  - name: "Alexander Pan"
-    post: "Membre"
-    social:
-      - title: github
-        url: "https://github.com/AlexanderPan96"
-      - title: linkedin
-        url: "https://www.linkedin.com/in/alexander-pan-505034177/"  
-    image: "images/membres/AlexanderPan.jpg"
-
   - name: "Etienne Ouellette-Halle"
     post: "Membre"
     social:
       - title: github
         url: "https://github.com/etienneoh"
       - title: linkedin
-        url: "https://www.linkedin.com/in/etienne-ouellette-halle/"  
+        url: "https://www.linkedin.com/in/etienne-ouellette-halle/"
     image: "images/membres/etienneOuelletteHalle.jpg"
-  
+
   - name: "Yann Mijatovic"
     post: "Membre"
     social:
