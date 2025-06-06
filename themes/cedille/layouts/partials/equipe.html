@@ -38,6 +38,42 @@
     </div>
 </div>
 
+<div class="row">
+    <h2 style="border-bottom: solid 2px grey;"><b>Anciens Membres</b></h2>
+</div>
+
+<div class="members">
+    <div class="container py-5">
+        <div class="row text-center">
+            {{ range .anciens-membres}}
+            <div class="col-md-4 col-sm-6 my-3">
+                <div class="member">
+                    <div class="image mb-4">
+                        {{ if .image }}
+                        <img src="{{ .image | relURL }}" alt="{{.name}}" class="member-image">
+                        {{ else }}
+                        <img src="{{ .Site.baseurl }}/images/membres/anonyme.jpg" alt="{{.name}}" class="member-image">
+                        {{ end }}
+                    </div>
+                    <div class="member-information">
+                        <h4>{{.name}}</h4>
+                        <h5>{{.post}}</h5>
+                    </div>
+                    {{ if .social }}
+                    <div class="row">
+                        <div class="social-links">
+                            {{ range .social}}
+                                <a class="mx-1" href="{{.url}}"><i class="fab fa-{{ .title }} fa-lg"></i></a>
+                            {{end}}
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{end}}
+        </div>
+    </div>
+</div>
 <!-- Becoming member section -->
 <div class="becoming-member">
     <div class="container">
