@@ -111,13 +111,13 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/yann-mijatovic/"
     image: "images/membres/yannmijatovic.jpg"
-anciens-membres:
+anciensmembres:
   - name: "Roch D'amour"
     post: "Membre"
     social:
       - title: github
         url: "https://github.com/notarock"
-      - title: linkedin 
+      - title: linkedin
         url: "https://www.linkedin.com/in/notarock/"
     image: "images/membres/Roch.jpg"
 
