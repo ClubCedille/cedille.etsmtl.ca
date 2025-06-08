@@ -900,7 +900,7 @@ header{
 
 /*----------------------- PROJECT PAGE --------------------*/
 
-.projects-container a {
+.github-icon a {
     color: white;
     border-radius: 50%;
     background-color: black;
@@ -913,12 +913,12 @@ header{
     width: fit-content;
 }
 
-.projects-container i {
+.github-icon i {
     font-size: 16px;
     margin: 0;
 }
 
-.projects-container a:hover{
+.github-icon a:hover{
     background-color: rgba(255, 166, 0, 0.748);
 }
 
