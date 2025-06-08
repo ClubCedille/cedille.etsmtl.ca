@@ -182,12 +182,12 @@ anciensmembres:
   - name: "Lydia Akrour"
     post: "Ancien capitaine"
     social: []
-    image: "images/membres/unknown.jpg"
+    image: "images/membres/anonyme.jpg"
 
   - name: "Mauricio Figueroa"
     post: "Ancien trésorier"
     social: []
-    image: "images/membres/unknown.jpg"
+    image: "images/membres/anonyme.jpg"
 
   - name: "Yamlal Gotame"
     post: "Ancien capitaine"
@@ -213,7 +213,7 @@ anciensmembres:
   - name: "Xavier Langlais-Savage"
     post: "Membre"
     social: []
-    image: "images/membres/unknown.jpg"
+    image: "images/membres/anonyme.jpg"
 
   - name: "Javier Beltran"
     post: "Membre"
@@ -223,7 +223,7 @@ anciensmembres:
   - name: "Ilyass Arbaoui"
     post: "Membre"
     social: []
-    image: "images/membres/unknown.jpg"
+    image: "images/membres/anonyme.jpg"
 
   - name: "Bernard Claing"
     post: "Membre"
@@ -275,7 +275,7 @@ anciensmembres:
   - name: "Vincent Perrier"
     post: "Membre"
     social: []
-    image: "images/membres/unknown.jpg"
+    image: "images/membres/anonyme.jpg"
 
 
 ---
