@@ -1,141 +1,57 @@
 {{ define "main" }}
 <!-- Progress project section -->
-<div class="progress-projects">
-    <div class="container my-5">
-        <div class="row">
-            <h2 style="border-bottom: solid 2px grey;"><b>Projets en cours</b></h2>
-        </div>
-        <div class="row">
-            {{ range $.Site.Data.projects.inProgress }}
-                <div class="col-12 col-lg-6 col-md-6">
-                    <div class="card my-2" style="background-color: rgb(191, 189, 189); height: 250px">
-                        <div class="card-body mt-1">
-                            <div class="row mb-3">
-                                <div class="col-8">
-                                    <h5><b>{{ .name }}</b></h5>
-                                </div>
-                                <div class="col-4 text-center">
-                                    <a href="https://github.com/ClubCedille/{{ .name }}"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <p class="mb-2">{{ .description }}</p>
-                            {{if .languages}}
-                            <p>Languages: 
-                                {{ $.Scratch.Set "languages" slice }}
-                                {{ range $language, $ratio := .languages }}
-                                    {{ $.Scratch.Add "languages" $language }}
-                                {{ end }}
-                                {{ $languages := $.Scratch.Get "languages" }}
-                                {{ delimit $languages ", " }}
-                            </p>
-                            {{end}}
-                        </div>
-                        <div class="card-footer">
-                            <ul class="list-unstyled list-inline">
-                                <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
-                                <li class="list-inline-item"><b>{{ .stargazers_count }}</b> étoiles</li>
-                                <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            {{ end }}
-        </div>
-    </div>
+<div class="container my-5">
+  <div class="row">
+    <h2 style="border-bottom: solid 2px grey;"><b>Projets en cours</b></h2>
+  </div>
+  <div class="row">
+    {{ range $.Site.Data.projects.inProgress }}
+      <div class="col-12 col-lg-6 col-md-6">
+        {{ partial "project_card" . }}
+      </div>
+    {{ end }}
+  </div>
 </div>
 <!-- end progress project section -->
 
 <!-- Finished projects section -->
-<div class="finished-projects">
-    <div class="container my-5">
-        <div class="row">
-            <h2 style="border-bottom: solid 2px grey;"><b>Projets terminés</b></h2>
-        </div>
-        <div class="row">
-            {{ $index := 0}}
-            {{ range .Site.Data.projects.done }}
-                {{ if or (eq $index 0) (eq $index 1)}}
-                    {{ $index = add $index 1 }}
-                    <div class="col-12 col-lg-6 col-md-6">
-                        <div class="card my-2" style="background-color: rgb(191, 189, 189); height: 250px">
-                            <div class="card-body mt-1">
-                                <div class="row mb-3">
-                                    <div class="col-8">
-                                        <h5><b>{{ .name }}</b></h5>
-                                    </div>
-                                    <div class="col-4 text-center">
-                                        <a href="https://github.com/ClubCedille/{{ .name }}"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                                <p class="mb-2">{{ .description }}</p>
-                                <p>Languages: 
-                                    {{ $.Scratch.Set "languages" slice }}
-                                    {{ range $language, $ratio := .languages }}
-                                        {{ $.Scratch.Add "languages" $language }}
-                                    {{ end }}
-                                    {{ $languages := $.Scratch.Get "languages" }}
-                                    {{ delimit $languages ", " }}
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <ul class="list-unstyled list-inline">
-                                    <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
-                                    <li class="list-inline-item"><b>{{ .stargazers_count }}</b> étoiles</li>
-                                    <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                {{ end }}
-            {{ end }}
-        </div>
-        <div class="row btn-collapse collapse" id="PROJETS-APPARITION">
-            {{ $index := 0}}
-            {{ range .Site.Data.projects.done }}
-                {{ if not (eq $index 0) }} {{ if not (eq $index 1) }} 
-                    <div class="col-12 col-lg-6 col-md-6">
-                        <div class="card my-2" style="background-color: rgb(191, 189, 189); height: 250px">
-                            <div class="card-body mt-1">
-                                <div class="row mb-3">
-                                    <div class="col-8">
-                                        <h5><b>{{ .name }}</b></h5>
-                                    </div>
-                                    <div class="col-4 text-center">
-                                        <a href="https://github.com/ClubCedille/{{ .name }}"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                                <p class="mb-2">{{ .description }}</p>
-                                <p>Languages: 
-                                    {{ $.Scratch.Set "languages" slice }}
-                                    {{ range $language, $ratio := .languages }}
-                                        {{ $.Scratch.Add "languages" $language }}
-                                    {{ end }}
-                                    {{ $languages := $.Scratch.Get "languages" }}
-                                    {{ delimit $languages ", " }}
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <ul class="list-unstyled list-inline">
-                                    <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
-                                    <li class="list-inline-item"><b>{{ .stargazers_count }}</b> étoiles</li>
-                                    <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                {{ end }}{{ end }}
-                {{ $index = add $index 1 }}
-            {{ end }}
-        </div>
-        <div class="row text-center mt-2" id="button-down" style="display: block">
-            <h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir plus</h6>
-            <button onclick="hideButtonDown()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION"><i class="fa-solid fa-angles-down"></i></button> 
-        </div>
-        <div class="row text-center mt-2" id="button-up" style="display: none">
-            <h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir moins</h6>
-            <button onclick="hideButtonUp()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION"><i class="fa-solid fa-angles-up"></i></button>
-        </div>
+<div class="container my-5">
+    <div class="row">
+	<h2 style="border-bottom: solid 2px grey;"><b>Projets terminés</b></h2>
+    </div>
+    <div class="row">
+	{{ $index := 0 }}
+	{{ range .Site.Data.projects.done }}
+	    {{ if or (eq $index 0) (eq $index 1) }}
+		{{ $index = add $index 1 }}
+		<div class="col-12 col-lg-6 col-md-6">
+		    {{ partial "project_card" . }}
+		</div>
+	    {{ end }}
+	{{ end }}
+    </div>
+    <div class="row btn-collapse collapse" id="PROJETS-APPARITION">
+	{{ $index := 0 }}
+	{{ range .Site.Data.projects.done }}
+	    {{ if not (or (eq $index 0) (eq $index 1)) }}
+		<div class="col-12 col-lg-6 col-md-6">
+		    {{ partial "project_card" . }}
+		</div>
+	    {{ end }}
+	    {{ $index = add $index 1 }}
+	{{ end }}
+    </div>
+    <div class="row text-center mt-2" id="button-down" style="display: block">
+	<h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir plus</h6>
+	<button onclick="hideButtonDown()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
+	    <i class="fa-solid fa-angles-down"></i>
+	</button>
+    </div>
+    <div class="row text-center mt-2" id="button-up" style="display: none">
+	<h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir moins</h6>
+	<button onclick="hideButtonUp()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
+	    <i class="fa-solid fa-angles-up"></i>
+	</button>
     </div>
 </div>
-<!--end finished projects section-->
 {{ end }}

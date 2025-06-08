@@ -111,4 +111,171 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/yann-mijatovic/"
     image: "images/membres/yannmijatovic.jpg"
+
+anciensmembres:
+  - name: "Roch D'amour"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/notarock"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/notarock/"
+    image: "images/membres/Roch.jpg"
+
+  - name: "Guyllaume Rousseau"
+    post: "Membre"
+    image: "images/membres/guyllaume.jpg"
+
+  - name: "Thomas Cardin"
+    post: "Co-Capitaine"
+    social:
+      - title: github
+        url: "https://github.com/ThomasCardin"
+      - title: linkedin
+        url: "https://ca.linkedin.com/in/thomas-cardin-349056185"
+    image: "images/membres/tcardin.jpg"
+
+  - name: "Bayes Diarra"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/bayes-diarra"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/bayes-diarra-b67537177"
+
+  - name: "Bryan Ndjeutcha"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://gitlab.com/snakedye"
+
+  - name: "Tristan Gosselin-Hane"
+    post: "Membre"
+
+  - name: "Charles Guertin"
+    post: "Ancien Chef d'équipe SRE / Ancien Capitaine 2019-2021"
+    social:
+      - title: github
+        url: "https://github.com/cguertin14/"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/charles-guertin-495b6520/"
+    image: "images/membres/cguertz.jpg"
+
+  - name: "Nicolas Berbiche"
+    post: "Ancien Co-Capitaine"
+    social:
+      - title: github
+        url: "https://github.com/berbiche"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/nicolas-berbiche/"
+    image: "images/membres/nberbiche.jpg"
+
+  - name: "Alexandre-Xavier Labonté-Lamoureux"
+    post: "Ancien Membre et Mentor / Précédemment: Trésorier et chef de projet"
+    social:
+      - title: github
+        url: "https://github.com/axdoomer"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/axll/"
+    image: "images/membres/axdoomer.jpg"
+
+  - name: "Lydia Akrour"
+    post: "Ancien capitaine"
+    social: []
+    image: "images/membres/anonyme.jpg"
+
+  - name: "Mauricio Figueroa"
+    post: "Ancien trésorier"
+    social: []
+    image: "images/membres/anonyme.jpg"
+
+  - name: "Yamlal Gotame"
+    post: "Ancien capitaine"
+    social:
+      - title: linkedin
+        url: "https://ca.linkedin.com/in/ygotame"
+    image: "images/membres/batman.jpg"
+
+  - name: "Jalil Bengoufa"
+    post: "Membre / Anciennement: Co-Capitaine"
+    social:
+      - title: github
+        url: "https://github.com/jalilbengoufa"
+      - title: linkedin
+        url: "https://ca.linkedin.com/in/jalil-bengoufa-80a406b7"
+    image: "images/membres/jalil.jpg"
+
+  - name: "Van Duc Nguyen"
+    post: "Membre"
+    social: []
+    image: "images/membres/duc.jpg"
+
+  - name: "Xavier Langlais-Savage"
+    post: "Membre"
+    social: []
+    image: "images/membres/anonyme.jpg"
+
+  - name: "Javier Beltran"
+    post: "Membre"
+    social: []
+    image: "images/membres/javier.jpg"
+
+  - name: "Ilyass Arbaoui"
+    post: "Membre"
+    social: []
+    image: "images/membres/anonyme.jpg"
+
+  - name: "Bernard Claing"
+    post: "Membre"
+    social: []
+    image: "images/membres/bernard.jpg"
+
+  - name: "Patrick Laurin"
+    post: "Ancien capitaine et cofondateur"
+    social:
+      - title: linkedin
+        url: "https://ca.linkedin.com/in/laurinpatrick"
+    image: "images/membres/mosieurlaurin.jpg"
+
+  - name: "Arthur Gambet"
+    post: "Membre"
+    social: []
+    image: "images/membres/arthur.jpg"
+
+  - name: "Samuel Cardinal"
+    post: "Ancien capitaine"
+    social:
+      - title: linkedin
+        url: "https://ca.linkedin.com/in/samuelcardinal"
+    image: "images/membres/samuel.jpg"
+
+  - name: "Julien Robitaille"
+    post: "Ancien Co-Capitaine"
+    social:
+      - title: github
+        url: "https://www.github.com/JulienRobitaille"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/robitaillej/"
+    image: "images/membres/julien.jpg"
+
+  - name: "Michael Faille"
+    post: "Architecte DevOps et leader en fiabilité / Anciennement: initiateur, cofondateur et capitaine"
+    social:
+      - title: github
+        url: "https://www.github.com/mikefaille"
+    image: "images/membres/michael.jpg"
+
+  - name: "Raphaël Bouchard"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://www.github.com/waldo121"
+    image: "images/membres/raphaël.jpg"
+
+  - name: "Vincent Perrier"
+    post: "Membre"
+    social: []
+    image: "images/membres/anonyme.jpg"
+
+
 ---

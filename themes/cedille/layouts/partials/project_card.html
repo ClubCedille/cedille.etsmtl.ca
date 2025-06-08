@@ -1,0 +1,29 @@
+<div class="card my-2" style="background-color: white; height: 250px">
+    <div class="card-body mt-1">
+      <div class="row mb-3">
+	<div class="col">
+          <h5><b>{{ .name }}</b></h5>
+	</div>
+	<div class="col-auto text-end">
+	  <a href="https://github.com/ClubCedille/{{ .name }}" class="btn btn-dark rounded-circle d-flex align-items-center justify-content-center p-2" style="width: 30px; height: 30px;">
+    <i class="fab fa-github"></i>
+	  </a>
+	</div>
+      </div>
+      <p class="mb-2">{{ .description }}</p>
+      {{ if .languages }}
+	{{ $languages := slice }}
+	{{ range $language, $_ := .languages }}
+	  {{ $languages = append $language $languages }}
+	{{ end }}
+	<p>Languages: {{ delimit $languages ", " }}</p>
+      {{ end }}
+    </div>
+    <div class="card-footer">
+        <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
+            <li class="list-inline-item"><b>{{ .stargazers_count }}</b> étoiles</li>
+            <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
+        </ul>
+    </div>
+</div>

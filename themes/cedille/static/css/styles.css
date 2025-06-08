@@ -39,16 +39,16 @@ header{
 }
 
 .navbar-brand{
-    color: rgba(255, 166, 0, 0.748); 
+    color: rgba(255, 166, 0, 0.748);
     margin-right: 0px;
 }
 
 .navbar-brand:hover{
-    color: white; 
+    color: white;
 }
 
 #editable-underscore{
-    color: rgba(255, 166, 0, 0.748) !important; 
+    color: rgba(255, 166, 0, 0.748) !important;
     animation: blinker 0.6s linear infinite !important;
 }
 
@@ -84,11 +84,11 @@ header{
 }
 
 .navbar-collapse a.active{
-    color: rgba(255, 166, 0, 0.748); 
+    color: rgba(255, 166, 0, 0.748);
 }
 
 .navbar-collapse a:hover{
-    color: rgba(255, 166, 0, 0.748); 
+    color: rgba(255, 166, 0, 0.748);
 }
 
 .navbar-collapse .dropdown-menu{
@@ -238,7 +238,7 @@ header{
 .projets-recents .panel button{
     text-align: left;
     padding-right: 60%;
-} 
+}
 
 .projets-recents .panel .btn:focus{
     box-shadow: none;
@@ -382,7 +382,7 @@ header{
 
 .partenaires .partenaire:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.285);
-    
+
 }
 
 .partenaires .partenaire a .bnc{
@@ -535,7 +535,7 @@ header{
         width: 170px;
         height: 100px;
     }
-    
+
     .partenaires .partenaire a .ets{
         width: 190px;
         height: 100px;
@@ -899,34 +899,27 @@ header{
 }
 
 /*----------------------- PROJECT PAGE --------------------*/
-/*-------------- PROGRESS SECTION -----------------*/
-.progress-projects a{
-    color: rgba(255, 166, 0, 0.748);
-    border-radius: 100%;
+
+.github-icon a {
+    color: white;
+    border-radius: 50%;
     background-color: black;
     padding: 8px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all 0.2s ease;
+    width: fit-content;
 }
 
-.progress-projects a:hover{
-    padding: 10px;
-    background-color: rgb(221, 207, 207);
+.github-icon i {
+    font-size: 16px;
+    margin: 0;
 }
 
-/*-------------- FINISHED SECTION -----------------*/
-.finished-projects a{
-    color: rgba(255, 166, 0, 0.748);
-    border-radius: 100%;
-    background-color: black;
-    padding: 8px;
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.finished-projects a:hover{
-    padding: 10px;
-    background-color: rgb(221, 207, 207);
+.github-icon a:hover{
+    background-color: rgba(255, 166, 0, 0.748);
 }
 
 /*---------------------- FOOTER SECTION ---------------------*/
@@ -969,4 +962,3 @@ footer .copyleft {
         padding-left: 0;
     }
 }
-
