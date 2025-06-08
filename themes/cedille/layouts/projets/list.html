@@ -1,61 +1,57 @@
 {{ define "main" }}
 <!-- Progress project section -->
-<div class="projects-container">
-    <div class="container my-5">
-        <div class="row">
-            <h2 style="border-bottom: solid 2px grey;"><b>Projets en cours</b></h2>
-        </div>
-        <div class="row">
-            {{ range $.Site.Data.projects.inProgress }}
-                <div class="col-12 col-lg-6 col-md-6">
-                    {{ partial "project_card" . }}
-                </div>
-            {{ end }}
-        </div>
-    </div>
+<div class="container my-5">
+  <div class="row">
+    <h2 style="border-bottom: solid 2px grey;"><b>Projets en cours</b></h2>
+  </div>
+  <div class="row">
+    {{ range $.Site.Data.projects.inProgress }}
+      <div class="col-12 col-lg-6 col-md-6">
+        {{ partial "project_card" . }}
+      </div>
+    {{ end }}
+  </div>
 </div>
 <!-- end progress project section -->
 
 <!-- Finished projects section -->
-<div class="projects">
-    <div class="container my-5">
-        <div class="row">
-            <h2 style="border-bottom: solid 2px grey;"><b>Projets terminés</b></h2>
-        </div>
-        <div class="row">
-            {{ $index := 0 }}
-            {{ range .Site.Data.projects.done }}
-                {{ if or (eq $index 0) (eq $index 1) }}
-                    {{ $index = add $index 1 }}
-                    <div class="col-12 col-lg-6 col-md-6">
-                        {{ partial "project_card" . }}
-                    </div>
-                {{ end }}
-            {{ end }}
-        </div>
-        <div class="row btn-collapse collapse" id="PROJETS-APPARITION">
-            {{ $index := 0 }}
-            {{ range .Site.Data.projects.done }}
-                {{ if not (or (eq $index 0) (eq $index 1)) }}
-                    <div class="col-12 col-lg-6 col-md-6">
-                        {{ partial "project_card" . }}
-                    </div>
-                {{ end }}
-                {{ $index = add $index 1 }}
-            {{ end }}
-        </div>
-        <div class="row text-center mt-2" id="button-down" style="display: block">
-            <h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir plus</h6>
-            <button onclick="hideButtonDown()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
-                <i class="fa-solid fa-angles-down"></i>
-            </button>
-        </div>
-        <div class="row text-center mt-2" id="button-up" style="display: none">
-            <h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir moins</h6>
-            <button onclick="hideButtonUp()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
-                <i class="fa-solid fa-angles-up"></i>
-            </button>
-        </div>
+<div class="container my-5">
+    <div class="row">
+	<h2 style="border-bottom: solid 2px grey;"><b>Projets terminés</b></h2>
+    </div>
+    <div class="row">
+	{{ $index := 0 }}
+	{{ range .Site.Data.projects.done }}
+	    {{ if or (eq $index 0) (eq $index 1) }}
+		{{ $index = add $index 1 }}
+		<div class="col-12 col-lg-6 col-md-6">
+		    {{ partial "project_card" . }}
+		</div>
+	    {{ end }}
+	{{ end }}
+    </div>
+    <div class="row btn-collapse collapse" id="PROJETS-APPARITION">
+	{{ $index := 0 }}
+	{{ range .Site.Data.projects.done }}
+	    {{ if not (or (eq $index 0) (eq $index 1)) }}
+		<div class="col-12 col-lg-6 col-md-6">
+		    {{ partial "project_card" . }}
+		</div>
+	    {{ end }}
+	    {{ $index = add $index 1 }}
+	{{ end }}
+    </div>
+    <div class="row text-center mt-2" id="button-down" style="display: block">
+	<h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir plus</h6>
+	<button onclick="hideButtonDown()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
+	    <i class="fa-solid fa-angles-down"></i>
+	</button>
+    </div>
+    <div class="row text-center mt-2" id="button-up" style="display: none">
+	<h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir moins</h6>
+	<button onclick="hideButtonUp()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
+	    <i class="fa-solid fa-angles-up"></i>
+	</button>
     </div>
 </div>
 {{ end }}
