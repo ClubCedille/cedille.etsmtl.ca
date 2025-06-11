@@ -1,4 +1,4 @@
-commits: 1046
+commits: 1052
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -16,20 +16,20 @@ contributors:
 - plaurin84
 - JulienRobitaille
 - samdidos
+- JulienGiguere
 - etienneoh
 - dependabot[bot]
+- Angry-Russian
 - ThomasCardin
 - RussellJimmies
-- Angry-Russian
-- DarkPyroM
 - maximeconnolly
-- Epsot
+- DarkPyroM
 - Oxsw1ng
-- BinaryTiger
-- Endlessflow
-- mj-sakellaropoulos
+- Epsot
 - berbiche
-- JulienGiguere
+- mj-sakellaropoulos
+- Endlessflow
+- BinaryTiger
 description: Site web du club CEDILLE
 forks: 2
 languages:
