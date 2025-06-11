@@ -1,6 +1,7 @@
 name: Docker
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -9,8 +10,10 @@ on:
       - master
 jobs:     
   build-push-ghcr:
-    if: ${{ github.event.head_commit.committer.name != 'svc-cedille-user' }}
     uses: ClubCedille/cedille-workflows/.github/workflows/build-push-ghcr.yaml@master
     with:
       container-name: ${{ github.event.repository.name }}
     secrets: inherit
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
