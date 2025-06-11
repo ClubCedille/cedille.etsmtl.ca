@@ -10,7 +10,6 @@ on:
       - master
 jobs:     
   build-push-ghcr:
-    if: ${{ github.event.head_commit.committer.name != 'svc-cedille-user' }}
     uses: ClubCedille/cedille-workflows/.github/workflows/build-push-ghcr.yaml@master
     with:
       container-name: ${{ github.event.repository.name }}
