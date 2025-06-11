@@ -1,0 +1,13 @@
+commits: 17
+contributors:
+- SonOfLope
+- Simon-Boyer
+- cedille-terraform-cloud[bot]
+description: 'Cluster Kubernetes: k8s-shared'
+forks: 0
+languages: {}
+name: k8s-shared
+open_issues: 0
+owner: ClubCedille
+pulls: 1
+stargazers_count: 0
