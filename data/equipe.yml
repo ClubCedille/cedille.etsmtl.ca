@@ -86,7 +86,7 @@ membres:
     image: "images/membres/sebastianPerez.jpg"
 
   - name: "Julien Giguère"
-    post: "Membre"
+    post: "Exec"
     social:
       - title: github
         url: "https://github.com/JulienGiguere"
