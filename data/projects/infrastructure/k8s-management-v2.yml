@@ -1,6 +1,7 @@
-commits: 16
+commits: 18
 contributors:
 - SonOfLope
+- Simon-Boyer
 - cedille-terraform-cloud[bot]
 description: 'Cluster Kubernetes: k8s-management-v2'
 forks: 0
