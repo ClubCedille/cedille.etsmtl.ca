@@ -1,4 +1,4 @@
-commits: 18
+commits: 23
 contributors:
 - SonOfLope
 - Simon-Boyer
@@ -12,5 +12,5 @@ languages:
 name: k8s-management-v2
 open_issues: 0
 owner: ClubCedille
-pulls: 0
+pulls: 1
 stargazers_count: 0

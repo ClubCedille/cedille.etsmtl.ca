@@ -1,4 +1,4 @@
-commits: 1061
+commits: 1062
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -43,5 +43,5 @@ languages:
 name: cedille.etsmtl.ca
 open_issues: 4
 owner: ClubCedille
-pulls: 0
+pulls: 1
 stargazers_count: 1
