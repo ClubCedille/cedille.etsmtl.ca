@@ -30,9 +30,7 @@ body:
         - [ ] LinkedIn profile link  /*Lien vers le profil LinkedIn*
         - [ ] [Optional / Optionnel] Profile picture path /*Chemin de la photo de profil* (e.g. `images/membres/{nom_image}`)
 
-  - type: markdown
-    attributes:
-      value: |
+
         [Optional / Optionnel]
         The profile picture is properly sized to 225x225 pixels.
         *La photo de profil est correctement redimensionnée à 225x225 pixels.*
