@@ -9,7 +9,6 @@ body:
     id: member_name
     attributes:
       label: "Member Name / Nom du membre"
-      description: "Name of the new member"
     validations:
       required: true
 
@@ -29,8 +28,11 @@ body:
         - [ ] Full Name  /*Nom complet*
         - [ ] GitHub profile link  /*Lien vers le profil GitHub*
         - [ ] LinkedIn profile link  /*Lien vers le profil LinkedIn*
-        - [ ] [Optional] Profile picture path (e.g. `images/membres/{nom_image}`)  *[Optionnel] Chemin de la photo de profil*
+        - [ ] [Optional / Optionnel] Profile picture path /*Chemin de la photo de profil* (e.g. `images/membres/{nom_image}`)
 
+ - type: markdown
+    attributes:
+      value: |
         [Optional / Optionnel]
         The profile picture is properly sized to 225x225 pixels.
         *La photo de profil est correctement redimensionnée à 225x225 pixels.*
