@@ -1,4 +1,4 @@
-commits: 922
+commits: 929
 contributors:
 - SonOfLope
 - Simon-Boyer
@@ -15,22 +15,22 @@ contributors:
 - ahenrij
 - JulienGiguere
 - etienneoh
-- Endlessflow
 - svc-cedille-user
+- Endlessflow
 - lamiphil
 description: Nouvelle infra du club CEDILLE
 forks: 1
 languages:
-  CSS: 0.011827758270190353
-  Dockerfile: 0.017187211236370358
-  HCL: 0.7123452226945112
-  HTML: 0.006221893673381384
-  JavaScript: 0.029754204398447608
-  Jinja: 0.14492084026366045
-  Python: 0.03114026982073554
-  Shell: 0.046602599642703135
+  CSS: 0.011935844834017158
+  Dockerfile: 0.017344274524431182
+  HCL: 0.7097165236851921
+  HTML: 0.0062787517095611095
+  JavaScript: 0.030026109660574413
+  Jinja: 0.14624518214596544
+  Python: 0.031424841477060796
+  Shell: 0.04702847196319781
 name: Plateforme-Cedille
-open_issues: 41
+open_issues: 46
 owner: ClubCedille
 pulls: 2
 stargazers_count: 10

@@ -1,4 +1,4 @@
-commits: 1062
+commits: 1071
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -8,9 +8,9 @@ contributors:
 - AXDOOMER
 - ygotame
 - alexvegas22
+- JulienGiguere
 - jalilbengoufa
 - BernardClaing
-- JulienGiguere
 - cguertin14
 - andrei22131
 - bayes-diarra
@@ -43,5 +43,5 @@ languages:
 name: cedille.etsmtl.ca
 open_issues: 4
 owner: ClubCedille
-pulls: 1
+pulls: 0
 stargazers_count: 1
