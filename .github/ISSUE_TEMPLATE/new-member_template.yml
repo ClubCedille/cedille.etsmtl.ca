@@ -30,7 +30,7 @@ body:
         - [ ] LinkedIn profile link  /*Lien vers le profil LinkedIn*
         - [ ] [Optional / Optionnel] Profile picture path /*Chemin de la photo de profil* (e.g. `images/membres/{nom_image}`)
 
- - type: markdown
+  - type: markdown
     attributes:
       value: |
         [Optional / Optionnel]
