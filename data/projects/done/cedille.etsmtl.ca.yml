@@ -1,4 +1,4 @@
-commits: 1084
+commits: 1086
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -6,8 +6,8 @@ contributors:
 - RikuAvelar
 - notarock
 - AXDOOMER
-- ygotame
 - alexvegas22
+- ygotame
 - JulienGiguere
 - jalilbengoufa
 - BernardClaing
@@ -41,7 +41,7 @@ languages:
   Nix: 0.001887504718761797
   Shell: 0.00013067340360658594
 name: cedille.etsmtl.ca
-open_issues: 8
+open_issues: 7
 owner: ClubCedille
 pulls: 0
 stargazers_count: 1
