@@ -55,7 +55,7 @@ baseURL = 'https://cedille.etsmtl.ca'
     phone = "514 396-8800, poste 7302"
 
     [params.map]
-    APIkey="AIzaSyBbdrK23GFc0JJpng1dX8O_FA_kJv8zhOE"
+    APIkey="AIzaSyD1aM-ZRRtAGOlk4qQWdLhHQe0qiAZlFRA"
     latitude = "45.49382"
     longitude = "-73.56233"
 
