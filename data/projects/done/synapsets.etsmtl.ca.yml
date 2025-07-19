@@ -1,4 +1,4 @@
-commits: 228
+commits: 231
 contributors:
 - SonOfLope
 - EdvinHonda
@@ -6,6 +6,7 @@ contributors:
 - Jackdamiel
 - renovate[bot]
 - Maerakk
+- alexvegas22
 description: Site web du club SynapsÉTS
 forks: 0
 languages:
