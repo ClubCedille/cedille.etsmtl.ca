@@ -14,6 +14,15 @@ membres:
         url: "https://www.linkedin.com/in/alexandre-baudouin-vegas/"
     image: "images/membres/photoalex.jpg"
 
+  - name: "Julien Giguère"
+    post: "Co-Capitaine"
+    social:
+      - title: github
+        url: "https://github.com/JulienGiguere"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/juliengiguere/"
+    image: "images/membres/julieng.jpg"
+    
   - name: "William Lemire"
     post: "Trésorier"
     social:
@@ -23,14 +32,6 @@ membres:
         url: "https://www.linkedin.com/in/wlemire"
     image: "images/membres/williamlemire.jpg"
 
-  - name: "Julien Giguère"
-    post: "Exec"
-    social:
-      - title: github
-        url: "https://github.com/JulienGiguere"
-      - title: linkedin
-        url: "https://www.linkedin.com/in/juliengiguere/"
-    image: "images/membres/julieng.jpg"
 
   - name: "Jonathan Lopez"
     post: "Exec/Ancien capitaine"
