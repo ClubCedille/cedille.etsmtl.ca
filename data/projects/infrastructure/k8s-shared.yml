@@ -1,4 +1,4 @@
-commits: 48
+commits: 50
 contributors:
 - JulienGiguere
 - SonOfLope
@@ -11,5 +11,5 @@ languages: {}
 name: k8s-shared
 open_issues: 0
 owner: ClubCedille
-pulls: 2
+pulls: 3
 stargazers_count: 0
