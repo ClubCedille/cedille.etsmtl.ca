@@ -1,9 +1,9 @@
-commits: 50
+commits: 65
 contributors:
 - JulienGiguere
+- alexvegas22
 - SonOfLope
 - Simon-Boyer
-- alexvegas22
 - cedille-terraform-cloud[bot]
 description: 'Cluster Kubernetes: k8s-shared'
 forks: 0
