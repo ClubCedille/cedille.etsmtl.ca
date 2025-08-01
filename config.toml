@@ -79,20 +79,24 @@ baseURL = 'https://cedille.etsmtl.ca'
     weight = 1
     [[params.footer.menu]]
     name = "À propos"
-    url = "/equipe/"
+    url = "/a-propos/"
     weight = 2
+    [[params.footer.menu]]
+    name = "Équipe"
+    url = "/equipe/"
+    weight = 3
     [[params.footer.menu]]
     name = "Nos projets"
     url = "/projets/"
-    weight = 3
+    weight = 4
     [[params.footer.menu]]
     name = "Partenaires"
     url = "/partenaires/"
-    weight = 4
+    weight = 5
     [[params.footer.menu]]
     name = "Contact"
     url = "/contact/"
-    weight = 5 
+    weight = 6 
 
     [[params.footer.social]]
     icon = "fab fa-facebook-f"
