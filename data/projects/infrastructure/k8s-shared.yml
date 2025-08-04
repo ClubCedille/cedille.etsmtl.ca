@@ -1,4 +1,4 @@
-commits: 65
+commits: 105
 contributors:
 - JulienGiguere
 - alexvegas22
@@ -11,5 +11,5 @@ languages: {}
 name: k8s-shared
 open_issues: 0
 owner: ClubCedille
-pulls: 3
+pulls: 2
 stargazers_count: 0
