@@ -2,12 +2,12 @@
 enable: true
 title: "FAQs"
 questionTitle: "Tu as encore une question ?"
-text: 
+text:
   first: "Rejoindre un club pendant tes études peut être une décision effrayante. Nous le comprenons. Pour t'aider à faire un choix, nous avons pensé partager avec toi quelques-unes des questions les plus fréquentes que nous recevons."
   second: "N'hésite pas à nous contacter. Nous serons ravis d'en savoir plus sur toi et de répondre à toutes les questions que tu pourrais avoir."
 button:
   contactUs: "Contactez-nous"
-  url: "/contact"
+  url: "/contact/"
 accordion:
   - idHeader: "flush-headingOne"
     idParent: "accordionFaq"
@@ -20,23 +20,23 @@ accordion:
     question: "Je viens de commencer à coder récemment... Est-ce que je vais m'en sortir ?"
     response: "<p>Certes ! Nous accueillons des étudiants de tous les niveaux de compétences en programmation, y compris les débutants. Il est tout à fait normal de se sentir submergé au début, surtout lorsque l'on débute sans aucune expérience. Chez nous, l'objectif principal est l'apprentissage progressif et le développement de compétences. Nous comprenons parfaitement que certaines de nos activités puissent sembler extrêmement intimidantes au départ.</p><p>Il est essentiel que tu comprennes que notre objectif ultime est d'apprendre et de construire lentement nos compétences. Tu ne dois pas te sentir obligés de contribuer immédiatement à nos projets complexes. Si tu te concentres sur l'apprentissage pas à pas, jour après jour, avec suffisamment de volonté, tu atteindras éventuellement un niveau où tu pourras activement contribuer à toutes sortes de projets complexes.</p><p>Chez CEDILLE, nous croyons fermement en la progression par étapes. Nous t'encourageons à te concentrer sur ton propre apprentissage, en tirant parti des ressources, du soutien et des opportunités d'apprentissage que nous offrons. Avec le temps, tu gagneras en confiance et en compétences, et tu constateras que tu pourras apporter une contribution précieuse à notre communauté. Souviens-toi toujours que chaque petit pas compte dans ton parcours d'apprentissage.</p>"
   - idHeader: "flush-headingThree"
-    idParent: "accordionFaq" 
+    idParent: "accordionFaq"
     target: "flush-collapseThree"
     question: "Je suis principalement intéressé(e) par la technologie XYZ. Est-ce que cela posera un problème pour vous ?"
     response: "Absolument pas ! Nous valorisons la diversité des intérêts et des domaines d'expertise au sein de notre club. Nous encourageons les membres à proposer des projets et à poursuivre leurs intérêts spécifiques. C'est une opportunité pour nous d'élargir notre champ d'expertise et de découvrir de nouvelles perspectives."
   - idHeader: "flush-headingFour"
-    idParent: "accordionFaq" 
+    idParent: "accordionFaq"
     target: "flush-collapseFour"
     question: "Est-ce que vous acceptez les suggestions de projets de la part des membres ?"
     response: "Nous encourageons activement les membres à proposer des idées de projets."
   - idHeader: "flush-headingFive"
-    idParent: "accordionFaq" 
+    idParent: "accordionFaq"
     target: "flush-collapseFive"
     question: "Je ne suis pas en génie logiciel/informatique, est-ce que je peux quand même joindre ?"
     response: "Notre club est ouvert à tous les étudiants, indépendamment de leur domaine d'études. Nous croyons en la valeur de la diversité et nous encourageons les membres provenant de différents horizons à se joindre à nous. Que tu sois en génie mécanique, en génie électrique, en génie civil ou dans tout autre domaine, tu es le bienvenu dans notre club. Nous offrons un environnement d'apprentissage inclusif où tu pourras contribuer avec tes connaissances et tes perspectives."
   - idHeader: "flush-headingSix"
-    idParent: "accordionFaq" 
+    idParent: "accordionFaq"
     target: "flush-collapseSix"
     question: "Je suis intéressé(e). Quelle est la procédure pour rejoindre le club ?"
     response: "Tout d'abord, tu peux remplir le formulaire d'adhésion sur notre site web, où nous te demanderons quelques informations de base. Ensuite, nous t'inviterons à notre prochaine réunion ou événement pour que tu puisses rencontrer les membres et en apprendre davantage sur nos activités. C'est l'occasion idéale de poser des questions, de discuter de tes intérêts et de t'impliquer dans nos projets."
---- 
+---
