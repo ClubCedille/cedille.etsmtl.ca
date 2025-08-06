@@ -33,10 +33,16 @@ logos:
     alt: logoSaveursGenie
   - image: /images/sitesHeberges/dronoLab.png
     url: "https://wiki.dronolab.etsmtl.ca/"
-    alt: logoDronoLab 
+    alt: logoDronoLab
   - image: /images/sitesHeberges/raconteursdangles.png
     url: "https://raconteurs.etsmtl.ca/"
-    alt: logoRaconteursDangles   
+    alt: logoRaconteursDangles
+  - image: /images/sitesHeberges/conjure-logo.svg
+    url: "https://conjure.etsmtl.ca/"
+    alt: logoConjure
+  - image: /images/sitesHeberges/crabe-logo.jpg
+    url: "https://atelier.crabe.cedille.club/"
+    alt: logoCrabe
   - image: /images/sitesHeberges/canoeBeton.png
     url: "https://canoe.etsmtl.ca/"
     alt: logoCanoeBeton
@@ -66,8 +72,14 @@ logos:
     alt: logoSaveursGenie
   - image: /images/sitesHeberges/dronoLab.png
     url: "https://wiki.dronolab.etsmtl.ca/"
-    alt: logoDronoLab  
+    alt: logoDronoLab
   - image: /images/sitesHeberges/raconteursdangles.png
     url: "https://raconteurs.etsmtl.ca/"
     alt: logoRaconteursDangles
+  - image: /images/sitesHeberges/conjure-logo.svg
+    url: "https://conjure.etsmtl.ca/"
+    alt: logoConjure
+  - image: /images/sitesHeberges/crabe-logo.jpg
+    url: "https://atelier.crabe.cedille.club/"
+    alt: logoCrabe
 ---
