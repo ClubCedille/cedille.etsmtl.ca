@@ -43,6 +43,9 @@ logos:
   - image: /images/sitesHeberges/crabe-logo.jpg
     url: "https://atelier.crabe.cedille.club/"
     alt: logoCrabe
+  - image: /images/sitesHeberges/ingenieuse-ets.jpeg
+    url: "https://ingenieuses.ca/"
+    alt: logoIngenieusesETS
   - image: /images/sitesHeberges/canoeBeton.png
     url: "https://canoe.etsmtl.ca/"
     alt: logoCanoeBeton
@@ -82,4 +85,7 @@ logos:
   - image: /images/sitesHeberges/crabe-logo.jpg
     url: "https://atelier.crabe.cedille.club/"
     alt: logoCrabe
+  - image: /images/sitesHeberges/ingenieuse-ets.jpeg
+    url: "https://ingenieuses.ca/"
+    alt: logoIngenieusesETS
 ---
