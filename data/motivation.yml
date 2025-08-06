@@ -49,6 +49,9 @@ logos:
   - image: /images/sitesHeberges/algoets.png
     url: "https://markets.prod.cedille.club/"
     alt: logoAlgoETS
+  - image: /images/sitesHeberges/fraternite.png
+    url: "https://commande.fraternitedupiranha.com/"
+    alt: logoFraternitedupiranha
   - image: /images/sitesHeberges/canoeBeton.png
     url: "https://canoe.etsmtl.ca/"
     alt: logoCanoeBeton
@@ -94,4 +97,7 @@ logos:
   - image: /images/sitesHeberges/algoets.png
     url: "https://markets.prod.cedille.club/"
     alt: logoAlgoETS
+  - image: /images/sitesHeberges/fraternite.png
+    url: "https://commande.fraternitedupiranha.com/"
+    alt: logoFraternitedupiranha
 ---
