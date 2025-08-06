@@ -46,6 +46,9 @@ logos:
   - image: /images/sitesHeberges/ingenieuse-ets.jpeg
     url: "https://ingenieuses.ca/"
     alt: logoIngenieusesETS
+  - image: /images/sitesHeberges/algoets.png
+    url: "https://markets.prod.cedille.club/"
+    alt: logoAlgoETS
   - image: /images/sitesHeberges/canoeBeton.png
     url: "https://canoe.etsmtl.ca/"
     alt: logoCanoeBeton
@@ -88,4 +91,7 @@ logos:
   - image: /images/sitesHeberges/ingenieuse-ets.jpeg
     url: "https://ingenieuses.ca/"
     alt: logoIngenieusesETS
+  - image: /images/sitesHeberges/algoets.png
+    url: "https://markets.prod.cedille.club/"
+    alt: logoAlgoETS
 ---
