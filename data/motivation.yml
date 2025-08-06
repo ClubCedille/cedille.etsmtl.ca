@@ -31,13 +31,13 @@ logos:
   - image: /images/sitesHeberges/raconteursdangles.png
     url: "https://raconteurs.etsmtl.ca/"
     alt: logoRaconteursDangles
-  - image: /images/sitesHeberges/conjure-logo.svg
+  - image: /images/sitesHeberges/conjure.png
     url: "https://conjure.etsmtl.ca/"
     alt: logoConjure
-  - image: /images/sitesHeberges/crabe-logo.jpg
+  - image: /images/sitesHeberges/crabe-logo.png
     url: "https://atelier.crabe.cedille.club/"
     alt: logoCrabe
-  - image: /images/sitesHeberges/ingenieuse-ets.jpeg
+  - image: /images/sitesHeberges/ingenieuses.svg
     url: "https://ingenieuses.ca/"
     alt: logoIngenieusesETS
   - image: /images/sitesHeberges/algoets.png
@@ -73,13 +73,13 @@ logos:
   - image: /images/sitesHeberges/raconteursdangles.png
     url: "https://raconteurs.etsmtl.ca/"
     alt: logoRaconteursDangles
-  - image: /images/sitesHeberges/conjure-logo.svg
+  - image: /images/sitesHeberges/conjure.png
     url: "https://conjure.etsmtl.ca/"
     alt: logoConjure
-  - image: /images/sitesHeberges/crabe-logo.jpg
+  - image: /images/sitesHeberges/crabe-logo.png
     url: "https://atelier.crabe.cedille.club/"
     alt: logoCrabe
-  - image: /images/sitesHeberges/ingenieuse-ets.jpeg
+  - image: /images/sitesHeberges/ingenieuses.svg
     url: "https://ingenieuses.ca/"
     alt: logoIngenieusesETS
   - image: /images/sitesHeberges/algoets.png
