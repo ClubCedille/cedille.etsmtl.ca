@@ -752,12 +752,11 @@ header{
 
 .motivation .slider .slide-track .slide img{
     width: 100px;
-    height: 100px;
+    height: auto;
 }
 
 .motivation .slider .slide-track .slide img:hover{
-    height: 120px;
-    width: 120px;
+    transform: scale(1.2) translateX(-5px);
 }
 
 /*--------- CONTRIBUTE SECTION --------*/
