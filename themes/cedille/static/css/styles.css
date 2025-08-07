@@ -865,6 +865,47 @@ header{
     color: rgba(255, 166, 0, 0.748);
     background-color: black;
 }
+
+/*--------------------- SERVICES PAGE ----------------------*/
+/*------------- SIDEBAR SECTION -------------*/
+.services-section .sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.services-section .sidebar a:hover{
+    color: rgba(255, 166, 0, 0.748);
+}
+
+/*------------- ASIDE SECTION -------------*/
+.services-section .card {
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.285);
+}
+
+.services-section .nav-pills .nav-link {
+    color: black;
+}
+
+.services-section .nav-pills .nav-link.active {
+    background-color: #FFD2A4;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.285);
+}
+
+.services-section .btn{
+    border: 1px solid black !important;
+    border-radius: 0 !important;
+    transition: all 0.4s ease-in-out;
+}
+
+.services-section .btn:hover{
+    color: rgba(255, 166, 0, 0.748);
+    background-color: black;
+}
+
 /*---------------- TEAM PAGE ---------------- */
 .team-section .social-links a{
     color: black;

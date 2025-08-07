@@ -1,0 +1,29 @@
+---
+enable: true
+title: "Services offerts"
+button:
+  getInvolved: "Entrer en contact"
+  url: "/contact"
+sections:
+  - title: "Hébergement"
+    subtitle: "Hébergement de sites web et services"
+    text: >
+      <p>Nous offrons gratuitement l'hébergement de sites web et d'applications aux clubs étudiants et organisations de l'ÉTS.</p>
+      <p>Que ce soit pour une simple page statique, une application web ou un service complet, nous fournissons l'infrastructure nécessaire à votre projet.</p>
+      <p>Pour que nous puissions déployer votre service, il suffit de nous fournir un <code>Dockerfile</code> ou une image Docker publique, ainsi qu'une brève description de l'application et l'URL désirée.</p>
+  - title: "Stockage de fichiers"
+    subtitle: "Nextcloud"
+    text: >
+      <p>Nous mettons à disposition un service Nextcloud pour permettre aux membres des clubs de l'ETS de stocker, partager et synchroniser des fichiers en toute sécurité.</p>
+      <p>Ce service est accessible depuis le web et supporte l'intégration avec les systèmes de fichiers sur PC ou mobile.</p>
+  - title: "Gestion de mots de passe"
+    subtitle: "Vaultwarden"
+    text: >
+      <p>Nous offrons un accès à Vaultwarden, une solution libre et sécurisée de gestion de mots de passe compatible avec Bitwarden.</p>
+      <p>Ce service vous permet de sauvegarder vos mots de passe, générer des mots de passe sécurisés, et partager des accès en équipe.</p>
+  - title: "Authentification centralisée (SSO)"
+    subtitle: "Fournisseur d'identité"
+    text: >
+      <p>Grâce à Authentik, nous proposons un fournisseur d'identité (SSO) permettant une authentification centralisée sur plusieurs de nos services.</p>
+      <p>Ce système est intégré aux comptes étudiants de l'ÉTS, ce qui vous permet de vous connecter en utilisant votre courriel et mot de passe institutionnels.</p>
+---
