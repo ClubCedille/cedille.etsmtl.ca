@@ -756,7 +756,7 @@ header{
 }
 
 .motivation .slider .slide-track .slide img:hover{
-    transform: scale(1.3);
+    transform: scale(1.2) translateX(-5px);
 }
 
 /*--------- CONTRIBUTE SECTION --------*/
