@@ -23,7 +23,7 @@ body{
 
 ::-webkit-scrollbar-thumb{
     border-radius: 10px;
-    box-shadow: inset 10px 10px 10px rgba(255, 166, 0, 0.748);
+    box-shadow: inset 10px 10px 10px orange;
     border: solid 4px transparent;
 }
 
@@ -39,7 +39,7 @@ header{
 }
 
 .navbar-brand{
-    color: rgba(255, 166, 0, 0.748);
+    color: orange;
     margin-right: 0px;
 }
 
@@ -48,7 +48,19 @@ header{
 }
 
 #editable-underscore{
-    color: rgba(255, 166, 0, 0.748) !important;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: orange !important;
+    caret-shape: underscore;
+    caret-color: black;
+}
+
+#editable-underscore::before{
+    content: "> ";
+}
+
+#editable-underscore::after{
+    content: "█";
     animation: blinker 0.6s linear infinite !important;
 }
 
@@ -59,12 +71,14 @@ header{
 }
 
 .navbar .link-navbar{
+    padding:0 10px 0 10px !important;;
     background-color: white;
     color: black !important;
 }
 
 .navbar .link-navbar:hover{
-    color: rgba(255, 166, 0, 0.748) !important;
+    background-color: orange;
+    color: white !important;
 }
 
 .navbar-collapse ul li{
@@ -81,14 +95,15 @@ header{
     border-radius: 4px;
     transition: all 0.3s ease;
     opacity: none;
+    font-weight: 400;
 }
 
 .navbar-collapse a.active{
-    color: rgba(255, 166, 0, 0.748);
+    color:orange;
 }
 
 .navbar-collapse a:hover{
-    color: rgba(255, 166, 0, 0.748);
+    color:orange;
 }
 
 .navbar-collapse .dropdown-menu{
@@ -113,7 +128,7 @@ header{
     width: 30px;
     height: 3px;
     border-radius: 5px;
-    background-color: rgba(255, 166, 0, 0.748);
+    background-color:orange;
     display: block;
     transition: all 0.2s;
 }
@@ -151,7 +166,7 @@ header{
 }
 
 .navbar-toggler.collapsed .toggler-icon{
-    background-color: rgba(255, 166, 0, 0.748);
+    background-color:orange;
 }
 
 @media only screen and (max-width:990px){
@@ -192,7 +207,7 @@ header{
     border-bottom-left-radius: 10px;
     background-color: rgba(0, 0, 0, 0.822);
     z-index: 1;
-    color: rgba(255, 166, 0, 0.748);
+    color:orange;
     border: none;
     text-decoration: none;
     position: fixed;
@@ -256,7 +271,7 @@ header{
 }
 
 .projets-recents .panel a{
-    color: rgba(255, 166, 0, 0.748);
+    color:orange;
     border-radius: 100%;
     background-color: black;
     display: inline-flex;
@@ -272,7 +287,7 @@ header{
 .projets-recents .panel a:hover{
     height: 40px;
     width: 40px;
-    color: rgba(255, 166, 0, 0.748);
+    color:orange;
     background-color: rgb(221, 207, 207);
 }
 
@@ -578,33 +593,45 @@ header{
   background-repeat: no-repeat;
   background-position: left, right;
 }
-
-.contact .container.form-contact{
-    background-color: #bdbcbc;
+.contact .container.form-contact {
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-.contact .nav-tabs .nav-link{
-    color: #fff;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+.contact .nav-tabs .nav-link {
+    color: #333333;
+    transition: background-color 0.3s ease;
 }
 
-.contact .nav-tabs .nav-link.active{
-    border: 3px solid black;
+.contact .nav-tabs .nav-link.active {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid orange;
 }
 
-.contact .btn{
-    color: #fff;
-    background-color: #C08314;
-    border-radius: 10px;
+.contact .form-label {
+    font-size: 12px;
+    font-variant: ordinal;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
-.contact .btn:hover{
-    background-color: #bd7c05;
+.contact .btn {
+    color: #ffffff;
+    background-color: orange;
+    border-radius: 0.625rem;
+    transition: background-color 0.3s ease;
 }
 
-.contact .btn:focus{
+.contact .btn:hover {
+    background-color: darkorange;
+}
+
+.contact .btn:focus {
     box-shadow: none;
+    outline: none;
 }
 
 #map{
@@ -821,7 +848,7 @@ header{
 }
 
 .faq .btn:hover{
-    color: rgba(255, 166, 0, 0.748);
+    color:orange;
     background-color: black;
 }
 
@@ -836,7 +863,7 @@ header{
 }
 
 .about-us-section .sidebar a:hover{
-    color: rgba(255, 166, 0, 0.748);
+    color:orange;
 }
 
 /*------------- ASIDE SECTION -------------*/
@@ -861,7 +888,7 @@ header{
 }
 
 .about-us-section .btn:hover{
-    color: rgba(255, 166, 0, 0.748);
+    color:orange;
     background-color: black;
 }
 /*---------------- TEAM PAGE ---------------- */
@@ -880,7 +907,7 @@ header{
 }
 
 .team-section .becoming-member .btn:hover{
-    color: rgba(255, 166, 0, 0.748);
+    color:orange;
     background-color: black;
 }
 
@@ -893,7 +920,7 @@ header{
 }
 
 .partenaires-section .btn:hover {
-    color: rgba(255, 166, 0, 0.748);
+    color:orange;
     background-color: black;
 }
 
@@ -918,7 +945,7 @@ header{
 }
 
 .github-icon a:hover{
-    background-color: rgba(255, 166, 0, 0.748);
+    background-color:orange;
 }
 
 /*---------------------- FOOTER SECTION ---------------------*/
@@ -942,7 +969,7 @@ footer a{
 }
 
 footer a:hover{
-    color: rgba(255, 166, 0, 0.748);
+    color:orange;
 }
 
 footer .copyleft {
