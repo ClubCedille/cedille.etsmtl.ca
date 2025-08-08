@@ -9,51 +9,81 @@
     <nav class="sticky-top text-end py-2">
       <h6 class="mb-2"><b>{{ .title }}</b></h6>
       <ul class="list-unstyled list">
-          {{ range .sections }}
-          <li class="mb-1"><a href="#{{ .title }}">{{ .title }}</a></li>
-          {{ end }}
+        {{ range .sections }}
+        <li class="mb-1"><a href="#{{ .title }}">{{ .title }}</a></li>
+        {{ end }}
       </ul>
     </nav>
   </div>
   <!-- end sidebar section -->  */}}
 
-  <!-- Aside section -->
+  <p>Découvrez nos services gratuits dédiés aux clubs étudiants et organisations de l'ETS</p>
+
+  <div class="container my-4">
+    <div class="row">
       {{ range .sections }}
-      <div class="mb-4" id="{{ .title }}">
-          <h2><b>{{ .subtitle }}</b></h2>
-          {{ .text | safeHTML }}
-          {{ if .descriptionAreas }}
-            <div class="card" style="background-color: #FFB76B;">
-              <div class="card-body">
-                <nav class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
-                  {{ range .descriptionAreas }}
-                    {{ if .active }}
-                    <button class="nav-link {{ .active }}" id="pills-{{ .name }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ .name }}" type="button" role="tab" aria-controls="nav-{{ .name }}" aria-selected="true"><b>{{ .title }}</b></button>
-                    {{ else }}
-                    <button class="nav-link" id="pills-{{ .name }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ .name }}" type="button" role="tab" aria-controls="nav-{{ .name }}" aria-selected="true"><b>{{ .title }}</b></button>
-                    {{ end }}
-                  {{ end }}
-                </nav>
-                <div class="tab-content m-4" id="pills-tabContent">
-                  {{ range .descriptionAreas }}
-                    {{ if .showActive }}
-                    <div class="tab-pane fade {{ .showActive }}" id="pills-{{ .name }}" role="tabpanel" aria-labelledby="pills-{{ .name }}-tab">
-                      {{ .text | safeHTML }}
-                    </div>
-                    {{ else }}
-                    <div class="tab-pane fade" id="pills-{{ .name }}" role="tabpanel" aria-labelledby="pills-{{ .name }}-tab">
-                      {{ .text | safeHTML }}
-                    </div>
-                    {{ end }}
-                  {{ end }}
-                </div>
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <div class="d-flex align-items-start mb-3">
+              <div class="me-3 highlight-color text-white p-3 rounded">
+                <i class="{{ .icon }} fs-2"></i>
+              </div>
+              <div>
+                <h5 class="card-title">{{ .title }}</h5>
+                <p class="card-text">{{ .text }}</p>
               </div>
             </div>
+            {{ range .details }}
+            <p>{{ . }}</p>
+
+            {{ end }}
+          <!-- Service link -->
+          {{ if .serviceLink }}
+          <a href="{{ .serviceLink }}" target="_blank" rel="noopener noreferrer"
+             class="btn btn-primary btn-sm d-inline-flex align-items-center">
+            <i class="bi bi-box-arrow-up-right me-2"></i>
+            Accéder au service
+          </a>
           {{ end }}
+
+          <!-- Wiki/documentation link -->
+          {{ if .wikiLink }}
+          <a href="{{ .wikiLink }}" target="_blank" rel="noopener noreferrer"
+             class="btn btn-outline-secondary btn-sm d-inline-flex align-items-center">
+            <i class="bi bi-book me-2"></i>
+            Documentation
+          </a>
+          {{ end }}
+
+          </div>
+        </div>
+
+        <div class="pt-3 border-top d-flex flex-wrap gap-2">
+        </div>
+
+        </div>
+        {{ end }}
+
       </div>
-      {{ end }}
     </div>
-    <a class="btn py-2 px-4" href="{{ .button.url }}">{{ .button.getInvolved }}</a>
+
+    <!-- Contact Section -->
+  <div class="mt-5 text-center">
+    <div class="p-5 rounded-3 text-white" style="background: linear-gradient(to right, orange, orangered);">
+      <h2 class="fs-4 fw-bold mb-3">
+        Prêt à utiliser nos services ?
+      </h2>
+      <p class="text-light mb-4 mx-auto" style="max-width: 40rem;">
+        Contactez-nous pour commencer à utiliser nos services gratuits ou pour obtenir plus d'informations.
+      </p>
+      <a href="{{ .button.url }}" class="btn btn-light btn-lg text-dark fw-bold">
+        <i class="bi bi-envelope-fill me-2"></i>
+        {{ .button.getInvolved }}
+      </a>
+    </div>
+  </div>
+
   <!-- end aside section -->
 </div>
 {{ end }}
