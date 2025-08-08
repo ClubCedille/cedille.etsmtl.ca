@@ -5,7 +5,7 @@
         <div class="partenaires-section my-5">
             <div class="container">
                 <div class="row">
-                    <h2 style="border-bottom: solid 2px grey;"><b>{{ .title }}</b></h2>
+                  <h2 class="title-border"><b>{{ .title }}</b></h2>
                 </div>
                 <!-- Partnership card section -->
                 {{ range .partnerships }}
@@ -14,7 +14,7 @@
                     <img src="{{ .imageCard }}" class="card-img-top" alt="{{ .name }}">
                     <div class="card-body">
                         <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-                        <p class="card-text"><b>{{ .text }}</b></p>   
+                        <p class="card-text"><b>{{ .text }}</b></p>
                     </div>
                 </div>
                 <!-- end mobile version -->
@@ -24,8 +24,8 @@
                         <div class="col-md-7 d-flex align-items-center">
                             <div class="d-block me-5">
                                 <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-                                <p class="card-text">{{ .text }}</p>        
-                            </div>                            
+                                <p class="card-text">{{ .text }}</p>
+                            </div>
                         </div>
                         <img class="col-md-5 p-0" src="{{ .imageCard }}" alt="{{ .name }}" width="auto" style="box-shadow: 0px 10px 10px 0px black;">
                         {{ else }}
@@ -40,8 +40,8 @@
                                 {{ else }}
                                 <img class="mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
                                 {{ end }}
-                                <p class="card-text">{{ .text }}</p>        
-                            </div>                            
+                                <p class="card-text">{{ .text }}</p>
+                            </div>
                         </div>
                         {{ end }}
                     </div>
