@@ -5,11 +5,11 @@ navTabsTitle:
   collaborationRequest: "Demande de collaboration"
   informationRequest: "Demande de partenariat"
 navMember:
-  name: "Nom:"
-  email: "Courriel:"
-  interests: "Intérêts:"
-  education: "Formation:"
-  program: "Programme d'études:"
+  name: "Nom"
+  email: "Courriel"
+  interests: "Intérêts"
+  education: "Formation"
+  program: "Programme d'études"
   selectedEducation: "Choissisez une formation"
   selectedProgram: "Choissisez un programme"
   optionValueEducation:
@@ -39,20 +39,20 @@ navMember:
     - value: "autre"
       choice: "Autre"
 navCollab:
-  name: "Nom:"
-  email: "Courriel:"
-  website: "Site web:"
-  projectToPropose: "Projet à proposer:"
-  club: "Club:"
+  name: "Nom"
+  email: "Courriel"
+  website: "Site web"
+  projectToPropose: "Projet à proposer"
+  club: "Club"
   selectedClub: "Choissisez un club"
   optionValueClub:
     - value: "1"
       choice: "Test"
 navInfo:
-  name: "Nom:"
-  email: "Courriel:"
-  company: "Compagnie:"
-  message: "Message:"
+  name: "Nom"
+  email: "Courriel"
+  company: "Compagnie"
+  message: "Message"
 button:
   submit: "Soumettre"
 ---

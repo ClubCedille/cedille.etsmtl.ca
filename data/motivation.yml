@@ -2,11 +2,8 @@
 enable: true
 title: "Nos responsabilités nous font avancer"
 subtitle: "Faire une différence"
-summary: "CEDILLE croit en la puissance de prendre des responsabilités et d'aider les communautés. Les membres de notre club travaillent sur des projets qui ont un impact réel, favorisant un sentiment de but et de motivation qui stimule la croissance personnelle et professionnelle."
+summary: "CEDILLE croit en la puissance de prendre des responsabilités et d'aider les communautés. Les membres de notre club travaillent sur des projets qui ont un impact réel, favorisant un sentiment de but et de motivation qui stimule la croissance personnelle et professionnelle. Voici quelques projets que nous hébergeons sur nos serveurs."
 logos:
-  - image: /images/sitesHeberges/canoeBeton.png
-    url: "https://canoe.etsmtl.ca/"
-    alt: logoCanoeBeton
   - image: /images/sitesHeberges/synapse.png
     url: "https://synapsets.etsmtl.ca/"
     alt: logoSynapse
@@ -19,9 +16,6 @@ logos:
   - image: /images/sitesHeberges/capra.png
     url: "https://wiki.capra.etsmtl.ca/"
     alt: logoCapra
-  - image: /images/sitesHeberges/serreEts.png
-    url: "https://serreets.com/"
-    alt: logSerreEts
   - image: /images/sitesHeberges/pontAcier.png
     url: "https://pontacier.etsmtl.ca/"
     alt: logoPontAcier
@@ -32,42 +26,66 @@ logos:
     url: "https://saveursdegenie.etsmtl.ca"
     alt: logoSaveursGenie
   - image: /images/sitesHeberges/dronoLab.png
-    url: "https://wiki.dronolab.etsmtl.ca/"
-    alt: logoDronoLab 
-  - image: /images/sitesHeberges/raconteursdangles.png
-    url: "https://raconteurs.etsmtl.ca/"
-    alt: logoRaconteursDangles   
-  - image: /images/sitesHeberges/canoeBeton.png
-    url: "https://canoe.etsmtl.ca/"
-    alt: logoCanoeBeton
-  - image: /images/sitesHeberges/synapse.png
-    url: "https://synapsets.etsmtl.ca/"
-    alt: logoSynapse
-  - image: /images/sitesHeberges/preci.png
-    url: "https://preci.etsmtl.ca/"
-    alt: logoPreci
-  - image: /images/sitesHeberges/sonia.png
-    url: "https://wiki.sonia.etsmtl.ca/hardware/overview"
-    alt: logoSonia
-  - image: /images/sitesHeberges/capra.png
-    url: "https://wiki.capra.etsmtl.ca/"
-    alt: logoCapra
-  - image: /images/sitesHeberges/serreEts.png
-    url: "https://serreets.com/"
-    alt: logoSerreEts
-  - image: /images/sitesHeberges/pontAcier.png
-    url: "https://pontacier.etsmtl.ca/"
-    alt: logoPontAcier
-  - image: /images/sitesHeberges/integrale.png
-    url: "https://integrale.etsmtl.ca/"
-    alt: logoIntegrale
-  - image: /images/sitesHeberges/saveursGenie.png
-    url: "https://saveursdegenie.etsmtl.ca"
-    alt: logoSaveursGenie
-  - image: /images/sitesHeberges/dronoLab.png
-    url: "https://wiki.dronolab.etsmtl.ca/"
-    alt: logoDronoLab  
+    url: "https://dronolab.etsmtl.ca/"
+    alt: logoDronoLab
   - image: /images/sitesHeberges/raconteursdangles.png
     url: "https://raconteurs.etsmtl.ca/"
     alt: logoRaconteursDangles
+  - image: /images/sitesHeberges/conjure.png
+    url: "https://conjure.etsmtl.ca/"
+    alt: logoConjure
+  - image: /images/sitesHeberges/crabe-logo.png
+    url: "https://atelier.crabe.cedille.club/"
+    alt: logoCrabe
+  - image: /images/sitesHeberges/ingenieuses.svg
+    url: "https://ingenieuses.ca/"
+    alt: logoIngenieusesETS
+  - image: /images/sitesHeberges/algoets.png
+    url: "https://markets.prod.cedille.club/"
+    alt: logoAlgoETS
+  - image: /images/sitesHeberges/fraternite.png
+    url: "https://commande.fraternitedupiranha.com/"
+    alt: logoFraternitedupiranha
+  - image: /images/sitesHeberges/synapse.png
+    url: "https://synapsets.etsmtl.ca/"
+    alt: logoSynapse
+  - image: /images/sitesHeberges/preci.png
+    url: "https://preci.etsmtl.ca/"
+    alt: logoPreci
+  - image: /images/sitesHeberges/sonia.png
+    url: "https://wiki.sonia.etsmtl.ca/hardware/overview"
+    alt: logoSonia
+  - image: /images/sitesHeberges/capra.png
+    url: "https://wiki.capra.etsmtl.ca/"
+    alt: logoCapra
+  - image: /images/sitesHeberges/pontAcier.png
+    url: "https://pontacier.etsmtl.ca/"
+    alt: logoPontAcier
+  - image: /images/sitesHeberges/integrale.png
+    url: "https://integrale.etsmtl.ca/"
+    alt: logoIntegrale
+  - image: /images/sitesHeberges/saveursGenie.png
+    url: "https://saveursdegenie.etsmtl.ca"
+    alt: logoSaveursGenie
+  - image: /images/sitesHeberges/dronoLab.png
+    url: "https://dronolab.etsmtl.ca/"
+    alt: logoDronoLab
+  - image: /images/sitesHeberges/raconteursdangles.png
+    url: "https://raconteurs.etsmtl.ca/"
+    alt: logoRaconteursDangles
+  - image: /images/sitesHeberges/conjure.png
+    url: "https://conjure.etsmtl.ca/"
+    alt: logoConjure
+  - image: /images/sitesHeberges/crabe-logo.png
+    url: "https://atelier.crabe.cedille.club/"
+    alt: logoCrabe
+  - image: /images/sitesHeberges/ingenieuses.svg
+    url: "https://ingenieuses.ca/"
+    alt: logoIngenieusesETS
+  - image: /images/sitesHeberges/algoets.png
+    url: "https://markets.prod.cedille.club/"
+    alt: logoAlgoETS
+  - image: /images/sitesHeberges/fraternite.png
+    url: "https://commande.fraternitedupiranha.com/"
+    alt: logoFraternitedupiranha
 ---

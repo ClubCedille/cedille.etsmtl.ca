@@ -2,11 +2,11 @@
 {{ if .enable }}
 <nav>
     <div class="nav nav-tabs row" id="nav-tab" role="tablist">
-      <button class="nav-link col-6 active" id="nav-member-tab" data-bs-toggle="tab" data-bs-target="#nav-member" type="button" role="tab" aria-controls="nav-member" aria-selected="true" style="background-color: #D7A64D;">
+      <button class="nav-link col-6 active" id="nav-member-tab" data-bs-toggle="tab" data-bs-target="#nav-member" type="button" role="tab" aria-controls="nav-member" aria-selected="true">
         {{ .navTabsTitle.membershipRequest }}
       </button>
 
-      <button class="nav-link col-6" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info" aria-selected="false" style="background-color: #D7A64D;">
+      <button class="nav-link col-6" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info" aria-selected="false">
         {{ .navTabsTitle.informationRequest }}
       </button>
     </div>
@@ -45,7 +45,7 @@
       <div class="col-md-6">
         <label for="interests" class="form-label">{{ $navMember.interests }}</label>
         <textarea name="interets" class="form-control" id="interests"></textarea>
-      </div>    
+      </div>
     </form>
     <div class="text-end mt-2 me-2">
       <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm('member-form');">
@@ -58,7 +58,7 @@
       <div id="member-form-error" style="display: none;" class="alert alert-danger form-error" role="alert">
         Il y a eu une erreur lors de la soumission du formulaire.
       </div>
-    </div>   
+    </div>
   </div>
   <!-- collab tab section -->
   {{/*  {{ $navCollab := .navCollab }}
@@ -93,8 +93,8 @@
     <div class="text-end mt-2 me-2">
       <button type="submit" class="btn py-2 px-5">
           {{ .button.submit }}
-      </button>  
-    </div> 
+      </button>
+    </div>
   </div>  */}}
   <!-- info tab section -->
   {{ $navInfo := .navInfo }}
@@ -121,14 +121,14 @@
       <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm('partnership-form');">
         <span id="loading-partnership" class="spinner-border spinner-border-sm" role="loading" style="display: none;"></span>
           {{ .button.submit }}
-      </button> 
+      </button>
       <div id="partnership-form-success" style="display: none;" class="alert alert-success form-success" role="alert">
         Formulaire soumis avec succès!
       </div>
       <div id="partnership-form-error" style="display: none;" class="alert alert-danger form-error" role="alert">
         Il y a eu une erreur lors de la soumission du formulaire.
       </div>
-    </div> 
+    </div>
   </div>
 </div>
 {{ $formJS := resources.Get "js/form-handler.js" | resources.Minify | resources.Fingerprint }}
