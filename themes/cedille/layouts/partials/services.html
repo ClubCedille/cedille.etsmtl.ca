@@ -15,7 +15,8 @@
       </ul>
     </nav>
   </div>
-  <!-- end sidebar section -->  */}}
+  <!-- end sidebar section -->
+  */}}
 
   <p>Découvrez nos services gratuits dédiés aux clubs étudiants et organisations de l'ETS</p>
 
@@ -23,14 +24,15 @@
     <div class="row">
       {{ range .sections }}
       <div class="col-md-6 mb-4">
-        <div class="card shadow-sm h-100">
-          <div class="card-body">
+        <div class="card shadow-sm h-100"  >
+          <div class="card-body" style="display: flex; flex-direction:column;justify-content: space-between">
             <div class="d-flex align-items-start mb-3">
-              <div class="me-3 highlight-color text-white p-3 rounded">
-                <i class="{{ .icon }} fs-2"></i>
+              <div class="me-3 highlight-color text-white"
+		   style="width: 44px; height: 44px; border-radius:10px; padding: 10px">
+                <i class="{{ .icon }} fs-5"></i>
               </div>
               <div>
-                <h5 class="card-title">{{ .title }}</h5>
+                <h4 class="card-title"><b>{{ .title }}</b></h5>
                 <p class="card-text">{{ .text }}</p>
               </div>
             </div>
@@ -39,6 +41,9 @@
 
             {{ end }}
           <!-- Service link -->
+	  <div class="row w-30" style="display: flex; justify-content: space-between">
+        <div class="pt-3 border-top d-flex flex-wrap gap-2">
+        </div>
           {{ if .serviceLink }}
           <a href="{{ .serviceLink }}" target="_blank" rel="noopener noreferrer"
              class="btn btn-primary btn-sm d-inline-flex align-items-center">
@@ -46,11 +51,10 @@
             Accéder au service
           </a>
           {{ end }}
-
-          <!-- Wiki/documentation link -->
           {{ if .wikiLink }}
+          <!-- Wiki/documentation link -->
           <a href="{{ .wikiLink }}" target="_blank" rel="noopener noreferrer"
-             class="btn btn-outline-secondary btn-sm d-inline-flex align-items-center">
+             class="btn btn-sm d-inline-flex align-items-center">
             <i class="bi bi-book me-2"></i>
             Documentation
           </a>
@@ -59,9 +63,8 @@
           </div>
         </div>
 
-        <div class="pt-3 border-top d-flex flex-wrap gap-2">
-        </div>
 
+	</div>
         </div>
         {{ end }}
 

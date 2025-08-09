@@ -927,15 +927,23 @@ header{
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.285);
 }
 
-.services-section .btn{
-    border: 1px solid black !important;
-    border-radius: 0 !important;
-    transition: all 0.4s ease-in-out;
+.services-section .btn {
+    border: none;
+    color: #ffffff;
+    width:fit-content;
+    background-color: orange;
+    border-radius: 0.625rem;
+    transition: background-color 0.3s ease;
+    margin: 5px 20px;
 }
 
-.services-section .btn:hover{
-    color: white;
-    background-color: black;
+.services-section .btn:hover {
+    background-color: darkorange;
+}
+
+.services-section .btn:focus {
+    box-shadow: none;
+    outline: none;
 }
 
 /*---------------- TEAM PAGE ---------------- */
