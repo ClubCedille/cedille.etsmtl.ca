@@ -950,7 +950,7 @@ header{
 }
 
 .services-section .btn:hover {
-    background-color: white;
+    background-color: orangered;
 }
 
 .services-section .btn:focus {
