@@ -30,13 +30,11 @@
               <i class="icon-circle {{ .icon }} {{.iconColor}}"></i>
               <div>
                 <h4 class="card-title"><b>{{ .title }}</b></h4>
-		<p class="card-text">{{ .text }}</p>
+		            <p class="card-text">{{ .text }}</p>
+                <p class="card-text">{{ .details }}</p>
 	      </div>
 	    </div>
-	    {{ range .details }}
-	    <p>{{ . }}</p>w
 
-	    {{ end }}
 	    <!-- Service link -->
 	    <div class="row w-30" style="display: flex; justify-content: space-between">
 	      <div class="pt-3 border-top d-flex flex-wrap gap-2">
