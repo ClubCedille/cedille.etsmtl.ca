@@ -2,11 +2,15 @@
 {{ if .enable }}
 <nav>
     <div class="nav nav-tabs row" id="nav-tab" role="tablist">
-      <button class="nav-link col-6 active" id="nav-member-tab" data-bs-toggle="tab" data-bs-target="#nav-member" type="button" role="tab" aria-controls="nav-member" aria-selected="true">
+      <button class="nav-link active col" id="nav-member-tab" data-bs-toggle="tab" data-bs-target="#nav-member" type="button" role="tab" aria-controls="nav-member" aria-selected="true">
         {{ .navTabsTitle.membershipRequest }}
       </button>
 
-      <button class="nav-link col-6" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info" aria-selected="false">
+      <button class="nav-link col" id="nav-member-tab" data-bs-toggle="tab" data-bs-target="#nav-collab" type="button" role="tab" aria-controls="nav-member" aria-selected="true">
+        {{ .navTabsTitle.collaborationRequest }}
+      </button>
+
+      <button class="nav-link col" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info" aria-selected="false">
         {{ .navTabsTitle.informationRequest }}
       </button>
     </div>
@@ -61,7 +65,7 @@
     </div>
   </div>
   <!-- collab tab section -->
-  {{/*  {{ $navCollab := .navCollab }}
+  {{ $navCollab := .navCollab }}
   <div class="tab-pane fade" id="nav-collab" role="tabpanel" aria-labelledby="nav-collaboration-tab">
     <form class="row g-3 px-2 mt-2">
       <div class="col-md-6">
@@ -73,17 +77,8 @@
         <input type="email" class="form-control" id="inputEmail4">
       </div>
       <div class="col-md-6">
-        <label for="formation" class="form-label">{{ $navCollab.club }}</label>
-        <select class="form-select" id="specificSizeSelect">
-          <option selected>{{ $navCollab.selectedClub }}</option>
-          {{ range $navCollab.optionValueClub }}
-          <option value="{{ .value }}">{{ .choice }}</option>
-          {{ end }}
-        </select>
-      </div>
-      <div class="col-md-6">
-        <label for="website" class="form-label">{{ $navCollab.website }}</label>
-        <input type="url" class="form-control" id="inputWebsite">
+        <label for="inputEmail4" class="form-label">{{ $navCollab.club }}</label>
+        <input type="text" class="form-control" id="inputClub">
       </div>
       <div class="col-md-6">
         <label class="form-label">{{ $navCollab.projectToPropose }}</label>
@@ -95,7 +90,7 @@
           {{ .button.submit }}
       </button>
     </div>
-  </div>  */}}
+  </div>
   <!-- info tab section -->
   {{ $navInfo := .navInfo }}
   <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">

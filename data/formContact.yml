@@ -41,13 +41,8 @@ navMember:
 navCollab:
   name: "Nom"
   email: "Courriel"
-  website: "Site web"
   projectToPropose: "Projet à proposer"
   club: "Club"
-  selectedClub: "Choissisez un club"
-  optionValueClub:
-    - value: "1"
-      choice: "Test"
 navInfo:
   name: "Nom"
   email: "Courriel"
