@@ -17,7 +17,7 @@ body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 40px;
     height: auto;
     border-radius: 10%;
     color:  white !important;
@@ -927,18 +927,16 @@ header{
 .services-section .card {
     border: none;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.285);
+    padding: 20px;
 }
 .services-section .highlight-color {
     background-color: orange;
 }
 
-.services-section .nav-pills .nav-link {
-    color: black;
-}
-
-.services-section .nav-pills .nav-link.active {
-    background-color: #FFD2A4;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.285);
+.services-section p{
+    text-align:justify;
+    color: darkslategrey;
+    font-weight: 100;
 }
 
 .services-section .btn {
