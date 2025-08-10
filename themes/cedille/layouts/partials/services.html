@@ -27,10 +27,7 @@
         <div class="card shadow-sm h-100"  >
           <div class="card-body" style="display: flex; flex-direction:column;justify-content: space-between">
             <div class="d-flex align-items-start mb-3">
-              <div class="me-3 highlight-color text-white"
-		   style="width: 44px; height: 44px; border-radius:10px; padding: 10px">
-                <i class="{{ .icon }} fs-5"></i>
-              </div>
+                <i class="icon-circle {{ .icon }}"></i>
               <div>
                 <h4 class="card-title"><b>{{ .title }}</b></h5>
                 <p class="card-text">{{ .text }}</p>
@@ -80,7 +77,7 @@
       <p class="text-light mb-4 mx-auto" style="max-width: 40rem;">
         Contactez-nous pour commencer à utiliser nos services gratuits ou pour obtenir plus d'informations.
       </p>
-      <a href="{{ .button.url }}" class="btn btn-light btn-lg text-dark fw-bold">
+      <a href="{{ .button.url }}" class="btn contact-btn">
         <i class="bi bi-envelope-fill me-2"></i>
         {{ .button.getInvolved }}
       </a>

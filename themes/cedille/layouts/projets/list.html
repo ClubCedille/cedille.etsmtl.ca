@@ -19,7 +19,7 @@
 <!-- Progress project section -->
 <div class="container my-5">
   <div class="row">
-    <h2 style="border-bottom: solid 2px grey;"><b>Projets en cours</b></h2>
+    <h2 class="title-border"><b>Projets en cours</b></h2>
   </div>
   <div class="row">
     {{ range $.Site.Data.projects.inProgress }}
@@ -34,7 +34,7 @@
 <!-- Finished projects section -->
 <div class="container my-5">
     <div class="row">
-	<h2 style="border-bottom: solid 2px grey;"><b>Projets terminés</b></h2>
+	<h2 class="title-border"><b>Projets terminés</b></h2>
     </div>
     <div class="row">
 	{{ $index := 0 }}
@@ -60,13 +60,13 @@
     </div>
     <div class="row text-center mt-2" id="button-down" style="display: block">
 	<h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir plus</h6>
-	<button onclick="hideButtonDown()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
+	<button class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
 	    <i class="fa-solid fa-angles-down"></i>
 	</button>
     </div>
     <div class="row text-center mt-2" id="button-up" style="display: none">
 	<h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir moins</h6>
-	<button onclick="hideButtonUp()" class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
+	<button class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
 	    <i class="fa-solid fa-angles-up"></i>
 	</button>
     </div>

@@ -12,6 +12,21 @@ body{
 .title-border {
     border-bottom: 2px solid orange;
 }
+
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: auto;
+    background-color: black;
+    border-radius: 10%;
+    color: orange;
+    font-size: 24px;
+    padding: 8px;
+    margin-right: 16px;
+}
+
 /*--------------- SCROLLBAR SECTION --------------*/
 ::-webkit-scrollbar{
     width: 17px;
@@ -930,20 +945,31 @@ header{
 .services-section .btn {
     border: none;
     color: #ffffff;
-    width:fit-content;
     background-color: orange;
+    width:fit-content;
     border-radius: 0.625rem;
     transition: background-color 0.3s ease;
     margin: 5px 20px;
 }
 
 .services-section .btn:hover {
-    background-color: darkorange;
+    background-color: white;
 }
 
 .services-section .btn:focus {
     box-shadow: none;
     outline: none;
+}
+
+.services-section .contact-btn {
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+}
+
+.services-section .contact-btn:hover {
+    background-color: orange;
 }
 
 /*---------------- TEAM PAGE ---------------- */
