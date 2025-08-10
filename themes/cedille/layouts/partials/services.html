@@ -27,59 +27,56 @@
         <div class="card shadow-sm h-100"  >
           <div class="card-body" style="display: flex; flex-direction:column;justify-content: space-between">
             <div class="d-flex align-items-start mb-3">
-                <i class="icon-circle {{ .icon }} {{.iconColor}}"></i>
+              <i class="icon-circle {{ .icon }} {{.iconColor}}"></i>
               <div>
-                <h4 class="card-title"><b>{{ .title }}</b></h5>
-                <p class="card-text">{{ .text }}</p>
-              </div>
-            </div>
-            {{ range .details }}
-            <p>{{ . }}</p>
+                <h4 class="card-title"><b>{{ .title }}</b></h4>
+		<p class="card-text">{{ .text }}</p>
+	      </div>
+	    </div>
+	    {{ range .details }}
+	    <p>{{ . }}</p>w
 
-            {{ end }}
-          <!-- Service link -->
-	  <div class="row w-30" style="display: flex; justify-content: space-between">
-        <div class="pt-3 border-top d-flex flex-wrap gap-2">
-        </div>
-          {{ if .serviceLink }}
-          <a href="{{ .serviceLink }}" target="_blank" rel="noopener noreferrer"
-             class="btn btn-primary btn-sm d-inline-flex align-items-center">
-            <i class="bi bi-box-arrow-up-right me-2"></i>
-            Accéder au service
-          </a>
-          {{ end }}
-          {{ if .wikiLink }}
-          <!-- Wiki/documentation link -->
-          <a href="{{ .wikiLink }}" target="_blank" rel="noopener noreferrer"
-             class="btn btn-sm d-inline-flex align-items-center">
-            <i class="bi bi-book me-2"></i>
-            Documentation
-          </a>
-          {{ end }}
+	    {{ end }}
+	    <!-- Service link -->
+	    <div class="row w-30" style="display: flex; justify-content: space-between">
+	      <div class="pt-3 border-top d-flex flex-wrap gap-2">
+	      </div>
+	      {{ if .serviceLink }}
+	      <a href="{{ .serviceLink }}" target="_blank" rel="noopener noreferrer"
+		 class="btn btn-primary btn-sm d-inline-flex align-items-center">
+		<i class="bi bi-box-arrow-up-right me-2"></i>
+		Accéder au service
+	      </a>
+	      {{ end }}
+	      {{ if .wikiLink }}
+	      <!-- Wiki/documentation link -->
+	      <a href="{{ .wikiLink }}" target="_blank" rel="noopener noreferrer"
+		 class="btn btn-sm d-inline-flex align-items-center">
+		<i class="bi bi-book me-2"></i>
+		Documentation
+	      </a>
+	      {{ end }}
 
-          </div>
-        </div>
-
-
+	    </div>
+	  </div>
 	</div>
-        </div>
-        {{ end }}
-
       </div>
+      {{ end }}
     </div>
+  </div>
 
-    <!-- Contact Section -->
+  <!-- Contact Section -->
   <div class="mt-5 text-center">
     <div class="p-5 rounded-3 text-white" style="background: linear-gradient(to right, orange, orangered);">
       <h2 class="fs-4 fw-bold mb-3">
-        Prêt à utiliser nos services ?
+	Prêt à utiliser nos services ?
       </h2>
       <p class="text-light mb-4 mx-auto" style="max-width: 40rem;">
-        Contactez-nous pour commencer à utiliser nos services gratuits ou pour obtenir plus d'informations.
+	Contactez-nous pour commencer à utiliser nos services gratuits ou pour obtenir plus d'informations.
       </p>
       <a href="{{ .button.url }}" class="btn contact-btn">
-        <i class="bi bi-envelope-fill me-2"></i>
-        {{ .button.getInvolved }}
+	<i class="bi bi-envelope-fill me-2"></i>
+	{{ .button.getInvolved }}
       </a>
     </div>
   </div>
