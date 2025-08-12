@@ -12,6 +12,20 @@ body{
 .title-border {
     border-bottom: 2px solid orange;
 }
+
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: auto;
+    border-radius: 10%;
+    color:  white !important;
+    font-size: 24px;
+    padding: 8px;
+    margin-right: 16px;
+}
+
 /*--------------- SCROLLBAR SECTION --------------*/
 ::-webkit-scrollbar{
     width: 17px;
@@ -894,6 +908,67 @@ header{
     color:orange;
     background-color: black;
 }
+
+/*--------------------- SERVICES PAGE ----------------------*/
+/*------------- SIDEBAR SECTION -------------*/
+.services-section .sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.services-section .sidebar a:hover{
+    color: rgba(255, 166, 0, 0.748);
+}
+
+/*------------- ASIDE SECTION -------------*/
+.services-section .card {
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.285);
+    padding: 20px;
+}
+.services-section .highlight-color {
+    background-color: orange;
+}
+
+.services-section p{
+    text-align:justify;
+    color: darkslategrey;
+    font-weight: 100;
+}
+
+.services-section .btn {
+    border: none;
+    color: #ffffff;
+    background-color: orange;
+    width:fit-content;
+    border-radius: 0.625rem;
+    transition: background-color 0.3s ease;
+    margin: 5px 20px;
+}
+
+.services-section .btn:hover {
+    background-color: orangered;
+}
+
+.services-section .btn:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.services-section .contact-btn {
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+}
+
+.services-section .contact-btn:hover {
+    background-color: orange;
+}
+
 /*---------------- TEAM PAGE ---------------- */
 .team-section .social-links a{
     color: black;

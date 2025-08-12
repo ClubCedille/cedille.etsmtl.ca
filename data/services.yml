@@ -1,0 +1,50 @@
+---
+enable: true
+title: "Services offerts"
+button:
+  getInvolved: "Entrer en contact"
+  url: "/contact"
+sections:
+  - title: "Hébergement"
+    subtitle: "Hébergement de sites web et services"
+    icon: "bi bi-hdd-rack-fill"
+    iconColor: "bg-success"
+    text: >
+      Hébergement gratuit de sites web et d'applications pour les clubs étudiants et organisations de l'ÉTS.
+    details: >
+      Que ce soit pour une simple page statique, une application web ou un service complet, nous fournissons l'infrastructure nécessaire à votre projet.
+      Pour que nous puissions déployer votre service, il suffit de nous fournir un Dockerfile ou une image Docker publique, ainsi qu'une brève description de l'application et l'URL désirée.
+  - title: "Stockage de fichiers"
+    subtitle: "Nextcloud"
+    icon: "bi bi-cloud-fill"
+    iconColor: "bg-danger"
+    serviceLink: "https://nextcloud.etsmtl.club"
+    wikiLink: "https://wiki.etsmtl.club/s/nextcloud"
+    text: >
+      Service de stockage et de partage de fichiers pour les clubs de l'ÉTS.
+    details: >
+      Nous mettons à disposition un service Nextcloud pour permettre aux membres des clubs de l'ÉTS de stocker, partager et synchroniser des fichiers en toute sécurité.
+      Ce service est accessible depuis le web et supporte l'intégration avec les systèmes de fichiers sur PC ou mobile.
+  - title: "Gestion de mots de passe"
+    subtitle: "Vaultwarden"
+    icon: "bi bi-shield-lock-fill"
+    iconColor: "bg-info"
+    serviceLink: "https://vaultwarden.etsmtl.club"
+    wikiLink: "https://wiki.etsmtl.club/s/vaultwarden"
+    text: >
+      Gestion sécurisée de mots de passe compatible avec Bitwarden.
+    details: >
+      Nous offrons un accès à Vaultwarden, une solution libre et sécurisée de gestion de mots de passe.
+      Ce service vous permet de sauvegarder vos mots de passe, générer des mots de passe sécurisés, et partager des accès en équipe.
+  - title: "Authentification centralisée (SSO)"
+    subtitle: "Fournisseur d'identité"
+    icon: "bi bi-person-fill-lock"
+    iconColor: "bg-secondary"
+    serviceLink: "https://auth.etsmtl.club"
+    wikiLink: "https://wiki.etsmtl.club/s/authentik"
+    text: >
+      Authentification centralisée sur nos services via Authentik.
+    details: >
+      Grâce à Authentik, nous proposons un fournisseur d'identité (SSO) permettant une authentification centralisée sur plusieurs de nos services.
+      Ce système est intégré aux comptes étudiants de l'ÉTS, ce qui vous permet de vous connecter en utilisant votre courriel et mot de passe institutionnels.
+---

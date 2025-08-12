@@ -9,32 +9,37 @@ baseURL = 'https://cedille.etsmtl.ca'
         identifier = "accueil"
         name = "Accueil"
         url = "/"
-        weight = 1 
+        weight = 1
     [[menu.main]]
         identifier = "a-propos"
         name = "À propos"
         url = "/a-propos/"
         weight = 2
     [[menu.main]]
+        identifier = "services"
+        name = "Services"
+        url = "/services/"
+        weight = 3
+    [[menu.main]]
         identifier = "equipe"
         name = "Équipe"
         url = "/equipe/"
-        weight = 3
+        weight = 4
     [[menu.main]]
-        identifier = "projets"    
+        identifier = "projets"
         name = "Projets"
         url = "/projets/"
-        weight = 4
-    [[menu.main]]  
-        identifier = "partenaires" 
+        weight = 5
+    [[menu.main]]
+        identifier = "partenaires"
         name = "Partenaires"
         url = "/partenaires/"
-        weight = 5
-    [[menu.main]]  
-        identifier = "contact" 
+        weight = 6
+    [[menu.main]]
+        identifier = "contact"
         name = "Joignez l'équipe"
         url = "/contact/"
-        weight = 6
+        weight = 7
 
 [params]
     titleFollowUs = "Suivez-nous"
@@ -45,7 +50,7 @@ baseURL = 'https://cedille.etsmtl.ca'
     #General Params
     [params.general]
     logoCedille = "images/cedille-logo-orange.png"
-    
+
     #Address Information Params
     [params.address]
     title = "Adresse"
@@ -96,7 +101,7 @@ baseURL = 'https://cedille.etsmtl.ca'
     [[params.footer.menu]]
     name = "Contact"
     url = "/contact/"
-    weight = 6 
+    weight = 6
 
     [[params.footer.social]]
     icon = "fab fa-facebook-f"
@@ -118,4 +123,3 @@ baseURL = 'https://cedille.etsmtl.ca'
     icon = "fa-brands fa-discord"
     url = "https://discord.gg/kX4rXRTMR6"
     weight = 5
-
