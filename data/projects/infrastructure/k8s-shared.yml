@@ -1,4 +1,4 @@
-commits: 204
+commits: 225
 contributors:
 - alexvegas22
 - Simon-Boyer
@@ -12,5 +12,5 @@ languages:
 name: k8s-shared
 open_issues: 0
 owner: ClubCedille
-pulls: 2
+pulls: 0
 stargazers_count: 0
