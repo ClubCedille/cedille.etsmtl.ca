@@ -3,7 +3,7 @@ enable: true
 title: "Services offerts"
 button:
   getInvolved: "Entrer en contact"
-  url: "/contact"
+  url: "/contact/"
 sections:
   - title: "Hébergement"
     subtitle: "Hébergement de sites web et services"
