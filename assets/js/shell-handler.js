@@ -2,7 +2,7 @@ function submitCommand(command) {
   const apiKey = document.querySelector('meta[name="apiKey"]').content;
   const link = document.querySelector('meta[name="link"]').content;
 
-  fetch(link, {
+  fetch(link+ '/command', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
