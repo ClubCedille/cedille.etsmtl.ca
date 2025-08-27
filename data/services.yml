@@ -41,7 +41,7 @@ sections:
     icon: "bi bi-person-fill-lock"
     iconColor: "bg-secondary"
     serviceLink: "https://auth.etsmtl.club"
-    wikiLink: "https://wiki.etsmtl.club/s/authentik"
+    wikiLink: "https://wiki.etsmtl.club/s/authentik/p/introduction-authentik-u1kx9V5Fhl"
     text: >
       Authentification centralisée sur nos services via Authentik.
     details: >
