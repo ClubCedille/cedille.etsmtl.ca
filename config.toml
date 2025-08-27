@@ -66,7 +66,7 @@ baseURL = 'https://cedille.etsmtl.ca'
 
     [params.form]
     APIkey = "JJ^j6qUYa^t5bCoQ7bfy"
-    link = "https://calidum-rotae.prod.cedille.club"
+    link = "https://calidum-rotae.prodv2.cedille.club"
 
     ############ Footer section #############
     [params.footer]
