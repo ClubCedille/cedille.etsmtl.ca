@@ -8,8 +8,7 @@
         </a>
         <span contenteditable="true" id="editable-underscore" class="blink"></span>
       </div>
-      <span id="flag" style="display:none; margin-left: 10px;">Défi réussi! réponse : Hello, CEDILLE</span>
-      <span id="error-message" style="display:none; color:red; margin-left: 10px;">Insufficient privileges</span>
+      <span id="responseId" style="display:none; margin-left: 10px;"></span>
       {{ end }}
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,19 +45,5 @@
   </nav>
 </header>
 
-<script>
-  document.getElementById('editable-underscore').addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-      event.preventDefault();
-      const userInput = event.target.innerText.trim();
-
-      if (userInput.includes('sudo')) {
-        document.getElementById('flag').style.display = 'inline';
-        document.getElementById('error-message').style.display = 'none';
-      } else {
-        document.getElementById('error-message').style.display = 'inline';
-        document.getElementById('flag').style.display = 'none';
-      }
-    }
-  });
-</script>
+{{ $shellJS := resources.Get "js/shell-handler.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $shellJS.RelPermalink }}" defer></script>
