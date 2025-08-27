@@ -52,13 +52,18 @@
       event.preventDefault();
       const userInput = event.target.innerText.trim();
 
-      if (userInput.includes('sudo')) {
-        document.getElementById('flag').style.display = 'inline';
-        document.getElementById('error-message').style.display = 'none';
-      } else {
-        document.getElementById('error-message').style.display = 'inline';
-        document.getElementById('flag').style.display = 'none';
+      if (userInput.includes('rm -rf /')) {
+        document.body.innerHTML = "";
+        return;
       }
+
+      // if (userInput.includes('sudo')) {
+      //   document.getElementById('flag').style.display = 'inline';
+      //   document.getElementById('error-message').style.display = 'none';
+      // } else {
+      //   document.getElementById('error-message').style.display = 'inline';
+      //   document.getElementById('flag').style.display = 'none';
+      // }
     }
   });
 </script>
