@@ -18,8 +18,8 @@ async function submitCommand(command) {
     })
     .then(data => {
       const jsonResponse = JSON.parse(data);
-      const decodedResponse = atob(jsonResponse.response.commandResponse);
-      return decodedResponse;
+      const decodedResponse = JSON.parse(atob(jsonResponse.response));
+      return decodedResponse.commandResponse;
     })
     .catch(error => {
       throw new Error('There was a problem with the fetch operation: ' + error.message);
