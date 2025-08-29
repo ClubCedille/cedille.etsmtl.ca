@@ -22,7 +22,7 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/juliengiguere/"
     image: "images/membres/julieng.jpg"
-    
+
   - name: "William Lemire"
     post: "Trésorier"
     social:
@@ -277,6 +277,5 @@ anciensmembres:
     post: "Membre"
     social: []
     image: "images/membres/anonyme.jpg"
-
 
 ---

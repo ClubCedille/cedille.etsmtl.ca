@@ -42,8 +42,8 @@ document.getElementById('editable-underscore').addEventListener('keydown', funct
 
       submitCommand(userInput)
         .then(response => {
-          responseMessage.innerText = response.text || response.message;
-          responseMessage.style.color = 'black';
+          responseMessage.innerText = response;
+          responseMessage.style.color = 'green';
         })
         .catch(e => {
           responseMessage.innerText = 'Error fetching response: ' + e.message;
