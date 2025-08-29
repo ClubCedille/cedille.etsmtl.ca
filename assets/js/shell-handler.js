@@ -18,8 +18,13 @@ async function submitCommand(command) {
     })
     .then(data => {
       const jsonResponse = JSON.parse(data);
-      const decodedResponse = JSON.parse(new TextDecoder('utf-8').decode(new Uint8Array(jsonResponse.response)));
-      return decodedResponse.CommandResponse;
+      const encodedResponse = jsonResponse.response;
+      console.log(encodedResponse)
+      const decodedResponse = new TextDecoder('utf-8').decode(new Uint8Array(encodedResponse));
+      console.log(decodedResponse);
+      const commandResponse = JSON.parse(decodedResponse).CommandResponse;
+      console.log(commandResponse)
+      return commandResponse;
     })
     .catch(error => {
       throw new Error('There was a problem with the fetch operation: ' + error.message);
