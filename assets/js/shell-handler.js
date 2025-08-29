@@ -8,7 +8,7 @@ async function submitCommand(command) {
       'Content-Type': 'application/json',
       'X-API-KEY': apiKey
     },
-    body: JSON.stringify({ 'commandRequest': command })
+    body: JSON.stringify({ 'requestCommand': command })
   })
     .then(response => {
       if (!response.ok) {
