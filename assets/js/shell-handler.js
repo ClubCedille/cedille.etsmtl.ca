@@ -18,7 +18,7 @@ async function submitCommand(command) {
     })
     .then(data => {
       const jsonResponse = JSON.parse(data);
-      const decodedResponse = JSON.parse(atob(jsonResponse.response));
+      const decodedResponse = atob(jsonResponse.response);
       return decodedResponse;
     })
     .catch(error => {
