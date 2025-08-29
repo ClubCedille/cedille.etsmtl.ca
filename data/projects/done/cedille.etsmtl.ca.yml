@@ -1,4 +1,4 @@
-commits: 1161
+commits: 1164
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -33,13 +33,13 @@ contributors:
 description: Site web du club CEDILLE
 forks: 2
 languages:
-  CSS: 0.26621013183791215
-  Dockerfile: 0.0026556307460030735
-  HTML: 0.6579898088485078
-  JavaScript: 0.06358685395378932
-  Makefile: 0.0076838046965571165
-  Nix: 0.001752446685179693
-  Shell: 0.00012132323205090184
+  CSS: 0.2661670755047578
+  Dockerfile: 0.002655201229209909
+  HTML: 0.657883386796776
+  JavaScript: 0.0637383076798663
+  Makefile: 0.007682561932231717
+  Nix: 0.0017521632477019704
+  Shell: 0.00012130360945629027
 name: cedille.etsmtl.ca
 open_issues: 4
 owner: ClubCedille
