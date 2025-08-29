@@ -20,7 +20,7 @@ async function submitCommand(command) {
       console.log("Raw response data:", data);
       const jsonResponse = JSON.parse(data);
       console.log("JSON parsed response data:", jsonResponse);
-      const decodedResponse = atob(jsonResponse.response);
+      const decodedResponse = JSON.parse(atob(jsonResponse.response));
       console.log("base64 decoded response data:", decodedResponse);
       console.log("base64.commandResponse response data:", decodedResponse.CommandResponse);
       return decodedResponse.CommandResponse;
