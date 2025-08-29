@@ -22,8 +22,8 @@ async function submitCommand(command) {
       console.log("JSON parsed response data:", jsonResponse);
       const decodedResponse = atob(jsonResponse.response);
       console.log("base64 decoded response data:", decodedResponse);
-      console.log("base64.commandResponse response data:", decodedResponse.commandResponse);
-      return decodedResponse.commandResponse;
+      console.log("base64.commandResponse response data:", decodedResponse.CommandResponse);
+      return decodedResponse.CommandResponse;
     })
     .catch(error => {
       throw new Error('There was a problem with the fetch operation: ' + error.message);
