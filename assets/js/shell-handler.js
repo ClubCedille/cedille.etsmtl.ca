@@ -17,14 +17,15 @@ async function submitCommand(command) {
       return response.text();
     })
     .then(data => {
-      const jsonResponse = JSON.parse(data);
-      const encodedResponse = jsonResponse.response;
-      console.log(encodedResponse)
-      const decodedResponse = new TextDecoder('utf-8').decode(new Uint8Array(encodedResponse));
-      console.log(decodedResponse);
-      const commandResponse = JSON.parse(decodedResponse).CommandResponse;
-      console.log(commandResponse)
-      return commandResponse;
+      const jsonResponse = JSON.parse(data).response;
+      const binary = atob(jsonResponse);
+      const bytes = new Uint8Array(binary.length);
+      for (let i = 0; i < bytes.length; i++) {
+	bytes[i] = binary.charCodeAt(i);
+      }
+      const decodedString = String.fromCharCode(...new Uint16Array(bytes.buffer));
+
+      return JSON.parse(decodedString).CommandResponse;
     })
     .catch(error => {
       throw new Error('There was a problem with the fetch operation: ' + error.message);
