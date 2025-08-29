@@ -17,8 +17,12 @@ async function submitCommand(command) {
       return response.text();
     })
     .then(data => {
+      console.log("Raw response data:", data);
       const jsonResponse = JSON.parse(data);
-      const decodedResponse = JSON.parse(atob(jsonResponse.response));
+      console.log("JSON parsed response data:", jsonResponse);
+      const decodedResponse = atob(jsonResponse.response);
+      console.log("base64 decoded response data:", decodedResponse);
+      console.log("base64.commandResponse response data:", decodedResponse.commandResponse);
       return decodedResponse.commandResponse;
     })
     .catch(error => {
