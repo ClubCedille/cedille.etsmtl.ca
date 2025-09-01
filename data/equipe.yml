@@ -60,6 +60,15 @@ membres:
         url: "https://www.linkedin.com/in/michael-john-s-9ab93a129/"
     image: "images/membres/msakellaropoulos.png"
 
+  - name: "Benjamin Joinvil"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/kingNomad3"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/benjaminjoinvil/"
+    image: "images/membres/BenjaminJoinvil.png"
+
   - name: "Edvin Honda"
     post: "Membre"
     social:
