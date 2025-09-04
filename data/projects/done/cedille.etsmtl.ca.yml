@@ -1,4 +1,4 @@
-commits: 1180
+commits: 1181
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -31,7 +31,7 @@ contributors:
 - mj-sakellaropoulos
 - berbiche
 description: Site web du club CEDILLE
-forks: 2
+forks: 3
 languages:
   CSS: 0.2654051366134907
   Dockerfile: 0.0026476003601811657
@@ -43,5 +43,5 @@ languages:
 name: cedille.etsmtl.ca
 open_issues: 4
 owner: ClubCedille
-pulls: 0
+pulls: 1
 stargazers_count: 1
