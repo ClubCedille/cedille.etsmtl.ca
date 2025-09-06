@@ -170,7 +170,16 @@ anciensmembres:
 
   - name: "Tristan Gosselin-Hane"
     post: "Membre"
-
+    
+  - name: "Antoine Abel"
+    post: "Trésorier 2020-2022"
+    social:
+      - title: github
+        url: "https://github.com/AntoineAbel164"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/antoine-abel-992732162"
+    image: "images/membres/antoine.jpeg"
+    
   - name: "Charles Guertin"
     post: "Ancien Chef d'équipe SRE / Ancien Capitaine 2019-2021"
     social:
