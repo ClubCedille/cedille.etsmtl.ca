@@ -60,15 +60,6 @@ membres:
         url: "https://www.linkedin.com/in/michael-john-s-9ab93a129/"
     image: "images/membres/msakellaropoulos.png"
 
-  - name: "Benjamin Joinvil"
-    post: "Membre"
-    social:
-      - title: github
-        url: "https://github.com/kingNomad3"
-      - title: linkedin
-        url: "https://www.linkedin.com/in/benjaminjoinvil/"
-    image: "images/membres/BenjaminJoinvil.png"
-
   - name: "Edvin Honda"
     post: "Membre"
     social:
@@ -95,6 +86,15 @@ membres:
         url: "https://www.linkedin.com/in/andrei-anton-422869292/"
     image: "images/membres/andrei-anton.jpg"
 
+  - name: "Hassaan Bahsoun"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/HassaanBahsoun"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/hassaan-bahsoun/"
+    image: "images/membres/hassaan-bahsoun.png"
+
   - name: "Sebastian Perez"
     post: "Membre"
     social:
@@ -103,6 +103,15 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/sebastian-perez-ets/"
     image: "images/membres/sebastianPerez.jpg"
+  
+  - name: "Benjamin Joinvil"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/kingNomad3"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/benjaminjoinvil/"
+    image: "images/membres/BenjaminJoinvil.png"
 
   - name: "Etienne Ouellette-Halle"
     post: "Membre"
