@@ -5,6 +5,9 @@ button:
   becomingMember: "Devenir membre"
   url: "/contact"
 membres:
+  - name: "Anon"
+    post: "Anon"
+
   - name: "Alexandre Baudouin Vegas"
     post: "Capitaine"
     social:
