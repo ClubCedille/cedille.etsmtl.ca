@@ -1,4 +1,4 @@
-commits: 1051
+commits: 1086
 contributors:
 - SonOfLope
 - Simon-Boyer
@@ -9,10 +9,10 @@ contributors:
 - JulienGiguere
 - cedille-terraform-cloud[bot]
 - andrei22131
+- HassaanBahsoun
 - Oxsw1ng
 - Epsot
 - RussellJimmies
-- HassaanBahsoun
 - ahenrij
 - etienneoh
 - svc-cedille-user
@@ -30,7 +30,7 @@ languages:
   Python: 0.02774119196575568
   Shell: 0.04151575019207551
 name: Plateforme-Cedille
-open_issues: 93
+open_issues: 98
 owner: ClubCedille
 pulls: 0
 stargazers_count: 10
