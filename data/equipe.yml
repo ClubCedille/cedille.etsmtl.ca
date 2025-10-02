@@ -6,7 +6,7 @@ button:
   url: "/contact"
 membres:
   - name: "John Doe"
-    post: "President"
+    post: "President & .."
   - name: "Alexandre Baudouin Vegas"
     post: "Capitaine"
     social:
