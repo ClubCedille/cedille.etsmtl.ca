@@ -86,6 +86,15 @@ membres:
         url: "https://www.linkedin.com/in/andrei-anton-422869292/"
     image: "images/membres/andrei-anton.jpg"
 
+  - name: "Hassaan Bahsoun"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/HassaanBahsoun"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/hassaan-bahsoun/"
+    image: "images/membres/hassaan-bahsoun.jpg"
+
   - name: "Sebastian Perez"
     post: "Membre"
     social:
@@ -94,6 +103,15 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/sebastian-perez-ets/"
     image: "images/membres/sebastianPerez.jpg"
+  
+  - name: "Benjamin Joinvil"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/kingNomad3"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/benjaminjoinvil/"
+    image: "images/membres/BenjaminJoinvil.png"
 
   - name: "Etienne Ouellette-Halle"
     post: "Membre"
@@ -112,6 +130,15 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/yann-mijatovic/"
     image: "images/membres/yannmijatovic.jpg"
+
+  - name: "Amine Fanid"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/AmineFanid"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/amine-fanid-7936a12b0/"
+    image: "images/membres/AmineFanid.jpg"
 
 anciensmembres:
   - name: "Roch D'amour"
@@ -152,7 +179,16 @@ anciensmembres:
 
   - name: "Tristan Gosselin-Hane"
     post: "Membre"
-
+    
+  - name: "Antoine Abel"
+    post: "Trésorier 2020-2022"
+    social:
+      - title: github
+        url: "https://github.com/AntoineAbel164"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/antoine-abel-992732162"
+    image: "images/membres/antoine.jpeg"
+    
   - name: "Charles Guertin"
     post: "Ancien Chef d'équipe SRE / Ancien Capitaine 2019-2021"
     social:
