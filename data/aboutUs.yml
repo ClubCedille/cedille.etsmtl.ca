@@ -3,7 +3,7 @@ enable: true
 title: "À propos"
 button:
   getInvolved: "Rejoindre l'équipe"
-  url: "/contact"
+  url: "/contact/"
 sections:
   - title: "CEDILLE's vision"
     subtitle: "Faire le pont entre l'éducation et l'industrie"
@@ -14,7 +14,7 @@ sections:
   - title: "Areas of Expertise"
     subtitle: "Diverses opportunités de croissance et de développement"
     text: "<p>CEDILLE propose un large éventail d'opportunités pour les étudiants de développer leurs compétences dans divers domaines de l'ingénierie logicielle et informatique. Nos domaines d'activité comprennent :</p>"
-    descriptionAreas: 
+    descriptionAreas:
       - title: "Développement Web"
         name: "web"
         active: "active"
