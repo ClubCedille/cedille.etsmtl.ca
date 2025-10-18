@@ -3,7 +3,7 @@ enable: true
 title: "Équipe"
 button:
   becomingMember: "Devenir membre"
-  url: "/contact"
+  url: "/contact/"
 membres:
   - name: "Alexandre Baudouin Vegas"
     post: "Capitaine"
