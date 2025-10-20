@@ -9,6 +9,7 @@ sections:
     subtitle: "Hébergement de sites web et applications"
     icon: "bi bi-hdd-rack-fill"
     iconColor: "bg-success"
+    wikiLink: "https://wiki.etsmtl.club/share/8cnz7bzxf3/p/hebergement-AzKZ6iYsl0"
     text: >
       Hébergement de sites web et applications
     details: >
@@ -19,7 +20,7 @@ sections:
     icon: "bi bi-cloud-fill"
     iconColor: "bg-danger"
     serviceLink: "https://nextcloud.etsmtl.club"
-    wikiLink: "https://wiki.etsmtl.club/s/nextcloud/p/introduction-nextcloud-Z7Zb9BXU8O"
+    wikiLink: "https://wiki.etsmtl.club/share/8cnz7bzxf3/p/nextcloud-dqA32TUwJu"
     text: >
       Service de stockage et de partage de fichiers pour les clubs de l'ÉTS.
     details: >
@@ -30,7 +31,7 @@ sections:
     icon: "bi bi-shield-lock-fill"
     iconColor: "bg-info"
     serviceLink: "https://vaultwarden.etsmtl.club"
-    wikiLink: "https://wiki.etsmtl.club/s/vaultwarden/p/introduction-vaultwarden-WIX8AIS92g"
+    wikiLink: "https://wiki.etsmtl.club/share/8cnz7bzxf3/p/vaultwarden-l3D52hXAAp"
     text: >
       Gestion de mots de passe
     details: >
@@ -41,7 +42,7 @@ sections:
     icon: "bi bi-person-fill-lock"
     iconColor: "bg-secondary"
     serviceLink: "https://auth.etsmtl.club"
-    wikiLink: "https://wiki.etsmtl.club/s/authentik/p/introduction-authentik-u1kx9V5Fhl"
+    wikiLink: "https://wiki.etsmtl.club/share/8cnz7bzxf3/p/authentik-i30RW1RYq6"
     text: >
       Authentification centralisée (SSO)
     details: >
