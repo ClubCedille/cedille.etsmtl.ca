@@ -42,7 +42,6 @@ membres:
         url: "https://www.linkedin.com/in/lopez-jonathan/"
     image: "images/membres/jolopez.jpg"
 
-
   - name: "Simon Boyer"
     post: "Exec"
     social:
@@ -51,9 +50,9 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/simon-boyer"
     image: "images/membres/simon-boyer.jpg"
-    
+
   - name: "Hassaan Bahsoun"
-    post: "Exec"
+    post: "Communications Réseaux Sociaux"
     social:
       - title: github
         url: "https://github.com/HassaanBahsoun"
@@ -104,7 +103,7 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/sebastian-perez-ets/"
     image: "images/membres/sebastianPerez.jpg"
-  
+
   - name: "Benjamin Joinvil"
     post: "Membre"
     social:
@@ -180,7 +179,7 @@ anciensmembres:
 
   - name: "Tristan Gosselin-Hane"
     post: "Membre"
-    
+
   - name: "Antoine Abel"
     post: "Trésorier 2020-2022"
     social:
@@ -189,7 +188,7 @@ anciensmembres:
       - title: linkedin
         url: "https://www.linkedin.com/in/antoine-abel-992732162"
     image: "images/membres/antoine.jpeg"
-    
+
   - name: "Charles Guertin"
     post: "Ancien Chef d'équipe SRE / Ancien Capitaine 2019-2021"
     social:
