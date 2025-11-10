@@ -23,15 +23,15 @@ membres:
         url: "https://www.linkedin.com/in/juliengiguere/"
     image: "images/membres/julieng.jpg"
 
-  - name: "William Lemire"
+
+  - name: "Andrei Anton"
     post: "Trésorier"
     social:
       - title: github
-        url: "https://github.com/RussellJimmies"
+        url: "https://github.com/andrei22131"
       - title: linkedin
-        url: "https://www.linkedin.com/in/wlemire"
-    image: "images/membres/williamlemire.jpg"
-
+        url: "https://www.linkedin.com/in/andrei-anton-422869292/"
+    image: "images/membres/andrei-anton.jpg"
 
   - name: "Jonathan Lopez"
     post: "Exec/Ancien capitaine"
@@ -50,6 +50,15 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/simon-boyer"
     image: "images/membres/simon-boyer.jpg"
+
+  - name: "Hassaan Bahsoun"
+    post: "Communications Réseaux Sociaux"
+    social:
+      - title: github
+        url: "https://github.com/HassaanBahsoun"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/hassaan-bahsoun/"
+    image: "images/membres/hassaan-bahsoun.jpg"
 
   - name: "Michael Sakellaropoulos"
     post: "Membre"
@@ -77,23 +86,14 @@ membres:
         url: "https://www.linkedin.com/in/james-talbi/"
     image: "images/membres/jamestalbi.jpg"
 
-  - name: "Andrei Anton"
+  - name: "William Lemire"
     post: "Membre"
     social:
       - title: github
-        url: "https://github.com/andrei22131"
+        url: "https://github.com/RussellJimmies"
       - title: linkedin
-        url: "https://www.linkedin.com/in/andrei-anton-422869292/"
-    image: "images/membres/andrei-anton.jpg"
-
-  - name: "Hassaan Bahsoun"
-    post: "Membre"
-    social:
-      - title: github
-        url: "https://github.com/HassaanBahsoun"
-      - title: linkedin
-        url: "https://www.linkedin.com/in/hassaan-bahsoun/"
-    image: "images/membres/hassaan-bahsoun.jpg"
+        url: "https://www.linkedin.com/in/wlemire"
+    image: "images/membres/williamlemire.jpg"
 
   - name: "Sebastian Perez"
     post: "Membre"
@@ -103,7 +103,7 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/sebastian-perez-ets/"
     image: "images/membres/sebastianPerez.jpg"
-  
+
   - name: "Benjamin Joinvil"
     post: "Membre"
     social:
@@ -179,7 +179,7 @@ anciensmembres:
 
   - name: "Tristan Gosselin-Hane"
     post: "Membre"
-    
+
   - name: "Antoine Abel"
     post: "Trésorier 2020-2022"
     social:
@@ -188,7 +188,7 @@ anciensmembres:
       - title: linkedin
         url: "https://www.linkedin.com/in/antoine-abel-992732162"
     image: "images/membres/antoine.jpeg"
-    
+
   - name: "Charles Guertin"
     post: "Ancien Chef d'équipe SRE / Ancien Capitaine 2019-2021"
     social:
