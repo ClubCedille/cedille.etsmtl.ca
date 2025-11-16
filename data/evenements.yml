@@ -1,0 +1,16 @@
+---
+enable: true
+title: "Événements"
+button:
+  getInvolved: "Entrer en contact"
+  url: "/contact/"
+sections:
+  - title: "Atelier de programmation"
+    subtitle: "28 septembre 2025"
+    icon: "bi bi-calendar-event"
+    iconColor: "bg-info"
+    date: >
+      28 septembre 2025
+    details: >
+      Développer une application prototype pour un doctorant du nouveau département de design de l’ÉTS, dans une réflexion sur notre relation à l’art et à la musique par la technologie.
+---
