@@ -14,3 +14,8 @@
 <meta property="og:description" content="{{ .Params.description }}" />
 <meta property="og:image" content="{{ .Params.og_image }}" />
 <meta property="og:url" content="{{ .Params.url }}" />
+<!-- Analytics -->
+{{ if ne hugo.Environment "development" }}
+  {{ $matomo := resources.Get "js/matomo.js" | minify | fingerprint }}
+  <script src="{{ $matomo.RelPermalink }}" integrity="{{ $matomo.Data.Integrity }}" defer></script>
+{{ end }}
