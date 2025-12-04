@@ -1,4 +1,4 @@
-commits: 88
+commits: 96
 contributors:
 - alexvegas22
 - SonOfLope
@@ -8,9 +8,7 @@ contributors:
 description: 'Cluster Kubernetes: k8s-management-v2'
 forks: 1
 languages:
-  Makefile: 0.010202005253616486
-  Smarty: 0.11170409560102113
-  YAML: 0.8780938991453624
+  YAML: 1.0
 name: k8s-management-v2
 open_issues: 0
 owner: ClubCedille

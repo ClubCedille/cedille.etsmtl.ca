@@ -1,4 +1,4 @@
-commits: 722
+commits: 738
 contributors:
 - trilby-bot
 - SonOfLope
@@ -7,16 +7,17 @@ contributors:
 - dependabot[bot]
 - jeannemas
 - Simon-Boyer
+- alexvegas22
 description: Site web du club étudiant de l'ÉTS Raconteurs d'angle
 forks: 0
 languages:
-  CSS: 0.03787406731925163
-  JavaScript: 0.1925288537259654
-  PHP: 0.33371838289550604
-  SCSS: 0.21966300018030685
-  Shell: 0.0005901625020224358
-  Twig: 0.21268619830570787
-  Vue: 0.0029393350712397224
+  CSS: 0.038213869910371505
+  JavaScript: 0.19224984759131505
+  PHP: 0.3347976629314384
+  SCSS: 0.21907673015705387
+  Shell: 0.0005885873865796907
+  Twig: 0.212141811896481
+  Vue: 0.0029314901267604543
 name: raconteurs.etsmtl.ca
 open_issues: 0
 owner: ClubCedille

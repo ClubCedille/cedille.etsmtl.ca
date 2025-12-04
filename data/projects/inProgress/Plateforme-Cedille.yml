@@ -1,4 +1,4 @@
-commits: 1096
+commits: 1098
 contributors:
 - SonOfLope
 - Simon-Boyer
@@ -30,7 +30,7 @@ languages:
   Python: 0.027088580461925943
   Shell: 0.04053909222442527
 name: Plateforme-Cedille
-open_issues: 94
+open_issues: 96
 owner: ClubCedille
 pulls: 0
 stargazers_count: 10
