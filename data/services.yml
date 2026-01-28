@@ -9,7 +9,7 @@ sections:
     subtitle: "Hébergement de sites web et applications"
     icon: "bi bi-hdd-rack-fill"
     iconColor: "bg-success"
-    wikiLink: "https://wiki.etsmtl.club/share/8cnz7bzxf3/p/hebergement-AzKZ6iYsl0"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/hebergement-6VxIJYoV2X"
     text: >
       Hébergement de sites web et applications
     details: >
@@ -20,7 +20,7 @@ sections:
     icon: "bi bi-cloud-fill"
     iconColor: "bg-danger"
     serviceLink: "https://nextcloud.etsmtl.club"
-    wikiLink: "https://wiki.etsmtl.club/share/8cnz7bzxf3/p/nextcloud-dqA32TUwJu"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/nextcloud-f5nEeUR8bS"
     text: >
       Service de stockage et de partage de fichiers pour les clubs de l'ÉTS.
     details: >
@@ -31,7 +31,7 @@ sections:
     icon: "bi bi-shield-lock-fill"
     iconColor: "bg-info"
     serviceLink: "https://vaultwarden.etsmtl.club"
-    wikiLink: "https://wiki.etsmtl.club/share/8cnz7bzxf3/p/vaultwarden-l3D52hXAAp"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/vaultwarden-lCBR4Z7cs4"
     text: >
       Gestion de mots de passe
     details: >
@@ -42,10 +42,20 @@ sections:
     icon: "bi bi-person-fill-lock"
     iconColor: "bg-secondary"
     serviceLink: "https://auth.etsmtl.club"
-    wikiLink: "https://wiki.etsmtl.club/share/8cnz7bzxf3/p/authentik-i30RW1RYq6"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/authentik-BdNSxOpKfY"
     text: >
       Authentification centralisée (SSO)
     details: >
       Grâce à Authentik, nous proposons un fournisseur d'identité (SSO) permettant une authentification centralisée sur plusieurs de nos services.
       Ce système est intégré aux comptes étudiants de l'ÉTS, ce qui vous permet de vous connecter en utilisant votre courriel et mot de passe institutionnels.
+  - title: "Outline"
+    subtitle: "Outline"
+    icon: "bi bi-file-earmark"
+    iconColor: "bg-warning"
+    serviceLink: "https://wiki.etsmtl.club"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/outline-my4l6QJJ73"
+    text: >
+      Base de connaissances (Wiki)
+    details: >
+      Nous fournissons gratuitement Outline comme service wiki pour les clubs. Chaque club peut obtenir sa propre instance dédiée en suivant les démarches présentées dans la documentation. Le lien ci-dessous vous mènera vers une instance de Outline réservée à la collaboration inter-clubs et au partage de connaissances utiles à tous.
 ---
