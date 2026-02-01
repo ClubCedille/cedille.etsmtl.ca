@@ -1,4 +1,5 @@
 languageCode = 'fr-ca'
+defaultContentLanguage = "fr-ca"
 title = 'Club CEDILLE'
 theme = 'cedille'
 baseURL = 'https://cedille.etsmtl.ca'
