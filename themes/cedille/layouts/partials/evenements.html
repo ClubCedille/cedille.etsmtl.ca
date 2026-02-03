@@ -1,0 +1,110 @@
+{{ $ev := .Site.Data.evenements }}
+
+{{ if and $ev $ev.enable }}
+{{ $sections := sort $ev.sections "date" }}
+{{ $now := now }}
+
+<section class="evenements-section my-5">
+  <div class="row">
+    <h2 class="title-border"><b>{{ $ev.title }}</b></h2>
+  </div>
+
+  <p class="mt-3 mb-4">
+    Venez nous rejoindre lors de nos événements pour en apprendre davantage sur nos initiatives.
+  </p>
+
+
+  {{/* ========= ÉVÉNEMENTS À VENIR ========= */}}
+  <div class="upcoming-events mb-5">
+    <h3 class="mb-3"><b>Événements à venir</b></h3>
+
+    <div class="container px-0">
+      <div class="row">
+
+        {{ range $sections }}
+        {{ $eventDate := time .date }}
+        {{ if ge $eventDate $now }}
+
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body d-flex flex-column justify-content-between">
+
+              <div class="d-flex align-items-start mb-3">
+
+                <i class="icon-circle bi bi-calendar-event bg-dark"></i>
+
+                <div>
+                  <h4 class="card-title mb-1"><b>{{ .title }}</b></h4>
+
+                  <h6 class="text-muted">{{ $d := time.AsTime .date }} {{ time.Format "15h | 2 January 2006" $d }} | {{ .lieu }}</h6>
+                </div>
+              </div>
+
+              <p class="text-justify mb-3">{{ .details }}</p>
+
+              <div class="pt-3 border-top d-flex justify-content-end">
+                <a href="{{ $ev.button.url }}"
+                   class="btn btn-primary btn-sm d-inline-flex align-items-center">
+                  <i class="bi bi-envelope me-2"></i>
+                  {{ $ev.button.getInvolved }}
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        {{ end }}
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+
+
+  {{/* ========= AUTRES ÉVÉNEMENTS ========= */}}
+  <div class="past-events">
+    <h3 class="mb-3"><b>Événements précédents</b></h3>
+
+    <div class="events-panel">
+      <div class="events-scroll">
+
+        {{ range $sections }}
+        {{ $eventDate := time .date }}
+        {{ if lt $eventDate $now }}
+
+        <article class="event-row">
+
+          <div class="event-left">
+
+            <div class="event-date">
+              {{ .subtitle }}
+            </div>
+
+            <div class="event-title">
+
+              <!-- Icône calendrier FIXE -->
+              <span class="event-icon">
+                <i class="bi bi-calendar-event"></i>
+              </span>
+
+              {{ .title }}
+            </div>
+
+            <div class="event-meta">{{ .details }}</div>
+          </div>
+
+          <div class="event-right">
+          </div>
+
+        </article>
+
+        {{ end }}
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+
+</section>
+{{ end }}

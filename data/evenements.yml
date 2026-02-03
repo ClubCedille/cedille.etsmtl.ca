@@ -1,0 +1,17 @@
+enable: true
+title: "Événements"
+button:
+  getInvolved: "Obtenir de l'information"
+  url: "mailto:cedille@ens.etsmtl.ca"
+sections:
+  - title: "Beer & Learn"
+    lieu: "Salle VIP Resto-pub 100 Génies"
+    date: "2026-02-06T18:00:00-04:00"
+    details: >
+      Rejoignez-nous au pub pour des présentations sur des technologies open-source et pour échanger avec d'autres membres de CEDILLE.
+
+  - title: "Atelier de programmation"
+    lieu: "Salle A2010"
+    date: "2025-09-28T12:00:00-04:00"
+    details: >
+      Développer une application prototype pour un doctorant du nouveau département de design de l’ÉTS, dans une réflexion sur notre relation à l’art et à la musique par la technologie.
