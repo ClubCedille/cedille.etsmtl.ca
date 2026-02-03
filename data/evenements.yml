@@ -1,8 +1,8 @@
 enable: true
 title: "Événements"
 button:
-  getInvolved: "Entrer en contact"
-  url: "/contact/"
+  getInvolved: "Obtenir de l'information"
+  url: "mailto:cedille@ens.etsmtl.ca"
 sections:
   - title: "Beer & Learn"
     lieu: "Salle VIP Resto-pub 100 Génies"

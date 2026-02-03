@@ -36,7 +36,7 @@
                 <div>
                   <h4 class="card-title mb-1"><b>{{ .title }}</b></h4>
 
-                  <h6 class="text-muted">{{ $d := time.AsTime .date }} {{ time.Format "15h - 2 January 2006" $d }} | {{ .lieu }}</h6>
+                  <h6 class="text-muted">{{ $d := time.AsTime .date }} {{ time.Format "15h | 2 January 2006" $d }} | {{ .lieu }}</h6>
                 </div>
               </div>
 
@@ -95,9 +95,6 @@
           </div>
 
           <div class="event-right">
-            <a class="event-btn" href="{{ $ev.button.url }}">
-              {{ $ev.button.getInvolved }}
-            </a>
           </div>
 
         </article>
