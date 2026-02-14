@@ -43,8 +43,16 @@
               <p class="text-justify mb-3">{{ .details }}</p>
 
               <div class="pt-3 border-top d-flex justify-content-end">
-                <a href="{{ $ev.button.url }}"
-                   class="btn btn-primary btn-sm d-inline-flex align-items-center">
+
+                {{ $subject := printf "Demande d'information – %s" .title }}
+                {{ $mailto := printf "mailto:%s?subject=%s&body=Bonjour Cedille, j'aimerais avoir de l'information sur cet événement"
+                    $ev.button.email
+                    ($subject | urlquery)
+                }}
+
+                <a href="{{ $mailto }}"
+                  class="btn btn-primary btn-sm d-inline-flex align-items-center">
+
                   <i class="bi bi-envelope me-2"></i>
                   {{ $ev.button.getInvolved }}
                 </a>
