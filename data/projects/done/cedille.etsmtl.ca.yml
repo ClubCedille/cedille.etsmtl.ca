@@ -1,4 +1,4 @@
-commits: 1240
+commits: 1244
 contributors:
 - EdvinHonda
 - SonOfLope
@@ -19,29 +19,29 @@ contributors:
 - samdidos
 - etienneoh
 - dependabot[bot]
+- Kyohkotsu
 - Angry-Russian
 - ThomasCardin
 - RussellJimmies
 - Oxsw1ng
 - Epsot
-- Kyohkotsu
 - maximeconnolly
 - DarkPyroM
 - hodux
 - BinaryTiger
-- berbiche
+- Endlessflow
 description: Site web du club CEDILLE
 forks: 5
 languages:
-  CSS: 0.28535529977077434
-  Dockerfile: 0.0024148371517179667
-  HTML: 0.6379705561480283
-  JavaScript: 0.06558060285122397
-  Makefile: 0.006987092266392086
-  Nix: 0.0015935473590017039
-  Shell: 9.806445286164331e-05
+  CSS: 0.28428199836359863
+  Dockerfile: 0.0024057542711297276
+  HTML: 0.6393322505403788
+  JavaScript: 0.06533393578956366
+  Makefile: 0.006960811850476876
+  Nix: 0.0015875535799333227
+  Shell: 9.769560491897371e-05
 name: cedille.etsmtl.ca
-open_issues: 8
+open_issues: 9
 owner: ClubCedille
-pulls: 1
+pulls: 2
 stargazers_count: 1
