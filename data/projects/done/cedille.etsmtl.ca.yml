@@ -1,10 +1,10 @@
-commits: 1244
+commits: 1247
 contributors:
 - EdvinHonda
 - SonOfLope
 - svc-cedille-user
-- RikuAvelar
 - alexvegas22
+- RikuAvelar
 - notarock
 - AXDOOMER
 - ygotame
@@ -41,7 +41,7 @@ languages:
   Nix: 0.0015875535799333227
   Shell: 9.769560491897371e-05
 name: cedille.etsmtl.ca
-open_issues: 9
+open_issues: 8
 owner: ClubCedille
-pulls: 2
+pulls: 1
 stargazers_count: 1
