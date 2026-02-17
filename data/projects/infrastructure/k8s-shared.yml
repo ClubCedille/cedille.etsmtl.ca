@@ -1,4 +1,4 @@
-commits: 473
+commits: 479
 contributors:
 - alexvegas22
 - JulienGiguere
@@ -10,9 +10,9 @@ contributors:
 description: 'Cluster Kubernetes: k8s-shared'
 forks: 1
 languages:
-  HCL: 0.027618509831175978
-  Shell: 0.04319057133756117
-  YAML: 0.9291909188312628
+  HCL: 0.02761731022600588
+  Shell: 0.04318869536260841
+  YAML: 0.9291939944113857
 name: k8s-shared
 open_issues: 0
 owner: ClubCedille
