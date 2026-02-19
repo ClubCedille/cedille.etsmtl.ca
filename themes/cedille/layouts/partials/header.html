@@ -26,6 +26,7 @@
           {{ $active = or $active (and (eq .Name "À propos") (eq $current.Section "a-propos")) }}
           {{ $active = or $active (and (eq .Name "Équipe") (eq $current.Section "equipe")) }}
           {{ $active = or $active (and (eq .Name "Projets") ( eq $current.Section "projets")) }}
+          {{ $active = or $active (and (eq .Name "Événements") ( eq $current.Section "evenements")) }}
           {{ $active = or $active (and (eq .Name "Partenaires") (eq $current.Section "partenaires")) }}
           {{ $active = or $active (and (eq .Name "Joignez l'équipe") (eq $current.Section "contact")) }}
           <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }} nav-item">
