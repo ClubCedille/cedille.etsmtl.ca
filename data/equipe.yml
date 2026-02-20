@@ -84,6 +84,15 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/yann-mijatovic/"
     image: "images/membres/yannmijatovic.jpg"
+    
+  - name: "Mathieu Gouveia Sousa"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/hodux"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/mathieu-sousa/"
+    image: "images/membres/matsou.jpg"
 
 anciensmembres:
   - name: "Jonathan Lopez"
