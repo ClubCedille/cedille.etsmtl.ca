@@ -1,4 +1,4 @@
-commits: 1254
+commits: 1259
 contributors:
 - EdvinHonda
 - svc-cedille-user
@@ -11,25 +11,25 @@ contributors:
 - JulienGiguere
 - jalilbengoufa
 - BernardClaing
+- plaurin84
+- bayes-diarra
 - cguertin14
 - andrei22131
-- bayes-diarra
-- plaurin84
-- JulienRobitaille
-- samdidos
 - etienneoh
+- samdidos
+- JulienRobitaille
 - dependabot[bot]
+- hodux
 - Kyohkotsu
 - Angry-Russian
 - ThomasCardin
 - RussellJimmies
 - Oxsw1ng
 - Epsot
-- maximeconnolly
 - DarkPyroM
-- hodux
-- BinaryTiger
-- Endlessflow
+- maximeconnolly
+- mj-sakellaropoulos
+- berbiche
 description: Site web du club CEDILLE
 forks: 5
 languages:
@@ -41,7 +41,7 @@ languages:
   Nix: 0.0015875535799333227
   Shell: 9.769560491897371e-05
 name: cedille.etsmtl.ca
-open_issues: 8
+open_issues: 7
 owner: ClubCedille
-pulls: 2
+pulls: 1
 stargazers_count: 1
