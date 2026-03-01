@@ -1,35 +1,137 @@
----
 enable: true
 title: "À propos"
-button:
-  getInvolved: "Rejoindre l'équipe"
-  url: "/contact/"
+
 sections:
-  - title: "CEDILLE's vision"
-    subtitle: "Faire le pont entre l'éducation et l'industrie"
-    text: "<p>Chez CEDILLE, nous croyons en l'autonomisation des étudiants pour qu'ils excellent au-delà de la salle de classe, en nourrissant leur passion pour l'ingénierie logicielle et informatique et en les aidant à avoir un impact positif sur la communauté. Nous comprenons que l'industrie technologique en rapide évolution exige plus que de simples connaissances théoriques; elle demande de l'expérience pratique, de l'adaptabilité et un solide système de valeurs.</p>"
-  - title: "Our Approach"
-    subtitle: "Une communauté d'apprentissage pour les étudiants par les étudiants"
-    text: "<p>Pour accomplir notre mission, nous travaillons fort pour créer un environnement de soutien où les étudiants peuvent pratiquer et perfectionner leurs compétences, développer une mentalité solide et apprendre auprès de professionnels de l'industrie. Grâce à divers projets, ateliers et événements, nous visons à exposer les étudiants aux dernières pratiques et tendances dans les domaines de l'ingénierie logicielle et informatique.</p><h4><b>Projets avec un but</b></h4><p>Chez CEDILLE, nous croyons que le travail que nous faisons doit avoir un impact significatif. Nous collaborons sur des projets qui contribuent non seulement à la croissance personnelle des étudiants, mais aussi à améliorer la vie des autres. En travaillant ensemble sur des projets qui comptent, nous favorisons un esprit de camaraderie et un engagement à créer un monde meilleur.</p><h4><b>Mentorat et accompagnement</b></h4><p>Nous reconnaissons que le chemin vers le succès peut être difficile, et c'est pourquoi nous offrons du mentorat et des conseils de professionnels de l'industrie. En mettant les étudiants en relation avec des ingénieurs expérimentés, nous facilitons l'échange de connaissances, d'expériences et de perspicacité qui aident les étudiants à devenir de meilleurs ingénieurs et individus.</p>"
-  - title: "Areas of Expertise"
-    subtitle: "Diverses opportunités de croissance et de développement"
-    text: "<p>CEDILLE propose un large éventail d'opportunités pour les étudiants de développer leurs compétences dans divers domaines de l'ingénierie logicielle et informatique. Nos domaines d'activité comprennent :</p>"
-    descriptionAreas:
-      - title: "Développement Web"
-        name: "web"
-        active: "active"
-        showActive: "show active"
-        text: "<p>Nous offrons une expérience pratique dans divers aspects du développement web, notamment le design, l'UI/UX, le développement front-end et back-end. Les étudiants travailleront avec des outils tels que Figma pour la création de designs conviviaux, <b>Hugo</b>, <b>Bootstrap</b> et <b>React</b> pour développer des interfaces utilisateur réactives et interactives, et <b>WordPress</b> et <b>Ghost</b> pour gérer efficacement le contenu. Nos projets intègrent également des technologies back-end telles que <b>Python</b> et <b>Go</b> pour créer des applications web dynamiques et performantes.</p>"
-      - title: "Développement logiciel"
-        name: "software"
-        text: "<p>Nos projets de développement logiciel permettent aux étudiants de travailler avec une variété de langages de programmation et d'outils. <b>Python</b>, <b>Go</b> et <b>Rust</b> sont utilisés pour développer des solutions adaptées aux différents types de projets. Nous mettons également l'accent sur la conteneurisation avec <b>Docker</b>, qui permet de créer des applications isolées et facilement déployables, garantissant ainsi des solutions efficaces et évolutives.</p>"
-      - title: "DevOps"
-        name: "devops"
-        text: "<p>CEDILLE se spécialise dans le <b>DevOps</b>, une méthodologie qui vise à rationaliser le processus de développement logiciel grâce à l'automatisation et la collaboration. Les étudiants travailleront avec des outils de pointe tels que <b>CircleCI</b> et <b>Github Actions</b> pour automatiser les processus de construction, de test et de déploiement, <b>ArgoCD</b> pour gérer les déploiements dans des environnements <b>Kubernetes</b> et <b>Terraform</b> pour automatiser la gestion des ressources d'infrastructure. Ces technologies permettent une meilleure intégration entre les équipes de développement et d'exploitation, accélérant ainsi la livraison de logiciels de qualité.</p>"
-      - title: "SRE"
-        name: "sre"
-        text: "<p>En tant que <b>SRE</b> au sein du club, nos membres visent à créer une infrastructure fiable et évolutive pour nos applications et services. Les étudiants utiliseront des outils tels que <b>Prometheus</b> pour collecter des métriques, <b>Grafana</b> pour les visualiser et <b>Groundcover</b> pour améliorer la surveillance des clusters Kubernetes. Ces outils permettent une meilleure compréhension des performances et de la fiabilité de nos systèmes, contribuant ainsi à garantir la disponibilité et la scalabilité des applications que nous développons.</p>"
-  - title: "Get involved"
-    subtitle: "Rejoignez la communauté CEDILLE"
-    text: "<p>Si vous partagez notre passion pour l'ingénierie logicielle et informatique et souhaitez avoir un impact positif sur la communauté, nous vous invitons à rejoindre CEDILLE. En devenant membre, vous aurez l'occasion de grandir, d'apprendre et de collaborer avec des personnes partageant les mêmes idées sur votre chemin vers le succès. Embarquez dans ce voyage avec nous - votre avenir vous attend.</p>"
----
+  - title: "qui-sommes-nous"
+    subtitle: "Qui sommes-nous ?"
+    text: |
+      <p class="lead">CEDILLE est un club étudiant de l'<a href="https://www.etsmtl.ca/"  style="color:inherit">ÉTS</a> axé sur le DevOps et le développement logiciel.
+      Notre plateforme est exploitée <em>on-premise</em>, en collaboration avec le <a  href="https://lanets.ca" style="color:inherit">Lan ETS</a>, et repose sur des technologies modernes utilisées en industrie.</p>
+      <div class="row g-3 mt-1">
+        <div class="col-md-6">
+          <div class="p-3 border rounded h-100">
+            <h5>🏗️ Hébergement gratuit pour les clubs</h5>
+            <p class="mb-0 text-muted">Plutôt que chaque club consacre du temps aux mêmes problèmes d'infrastructure, nous centralisons l'hébergement web, le stockage, le SSO et plus — gratuitement — pour que chaque club se concentre sur sa mission principale.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3 border rounded h-100">
+            <h5>🎓 Apprentissage par la pratique</h5>
+            <p class="mb-0 text-muted">Chaque déploiement est une opportunité d'apprendre. Kubernetes, GitOps, CI/CD, observabilité — nos membres travaillent avec les mêmes technologies que l'industrie, sur de vrais projets.</p>
+          </div>
+        </div>
+      </div>
+
+  - title: "philosophie"
+    subtitle: "Philosophie du club"
+    text: |
+      <p>CEDILLE fonctionne comme un collectif technique plutôt qu'une simple équipe d'exécution.</p>
+      <div class="row g-3 mt-1">
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">Logiciel libre</h6>
+            <p class="mb-0 small text-muted">Toutes nos solutions reposent sur des outils open-source, pertinents sur le marché et audités par la communauté.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">Git comme source de vérité</h6>
+            <p class="mb-0 small text-muted">Chaque déploiement est décrit en code, versionné et reproductible. Infrastructure as Code, pas de changements manuels.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">No blame</h6>
+            <p class="mb-0 small text-muted">Si une erreur se produit, c'est notre système qui l'a permise — pas un individu. On améliore les processus collectivement.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">Documentation = code</h6>
+            <p class="mb-0 small text-muted">Les procédures, guides et décisions techniques sont documentés avec le même soin que le code qu'on écrit.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">Participation volontaire</h6>
+            <p class="mb-0 small text-muted">Aucun minimum d'implication n'est exigé. On apprend ensemble, à des rythmes différents. Les rencontres sont optionnelles.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">Décisions discutées</h6>
+            <p class="mb-0 small text-muted">Les choix techniques sont expliqués, débattus et documentés. On fonctionne comme un collectif, pas une hiérarchie.</p>
+          </div>
+        </div>
+      </div>
+
+  - title: "rencontres"
+    subtitle: "Rencontres — Hivers 2026"
+    text: |
+      <div class="row g-3">
+        <p class="text-muted">Nos rencontres sont ouvertes à tous!</p>
+        <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header d-flex align-items-center gap-2">
+              <strong>Scrum hebdomadaire</strong>
+            </div>
+            <div class="card-body">
+              <p class="text-muted small">Chaque semaine, on fait le point sur les projets en cours, on adresse les défis, on passe en revue le backlog et on attribue les tâches. Suivi d'une session de codage au local D-2020.</p>
+              <span class="badge bg-success-subtle text-success border border-success-subtle">📅 Mardi · 17h30–18h00 · D-3014</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-header d-flex align-items-center gap-2">
+              <strong>Workshop du vendredi</strong>
+            </div>
+            <div class="card-body">
+              <p class="text-muted small">Session de collaboration ouverte sur les projets en cours. Les membres s'entraident sur leurs tâches, la participation est encouragée et l'ambiance détendue.</p>
+              <span class="badge bg-primary-subtle text-primary border border-primary-subtle">📅 Vendredi · 12h30-20h00 · D-2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-3 text-muted small">⚠ Nous indiquons toujours les locaux et les heures avant les rencontres. Confirmez sur <a href="https://discord.gg/kX4rXRTMR6" style="color:inherit">Discord</a> avant de vous déplacer.</p>
+
+  - title: "rejoindre"
+    subtitle: "Comment rejoindre"
+    text: |
+      <p class="text-muted">Nous acceptons seulement les étudiants après les avoir rencontrés.</p>
+      <ol class="list-group list-group-numbered mt-3">
+        <li class="list-group-item d-flex gap-3">
+          <div>
+            <h6 class="fw-bold mb-1">Prenez contact avec nous</h6>
+            <p class="mb-0 small text-muted">Rejoignez notre <a href="https://discord.gg/kX4rXRTMR6" style="color:inherit">Discord</a>, envoyez nous un courriel ou participez à une de nos réunions. C'est la première étape pour rencontrer l'équipe et découvrir nos projets.</p>
+          </div>
+        </li>
+        <li class="list-group-item d-flex gap-3">
+          <div>
+            <h6 class="fw-bold mb-1">Remplissez le formulaire sur Monets</h6>
+            <p class="mb-0 small text-muted">Une fois votre demande acceptée, remplissez le formulaire d'adhésion officiel sur le portail Monets.</p>
+          </div>
+        </li>
+        <li class="list-group-item d-flex gap-3">
+          <div>
+            <h6 class="fw-bold mb-1">Complétez le quiz sur Moodle</h6>
+            <p class="mb-0 small text-muted">Le questionnaire d'intégration sera accessible après acceptation. Il vous familiarisera avec nos outils et nos pratiques.</p>
+          </div>
+        </li>
+      </ol>
+
+  - title: "ressources"
+    subtitle: "Ressources utiles"
+    text: |
+      <p class="text-muted mb-3">Notre communication se fait principalement sur <a href="https://discord.gg/kX4rXRTMR6" style="color:inherit">Discord</a>. Voici les liens essentiels pour vous orienter.</p>
+      <div class="row g-3">
+        <div class="col-12">
+          <h6 class="text-uppercase text-muted small fw-bold mb-2">Liens utiles</h6>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="https://github.com/ClubCedille" class="btn btn-outline-secondary btn-sm" target="_blank">🐙 GitHub — ClubCedille</a>
+            <a href="https://cedille.etsmtl.club/s/wiki" class="btn btn-outline-secondary btn-sm" target="_blank">🌐 Wiki Publique CEDILLE</a>
+            <a href="https://cedille.etsmtl.club/s/wiki/doc/document-de-vision-2025-26-LcyRzLkUBk" class="btn btn-outline-secondary btn-sm" target="_blank">Document de Vision - Lecture essentielle</a>
+            <a href="https://cedille.etsmtl.club/s/wiki/doc/plateforme-cedille-Gc0iB7qdX4" class="btn btn-outline-secondary btn-sm" target="_blank">Documentation de l'infrastructure</a>
+            </div>
+        </div>
+      </div>
