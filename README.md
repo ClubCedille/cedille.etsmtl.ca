@@ -41,4 +41,5 @@ $ make dev-hugo
 ```
 
 ## TODO
-Check out our website's issues page for more details
+Check out our website's issues page for more details.
+
