@@ -1,4 +1,4 @@
-commits: 1275
+commits: 1276
 contributors:
 - EdvinHonda
 - svc-cedille-user
@@ -41,7 +41,7 @@ languages:
   Nix: 0.0015857526225908757
   Shell: 9.758477677482313e-05
 name: cedille.etsmtl.ca
-open_issues: 9
+open_issues: 10
 owner: ClubCedille
 pulls: 2
 stargazers_count: 1
