@@ -101,13 +101,17 @@ baseURL = 'https://cedille.etsmtl.ca'
     url = "/projets/"
     weight = 4
     [[params.footer.menu]]
+    name = "Événements"
+    url = "/evenements/"
+    weight = 5
+    [[params.footer.menu]]
     name = "Partenaires"
     url = "/partenaires/"
-    weight = 5
+    weight = 6
     [[params.footer.menu]]
     name = "Contact"
     url = "/contact/"
-    weight = 6
+    weight = 7
 
     [[params.footer.social]]
     icon = "fab fa-facebook-f"
