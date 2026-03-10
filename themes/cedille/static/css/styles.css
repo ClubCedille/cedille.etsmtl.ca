@@ -1215,7 +1215,7 @@ footer .copyleft {
     color: #333;
     max-width: 60ch;
 }
- 
+
 .evenements-section .events-scroll::-webkit-scrollbar{
     width: 8px;
 }
@@ -1228,4 +1228,8 @@ footer .copyleft {
 .evenements-section .events-scroll::-webkit-scrollbar-thumb{
     background: #ff7a00;
     border-radius: 999px;
+}
+
+.border-orange {
+    border-color: orange !important; /* Using !important to override Bootstrap styles */
 }
