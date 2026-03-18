@@ -51,7 +51,7 @@
                 {{ $mailto := printf "mailto:%s?subject=%s&body=%s"
                     $ev.button.email
                     ($subject | urlquery)
-                    ("Bonjour Cedille, j'aimerais avoir de l'information sur cet événement." | urlquery)
+                    ("Bonjour CEDILLE, j'aimerais avoir de l'information sur cet événement." | urlquery)
                 }}
 
                 <a href="{{ $mailto }}"
