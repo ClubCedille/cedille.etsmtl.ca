@@ -1,58 +1,61 @@
-{{ $ev := .Site.Data.evenements }}
+{{ with .Site.Data.evenements }}
+{{ if .enable }}
+{{ $ev := . }}
 
-{{ if and $ev $ev.enable }}
-{{ $sections := sort $ev.sections "date" }}
 {{ $now := now }}
+{{ $upcoming := sort .sections "date" }}
+{{ $past := sort .sections "date" "desc" }}
 
 <section class="evenements-section my-5">
   <div class="row">
-    <h2 class="title-border"><b>{{ $ev.title }}</b></h2>
+    <h2 class="title-border"><b>{{ .title }}</b></h2>
   </div>
 
   <p class="mt-3 mb-4">
     Venez nous rejoindre lors de nos événements pour en apprendre davantage sur nos initiatives.
   </p>
 
+  <div class="container my-4">
 
-  {{/* ========= ÉVÉNEMENTS À VENIR ========= */}}
-  <div class="upcoming-events mb-5">
-    <h3 class="mb-3"><b>Événements à venir</b></h3>
+    {{/* ========= ÉVÉNEMENTS À VENIR ========= */}}
+    <div class="upcoming-events mb-5">
+      <h3 class="mb-3"><b>Événements à venir</b></h3>
 
-    <div class="container px-0">
       <div class="row">
+        {{ $hasUpcoming := false }}
 
-        {{ range $sections }}
+        {{ range $upcoming }}
         {{ $eventDate := time .date }}
         {{ if ge $eventDate $now }}
+        {{ $hasUpcoming = true }}
 
         <div class="col-md-6 mb-4">
           <div class="card shadow-sm h-100">
             <div class="card-body d-flex flex-column justify-content-between">
 
               <div class="d-flex align-items-start mb-3">
-
-                <i class="icon-circle bi bi-calendar-event bg-dark"></i>
+                <i class="icon-circle bi bi-calendar-event"></i>
 
                 <div>
                   <h4 class="card-title mb-1"><b>{{ .title }}</b></h4>
-
-                  <h6 class="text-muted">{{ $d := time.AsTime .date }} {{ time.Format "15h | 2 January 2006" $d }} | {{ .lieu }}</h6>
+                  <h6 class="text-muted">
+                    {{ time.Format "15h | 2 January 2006" $eventDate }} | {{ .lieu }}
+                  </h6>
                 </div>
               </div>
 
               <p class="text-justify mb-3">{{ .details }}</p>
 
               <div class="pt-3 border-top d-flex justify-content-end">
-
                 {{ $subject := printf "Demande d'information – %s" .title }}
-                {{ $mailto := printf "mailto:%s?subject=%s&body=Bonjour Cedille, j'aimerais avoir de l'information sur cet événement"
+                {{ $mailto := printf "mailto:%s?subject=%s&body=%s"
                     $ev.button.email
                     ($subject | urlquery)
+                    ("Bonjour Cedille, j'aimerais avoir de l'information sur cet événement." | urlquery)
                 }}
 
                 <a href="{{ $mailto }}"
-                  class="btn btn-primary btn-sm d-inline-flex align-items-center">
-
+                   class="btn btn-primary btn-sm d-inline-flex align-items-center">
                   <i class="bi bi-envelope me-2"></i>
                   {{ $ev.button.getInvolved }}
                 </a>
@@ -65,55 +68,65 @@
         {{ end }}
         {{ end }}
 
+        {{ if not $hasUpcoming }}
+        <div class="col-12">
+          <p class="text-muted">Aucun événement à venir pour le moment.</p>
+        </div>
+        {{ end }}
       </div>
     </div>
-  </div>
 
+    {{/* ========= ÉVÉNEMENTS PRÉCÉDENTS ========= */}}
+    <div class="past-events">
+      <h3 class="mb-3"><b>Événements précédents</b></h3>
 
-  {{/* ========= AUTRES ÉVÉNEMENTS ========= */}}
-  <div class="past-events">
-    <h3 class="mb-3"><b>Événements précédents</b></h3>
+      <div class="events-panel">
+        <div class="events-scroll">
 
-    <div class="events-panel">
-      <div class="events-scroll">
+          {{ $hasPast := false }}
 
-        {{ $sections := sort $ev.sections "date" "desc" }}
-        {{ range $sections }}
-        {{ $eventDate := time .date }}
-        {{ if lt $eventDate $now }}
+          {{ range $past }}
+          {{ $eventDate := time .date }}
+          {{ if lt $eventDate $now }}
+          {{ $hasPast = true }}
 
-        <article class="event-row">
-
-          <div class="event-left">
-
-            <div class="event-title">
-
-              <!-- Icône calendrier FIXE -->
+          <article class="event-row">
+            <div class="event-left">
               <span class="event-icon">
                 <i class="bi bi-calendar-event"></i>
               </span>
 
-              {{ .title }}
+              <div class="event-date">
+                {{ time.Format "2 January 2006" $eventDate }}
+              </div>
             </div>
 
-            <div class="event-date">
-              {{ time.Format "2 January 2006" $eventDate }}
+            <div class="event-right">
+              <div class="event-title">
+                {{ .title }}
+              </div>
+
+              <div class="event-meta">
+                {{ .details }}
+              </div>
             </div>
+          </article>
 
-            <div class="event-meta">{{ .details }}</div>
+          {{ end }}
+          {{ end }}
+
+          {{ if not $hasPast }}
+          <div class="px-4 py-3">
+            <p class="text-muted mb-0">Aucun événement précédent à afficher.</p>
           </div>
+          {{ end }}
 
-          <div class="event-right">
-          </div>
-
-        </article>
-
-        {{ end }}
-        {{ end }}
-
+        </div>
       </div>
     </div>
-  </div>
 
+  </div>
 </section>
+
+{{ end }}
 {{ end }}

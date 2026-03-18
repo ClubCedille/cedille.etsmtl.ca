@@ -22,6 +22,8 @@ sections:
     details: >
       Développer une application prototype pour un doctorant du nouveau département de design de l’ÉTS, dans une réflexion sur notre relation à l’art et à la musique par la technologie.
 
+
+# lorem ipsum 
   - title: "Lorem Ipsum Dolor"
     lieu: "Salle Alpha"
     date: "2026-01-15T17:30:00-05:00"
