@@ -1075,7 +1075,7 @@ footer .copyleft {
     margin-inline: auto;
 }
 .evenements-section .events-scroll{
-    max-height: 360px;
+    max-height: 600px;
     overflow-y: auto;
 }
 
@@ -1158,13 +1158,13 @@ footer .copyleft {
     border-radius: 8px;
     padding: 12px 0;
     width: 100%;
-    max-width: 1200px;  /* limite de sécurité */
+    max-width: 1200px;
     margin-inline: auto;
 }
 
 /* zone scrollable */
 .evenements-section .events-scroll{
-    max-height: 260px;              /* à ajuster si tu veux */
+    height: 500em;
     overflow-y: auto;
 }
 
@@ -1197,7 +1197,7 @@ footer .copyleft {
     margin-bottom: 4px;
 }
 
-/* petite pastille calendrier dans la liste */
+/* petit calendrier dans la liste */
 .evenements-section .event-icon{
     display:inline-flex;
     justify-content:center;

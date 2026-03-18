@@ -77,6 +77,7 @@
     <div class="events-panel">
       <div class="events-scroll">
 
+        {{ $sections := sort $ev.sections "date" "desc" }}
         {{ range $sections }}
         {{ $eventDate := time .date }}
         {{ if lt $eventDate $now }}
@@ -84,10 +85,6 @@
         <article class="event-row">
 
           <div class="event-left">
-
-            <div class="event-date">
-              {{ .subtitle }}
-            </div>
 
             <div class="event-title">
 
@@ -97,6 +94,10 @@
               </span>
 
               {{ .title }}
+            </div>
+
+            <div class="event-date">
+              {{ time.Format "2 January 2006" $eventDate }}
             </div>
 
             <div class="event-meta">{{ .details }}</div>

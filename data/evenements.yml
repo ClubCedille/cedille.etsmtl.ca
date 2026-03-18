@@ -21,3 +21,52 @@ sections:
     date: "2025-09-28T12:00:00-04:00"
     details: >
       Développer une application prototype pour un doctorant du nouveau département de design de l’ÉTS, dans une réflexion sur notre relation à l’art et à la musique par la technologie.
+
+  - title: "Lorem Ipsum Dolor"
+    lieu: "Salle Alpha"
+    date: "2026-01-15T17:30:00-05:00"
+    details: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+
+  - title: "Consectetur Adipiscing"
+    lieu: "Pavillon B - Local 203"
+    date: "2026-03-22T19:00:00-04:00"
+    details: >
+      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.
+  
+  - title: "Lorem Ipsum Dolor"
+    lieu: "Salle Alpha"
+    date: "2026-01-15T17:30:00-05:00"
+    details: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+
+  - title: "Consectetur Adipiscing"
+    lieu: "Pavillon B - Local 203"
+    date: "2026-03-22T19:00:00-04:00"
+    details: >
+      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.
+
+  - title: "Vestibulum Vivamus"
+    lieu: "Auditorium Central"
+    date: "2026-04-10T13:00:00-04:00"
+    details: >
+      Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Nulla porttitor accumsan tincidunt.
+
+  - title: "Nulla Porttitor"
+    lieu: "Salle 3.1416"
+    date: "2026-05-05T18:45:00-04:00"
+    details: >
+      Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum porta.
+
+  - title: "Curabitur Non Nulla"
+    lieu: "Local D-404"
+    date: "2026-02-28T16:15:00-05:00"
+    details: >
+      Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.
+
+  - title: "Mauris Blandit"
+    lieu: "Agora Étudiante"
+    date: "2026-03-03T20:00:00-05:00"
+    details: >
+      Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat.
+
