@@ -1,4 +1,4 @@
-commits: 1162
+commits: 1164
 contributors:
 - SonOfLope
 - Simon-Boyer
@@ -16,6 +16,7 @@ contributors:
 - ahenrij
 - etienneoh
 - svc-cedille-user
+- AXDOOMER
 - Endlessflow
 - Vianpyro
 - lamiphil
@@ -34,5 +35,5 @@ languages:
 name: Plateforme-Cedille
 open_issues: 133
 owner: ClubCedille
-pulls: 1
+pulls: 0
 stargazers_count: 10
