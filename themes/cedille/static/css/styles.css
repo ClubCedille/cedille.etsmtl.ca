@@ -1068,164 +1068,154 @@ footer .copyleft {
 }
 
 /*--------------------- EVENEMENTS PAGE ----------------------*/
-.evenements-section .events-panel{
-    background: var(--ev-bg);
-    padding: 18px;
-    width: min(720px, 100%);
-    margin-inline: auto;
-}
-.evenements-section .events-scroll{
-    max-height: 360px;
-    overflow-y: auto;
-}
-
-.evenements-section .event-row{
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 20px;
-    padding: 18px 6px;
-    border-top: 2px solid var(--ev-accent);
-}
-
-.evenements-section .event-row:last-child{
-    border-bottom: 2px solid var(--ev-accent);
-}
-
-.event-icon {
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  width:28px;
-  height:28px;
-  border-radius:50%;
-  background:black;
-  color:white;
-  margin-right:8px;
-}
-/*--------------------- EVENEMENTS SECTION ----------------------*/
-
 .evenements-section h2,
-.evenements-section h3{
+.evenements-section h3 {
     color: #222;
 }
 
-.evenements-section h3{
+.evenements-section h3 {
     margin-top: 32px;
     margin-bottom: 16px;
 }
-/* Cartes des événements à venir */
-.evenements-section .upcoming-events .card{
+
+/* Événements à venir */
+.evenements-section .upcoming-events .card {
     border: 1px solid #ffd0a3;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
-.evenements-section .upcoming-events .card-body{
+.evenements-section .upcoming-events .card-body {
     background-color: #fffdf9;
 }
 
-/* icône calendrier dans la carte */
-.evenements-section .upcoming-events .icon-circle{
+.evenements-section .upcoming-events .icon-circle {
     background-color: #ff7a00;
     color: #fff;
 }
 
-/* titre + date dans la carte */
-.evenements-section .upcoming-events .card-title{
+.evenements-section .upcoming-events .card-title {
     color: #222;
 }
 
-.evenements-section .upcoming-events .text-muted{
-    color: #ff7a00 !important;  /* date en orange */
+.evenements-section .upcoming-events .text-muted {
+    color: #ff7a00 !important;
 }
 
-/* bouton bleu -> bouton orange */
-.evenements-section .upcoming-events .btn-primary{
+.evenements-section .upcoming-events .btn-primary {
     background-color: #ff7a00;
     border-color: #ff7a00;
     border-radius: 999px;
     padding-inline: 18px;
 }
 
-.evenements-section .upcoming-events .btn-primary:hover{
+.evenements-section .upcoming-events .btn-primary:hover {
     background-color: #ff5a00;
     border-color: #ff5a00;
 }
-/* Panneau qui contient la liste scrollable */
-.evenements-section .events-panel{
-    background-color: #fff6ea;
-    border-radius: 8px;
-    padding: 12px 0;
+
+/* Panneau des événements précédents */
+.evenements-section .events-panel {
     width: 100%;
-    max-width: 1200px;  /* limite de sécurité */
+    max-width: 1200px;
     margin-inline: auto;
+    background: #e2e2e2;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ffd0a3;
 }
 
-/* zone scrollable */
-.evenements-section .events-scroll{
-    max-height: 260px;              /* à ajuster si tu veux */
+/* Zone scrollable - événements précédents */
+.evenements-section .events-scroll {
+    min-height: 500px;
+    max-height: 520px;
     overflow-y: auto;
 }
 
-/* une ligne passée */
-.evenements-section .event-row{
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 24px;
-    padding: 14px 32px;
-    border-top: 1px solid #ffc28a;
+/* Ligne d'événement - événements précédents */
+.evenements-section .event-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 18px 20px;
+    background: #f7f0e8;
+    border-bottom: 1px solid #e8b98a;
 }
 
-.evenements-section .event-row:first-child{
-    border-top: none;
+.evenements-section .event-row:last-child {
+    border-bottom: none;
 }
 
-.evenements-section .event-date{
-    font-size: 14px;
-    color: #ff7a00;
-    margin-bottom: 4px;
+/* Colonne gauche - événements précédents */
+.evenements-section .event-left {
+    width: 156px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.evenements-section .event-title{
-    font-size: 20px;
-    font-weight: 600;
-    color: #222;
+/* Icône calendrier - événements précédents */
+.evenements-section .event-icon {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    background-color: #ff7a00;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1;
 }
 
-/* petite pastille calendrier dans la liste */
-.evenements-section .event-icon{
-    display:inline-flex;
-    justify-content:center;
-    align-items:center;
-    width:24px;
-    height:24px;
-    border-radius:50%;
-    background:#ff7a00;
-    color:#fff;
-    font-size:14px;
+/* Date - événements précédents */
+.evenements-section .event-date {
+    color: #ff7a00;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.3;
 }
 
-.evenements-section .event-meta{
-    font-size: 14px;
-    color: #333;
+/* Colonne droite - événements précédents */
+.evenements-section .event-right {
+    flex: 1;
+    min-width: 0;
+}
+
+.evenements-section .event-title {
+    margin-bottom: 8px;
+    color: #1f2a37;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.evenements-section .event-meta {
     max-width: 60ch;
-}
- 
-.evenements-section .events-scroll::-webkit-scrollbar{
-    width: 8px;
-}
-
-.evenements-section .events-scroll::-webkit-scrollbar-track{
-    background: #ffe2c1;
-    border-radius: 999px;
+    color: #374151;
+    font-size: 0.98rem;
+    line-height: 1.55;
 }
 
-.evenements-section .events-scroll::-webkit-scrollbar-thumb{
-    background: #ff7a00;
-    border-radius: 999px;
+/* Scrollbar - événements précédents */
+.evenements-section .events-scroll::-webkit-scrollbar {
+    width: 14px;
+    background-color: rgba(220, 220, 220, 0.82);
+    border-radius: 10px;
+}
+
+.evenements-section .events-scroll::-webkit-scrollbar-track {
+    border: 3px solid transparent;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(200, 200, 200, 0.82);
+}
+
+.evenements-section .events-scroll::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 10px orange;
 }
