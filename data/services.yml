@@ -9,7 +9,7 @@ sections:
     subtitle: "Hébergement de sites web et applications"
     icon: "bi bi-hdd-rack-fill"
     iconColor: "bg-success"
-    wikiLink: "https://cedille.etsmtl.club/s/services/doc/hebergement-0V0oWdUG7Z"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/hebergement-6VxIJYoV2X"
     text: >
       Hébergement de sites web et applications
     details: >
@@ -20,7 +20,7 @@ sections:
     icon: "bi bi-cloud-fill"
     iconColor: "bg-danger"
     serviceLink: "https://nextcloud.etsmtl.club"
-    wikiLink: "https://cedille.etsmtl.club/s/services/doc/nextcloud-ReYENi6cCm"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/nextcloud-f5nEeUR8bS"
     text: >
       Service de stockage et de partage de fichiers pour les clubs de l'ÉTS.
     details: >
@@ -31,7 +31,7 @@ sections:
     icon: "bi bi-shield-lock-fill"
     iconColor: "bg-info"
     serviceLink: "https://vaultwarden.etsmtl.club"
-    wikiLink: "https://cedille.etsmtl.club/s/services/doc/vaultwarden-Nk1czv4QL6"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/vaultwarden-lCBR4Z7cs4"
     text: >
       Gestion de mots de passe
     details: >
@@ -42,7 +42,7 @@ sections:
     icon: "bi bi-person-fill-lock"
     iconColor: "bg-secondary"
     serviceLink: "https://auth.etsmtl.club"
-    wikiLink: "https://cedille.etsmtl.club/s/services/doc/authentik-djlqcn1rDo"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/authentik-BdNSxOpKfY"
     text: >
       Authentification centralisée (SSO)
     details: >
@@ -52,9 +52,10 @@ sections:
     subtitle: "Outline"
     icon: "bi bi-file-earmark"
     iconColor: "bg-warning"
-    wikiLink: "https://cedille.etsmtl.club/s/services/doc/outline-tS2qu2MKkB"
+    serviceLink: "https://wiki.etsmtl.club"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/outline-my4l6QJJ73"
     text: >
       Base de connaissances (Wiki)
     details: >
-      Nous fournissons gratuitement Outline comme service wiki pour les clubs. Chaque club peut obtenir sa propre instance dédiée en suivant les démarches présentées dans la documentation. Le lien ci-dessous vous mènera vers une instance de Outline réservée à la collaboration inter-clubs et au partage de connaissances utiles à tous. Un exemple est le wiki inter-club à l'adresse https://wiki.etsmtl.club.
+      Nous fournissons gratuitement Outline comme service wiki pour les clubs. Chaque club peut obtenir sa propre instance dédiée en suivant les démarches présentées dans la documentation. Le lien ci-dessous vous mènera vers une instance de Outline réservée à la collaboration inter-clubs et au partage de connaissances utiles à tous.
 ---
