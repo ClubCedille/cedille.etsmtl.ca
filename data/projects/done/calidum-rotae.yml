@@ -1,4 +1,4 @@
-commits: 110
+commits: 112
 contributors:
 - ThomasCardin
 - renovate[bot]
@@ -6,6 +6,7 @@ contributors:
 - SonOfLope
 - cguertin14
 - vyacheslav31
+- AXDOOMER
 - JulienGiguere
 description: Microservices permettant de router une demande d'admission vers différentes
   plateformes de messagerie.
@@ -17,5 +18,5 @@ languages:
 name: calidum-rotae
 open_issues: 4
 owner: ClubCedille
-pulls: 12
+pulls: 14
 stargazers_count: 5

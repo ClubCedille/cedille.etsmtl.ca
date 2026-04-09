@@ -1,14 +1,14 @@
-commits: 113
+commits: 116
 contributors:
 - alexvegas22
 - SonOfLope
 - Simon-Boyer
+- JulienGiguere
 - cedille-terraform-cloud[bot]
 - svc-cedille-user
 description: 'Cluster Kubernetes: k8s-management-v2'
 forks: 1
-languages:
-  YAML: 1.0
+languages: {}
 name: k8s-management-v2
 open_issues: 0
 owner: ClubCedille
