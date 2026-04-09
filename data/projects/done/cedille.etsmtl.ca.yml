@@ -1,4 +1,4 @@
-commits: 1321
+commits: 1327
 contributors:
 - svc-cedille-user
 - EdvinHonda
@@ -29,7 +29,7 @@ contributors:
 - maximeconnolly
 - DarkPyroM
 - BinaryTiger
-- Endlessflow
+- Thanthan77
 description: Site web du club CEDILLE
 forks: 6
 languages:
@@ -43,5 +43,5 @@ languages:
 name: cedille.etsmtl.ca
 open_issues: 9
 owner: ClubCedille
-pulls: 3
+pulls: 2
 stargazers_count: 1
