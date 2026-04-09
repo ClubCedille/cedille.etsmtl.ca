@@ -94,6 +94,16 @@ membres:
         url: "https://www.linkedin.com/in/mathieu-sousa/"
     image: "images/membres/matsou.jpg"
 
+  - name: "Ethan Chea"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/Thanthan77"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/ethan-chea"
+    image: "images/membres/ethan-chea.png"
+
+
 anciensmembres:
   - name: "Jonathan Lopez"
     post: "Ancien capitaine"
