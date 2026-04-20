@@ -1208,6 +1208,9 @@ footer .copyleft {
     border-radius: 10px;
 }
 
+.border-orange {
+    border-color: orange !important; /* Using !important to override Bootstrap styles */
+}
 .evenements-section .events-scroll::-webkit-scrollbar-track {
     border: 3px solid transparent;
     border-radius: 10px;
