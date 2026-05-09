@@ -4,7 +4,7 @@ contributors:
 - renovate[bot]
 description: Un robot Discord pour enregistrer, transcrire et résumer les discussions
   de vos canaux vocaux pour garder vos membres informés
-forks: 0
+forks: 1
 languages:
   Dockerfile: 0.04160717927799307
   Python: 0.9583928207220069
