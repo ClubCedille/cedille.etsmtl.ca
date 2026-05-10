@@ -9,7 +9,7 @@ contributors:
 - boredsimo
 - dependabot[bot]
 description: Robot logiciel pour le serveur Discord des clubs étudiants de l'ÉTS
-forks: 2
+forks: 1
 languages:
   Dockerfile: 0.0015798764342453663
   Python: 0.9984201235657546
