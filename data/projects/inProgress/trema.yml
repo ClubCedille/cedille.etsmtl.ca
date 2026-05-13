@@ -14,7 +14,7 @@ languages:
   Dockerfile: 0.0015798764342453663
   Python: 0.9984201235657546
 name: trema
-open_issues: 6
+open_issues: 7
 owner: ClubCedille
 pulls: 2
 stargazers_count: 2
