@@ -1,4 +1,4 @@
-commits: 1181
+commits: 1184
 contributors:
 - SonOfLope
 - Simon-Boyer
@@ -23,17 +23,17 @@ contributors:
 description: Nouvelle infra du club CEDILLE
 forks: 2
 languages:
-  CSS: 0.00822657354642444
-  Dockerfile: 0.011740005998543211
-  Go Template: 0.09623377179827756
-  HCL: 0.7027936072668066
-  HTML: 0.004327520459317023
-  JavaScript: 0.02069497407772398
-  Jinja: 0.10191096448005485
-  Python: 0.021659025665195595
-  Shell: 0.032413556707656714
+  CSS: 0.008226044857650864
+  Dockerfile: 0.011739251515605922
+  Go Template: 0.09622758724106167
+  HCL: 0.7028127075255457
+  HTML: 0.004327242346993424
+  JavaScript: 0.020693644095027955
+  Jinja: 0.10190441507251344
+  Python: 0.021657633726783917
+  Shell: 0.03241147361881708
 name: Plateforme-Cedille
-open_issues: 163
+open_issues: 169
 owner: ClubCedille
 pulls: 0
 stargazers_count: 10

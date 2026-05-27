@@ -1,9 +1,10 @@
-commits: 46
+commits: 48
 contributors:
 - EdvinHonda
 - SonOfLope
 - dependabot[bot]
 - alexvegas22
+- LeGhosdragon
 description: Site web du club Saveurs de Génie
 forks: 0
 languages:
@@ -15,5 +16,5 @@ languages:
 name: saveursdegenie.etsmtl.ca
 open_issues: 0
 owner: ClubCedille
-pulls: 5
+pulls: 4
 stargazers_count: 1
