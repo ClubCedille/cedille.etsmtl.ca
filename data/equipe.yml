@@ -104,13 +104,13 @@ membres:
     image: "images/membres/Ethan_Chea.png"
 
   - name: "Emilien Busson"
-      post: "Membre"
-      social:
+    post: "Membre"
+    social:
         - title: github
           url: "https://github.com/Emilinkb"
         - title: linkedin
           url: "https://www.linkedin.com/in/emilien-busson/"
-      image: "images/membres/emilien-busson.png"
+    image: "images/membres/emilien-busson.png"
 
 anciensmembres:
   - name: "Jonathan Lopez"
