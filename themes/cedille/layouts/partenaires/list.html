@@ -2,7 +2,7 @@
     {{ with $.Site.Data.partenaires }}
     {{ $pdf := resources.Get "/documents/Plan_de_partenariat.pdf"}}
     <!-- Partnership section -->
-        <div class="partenaires-section my-5">
+    <div class="partenaires-section my-5">
             <div class="container">
                 <div class="row">
                   <h2 class="title-border"><b>{{ .title }}</b></h2>
@@ -13,7 +13,18 @@
                 <div class="card mt-5 d-flex d-lg-none d-md-none" style="background-color:rgb(242, 242, 242);">
                     <img src="{{ .imageCard }}" class="card-img-top" alt="{{ .name }}">
                     <div class="card-body">
-                        <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                        {{ if .isLogoOnly }}
+                        <a href="{{ .websiteURL }}" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="row">
+                                <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                <h3 class="col-6 mt-3">{{ .logoText }}</h3>
+                            </div>
+                        </a>
+                        {{ else }}
+                        <a href="{{ .websiteURL }}" target="_blank">
+                            <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                        </a>
+                        {{ end }}
                         <p class="card-text"><b>{{ .text }}</b></p>
                     </div>
                 </div>
@@ -23,7 +34,18 @@
                         {{ if .imageSide }}
                         <div class="col-md-7 d-flex align-items-center">
                             <div class="d-block me-5">
-                                <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                {{ if .isLogoOnly }}
+                                <a href="{{ .websiteURL }}" target="_blank" style="text-decoration: none; color: inherit;">
+                                    <div class="row">
+                                        <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                        <h3 class="col-6 mt-3">{{ .logoText }}</h3>
+                                    </div>
+                                </a>
+                                {{ else }}
+                                <a href="{{ .websiteURL }}" target="_blank">
+                                    <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                </a>
+                                {{ end }}
                                 <p class="card-text">{{ .text }}</p>
                             </div>
                         </div>
@@ -32,13 +54,17 @@
                         <img class="col-md-5 p-0" src="{{ .imageCard }}" alt="{{ .name }}" width="auto" style="box-shadow: 0px 10px 10px 0px black;">
                         <div class="col-md-7 d-flex align-items-center">
                             <div class="d-block ms-5">
-                                {{ if .isEts }}
-                                <div class="row">
-                                    <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-                                    <h3 class="col-6 mt-3">{{ .nameEts }}</h3>
-                                </div>
+                                {{ if .isLogoOnly }}
+                                <a href="{{ .websiteURL }}" target="_blank" style="text-decoration: none; color: inherit;">
+                                    <div class="row">
+                                        <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                        <h3 class="col-6 mt-3">{{ .logoText }}</h3>
+                                    </div>
+                                </a>
                                 {{ else }}
-                                <img class="mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                <a href="{{ .websiteURL }}" target="_blank">
+                                    <img class="mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                                </a>
                                 {{ end }}
                                 <p class="card-text">{{ .text }}</p>
                             </div>
