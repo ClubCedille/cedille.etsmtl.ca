@@ -1,135 +1,273 @@
-languageCode = 'fr-ca'
+locale = 'fr-ca'
 defaultContentLanguage = "fr-ca"
 title = 'Club CEDILLE'
 theme = 'cedille'
 baseURL = 'https://cedille.etsmtl.ca'
 
 # main menu
-[menu]
-    [[menu.main]]
-        identifier = "accueil"
-        name = "Accueil"
-        url = "/"
+[languages]
+    [languages.fr-ca]
+        label = "FR"
         weight = 1
-    [[menu.main]]
-        identifier = "a-propos"
-        name = "À propos"
-        url = "/a-propos/"
-        weight = 2
-    [[menu.main]]
-        identifier = "services"
-        name = "Services"
-        url = "/services/"
-        weight = 3
-    [[menu.main]]
-        identifier = "equipe"
-        name = "Équipe"
-        url = "/equipe/"
-        weight = 4
-    [[menu.main]]
-        identifier = "projets"
-        name = "Projets"
-        url = "/projets/"
-        weight = 5
-    [[menu.main]]
-        identifier = "evenements"
-        name = "Événements"
-        url = "/evenements/"
-        weight = 6
-    [[menu.main]]
-        identifier = "partenaires"
-        name = "Partenaires"
-        url = "/partenaires/"
-        weight = 7
-    [[menu.main]]
-        identifier = "contact"
-        name = "Joignez l'équipe"
-        url = "/contact/"
-        weight = 8
+        # French Menu
+        [[languages.fr-ca.menu.main]]
+            identifier = "accueil"
+            name = "Accueil"
+            url = "/"
+            weight = 1
+        [[languages.fr-ca.menu.main]]
+            identifier = "a-propos"
+            name = "À propos"
+            url = "/a-propos/"
+            weight = 2
+        [[languages.fr-ca.menu.main]]
+            identifier = "services"
+            name = "Services"
+            url = "/services/"
+            weight = 3
+        [[languages.fr-ca.menu.main]]
+            identifier = "equipe"
+            name = "Équipe"
+            url = "/equipe/"
+            weight = 2
+        [[languages.fr-ca.menu.main]]
+            identifier = "projets"
+            name = "Projets"
+            url = "/projets/"
+            weight = 5
+        [[languages.fr-ca.menu.main]]
+            identifier = "evenements"
+            name = "Événements"
+            url = "/evenements/"
+            weight = 6
+        [[languages.fr-ca.menu.main]]
+            identifier = "partenaires"
+            name = "Partenaires"
+            url = "/partenaires/"
+            weight = 7
+        [[languages.fr-ca.menu.main]]
+            identifier = "contact"
+            name = "Joignez l'équipe"
+            url = "/contact/"
+            weight = 8
 
-[params]
-    titleFollowUs = "Suivez-nous"
-    titleContactPage = "Pour nous contacter"
-    copyright = "©"
-    year = "2022"
+        [languages.fr-ca.params]
+            titleFollowUs = "Suivez-nous"
+            titleContactPage = "Pour nous contacter"
+            copyright = "©"
+            year = "2022"
+        
+            #General Params
+            [languages.fr-ca.params.general]
+            logoCedille = "images/cedille-logo-orange.png"
+        
+            #Address Information Params
+            [languages.fr-ca.params.address]
+            title = "Adresse"
+            address = "1219 rue William <br>Montréal (Québec) <br>H3C 1R1 <br>Local D-2020"
+            email = "cedille@ens.etsmtl.ca"
+            phoneNumber = "5143968800p7302"
+            phone = "514 396-8800, poste 7302"
+        
+            [languages.fr-ca.params.map]
+            APIkey="AIzaSyD1aM-ZRRtAGOlk4qQWdLhHQe0qiAZlFRA"
+            latitude = "45.49382"
+            longitude = "-73.56233"
+        
+            [languages.fr-ca.params.form]
+            APIkey = "JJ^j6qUYa^t5bCoQ7bfy"
+            link = "https://calidum-rotae.prodv2.cedille.club"
+        
+            ############ Footer section #############
+            [languages.fr-ca.params.footer]
+            addressTitle = "Adresse:"
+            address = "1219 rue William, Montréal QC, H3C 1R1, Local D-2020"
+            contactTitle = "Contact:"
+            email = "cedille@ens.etsmtl.ca"
+            owner = "Club CEDILLE"
+            privacyPolicy = "Politique de confidentialité"
+            termsOfService = "Conditions de service"
+        
+            [[languages.fr-ca.params.footer.menu]]
+            name = "Accueil"
+            url = "/"
+            weight = 1
+            [[languages.fr-ca.params.footer.menu]]
+            name = "À propos"
+            url = "/a-propos/"
+            weight = 2
+            [[languages.fr-ca.params.footer.menu]]
+            name = "Équipe"
+            url = "/equipe/"
+            weight = 3
+            [[languages.fr-ca.params.footer.menu]]
+            name = "Nos projets"
+            url = "/projets/"
+            weight = 4
+            [[languages.fr-ca.params.footer.menu]]
+            name = "Événements"
+            url = "/evenements/"
+            weight = 5
+            [[languages.fr-ca.params.footer.menu]]
+            name = "Partenaires"
+            url = "/partenaires/"
+            weight = 6
+            [[languages.fr-ca.params.footer.menu]]
+            name = "Contact"
+            url = "/contact/"
+            weight = 7
+        
+            [[languages.fr-ca.params.footer.social]]
+            icon = "fab fa-facebook-f"
+            url = "https://www.facebook.com/clubcedille"
+            weight = 1
+            [[languages.fr-ca.params.footer.social]]
+            icon = "fab fa-instagram"
+            url = "https://www.instagram.com/cedille.etsmtl"
+            weight = 2
+            [[languages.fr-ca.params.footer.social]]
+            icon = "fab fa-github"
+            url = "https://github.com/ClubCedille"
+            weight = 3
+            [[languages.fr-ca.params.footer.social]]
+            icon = "fa-brands fa-linkedin"
+            url = "https://www.linkedin.com/company/cedille/about/"
+            weight = 4
+            [[languages.fr-ca.params.footer.social]]
+            icon = "fa-brands fa-discord"
+            url = "https://discord.gg/kX4rXRTMR6"
+            weight = 5
 
-    #General Params
-    [params.general]
-    logoCedille = "images/cedille-logo-orange.png"
+    [languages.en]
+        label = "EN"
+        weight = 1
+        # French Menu
+        [[languages.en.menu.main]]
+            identifier = "accueil"
+            name = "Home"
+            url = "/"
+            weight = 1
+        [[languages.en.menu.main]]
+            identifier = "a-propos"
+            name = "About"
+            url = "/about/"
+            weight = 2
+        [[languages.en.menu.main]]
+            identifier = "services"
+            name = "Services"
+            url = "/services/"
+            weight = 3
+        [[languages.en.menu.main]]
+            identifier = "equipe"
+            name = "Team"
+            url = "/team/"
+            weight = 2
+        [[languages.en.menu.main]]
+            identifier = "projets"
+            name = "Projects"
+            url = "/projects/"
+            weight = 5
+        [[languages.en.menu.main]]
+            identifier = "evenements"
+            name = "Events"
+            url = "/events/"
+            weight = 6
+        [[languages.en.menu.main]]
+            identifier = "partenaires"
+            name = "Sponsors"
+            url = "/sponsors/"
+            weight = 7
+        [[languages.en.menu.main]]
+            identifier = "contact"
+            name = "Join Us"
+            url = "/contact/"
+            weight = 8
 
-    #Address Information Params
-    [params.address]
-    title = "Adresse"
-    address = "1219 rue William <br>Montréal (Québec) <br>H3C 1R1 <br>Local D-2020"
-    email = "cedille@ens.etsmtl.ca"
-    phoneNumber = "5143968800p7302"
-    phone = "514 396-8800, poste 7302"
+        [languages.en.params]
+            titleFollowUs = "Follow Us"
+            titleContactPage = "To Contact Us"
+            copyright = "©"
+            year = "2022"
+        
+            #General Params
+            [languages.en.params.general]
+            logoCedille = "images/cedille-logo-orange.png"
+        
+            #Address Information Params
+            [languages.en.params.address]
+            title = "Address"
+            address = "1219 rue William <br>Montréal (Québec) <br>H3C 1R1 <br>Local D-2020"
+            email = "cedille@ens.etsmtl.ca"
+            phoneNumber = "5143968800p7302"
+            phone = "514 396-8800, poste 7302"
+        
+            [languages.en.params.map]
+            APIkey="AIzaSyD1aM-ZRRtAGOlk4qQWdLhHQe0qiAZlFRA"
+            latitude = "45.49382"
+            longitude = "-73.56233"
+        
+            [languages.en.params.form]
+            APIkey = "JJ^j6qUYa^t5bCoQ7bfy"
+            link = "https://calidum-rotae.prodv2.cedille.club"
+        
+            ############ Footer section #############
+            [languages.en.params.footer]
+            addressTitle = "Address:"
+            address = "1219 rue William, Montréal QC, H3C 1R1, Local D-2020"
+            contactTitle = "Contact:"
+            email = "cedille@ens.etsmtl.ca"
+            owner = "Club CEDILLE"
+            privacyPolicy = "Privacy Policy"
+            termsOfService = "Terms of Service"
+        
+            [[languages.en.params.footer.menu]]
+            name = "Home"
+            url = "/"
+            weight = 1
+            [[languages.en.params.footer.menu]]
+            name = "About"
+            url = "/about/"
+            weight = 2
+            [[languages.en.params.footer.menu]]
+            name = "Team"
+            url = "/team/"
+            weight = 3
+            [[languages.en.params.footer.menu]]
+            name = "Our Projects"
+            url = "/projects/"
+            weight = 4
+            [[languages.en.params.footer.menu]]
+            name = "Events"
+            url = "/events/"
+            weight = 5
+            [[languages.en.params.footer.menu]]
+            name = "Sponsors"
+            url = "/sponsors/"
+            weight = 6
+            [[languages.en.params.footer.menu]]
+            name = "Contact"
+            url = "/contact/"
+            weight = 7
+        
+            [[languages.en.params.footer.social]]
+            icon = "fab fa-facebook-f"
+            url = "https://www.facebook.com/clubcedille"
+            weight = 1
+            [[languages.en.params.footer.social]]
+            icon = "fab fa-instagram"
+            url = "https://www.instagram.com/cedille.etsmtl"
+            weight = 2
+            [[languages.en.params.footer.social]]
+            icon = "fab fa-github"
+            url = "https://github.com/ClubCedille"
+            weight = 3
+            [[languages.en.params.footer.social]]
+            icon = "fa-brands fa-linkedin"
+            url = "https://www.linkedin.com/company/cedille/about/"
+            weight = 4
+            [[languages.en.params.footer.social]]
+            icon = "fa-brands fa-discord"
+            url = "https://discord.gg/kX4rXRTMR6"
+            weight = 5
 
-    [params.map]
-    APIkey="AIzaSyD1aM-ZRRtAGOlk4qQWdLhHQe0qiAZlFRA"
-    latitude = "45.49382"
-    longitude = "-73.56233"
 
-    [params.form]
-    APIkey = "JJ^j6qUYa^t5bCoQ7bfy"
-    link = "https://calidum-rotae.prodv2.cedille.club"
-
-    ############ Footer section #############
-    [params.footer]
-    addressTitle = "Adresse:"
-    address = "1219 rue William, Montréal QC, H3C 1R1, Local D-2020"
-    contactTitle = "Contact:"
-    email = "cedille@ens.etsmtl.ca"
-    owner = "Club CEDILLE"
-    privacyPolicy = "Politique de confidentialité"
-    termsOfService = "Conditions de service"
-
-    [[params.footer.menu]]
-    name = "Accueil"
-    url = "/"
-    weight = 1
-    [[params.footer.menu]]
-    name = "À propos"
-    url = "/a-propos/"
-    weight = 2
-    [[params.footer.menu]]
-    name = "Équipe"
-    url = "/equipe/"
-    weight = 3
-    [[params.footer.menu]]
-    name = "Nos projets"
-    url = "/projets/"
-    weight = 4
-    [[params.footer.menu]]
-    name = "Événements"
-    url = "/evenements/"
-    weight = 5
-    [[params.footer.menu]]
-    name = "Partenaires"
-    url = "/partenaires/"
-    weight = 6
-    [[params.footer.menu]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 7
-
-    [[params.footer.social]]
-    icon = "fab fa-facebook-f"
-    url = "https://www.facebook.com/clubcedille"
-    weight = 1
-    [[params.footer.social]]
-    icon = "fab fa-instagram"
-    url = "https://www.instagram.com/cedille.etsmtl"
-    weight = 2
-    [[params.footer.social]]
-    icon = "fab fa-github"
-    url = "https://github.com/ClubCedille"
-    weight = 3
-    [[params.footer.social]]
-    icon = "fa-brands fa-linkedin"
-    url = "https://www.linkedin.com/company/cedille/about/"
-    weight = 4
-    [[params.footer.social]]
-    icon = "fa-brands fa-discord"
-    url = "https://discord.gg/kX4rXRTMR6"
-    weight = 5
