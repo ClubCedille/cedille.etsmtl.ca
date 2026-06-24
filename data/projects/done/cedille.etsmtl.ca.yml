@@ -1,4 +1,4 @@
-commits: 1417
+commits: 1418
 contributors:
 - svc-cedille-user
 - EdvinHonda
@@ -43,5 +43,5 @@ languages:
 name: cedille.etsmtl.ca
 open_issues: 8
 owner: ClubCedille
-pulls: 1
+pulls: 2
 stargazers_count: 1
