@@ -1,4 +1,4 @@
-commits: 1419
+commits: 1424
 contributors:
 - svc-cedille-user
 - EdvinHonda
@@ -13,6 +13,7 @@ contributors:
 - BernardClaing
 - andrei22131
 - cguertin14
+- hodux
 - bayes-diarra
 - plaurin84
 - Kyohkotsu
@@ -20,7 +21,6 @@ contributors:
 - samdidos
 - etienneoh
 - dependabot[bot]
-- hodux
 - Angry-Russian
 - ThomasCardin
 - RussellJimmies
@@ -33,15 +33,15 @@ contributors:
 description: Site web du club CEDILLE
 forks: 6
 languages:
-  CSS: 0.2849309703319299
-  Dockerfile: 0.0024111426613140116
-  HTML: 0.6385121903456379
-  JavaScript: 0.06548027024380691
-  Makefile: 0.006976402624106531
-  Nix: 0.0015911093704102613
-  Shell: 9.791442279447762e-05
+  CSS: 0.2844644297270217
+  Dockerfile: 0.0024071947017278036
+  HTML: 0.6391040836775093
+  JavaScript: 0.06537305408245558
+  Makefile: 0.006964979593831716
+  Nix: 0.0015885041178914441
+  Shell: 9.775409956255041e-05
 name: cedille.etsmtl.ca
 open_issues: 8
 owner: ClubCedille
-pulls: 2
+pulls: 1
 stargazers_count: 1
