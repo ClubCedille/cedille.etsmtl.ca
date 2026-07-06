@@ -1,4 +1,4 @@
-commits: 361
+commits: 370
 contributors:
 - SonOfLope
 - alexvegas22
@@ -8,11 +8,12 @@ contributors:
 - Oxsw1ng
 - mataai
 - mj-sakellaropoulos
+- andrei22131
 description: Base for all k8s clusters
 forks: 1
 languages: {}
 name: k8s-base
-open_issues: 2
+open_issues: 3
 owner: ClubCedille
 pulls: 2
 stargazers_count: 0
