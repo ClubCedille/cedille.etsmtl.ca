@@ -1,4 +1,4 @@
-commits: 386
+commits: 388
 contributors:
 - alexvegas22
 - SonOfLope
@@ -9,6 +9,7 @@ contributors:
 - mataai
 - mj-sakellaropoulos
 - andrei22131
+- Emilinkb
 description: Base for all k8s clusters
 forks: 1
 languages: {}
