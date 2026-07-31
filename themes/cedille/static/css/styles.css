@@ -64,12 +64,23 @@ header{
     color: white;
 }
 
+.shell-prompt{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
 #editable-underscore{
-    margin-bottom: 20px;
     padding: 5px;
     color: orange !important;
     caret-shape: underscore;
-    caret-color: black;
+    caret-color: orange;
+    min-width: 1.5rem;
+}
+
+#editable-underscore:focus-visible{
+    outline: 1px solid orange;
+    outline-offset: 2px;
 }
 
 #editable-underscore::before{
@@ -85,6 +96,20 @@ header{
     50% {
         opacity: 0;
     }
+}
+
+.shell-status{
+    margin-left: 10px;
+    margin-right: auto;
+    overflow-wrap: anywhere;
+}
+
+.shell-status[data-state="success"]{
+    color: #72d572;
+}
+
+.shell-status[data-state="error"]{
+    color: #ff6b6b;
 }
 
 .navbar .link-navbar{

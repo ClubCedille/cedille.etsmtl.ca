@@ -1,15 +1,16 @@
 <header>
   <nav class="navbar navbar-expand-lg py-3">
     <div class="container">
-      {{ if not (in .Name "Accueil") }}
-      <div class="">
+      {{ if not .IsHome }}
+      <div class="shell-prompt">
         <a class="navbar-brand" href="{{ relref . "/" }}">
           {{ .Site.Title | upper }}
         </a>
-        <span contenteditable="true" id="editable-underscore" class="blink"></span>
+        <span contenteditable="true" id="editable-underscore" role="textbox" aria-label="Terminal CEDILLE"
+          aria-multiline="false" spellcheck="false"></span>
       </div>
-      <span id="responseId" style="display:none; margin-left: 10px; margin-right: auto;"></span>
-      <span id="loading" style="display:none; margin-left: 10px; margin-right: auto;">processing...</span>
+      <span id="responseId" class="shell-status" aria-live="polite" hidden></span>
+      <span id="loading" class="shell-status" role="status" hidden>processing...</span>
       {{ end }}
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,5 +48,7 @@
   </nav>
 </header>
 
-{{ $shellJS := resources.Get "js/shell-handler.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $shellJS.RelPermalink }}" defer></script>
+{{ if not .IsHome }}
+  {{ $shellJS := resources.Get "js/shell-handler.js" | resources.Minify | resources.Fingerprint }}
+  <script src="{{ $shellJS.RelPermalink }}" defer></script>
+{{ end }}
