@@ -1,11 +1,11 @@
-commits: 1102
+commits: 1108
 contributors:
 - alexvegas22
 - JulienGiguere
 - hodux
 - Simon-Boyer
-- SonOfLope
 - GreatSymphonia
+- SonOfLope
 - svc-cedille-user
 - mataai
 - andrei22131
@@ -17,12 +17,12 @@ contributors:
 description: 'Cluster Kubernetes: k8s-shared'
 forks: 1
 languages:
-  HCL: 0.023455810085431315
-  Jinja: 0.01776143914383878
-  Python: 0.007906806784103224
-  SCSS: 0.0032225750359113933
-  Shell: 0.01844921582957419
-  YAML: 0.9292041531211411
+  HCL: 0.023361661273690573
+  Jinja: 0.01769014685488746
+  Python: 0.007875069808885755
+  SCSS: 0.0032096400057729595
+  Shell: 0.0183751628874001
+  YAML: 0.9294883191693631
 name: k8s-shared
 open_issues: 7
 owner: ClubCedille
