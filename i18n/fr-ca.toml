@@ -1,0 +1,80 @@
+[see_more]
+other = "Voir plus"
+
+[see_less]
+other = "Voir moins"
+
+[contributors]
+other = "contributeurs"
+
+[stars]
+other = "étoiles"
+
+[commits]
+other = "commits"
+
+[languages_label]
+other = "Langages"
+
+[infrastructure_title]
+other = "Infrastructure"
+
+[infrastructure_subtitle]
+other = "Répertoires clés de notre infrastructure"
+
+[infrastructure_desc]
+other = "Dans le but d'adhérer à la philosophie GitOps, notre infrastructure est composée de plusieurs répertoires, partant de k8s-base comme point de départ. Les repos sont structurés de façon à séparer les différents types de services."
+
+[projects_in_progress]
+other = "Projets en cours"
+
+[projects_completed]
+other = "Projets terminés"
+
+[former_members]
+other = "Anciens Membres"
+
+[services_intro]
+other = "Découvrez nos services gratuits dédiés aux clubs étudiants et organisations de l'ETS"
+
+[access_service]
+other = "Accéder au service"
+
+[documentation]
+other = "Documentation"
+
+[ready_to_use_services]
+other = "Prêt à utiliser nos services ?"
+
+[ready_to_use_desc]
+other = "Contactez-nous pour commencer à utiliser nos services gratuits ou pour obtenir plus d'informations."
+
+[events_intro]
+other = "Venez nous rejoindre lors de nos événements pour en apprendre davantage sur nos initiatives."
+
+[upcoming_events]
+other = "Événements à venir"
+
+[past_events]
+other = "Événements précédents"
+
+[no_upcoming_events]
+other = "Aucun événement à venir pour le moment."
+
+[no_past_events]
+other = "Aucun événement précédent à afficher."
+
+[event_info_request_subject]
+other = "Demande d'information – %s"
+
+[event_info_request_body]
+other = "Bonjour CEDILLE, j'aimerais avoir de l'information sur cet événement."
+
+[form_success]
+other = "Formulaire soumis avec succès!"
+
+[form_error]
+other = "Il y a eu une erreur lors de la soumission du formulaire."
+
+[processing]
+other = "traitement en cours..."

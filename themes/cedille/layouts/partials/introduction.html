@@ -1,4 +1,5 @@
-{{with .Site.Data.introduction }}
+{{ $data := index .Site.Data .Site.Language.Lang }}{{ if not $data }}{{ $data = index .Site.Data "fr-ca" }}{{ end }}{{ if not $data }}{{ $data = .Site.Data }}{{ end }}
+{{ with $data.introduction }}
 {{ if .enable }}
 <!-- Practice section -->
 <div class="practice">
@@ -16,7 +17,7 @@
         </div>
         <div class="row text-start mt-5">
             {{ range .practice.content }}
-            <div class="col-6 col-lg-3 col-md-3" style="word-break: break-word; hyphens: auto;" lang="fr">
+            <div class="col-6 col-lg-3 col-md-3" style="word-break: break-word; hyphens: auto;" lang="{{ $.Site.Language.Lang }}">
                 <i class="fa-solid fa-cube fa-xl"></i>
                 <h5 class="my-3"><b>{{ .title }}</b></h5>
                 <p class="mt-2">{{ .description }}</p>

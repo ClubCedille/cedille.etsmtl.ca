@@ -3,14 +3,14 @@
     <div class="container">
       {{ if not .IsHome }}
       <div class="shell-prompt">
-        <a class="navbar-brand" href="{{ relref . "/" }}">
+        <a class="navbar-brand" href="{{ "/" | relLangURL }}">
           {{ .Site.Title | upper }}
         </a>
         <span contenteditable="true" id="editable-underscore" role="textbox" aria-label="Terminal CEDILLE"
           aria-multiline="false" spellcheck="false"></span>
       </div>
       <span id="responseId" class="shell-status" aria-live="polite" hidden></span>
-      <span id="loading" class="shell-status" role="status" hidden>processing...</span>
+      <span id="loading" class="shell-status" role="status" hidden>{{ i18n "processing" | default "processing..." }}</span>
       {{ end }}
 
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,25 +27,23 @@
           
           {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
           {{ $active = or $active (eq .Name $current.Title) }}
-          {{ $active = or $active (and (eq .Identifier "a-propos") (eq $current.Section "a-propos")) }}
-          {{ $active = or $active (and (eq .Identifier "equipe") (eq $current.Section "equipe")) }}
-          {{ $active = or $active (and (eq .Identifier "projets") ( eq $current.Section "projets")) }}
-          {{ $active = or $active (and (eq .Identifier "evenements") ( eq $current.Section "evenements")) }}
-          {{ $active = or $active (and (eq .Identifier "partenaires") (eq $current.Section "partenaires")) }}
+          {{ $active = or $active (and (eq .Identifier "a-propos") (or (eq $current.Section "a-propos") (eq $current.RelPermalink "/about/") (eq $current.RelPermalink "/en/about/") (eq $current.RelPermalink "/a-propos/"))) }}
+          {{ $active = or $active (and (eq .Identifier "equipe") (or (eq $current.Section "equipe") (eq $current.RelPermalink "/team/") (eq $current.RelPermalink "/en/team/") (eq $current.RelPermalink "/equipe/"))) }}
+          {{ $active = or $active (and (eq .Identifier "projets") (or (eq $current.Section "projets") (eq $current.RelPermalink "/projects/") (eq $current.RelPermalink "/en/projects/") (eq $current.RelPermalink "/projets/"))) }}
+          {{ $active = or $active (and (eq .Identifier "evenements") (or (eq $current.Section "evenements") (eq $current.RelPermalink "/events/") (eq $current.RelPermalink "/en/events/") (eq $current.RelPermalink "/evenements/"))) }}
+          {{ $active = or $active (and (eq .Identifier "partenaires") (or (eq $current.Section "partenaires") (eq $current.RelPermalink "/sponsors/") (eq $current.RelPermalink "/en/sponsors/") (eq $current.RelPermalink "/partenaires/"))) }}
           {{ $active = or $active (and (eq .Identifier "contact") (eq $current.Section "contact")) }}
           
           <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }} nav-item">
-            
             {{ if eq .Identifier "contact" }}
-            <a class="link-navbar btn p-1 {{ if $active }}active{{ end }} nav-item" href="{{ .URL | relURL }}">
+            <a class="link-navbar btn p-1 {{ if $active }}active{{ end }} nav-item" href="{{ .URL | relLangURL }}">
               {{ .Name }}
             </a>
             {{ else }}
-            <a class="{{ if $active }}active{{ end }} nav-item" href="{{ .URL | relURL }}">
+            <a class="{{ if $active }}active{{ end }} nav-item" href="{{ .URL | relLangURL }}">
               {{ .Name }}
             </a>
             {{ end }}
-
           </li>
           {{ end }}
 
@@ -53,7 +51,7 @@
             {{ range .Translations }}
             <li class="nav-item" style="margin-left: 15px;">
               <a class="nav-item font-weight-bold" href="{{ .Permalink }}" style="font-weight: bold;">
-                {{ .Language.LanguageName }}
+                {{ .Language.Label | default .Language.Lang }}
               </a>
             </li>
             {{ end }}

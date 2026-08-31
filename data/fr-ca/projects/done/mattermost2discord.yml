@@ -1,0 +1,18 @@
+commits: 56
+contributors:
+- SonOfLope
+- cguertin14
+- notarock
+- dependabot[bot]
+description: Forward messages from Mattermost to Discord.
+forks: 0
+languages:
+  Dockerfile: 0.05043975043223333
+  Go: 0.9136285048485304
+  Makefile: 0.030820115763361647
+  Shell: 0.005111628955874615
+name: mattermost2discord
+open_issues: 3
+owner: ClubCedille
+pulls: 4
+stargazers_count: 4

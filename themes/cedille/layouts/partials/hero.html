@@ -1,20 +1,21 @@
-{{with .Site.Data.hero }}
+{{ $data := index .Site.Data .Site.Language.Lang }}{{ if not $data }}{{ $data = index .Site.Data "fr-ca" }}{{ end }}{{ if not $data }}{{ $data = .Site.Data }}{{ end }}
+{{ with $data.hero }}
 {{ if .enable }}
 <!-- hero section -->
 <div class="hero-section py-4">
     <div class="container py-5">
         <div class="row g-0 mt-4 mx-md-5">
             <div class="col-12 mb-3 text-center d-block d-md-none">
-                <img style="width: 15rem; height: 16rem; object-fit: contain;" src="{{ .logoCedille }}" alt="logo-cedille">
+                <img style="width: 15rem; height: 16rem; object-fit: contain;" src="{{ .logoCedille | relURL }}" alt="logo-cedille">
             </div>
             <div class="col-12 col-lg-5 col-md-5 text-center text-lg-start text-md-start my-auto">
                 <div class="container">
                     <h1 class="mb-4"><b>{{ .content.title }}</b></h1>
-                    <p>{{ .content.text }}</p>
+                    {{ if .content.text }}<p>{{ .content.text }}</p>{{ end }}
                 </div>
             </div>
             <div class="col-lg-7 col-md-7 text-center d-none d-md-block">
-                <img style="width: 420px; height: 530px;" src="{{ .logoCedille }}" alt="logo-cedille">
+                <img style="width: 420px; height: 530px;" src="{{ .logoCedille | relURL }}" alt="logo-cedille">
             </div>
         </div>
     </div>
@@ -22,4 +23,3 @@
 <!-- end hero section -->
 {{ end }}
 {{ end }}
-    

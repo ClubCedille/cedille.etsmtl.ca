@@ -29,7 +29,7 @@ baseURL = 'https://cedille.etsmtl.ca'
             identifier = "equipe"
             name = "Équipe"
             url = "/equipe/"
-            weight = 2
+            weight = 4
         [[languages.fr-ca.menu.main]]
             identifier = "projets"
             name = "Projets"
@@ -140,8 +140,8 @@ baseURL = 'https://cedille.etsmtl.ca'
 
     [languages.en]
         label = "EN"
-        weight = 1
-        # French Menu
+        weight = 2
+        # English Menu
         [[languages.en.menu.main]]
             identifier = "accueil"
             name = "Home"
@@ -161,7 +161,7 @@ baseURL = 'https://cedille.etsmtl.ca'
             identifier = "equipe"
             name = "Team"
             url = "/team/"
-            weight = 2
+            weight = 4
         [[languages.en.menu.main]]
             identifier = "projets"
             name = "Projects"
@@ -269,5 +269,3 @@ baseURL = 'https://cedille.etsmtl.ca'
             icon = "fa-brands fa-discord"
             url = "https://discord.gg/kX4rXRTMR6"
             weight = 5
-
-

@@ -1,0 +1,14 @@
+commits: 21
+contributors:
+- GRV96
+- cguertin14
+description: Automated reimbursement request generator for student clubs
+  étudiants de l'ÉTS.
+forks: 1
+languages:
+  Python: 1.0
+name: rapport_eirik
+open_issues: 3
+owner: ClubCedille
+pulls: 0
+stargazers_count: 3

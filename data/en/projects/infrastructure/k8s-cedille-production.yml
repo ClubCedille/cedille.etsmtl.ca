@@ -1,0 +1,16 @@
+commits: 413
+contributors:
+- alexvegas22
+- SonOfLope
+- JulienGiguere
+- mj-sakellaropoulos
+- Simon-Boyer
+- cedille-terraform-cloud[bot]
+description: 'Kubernetes Cluster: k8s-cedille-production'
+forks: 0
+languages: {}
+name: k8s-cedille-production
+open_issues: 0
+owner: ClubCedille
+pulls: 2
+stargazers_count: 0

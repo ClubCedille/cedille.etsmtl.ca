@@ -1,0 +1,47 @@
+commits: 1497
+contributors:
+- svc-cedille-user
+- EdvinHonda
+- SonOfLope
+- alexvegas22
+- RikuAvelar
+- notarock
+- AXDOOMER
+- JulienGiguere
+- ygotame
+- andrei22131
+- jalilbengoufa
+- BernardClaing
+- cguertin14
+- hodux
+- bayes-diarra
+- plaurin84
+- Kyohkotsu
+- JulienRobitaille
+- samdidos
+- etienneoh
+- dependabot[bot]
+- Angry-Russian
+- ThomasCardin
+- RussellJimmies
+- Oxsw1ng
+- Epsot
+- maximeconnolly
+- DarkPyroM
+- Thanthan77
+- Endlessflow
+description: Club CEDILLE official website
+forks: 6
+languages:
+  CSS: 0.2838216957605985
+  Dockerfile: 0.0023618837521580663
+  HTML: 0.6279493573757913
+  JavaScript: 0.0773786687128333
+  Makefile: 0.006833876846345674
+  Nix: 0.0015586034912718205
+  Shell: 9.59140610013428e-05
+name: cedille.etsmtl.ca
+open_issues: 8
+owner: ClubCedille
+pulls: 1
+stargazers_count: 2

@@ -1,0 +1,22 @@
+---
+enable: true
+contribute: 
+  title: "Complementing Your Studies"
+  subtitle: "A flexible and supportive learning environment"
+  summary: "Our club is designed as a complement to your studies, providing a flexible and open-minded space where you can learn, network, and develop new skills without feeling overwhelmed."
+mentoring:
+  title: "Together, We Go Further"
+  subtitle: "Learning and growing as a community"
+  summary: "CEDILLE is a supportive and inclusive environment where members of all skill levels share knowledge and help each other learn. Our dynamic community fosters professional growth and encourages the exchange of innovative ideas, enabling everyone to thrive and reach new heights."
+network:
+  title: "Connect, Learn, Succeed"
+  subtitle: "The power of networking"
+  summary: "At CEDILLE, our members benefit from an enriching and seamless networking experience through engaging social events, workshops, talks, and meetups led by seasoned industry experts. They expand their professional network, gain unique insights, and stay up to date with industry trends. At times, we even facilitate exceptional career opportunities for optimal professional development."
+  members:
+    - name: "Thomas Cardin"
+      image: "images/membres/tcardin.jpg"
+      text: "The experience I gained by joining Club CEDILLE had a significant impact on my career path. Thanks to their DevOps expertise and a wide range of hands-on activities, I landed an internship as a Site Reliability Engineer (SRE). I highly recommend the Club to anyone looking to turn their learning into real opportunities."
+    - name: "Jonathan Lopez"
+      image: "images/membres/jolopez.jpg"
+      text: "Joining Club CEDILLE was a pivotal step in my career. Working on innovative projects and gaining deep DevSecOps expertise helped me secure an internship as a DevSecOps specialist. I applied my skills in Kubernetes and automation, solidifying my expertise in cloud infrastructure management and systems security."
+---

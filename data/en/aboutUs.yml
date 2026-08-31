@@ -1,0 +1,137 @@
+enable: true
+title: "About Us"
+
+sections:
+  - title: "qui-sommes-nous"
+    subtitle: "Who We Are"
+    text: |
+      <p class="lead">CEDILLE is a student club at <a href="https://www.etsmtl.ca/" style="color:inherit">ÉTS</a> focused on DevOps and software development.
+      Our platform is operated <em>on-premise</em>, in collaboration with <a href="https://lanets.ca" style="color:inherit">Lan ETS</a>, built upon modern technologies used in industry.</p>
+      <div class="row g-3 mt-1">
+        <div class="col-md-6">
+          <div class="p-3 border rounded h-100">
+            <h5>🏗️ Free Hosting for Student Clubs</h5>
+            <p class="mb-0 text-muted">Instead of each club spending time solving the same infrastructure challenges, we centralize web hosting, storage, SSO, and more — for free — so clubs can focus on their core missions.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3 border rounded h-100">
+            <h5>🎓 Learning by Doing</h5>
+            <p class="mb-0 text-muted">Every deployment is an opportunity to learn. Kubernetes, GitOps, CI/CD, observability — our members work with the same industry technologies on real-world projects.</p>
+          </div>
+        </div>
+      </div>
+
+  - title: "philosophie"
+    subtitle: "Club Philosophy"
+    text: |
+      <p>CEDILLE operates as a technical collective rather than a traditional execution hierarchy.</p>
+      <div class="row g-3 mt-1">
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">Open Source</h6>
+            <p class="mb-0 small text-muted">All our solutions rely on industry-relevant open-source tools audited by the global community.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">Git as Single Source of Truth</h6>
+            <p class="mb-0 small text-muted">Every deployment is defined in code, version-controlled, and reproducible. Infrastructure as Code, no manual edits.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">Blameless Culture</h6>
+            <p class="mb-0 small text-muted">When an incident occurs, the system allowed it — not an individual. We improve processes collectively.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">Documentation as Code</h6>
+            <p class="mb-0 small text-muted">Procedures, guides, and architectural decisions are documented with the same care as source code.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">Voluntary Involvement</h6>
+            <p class="mb-0 small text-muted">No minimum commitment is required. We learn together at individual paces. Meetings are optional.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
+            <h6 class="fw-bold">Collaborative Decisions</h6>
+            <p class="mb-0 small text-muted">Technical choices are explained, discussed, and documented. We operate as a collective, not a hierarchy.</p>
+          </div>
+        </div>
+      </div>
+
+  - title: "rencontres"
+    subtitle: "Meetings — Winter 2026"
+    text: |
+      <div class="row g-3">
+        <p class="text-muted">Our meetings are open to everyone!</p>
+        <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header d-flex align-items-center gap-2">
+              <strong>Weekly Scrum</strong>
+            </div>
+            <div class="card-body">
+              <p class="text-muted small">Every week, we review ongoing projects, tackle challenges, refine the backlog, and assign tasks. Followed by a coding session in room D-2020.</p>
+              <span class="badge bg-success-subtle text-success border border-success-subtle">📅 Tuesday · 5:30 PM–6:00 PM · D-3014</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-header d-flex align-items-center gap-2">
+              <strong>Friday Workshop</strong>
+            </div>
+            <div class="card-body">
+              <p class="text-muted small">Open collaborative hacking session on ongoing projects. Members help each other on tasks in a relaxed atmosphere.</p>
+              <span class="badge bg-primary-subtle text-primary border border-primary-subtle">📅 Friday · 12:30 PM–8:00 PM · D-2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-3 text-danger small">⚠ Room numbers and times are always announced beforehand. Please confirm on <a href="https://discord.gg/kX4rXRTMR6" style="color:inherit">Discord</a> before coming.</p>
+
+  - title: "rejoindre"
+    subtitle: "How to Join"
+    text: |
+      <p class="text-muted">We onboard new students after meeting them in person or online.</p>
+      <ol class="list-group list-group-numbered mt-3">
+        <li class="list-group-item d-flex gap-3">
+          <div>
+            <h6 class="fw-bold mb-1">Get in touch with us</h6>
+            <p class="mb-0 small text-muted">Join our <a href="https://discord.gg/kX4rXRTMR6" style="color:inherit">Discord</a>, send us an email, or attend one of our meetings. It's the first step to meet the team and explore our projects.</p>
+          </div>
+        </li>
+        <li class="list-group-item d-flex gap-3">
+          <div>
+            <h6 class="fw-bold mb-1">Fill out the form on Monets</h6>
+            <p class="mb-0 small text-muted">Once accepted, complete the official membership registration form on the Monets portal.</p>
+          </div>
+        </li>
+        <li class="list-group-item d-flex gap-3">
+          <div>
+            <h6 class="fw-bold mb-1">Complete the Moodle quiz</h6>
+            <p class="mb-0 small text-muted">The onboarding questionnaire will be available after acceptance to familiarize you with our tools and practices.</p>
+          </div>
+        </li>
+      </ol>
+
+  - title: "ressources"
+    subtitle: "Useful Resources"
+    text: |
+      <p class="text-muted mb-3">Our main discussions happen on <a href="https://discord.gg/kX4rXRTMR6" style="color:inherit">Discord</a>. Here are key links to get oriented.</p>
+      <div class="row g-3">
+        <div class="col-12">
+          <h6 class="text-uppercase text-muted small fw-bold mb-2">Useful Links</h6>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="https://github.com/ClubCedille" class="btn btn-outline-secondary btn-sm" target="_blank">🐙 GitHub — ClubCedille</a>
+            <a href="https://cedille.etsmtl.club/s/wiki" class="btn btn-outline-secondary btn-sm" target="_blank">🌐 CEDILLE Public Wiki</a>
+            <a href="https://cedille.etsmtl.club/s/wiki/doc/document-de-vision-2025-26-LcyRzLkUBk" class="btn btn-outline-secondary btn-sm" target="_blank">Vision Document - Essential Reading</a>
+            <a href="https://cedille.etsmtl.club/s/wiki/doc/plateforme-cedille-Gc0iB7qdX4" class="btn btn-outline-secondary btn-sm" target="_blank">Infrastructure Documentation</a>
+          </div>
+        </div>
+      </div>

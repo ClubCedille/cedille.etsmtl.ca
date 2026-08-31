@@ -1,0 +1,60 @@
+---
+enable: true
+title: "Offered Services"
+button:
+  getInvolved: "Get in Touch"
+  url: "/contact/"
+sections:
+  - title: "Hosting"
+    subtitle: "Website and application hosting"
+    icon: "bi bi-hdd-rack-fill"
+    iconColor: "bg-success"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/hebergement-0V0oWdUG7Z"
+    text: >
+      Website and application hosting
+    details: >
+      Whether for a simple static webpage, a web application, or a full service, we provide the required infrastructure free of charge to student clubs and organizations at ÉTS.
+      To deploy your service, simply provide a Dockerfile or public Docker image along with a brief description and the desired URL.
+  - title: "Nextcloud"
+    subtitle: "Nextcloud"
+    icon: "bi bi-cloud-fill"
+    iconColor: "bg-danger"
+    serviceLink: "https://nextcloud.etsmtl.club"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/nextcloud-ReYENi6cCm"
+    text: >
+      File storage and sharing service for ÉTS clubs.
+    details: >
+      We provide Nextcloud so that ÉTS club members can securely store, share, and synchronize files.
+      Accessible via the web with full support for desktop and mobile syncing.
+  - title: "Vaultwarden"
+    subtitle: "Vaultwarden"
+    icon: "bi bi-shield-lock-fill"
+    iconColor: "bg-info"
+    serviceLink: "https://vaultwarden.etsmtl.club"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/vaultwarden-Nk1czv4QL6"
+    text: >
+      Password Management
+    details: >
+      We offer access to Vaultwarden, an open-source and secure password manager.
+      Safely store credentials, generate strong passwords, and securely share access with team members.
+  - title: "Authentik"
+    subtitle: "Identity Provider"
+    icon: "bi bi-person-fill-lock"
+    iconColor: "bg-secondary"
+    serviceLink: "https://auth.etsmtl.club"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/authentik-djlqcn1rDo"
+    text: >
+      Single Sign-On (SSO) Authentication
+    details: >
+      Powered by Authentik, our Single Sign-On (SSO) provides centralized authentication across multiple services.
+      Integrated with ÉTS student accounts, allowing you to log in using your institutional email and password.
+  - title: "Outline"
+    subtitle: "Outline"
+    icon: "bi bi-file-earmark"
+    iconColor: "bg-warning"
+    wikiLink: "https://cedille.etsmtl.club/s/services/doc/outline-tS2qu2MKkB"
+    text: >
+      Knowledge Base (Wiki)
+    details: >
+      We provide Outline as a free wiki service for student clubs. Each club can get its own dedicated instance by following the documentation. The link below takes you to an inter-club collaboration wiki for sharing knowledge accessible to everyone: https://wiki.etsmtl.club.
+---

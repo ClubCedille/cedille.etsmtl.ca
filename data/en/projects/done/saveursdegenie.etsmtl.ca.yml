@@ -1,0 +1,21 @@
+commits: 59
+contributors:
+- EdvinHonda
+- SonOfLope
+- LeGhosdragon
+- dependabot[bot]
+- JulienGiguere
+- alexvegas22
+description: Website for the Saveurs de Génie student club
+forks: 0
+languages:
+  CSS: 0.07284418755905706
+  Dockerfile: 0.001736430683895986
+  HTML: 0.25799801200161987
+  JavaScript: 0.31237344917718957
+  SCSS: 0.35504792057823753
+name: saveursdegenie.etsmtl.ca
+open_issues: 0
+owner: ClubCedille
+pulls: 4
+stargazers_count: 1

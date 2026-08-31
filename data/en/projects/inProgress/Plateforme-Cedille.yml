@@ -1,0 +1,39 @@
+commits: 1186
+contributors:
+- SonOfLope
+- Simon-Boyer
+- alexvegas22
+- mj-sakellaropoulos
+- ThomasCardin
+- JulienGiguere
+- cedille-terraform-cloud[bot]
+- Antoine-BL
+- andrei22131
+- HassaanBahsoun
+- Oxsw1ng
+- Epsot
+- RussellJimmies
+- ahenrij
+- etienneoh
+- svc-cedille-user
+- AXDOOMER
+- Endlessflow
+- Vianpyro
+- lamiphil
+description: Club CEDILLE next-generation infrastructure
+forks: 2
+languages:
+  CSS: 0.008203200102540002
+  Dockerfile: 0.011706650146333127
+  Go Template: 0.09596035119950438
+  HCL: 0.7036380337954754
+  HTML: 0.004315225053940313
+  JavaScript: 0.02063617525795219
+  Jinja: 0.10162141377026768
+  Python: 0.021597487769968598
+  Shell: 0.032321462904018286
+name: Plateforme-Cedille
+open_issues: 206
+owner: ClubCedille
+pulls: 0
+stargazers_count: 11

@@ -11,7 +11,7 @@ dev:
 dev-hugo: 
 	@hugo serve --source=./ -D --disableFastRender
 
-DIR = ./data/projects
+DIR = ./data/fr-ca/projects
 
 fetch-projects: 
 	$(foreach file, $(wildcard $(DIR)/**/*), \

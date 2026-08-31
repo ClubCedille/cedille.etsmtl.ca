@@ -1,4 +1,5 @@
-{{ with .Site.Data.aboutUs }}
+{{ $data := index .Site.Data .Site.Language.Lang }}{{ if not $data }}{{ $data = index .Site.Data "fr-ca" }}{{ end }}{{ if not $data }}{{ $data = .Site.Data }}{{ end }}
+{{ with $data.aboutUs }}
 {{ if .enable }}
 <div class="row">
   <h2 class="title-border"><b>{{ .title }}</b></h2>

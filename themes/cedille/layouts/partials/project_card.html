@@ -16,14 +16,14 @@
          {{ range $language, $_ := .languages }}
              {{ $languages = append $language $languages }}
          {{ end }}
-         <p>Languages: {{ delimit $languages ", " }}</p>
+         <p>{{ i18n "languages_label" }}: {{ delimit $languages ", " }}</p>
       {{ end }}
     </div>
     <div class="card-footer">
         <ul class="list-unstyled list-inline">
-            <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
-            <li class="list-inline-item"><b>{{ .stargazers_count }}</b> étoiles</li>
-            <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
+            <li class="list-inline-item"><b>{{ .contributors | len }}</b> {{ i18n "contributors" }}</li>
+            <li class="list-inline-item"><b>{{ .stargazers_count }}</b> {{ i18n "stars" }}</li>
+            <li class="list-inline-item"><b>{{ .commits }}</b> {{ i18n "commits" }}</li>
         </ul>
     </div>
 </div>

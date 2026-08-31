@@ -1,4 +1,5 @@
-{{ with .Site.Data.formContact }}
+{{ $data := index .Site.Data .Site.Language.Lang }}{{ if not $data }}{{ $data = index .Site.Data "fr-ca" }}{{ end }}{{ if not $data }}{{ $data = .Site.Data }}{{ end }}
+{{ with $data.formContact }}
 {{ if .enable }}
 <nav>
     <div class="nav nav-tabs row" id="nav-tab" role="tablist">
@@ -48,54 +49,18 @@
       </div>
     </form>
     <div class="text-end mt-2 me-2">
-      <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm('member-form');">
+      <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm(member-form);">
         <span id="loading-member" class="spinner-border spinner-border-sm" role="loading" style="display: none;"></span>
         {{ .button.submit }}
       </button>
       <div id="member-form-success" style="display: none;" class="alert alert-success form-success" role="alert">
-        Formulaire soumis avec succès!
+        {{ i18n "form_success" }}
       </div>
       <div id="member-form-error" style="display: none;" class="alert alert-danger form-error" role="alert">
-        Il y a eu une erreur lors de la soumission du formulaire.
+        {{ i18n "form_error" }}
       </div>
     </div>
   </div>
-  <!-- collab tab section -->
-  {{/*  {{ $navCollab := .navCollab }}
-  <div class="tab-pane fade" id="nav-collab" role="tabpanel" aria-labelledby="nav-collaboration-tab">
-    <form class="row g-3 px-2 mt-2">
-      <div class="col-md-6">
-        <label for="formGroupExampleInput" class="form-label">{{ $navCollab.name }}</label>
-        <input type="text" class="form-control" id="formGroupExampleInput">
-      </div>
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">{{ $navCollab.email }}</label>
-        <input type="email" class="form-control" id="inputEmail4">
-      </div>
-      <div class="col-md-6">
-        <label for="formation" class="form-label">{{ $navCollab.club }}</label>
-        <select class="form-select" id="specificSizeSelect">
-          <option selected>{{ $navCollab.selectedClub }}</option>
-          {{ range $navCollab.optionValueClub }}
-          <option value="{{ .value }}">{{ .choice }}</option>
-          {{ end }}
-        </select>
-      </div>
-      <div class="col-md-6">
-        <label for="website" class="form-label">{{ $navCollab.website }}</label>
-        <input type="url" class="form-control" id="inputWebsite">
-      </div>
-      <div class="col-md-6">
-        <label class="form-label">{{ $navCollab.projectToPropose }}</label>
-        <textarea name="projectToPropose" class="form-control"></textarea>
-      </div>
-    </form>
-    <div class="text-end mt-2 me-2">
-      <button type="submit" class="btn py-2 px-5">
-          {{ .button.submit }}
-      </button>
-    </div>
-  </div>  */}}
   <!-- info tab section -->
   {{ $navInfo := .navInfo }}
   <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
@@ -118,15 +83,15 @@
       </div>
     </form>
     <div class="text-end mt-2 me-2">
-      <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm('partnership-form');">
+      <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm(partnership-form);">
         <span id="loading-partnership" class="spinner-border spinner-border-sm" role="loading" style="display: none;"></span>
           {{ .button.submit }}
       </button>
       <div id="partnership-form-success" style="display: none;" class="alert alert-success form-success" role="alert">
-        Formulaire soumis avec succès!
+        {{ i18n "form_success" }}
       </div>
       <div id="partnership-form-error" style="display: none;" class="alert alert-danger form-error" role="alert">
-        Il y a eu une erreur lors de la soumission du formulaire.
+        {{ i18n "form_error" }}
       </div>
     </div>
   </div>

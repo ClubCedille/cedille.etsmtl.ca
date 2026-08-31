@@ -1,4 +1,5 @@
-{{ with .Site.Data.evenements }}
+{{ $data := index .Site.Data .Site.Language.Lang }}{{ if not $data }}{{ $data = index .Site.Data "fr-ca" }}{{ end }}{{ if not $data }}{{ $data = .Site.Data }}{{ end }}
+{{ with $data.evenements }}
 {{ if .enable }}
 {{ $ev := . }}
 
@@ -12,14 +13,14 @@
   </div>
 
   <p class="mt-3 mb-4">
-    Venez nous rejoindre lors de nos événements pour en apprendre davantage sur nos initiatives.
+    {{ i18n "events_intro" }}
   </p>
 
   <div class="container my-4">
 
     {{/* ========= ÉVÉNEMENTS À VENIR ========= */}}
     <div class="upcoming-events mb-5">
-      <h3 class="mb-3"><b>Événements à venir</b></h3>
+      <h3 class="mb-3"><b>{{ i18n "upcoming_events" }}</b></h3>
 
       <div class="row">
         {{ $hasUpcoming := false }}
@@ -47,11 +48,11 @@
               <p class="text-justify mb-3">{{ .details }}</p>
 
               <div class="pt-3 border-top d-flex justify-content-end">
-                {{ $subject := printf "Demande d'information – %s" .title }}
+                {{ $subject := printf (i18n "event_info_request_subject") .title }}
                 {{ $mailto := printf "mailto:%s?subject=%s&body=%s"
                     $ev.button.email
                     ($subject | urlquery)
-                    ("Bonjour CEDILLE, j'aimerais avoir de l'information sur cet événement." | urlquery)
+                    ((i18n "event_info_request_body") | urlquery)
                 }}
 
                 <a href="{{ $mailto }}"
@@ -70,7 +71,7 @@
 
         {{ if not $hasUpcoming }}
         <div class="col-12">
-          <p class="text-muted">Aucun événement à venir pour le moment.</p>
+          <p class="text-muted">{{ i18n "no_upcoming_events" }}</p>
         </div>
         {{ end }}
       </div>
@@ -78,7 +79,7 @@
 
     {{/* ========= ÉVÉNEMENTS PRÉCÉDENTS ========= */}}
     <div class="past-events">
-      <h3 class="mb-3"><b>Événements précédents</b></h3>
+      <h3 class="mb-3"><b>{{ i18n "past_events" }}</b></h3>
 
       <div class="events-panel">
         <div class="events-scroll">
@@ -117,7 +118,7 @@
 
           {{ if not $hasPast }}
           <div class="px-4 py-3">
-            <p class="text-muted mb-0">Aucun événement précédent à afficher.</p>
+            <p class="text-muted mb-0">{{ i18n "no_past_events" }}</p>
           </div>
           {{ end }}
 

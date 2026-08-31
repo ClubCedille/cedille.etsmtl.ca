@@ -1,4 +1,5 @@
-{{with .Site.Data.description }}
+{{ $data := index .Site.Data .Site.Language.Lang }}{{ if not $data }}{{ $data = index .Site.Data "fr-ca" }}{{ end }}{{ if not $data }}{{ $data = .Site.Data }}{{ end }}
+{{ with $data.description }}
 {{ if .enable }}
 <!-- Contribute section -->
 <div class="contribute">
@@ -60,7 +61,7 @@
                 <div class="row text-center align-center">
                     <p><b>« {{ .text }} »</b></p>
                     <div class="col">
-                        <img src="{{ .image }}" alt="test">
+                        <img src="{{ .image | relURL }}" alt="test">
                     </div>
                     <p class="mt-2">{{ .name }}</p>
                 </div>

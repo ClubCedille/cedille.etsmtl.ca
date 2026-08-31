@@ -1,0 +1,23 @@
+enable: true
+title: "Events"
+button:
+  getInvolved: "Get Information"
+  email: "cedille@ens.etsmtl.ca"
+sections:
+  - title: "Beer & Learn"
+    lieu: "100 Génies Resto-pub VIP Room"
+    date: "2026-02-06T18:00:00-04:00"
+    details: >
+      Join us at the pub for presentations on open-source technologies and to network with other CEDILLE members.
+
+  - title: "Beer & Learn"
+    lieu: "100 Génies Resto-pub VIP Room"
+    date: "2025-12-17T18:00:00-04:00"
+    details: >
+      Join us at the pub for presentations on open-source technologies and to network with other CEDILLE members.
+
+  - title: "Programming Workshop"
+    lieu: "Room A2010"
+    date: "2025-09-28T12:00:00-04:00"
+    details: >
+      Developing a prototype application for a PhD student from the new design department at ÉTS, exploring our relationship with art and music through technology.

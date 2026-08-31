@@ -1,5 +1,6 @@
 {{ define "main" }}
-{{ with $.Site.Data.partenaires }}
+{{ $data := index .Site.Data .Site.Language.Lang }}{{ if not $data }}{{ $data = index .Site.Data "fr-ca" }}{{ end }}{{ if not $data }}{{ $data = .Site.Data }}{{ end }}
+{{ with $data.partenaires }}
 {{ $pdf := resources.Get "/documents/Plan_de_partenariat.pdf"}}
 <!-- Partnership section -->
 <div class="partenaires-section my-5">
@@ -11,18 +12,18 @@
     {{ range .partnerships }}
     <!-- version mobile -->
     <div class="card mt-5 d-flex d-lg-none d-md-none" style="background-color:rgb(242, 242, 242);">
-      <img src="{{ .imageCard }}" class="card-img-top" alt="{{ .name }}">
+      <img src="{{ .imageCard | relURL }}" class="card-img-top" alt="{{ .name }}">
       <div class="card-body">
         {{ if .isLogoOnly }}
         <a href="{{ .websiteURL }}" target="_blank" style="text-decoration: none; color: inherit;">
           <div class="row">
-            <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+            <img class="col-6 mb-3" src="{{ .logo | relURL }}" alt="{{ .name }}" style="width: {{ .width }}px;">
             <h3 class="col-6 mt-3">{{ .logoText }}</h3>
           </div>
         </a>
         {{ else }}
         <a href="{{ .websiteURL }}" target="_blank">
-          <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+          <img class="mb-4" src="{{ .logo | relURL }}" alt="{{ .name }}" style="width: {{ .width }}px;">
         </a>
         {{ end }}
         <p class="card-text"><b>{{ .text }}</b></p>
@@ -37,37 +38,37 @@
             {{ if .isLogoOnly }}
             <a href="{{ .websiteURL }}" target="_blank" style="text-decoration: none; color: inherit;">
               <div class="row">
-                <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                <img class="col-6 mb-3" src="{{ .logo | relURL }}" alt="{{ .name }}" style="width: {{ .width }}px;">
                 <h3 class="col-6 mt-3">{{ .logoText }}</h3>
               </div>
             </a>
             {{ else }}
             <a href="{{ .websiteURL }}" target="_blank">
-              <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+              <img class="mb-4" src="{{ .logo | relURL }}" alt="{{ .name }}" style="width: {{ .width }}px;">
             </a>
             {{ end }}
             <p class="card-text">{{ .text }}</p>
           </div>
         </div>
         <a class="col-md-5 p-0 d-block" href="{{ .websiteURL }}" target="_blank">
-          <img class="w-100" src="{{ .imageCard }}" alt="{{ .name }}" style="box-shadow: 0px 10px 10px 0px black;">
+          <img class="w-100" src="{{ .imageCard | relURL }}" alt="{{ .name }}" style="box-shadow: 0px 10px 10px 0px black;">
         </a>
         {{ else }}
         <a class="col-md-5 p-0 d-block" href="{{ .websiteURL }}" target="_blank">
-          <img class="w-100" src="{{ .imageCard }}" alt="{{ .name }}" style="box-shadow: 0px 10px 10px 0px black;">
+          <img class="w-100" src="{{ .imageCard | relURL }}" alt="{{ .name }}" style="box-shadow: 0px 10px 10px 0px black;">
         </a>
         <div class="col-md-7 d-flex align-items-center">
           <div class="d-block ms-5">
             {{ if .isLogoOnly }}
             <a href="{{ .websiteURL }}" target="_blank" style="text-decoration: none; color: inherit;">
               <div class="row">
-                <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+                <img class="col-6 mb-3" src="{{ .logo | relURL }}" alt="{{ .name }}" style="width: {{ .width }}px;">
                 <h3 class="col-6 mt-3" style="position: relative; left: -20px; top: 4px;">{{ .logoText }}</h3>
               </div>
             </a>
             {{ else }}
             <a href="{{ .websiteURL }}" target="_blank">
-              <img class="mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
+              <img class="mb-3" src="{{ .logo | relURL }}" alt="{{ .name }}" style="width: {{ .width }}px;">
             </a>
             {{ end }}
             <p class="card-text">{{ .text }}</p>
@@ -90,16 +91,18 @@
         </div>
         <div class="row mt-2 mx-md-5 px-md-5">
           <div class="col-12 col-md-6 text-md-end">
-            <a class="btn py-2 px-4" href="/contact">
+            <a class="btn py-2 px-4" href="{{ "/contact" | relLangURL }}">
               {{ .partnerLink.buttonContactLink }}
             </a>
           </div>
           <div class="col-12 col-md-6 text-md-start">
             <div class="mt-2">
+              {{ if $pdf }}
               <a target="_blank" href="{{ $pdf.Permalink }}" style="text-decoration: none; color:black;">
                 {{ .partnerLink.buttonFormulas }}
                 <i class="fa-solid fa-chevron-right"></i>
               </a>
+              {{ end }}
             </div>
           </div>
         </div>

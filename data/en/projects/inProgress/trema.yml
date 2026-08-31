@@ -1,0 +1,20 @@
+commits: 90
+contributors:
+- SonOfLope
+- GRV96
+- alexvegas22
+- polocto
+- dependabot[bot]
+- AXDOOMER
+- dadatmmmm
+- boredsimo
+description: Software bot for the ÉTS student clubs Discord server
+forks: 1
+languages:
+  Dockerfile: 0.00158002983520024
+  Python: 0.9984199701647998
+name: trema
+open_issues: 7
+owner: ClubCedille
+pulls: 1
+stargazers_count: 2

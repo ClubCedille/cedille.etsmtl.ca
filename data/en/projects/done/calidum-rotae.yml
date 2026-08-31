@@ -1,0 +1,22 @@
+commits: 114
+contributors:
+- ThomasCardin
+- renovate[bot]
+- alexvegas22
+- SonOfLope
+- cguertin14
+- vyacheslav31
+- AXDOOMER
+- andrei22131
+- JulienGiguere
+description: Microservices to route admission requests to various messaging platforms.
+forks: 0
+languages:
+  Dockerfile: 0.061932338971752356
+  Go: 0.9155278726772769
+  Makefile: 0.022539788350970754
+name: calidum-rotae
+open_issues: 4
+owner: ClubCedille
+pulls: 12
+stargazers_count: 5

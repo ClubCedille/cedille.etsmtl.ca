@@ -1,0 +1,80 @@
+[see_more]
+other = "See more"
+
+[see_less]
+other = "See less"
+
+[contributors]
+other = "contributors"
+
+[stars]
+other = "stars"
+
+[commits]
+other = "commits"
+
+[languages_label]
+other = "Languages"
+
+[infrastructure_title]
+other = "Infrastructure"
+
+[infrastructure_subtitle]
+other = "Key repositories of our infrastructure"
+
+[infrastructure_desc]
+other = "In order to adhere to the GitOps philosophy, our infrastructure consists of multiple repositories starting with k8s-base. Repositories are structured to separate different service tiers."
+
+[projects_in_progress]
+other = "Projects in Progress"
+
+[projects_completed]
+other = "Completed Projects"
+
+[former_members]
+other = "Former Members"
+
+[services_intro]
+other = "Discover our free services dedicated to student clubs and organizations at ÉTS"
+
+[access_service]
+other = "Access service"
+
+[documentation]
+other = "Documentation"
+
+[ready_to_use_services]
+other = "Ready to use our services?"
+
+[ready_to_use_desc]
+other = "Contact us to start using our free services or to get more information."
+
+[events_intro]
+other = "Join us at our events to learn more about our initiatives."
+
+[upcoming_events]
+other = "Upcoming Events"
+
+[past_events]
+other = "Past Events"
+
+[no_upcoming_events]
+other = "No upcoming events at the moment."
+
+[no_past_events]
+other = "No past events to display."
+
+[event_info_request_subject]
+other = "Information Request – %s"
+
+[event_info_request_body]
+other = "Hello CEDILLE, I would like more information about this event."
+
+[form_success]
+other = "Form submitted successfully!"
+
+[form_error]
+other = "There was an error submitting the form."
+
+[processing]
+other = "processing..."

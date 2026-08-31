@@ -1,0 +1,24 @@
+---
+enable: true
+practice:
+  title: "Prepare for the Industry"
+  subtitle: "Put your theoretical knowledge into practice"
+  summary: "At CEDILLE, we believe in empowering students to excel in the software and computer engineering industry. We provide hands-on experience, foster a strong mindset, and create a positive impact on the community. We understand the importance of real-world experience, and our club is dedicated to bridging the gap between classroom learning and industry requirements."
+  content:
+    - title: "Web Development"
+      description: "Gain hands-on experience with modern web development tools and technologies, learning how to build fast, responsive, and user-friendly websites from front-end to back-end and full-stack."
+    - title: "Software Development"
+      description: "Develop essential skills to design, build, test, and deploy high-quality software. Our club provides opportunities to learn and apply best practices across various programming languages."
+    - title: "DevOps"
+      description: "Master DevOps principles to streamline software development, deployment, and operations. Learn to automate workflows and enhance collaboration using industry-leading tools and practices."
+    - title: "SRE"
+      description: "Discover Site Reliability Engineering (SRE) principles and learn to build highly available, fault-tolerant systems with monitoring, logging, and capacity planning."
+mindset: 
+  title: "Cultivating Core Values"
+  subtitle: "More than code, it's a mindset"
+  summary: "At CEDILLE, we shape engineers with more than just code. Dive into DevOps and Agile methodologies, embrace the power of open-source software, and foster essential values in an evolving tech landscape."
+  list:
+    - paradigm: "DevOps"
+    - paradigm: "Agile Software Development"
+    - paradigm: "Open Source"
+---

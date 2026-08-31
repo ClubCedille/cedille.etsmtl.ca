@@ -1,0 +1,28 @@
+commits: 268
+contributors:
+- AXDOOMER
+- notarock
+- berbiche
+- aubguillemette
+- dependabot[bot]
+- cguertin14
+- AlexBrochu
+- CedrickGauthier
+- xavsavage
+- mikefaille
+- ygotame
+description: System for autonomous planter buckets to grow plants
+forks: 11
+languages:
+  C++: 0.3698339780121898
+  CSS: 0.06946861417413752
+  Dockerfile: 0.01067225296703478
+  HTML: 0.004866019513562999
+  JavaScript: 0.14787750826810941
+  Python: 0.35918646751725786
+  Shell: 0.03809515954770761
+name: jardiniot
+open_issues: 18
+owner: ClubCedille
+pulls: 0
+stargazers_count: 14

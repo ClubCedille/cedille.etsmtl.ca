@@ -1,5 +1,6 @@
-{{ with .Site.Data.equipe}}
-{{ if .enable}}
+{{ $data := index .Site.Data .Site.Language.Lang }}{{ if not $data }}{{ $data = index .Site.Data "fr-ca" }}{{ end }}{{ if not $data }}{{ $data = .Site.Data }}{{ end }}
+{{ with $data.equipe }}
+{{ if .enable }}
 <div class="row">
     <h2 class="title-border"><b>{{ .title }}</b></h2>
 </div>
@@ -8,14 +9,14 @@
 <div class="members">
     <div class="container py-5">
         <div class="row text-center">
-            {{ range .membres}}
+            {{ range .membres }}
             <div class="col-md-4 col-sm-6 my-3">
                 <div class="member">
                     <div class="image mb-4">
                         {{ if .image }}
                         <img src="{{ .image | relURL }}" alt="{{.name}}" class="member-image">
                         {{ else }}
-                        <img src="{{ .Site.baseurl }}/images/membres/anonyme.jpg" alt="{{.name}}" class="member-image">
+                        <img src="{{ "/images/membres/anonyme.jpg" | relURL }}" alt="{{.name}}" class="member-image">
                         {{ end }}
                     </div>
                     <div class="member-information">
@@ -25,34 +26,34 @@
                     {{ if .social }}
                     <div class="row">
                         <div class="social-links">
-                            {{ range .social}}
+                            {{ range .social }}
                                 <a class="mx-1" href="{{.url}}"><i class="fab fa-{{ .title }} fa-lg"></i></a>
-                            {{end}}
+                            {{ end }}
                         </div>
                     </div>
                     {{ end }}
                 </div>
             </div>
-            {{end}}
+            {{ end }}
         </div>
     </div>
 </div>
 
 <div class="row">
-    <h2 style="border-bottom: solid 2px grey;"><b>Anciens Membres</b></h2>
+    <h2 style="border-bottom: solid 2px grey;"><b>{{ i18n "former_members" }}</b></h2>
 </div>
 
 <div class="members">
     <div class="container py-5">
         <div class="row text-center">
-            {{ range .anciensmembres}}
+            {{ range .anciensmembres }}
             <div class="col-md-4 col-sm-6 my-3">
                 <div class="member">
                     <div class="image mb-4">
                         {{ if .image }}
                         <img src="{{ .image | relURL }}" alt="{{.name}}" class="member-image">
                         {{ else }}
-                        <img src="{{ .Site.baseurl }}/images/membres/anonyme.jpg" alt="{{.name}}" class="member-image">
+                        <img src="{{ "/images/membres/anonyme.jpg" | relURL }}" alt="{{.name}}" class="member-image">
                         {{ end }}
                     </div>
                     <div class="member-information">
@@ -62,15 +63,15 @@
                     {{ if .social }}
                     <div class="row">
                         <div class="social-links">
-                            {{ range .social}}
+                            {{ range .social }}
                                 <a class="mx-1" href="{{.url}}"><i class="fab fa-{{ .title }} fa-lg"></i></a>
-                            {{end}}
+                            {{ end }}
                         </div>
                     </div>
                     {{ end }}
                 </div>
             </div>
-            {{end}}
+            {{ end }}
         </div>
     </div>
 </div>
@@ -80,14 +81,14 @@
         <div class="row py-3 mt-5">
             <div class="col-12">
                 <div class="d-flex justify-content-center">
-                    <a class="btn py-2 px-5" href="{{ .button.url }}">{{ .button.becomingMember }}</a>
+                    <a class="btn py-2 px-5" href="{{ .button.url | relLangURL }}">{{ .button.becomingMember }}</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-{{end}}
-{{end}}
+{{ end }}
+{{ end }}
 
 <style>
 .members .member {

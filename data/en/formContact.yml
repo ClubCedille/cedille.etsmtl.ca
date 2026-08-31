@@ -1,0 +1,58 @@
+---
+enable: true
+navTabsTitle:
+  membershipRequest: "Membership Application"
+  collaborationRequest: "Collaboration Request"
+  informationRequest: "Partnership Inquiry"
+navMember:
+  name: "Name"
+  email: "Email"
+  interests: "Interests"
+  education: "Degree Level"
+  program: "Study Program"
+  selectedEducation: "Select degree level"
+  selectedProgram: "Select a study program"
+  optionValueEducation:
+    - value: "bachelor"
+      choice: "Bachelor's"
+    - value: "master"
+      choice: "Master's"
+    - value: "phd"
+      choice: "PhD"
+    - value: "other"
+      choice: "Other"
+  optionValueProgram:
+    - value: "it_eng"
+      choice: "Information Technology Engineering"
+    - value: "electrical_eng"
+      choice: "Electrical Engineering"
+    - value: "mechanical_eng"
+      choice: "Mechanical Engineering"
+    - value: "software_eng"
+      choice: "Software Engineering"
+    - value: "operations_eng"
+      choice: "Operations and Logistics Engineering"
+    - value: "construction_eng"
+      choice: "Construction Engineering"
+    - value: "automated_eng"
+      choice: "Automated Manufacturing Engineering"
+    - value: "other"
+      choice: "Other"
+navCollab:
+  name: "Name"
+  email: "Email"
+  website: "Website"
+  projectToPropose: "Proposed Project"
+  club: "Club"
+  selectedClub: "Select a club"
+  optionValueClub:
+    - value: "1"
+      choice: "Test"
+navInfo:
+  name: "Name"
+  email: "Email"
+  company: "Company"
+  message: "Message"
+button:
+  submit: "Submit"
+---

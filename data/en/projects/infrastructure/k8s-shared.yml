@@ -1,0 +1,30 @@
+commits: 1109
+contributors:
+- alexvegas22
+- JulienGiguere
+- hodux
+- Simon-Boyer
+- GreatSymphonia
+- SonOfLope
+- svc-cedille-user
+- mataai
+- andrei22131
+- boredsimo
+- Meddad-Red
+- Emilinkb
+- Oxsw1ng
+- cedille-terraform-cloud[bot]
+description: 'Kubernetes Cluster: k8s-shared'
+forks: 1
+languages:
+  HCL: 0.023361661273690573
+  Jinja: 0.01769014685488746
+  Python: 0.007875069808885755
+  SCSS: 0.0032096400057729595
+  Shell: 0.0183751628874001
+  YAML: 0.9294883191693631
+name: k8s-shared
+open_issues: 7
+owner: ClubCedille
+pulls: 4
+stargazers_count: 3

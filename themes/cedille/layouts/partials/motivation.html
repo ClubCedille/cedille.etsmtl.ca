@@ -1,4 +1,5 @@
-{{with .Site.Data.motivation }}
+{{ $data := index .Site.Data .Site.Language.Lang }}{{ if not $data }}{{ $data = index .Site.Data "fr-ca" }}{{ end }}{{ if not $data }}{{ $data = .Site.Data }}{{ end }}
+{{ with $data.motivation }}
 {{ if .enable }}
 <!-- Motivation section -->
 <div class="motivation">
@@ -18,7 +19,7 @@
             <div class="slide-track">
                 {{ range .logos }}
                 <div class="slide">
-                    <a href="{{ .url }}" target="_blank"><img src="{{ .image }}" alt="{{ .alt }}"></a>
+                    <a href="{{ .url }}" target="_blank"><img src="{{ .image | relURL }}" alt="{{ .alt }}"></a>
                 </div>   
                 {{ end }}
             </div>
