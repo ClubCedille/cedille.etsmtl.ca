@@ -29,7 +29,7 @@ partnerships:
     width: "200"
   - name: "SadServers"
     text: "SadServers est notre plateforme de choix pour nos pratiques hebdomadaires chez CEDILLE. Grâce à leur générosité, nous bénéficions d'une license Business qui nous permet de mieux structurer nos entraînements. SadServers est une plateforme d'apprentissage axée sur des sujets tels que Linux, le DevOps et SRE."
-    logo: "/images/Partenaire/Logo_SadServers.png"
+    logo: "/images/Partenaire/sadservers.png"
     imageCard: "/images/membres/evenement/sadservers-site.png"
     isLogoOnly: true
     logoText: "SadServers"
