@@ -1,4 +1,4 @@
-commits: 1118
+commits: 1123
 contributors:
 - alexvegas22
 - JulienGiguere
@@ -17,14 +17,14 @@ contributors:
 description: 'Cluster Kubernetes: k8s-shared'
 forks: 1
 languages:
-  HCL: 0.022996694315272345
-  Jinja: 0.017413782986070003
-  Python: 0.00775204173130991
-  SCSS: 0.003159497486505991
-  Shell: 0.018088097373056455
-  YAML: 0.9305898861077853
+  HCL: 0.02299184200287784
+  Jinja: 0.01741010867036792
+  Python: 0.007750406047169403
+  SCSS: 0.003158830831177012
+  Shell: 0.01808428077672861
+  YAML: 0.9306045316716792
 name: k8s-shared
-open_issues: 7
+open_issues: 9
 owner: ClubCedille
 pulls: 2
 stargazers_count: 3
