@@ -1,10 +1,10 @@
-commits: 1195
+commits: 1219
 contributors:
 - SonOfLope
 - Simon-Boyer
 - alexvegas22
-- mj-sakellaropoulos
 - cedille-terraform-cloud[bot]
+- mj-sakellaropoulos
 - ThomasCardin
 - JulienGiguere
 - Antoine-BL
@@ -23,15 +23,15 @@ contributors:
 description: Nouvelle infra du club CEDILLE
 forks: 2
 languages:
-  CSS: 0.008133697655207472
-  Dockerfile: 0.011607464362118998
-  Go Template: 0.09514731736247908
-  HCL: 0.7061489907013196
-  HTML: 0.004278663870708098
-  JavaScript: 0.0204613331638813
-  Jinja: 0.10076041600474465
-  Python: 0.021414500857850925
-  Shell: 0.03204761602168986
+  CSS: 0.008148714031066972
+  Dockerfile: 0.011628893981835158
+  Go Template: 0.09532297767591885
+  HCL: 0.7011925982514218
+  HTML: 0.004286563110092522
+  JavaScript: 0.020499108734402853
+  Jinja: 0.10536032594856125
+  Python: 0.02145403615991851
+  Shell: 0.032106782106782104
 name: Plateforme-Cedille
 open_issues: 214
 owner: ClubCedille
