@@ -1,4 +1,4 @@
-commits: 118
+commits: 122
 contributors:
 - ThomasCardin
 - alexvegas22
@@ -19,5 +19,5 @@ languages:
 name: calidum-rotae
 open_issues: 4
 owner: ClubCedille
-pulls: 16
+pulls: 15
 stargazers_count: 5
