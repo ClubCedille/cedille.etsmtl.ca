@@ -86,6 +86,15 @@ membres:
           url: "https://www.linkedin.com/in/oumaima-lairani/"
     image: "images/membres/oumaima-lairani.jpg"
 
+  - name: "Ahmed Azibe Bouhari"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/Ahmedchalack"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/azibe-ahmed-bouhari"
+    image: "images/membres/ahmedChalack.jpg"
+
 anciensmembres:
   - name: "Jonathan Lopez"
     post: "Ancien capitaine"
