@@ -1,4 +1,4 @@
-commits: 1208
+commits: 1212
 contributors:
 - alexvegas22
 - JulienGiguere
@@ -12,20 +12,21 @@ contributors:
 - boredsimo
 - Meddad-Red
 - Emilinkb
+- mhd-hi
 - Kyohkotsu
 - Oxsw1ng
 - cedille-terraform-cloud[bot]
 description: 'Cluster Kubernetes: k8s-shared'
 forks: 1
 languages:
-  HCL: 0.02717792082942916
-  Jinja: 0.0137508061866459
-  Python: 0.006108765226279859
-  SCSS: 0.002489747739635178
-  Shell: 0.014253785527986338
-  YAML: 0.9362189744900236
+  HCL: 0.02713657715103606
+  Jinja: 0.01372988814393783
+  Python: 0.006099472432085655
+  SCSS: 0.0024859602780970616
+  Shell: 0.014232102341533196
+  YAML: 0.9363159996533102
 name: k8s-shared
 open_issues: 18
 owner: ClubCedille
-pulls: 5
+pulls: 4
 stargazers_count: 3
