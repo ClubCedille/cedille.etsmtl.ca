@@ -1,9 +1,9 @@
-commits: 66
+commits: 80
 contributors:
 - EdvinHonda
 - SonOfLope
-- LeGhosdragon
 - alexvegas22
+- LeGhosdragon
 - dependabot[bot]
 - JulienGiguere
 - AimeMelancon
@@ -18,5 +18,5 @@ languages:
 name: saveursdegenie.etsmtl.ca
 open_issues: 0
 owner: ClubCedille
-pulls: 4
+pulls: 0
 stargazers_count: 1
