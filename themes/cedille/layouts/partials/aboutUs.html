@@ -7,9 +7,7 @@
 {{ $section := . }}
 <div class="mb-5" id="{{ .title }}">
     <div class="d-flex align-items-center mb-4">
-        <h3 class="mb-0">
-            <i class="{{ .icon | default "fas fa-circle-info" }} text-warning me-2"></i><b>{{ .subtitle }}</b>
-        </h3>
+        <h3 class="mb-0"><b>{{ .subtitle }}</b></h3>
     </div>
 
     {{ with .intro }}
@@ -27,7 +25,7 @@
         {{ range .items }}
         <li class="mb-3">
             <h6 class="fw-bold mb-1">{{ .title }}</h6>
-            <div class="section-text text-muted small">{{ .text | markdownify }}</div>
+            <div class="small">{{ .text | markdownify }}</div>
         </li>
         {{ end }}
     </ol>
@@ -36,10 +34,16 @@
         {{ range .items }}
         {{ $item := . }}
         <div class="col-md-6">
+            {{ if $section.cards }}
+            <div class="card h-100 border-0 shadow-sm rounded-3">
+                <div class="card-body">
+                    <h{{ if $section.compact }}6{{ else }}5{{ end }} class="card-title fw-bold">{{ $item.title }}</h{{ if $section.compact }}6{{ else }}5{{ end }}>
+                    <div class="card-text{{ if $section.compact }} small{{ end }}">{{ $item.text | markdownify }}</div>
+                </div>
+            </div>
+            {{ else }}
             <h{{ if $section.compact }}6{{ else }}5{{ end }} class="fw-bold">{{ $item.title }}</h{{ if $section.compact }}6{{ else }}5{{ end }}>
-            <div class="section-text text-muted{{ if $section.compact }} small{{ end }}">{{ $item.text | markdownify }}</div>
-            {{ with $item.badge }}
-            <span class="badge bg-{{ $item.badgeStyle | default "secondary" }}-subtle text-{{ $item.badgeStyle | default "secondary" }} border border-{{ $item.badgeStyle | default "secondary" }}-subtle mt-2">{{ . }}</span>
+            <div class="{{ if $section.compact }}small{{ end }}">{{ $item.text | markdownify }}</div>
             {{ end }}
         </div>
         {{ end }}

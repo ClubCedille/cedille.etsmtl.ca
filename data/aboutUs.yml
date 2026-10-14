@@ -5,10 +5,10 @@ subtitle: "Découvrez notre mission, notre philosophie et les différentes faço
 sections:
   - title: "qui-sommes-nous"
     subtitle: "Qui sommes-nous ?"
-    icon: "fas fa-circle-info"
     layout: "grid"
     lead: true
-    intro: "CEDILLE est un club étudiant de l'[ÉTS](https://www.etsmtl.ca/) axé sur le DevOps et le développement logiciel. Notre plateforme est exploitée *on-premise*, en collaboration avec le [Lan ETS](https://lanets.ca), et repose sur des technologies modernes utilisées en industrie."
+    cards: true
+    intro: "CEDILLE est un club étudiant de l’ÉTS axé sur le DevOps, travaillant également sur des projets de développement web et applicatif. Notre mission est double, fondée sur ce que nous pouvons offrir à nos membres et aux autres clubs."
     items:
       - title: "Hébergement gratuit pour les clubs"
         text: "Plutôt que chaque club consacre du temps aux mêmes problèmes d'infrastructure, nous centralisons l'hébergement web, le stockage, le SSO et plus — gratuitement — pour que chaque club se concentre sur sa mission principale."
@@ -17,9 +17,9 @@ sections:
 
   - title: "philosophie"
     subtitle: "Philosophie du club"
-    icon: "fas fa-compass"
     layout: "grid"
     compact: true
+    cards: true
     intro: "CEDILLE fonctionne comme un collectif technique plutôt qu'une simple équipe d'exécution."
     items:
       - title: "Logiciel libre"
@@ -37,37 +37,33 @@ sections:
 
   - title: "rencontres"
     subtitle: "Rencontres hebdomadaires"
-    icon: "fas fa-calendar-days"
     layout: "grid"
+    cards: true
     intro: "Nos rencontres sont ouvertes à tous, aucune expérience requise!"
     note: "Les locaux et les heures sont annoncés avant chaque rencontre. Confirmez sur [Discord](https://discord.gg/kX4rXRTMR6) avant de vous déplacer."
     noteStyle: "secondary"
     items:
       - title: "Scrum hebdomadaire"
         text: "On fait le point sur les projets en cours, on adresse les défis, on passe en revue le backlog et on attribue les tâches."
-        badge: "📅 Mardi · 17h30–18h00 · D-3014"
-        badgeStyle: "success"
-      - title: "Workshop du vendredi"
+      - title: "Workshop"
         text: "Session de collaboration ouverte : les membres s'entraident sur leurs tâches dans une ambiance détendue."
-        badge: "📅 Vendredi · 12h30–20h00 · D-2020"
-        badgeStyle: "primary"
+      - title: "Pratiques DevOps"
+        text: "Sur une fréquence d'environ une semaine sur deux, nous pratiquons différents types de scénarios en lien avec le DevOps, Linux, et plus. Tous les exercices se font sur la plateforme [Sad Servers](https://sadservers.com)."
 
   - title: "rejoindre"
     subtitle: "Comment rejoindre"
-    icon: "fas fa-handshake"
     layout: "ordered"
     intro: "Nous acceptons seulement les étudiants après les avoir rencontrés."
     items:
       - title: "Prenez contact avec nous"
         text: "Rejoignez notre [Discord](https://discord.gg/kX4rXRTMR6), envoyez nous un courriel ou participez à une de nos réunions. C'est la première étape pour rencontrer l'équipe et découvrir nos projets."
-      - title: "Remplissez le formulaire sur Monets"
-        text: "Une fois votre demande acceptée, remplissez le formulaire d'adhésion officiel sur le portail Monets."
+      - title: "Remplissez le formulaire d'adhésion"
+        text: "Une fois votre demande acceptée, remplissez le [formulaire d'adhésion officiel](https://formulaires.etsmtl.ca/ClubEtudiantAdhesion?requete=cedille&categorie=0) sur le portail Monets."
       - title: "Complétez le quiz sur Moodle"
         text: "Le questionnaire d'intégration sera accessible après acceptation. Il vous familiarisera avec nos outils et nos pratiques."
 
   - title: "ressources"
     subtitle: "Ressources utiles"
-    icon: "fas fa-book"
     layout: "links"
     intro: "Notre communication se fait principalement sur [Discord](https://discord.gg/kX4rXRTMR6). Voici les liens essentiels pour vous orienter."
     links:
@@ -75,7 +71,7 @@ sections:
         url: "https://github.com/ClubCedille"
       - label: "Wiki publique CEDILLE"
         url: "https://cedille.etsmtl.club/s/wiki"
-      - label: "Document de vision — lecture essentielle"
+      - label: "Document de vision (lecture essentielle)"
         url: "https://cedille.etsmtl.club/s/05b8bdc7-765a-4359-b6a1-0679f98bfca9"
 
 button:
