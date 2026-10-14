@@ -1,137 +1,191 @@
-{{ with .Site.Data.equipe}}
-{{ if .enable}}
-<div class="row">
-    <h2 class="title-border"><b>{{ .title }}</b></h2>
+{{ with .Site.Data.equipe }}
+{{ if .enable }}
+
+<!-- Page Header -->
+<div class="row mb-4">
+    <div class="col-12">
+        <h2 class="title-border mb-3"><b>{{ .title }}</b></h2>
+        {{ with .subtitle }}
+        <p class="lead text-muted mb-0">{{ . }}</p>
+        {{ end }}
+    </div>
 </div>
 
-<!-- Members section -->
-<div class="members">
-    <div class="container py-5">
-        <div class="row text-center">
-            {{ range .membres}}
-            <div class="col-md-4 col-sm-6 my-3">
-                <div class="member">
-                    <div class="image mb-4">
-                        {{ if .image }}
-                        <img src="{{ .image | relURL }}" alt="{{.name}}" class="member-image">
-                        {{ else }}
-                        <img src="{{ .Site.baseurl }}/images/membres/anonyme.jpg" alt="{{.name}}" class="member-image">
-                        {{ end }}
+<!-- team banner -->
+{{ if .teamImage }}
+<div class="row mb-5">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm overflow-hidden rounded-3">
+            <img src="{{ .teamImage | relURL }}" alt="{{ with .teamImageCaption }}{{ . }}{{ else }}L'équipe du Club CEDILLE{{ end }}" class="img-fluid w-100 team-wide-photo" style="max-height: 480px; object-fit: cover; object-position: center 30%;">
+            <div class="card-footer bg-white border-0 py-2 text-center text-muted small">
+                <i class="fas fa-users text-warning me-1"></i> L'équipe de CEDILLE. Photo par <a href="https://www.etsmtl.ca/clubs/exutoire-media-etudiant">L'Exutoire</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+
+<!-- execs -->
+{{ if .responsables }}
+<div class="mb-5">
+    <div class="d-flex align-items-center mb-4">
+        <h3 class="mb-0">
+            <i class="fas fa-user-friends text-warning me-2"></i><b>Exécutif</b>
+        </h3>
+        <span class="badge bg-secondary ms-2">{{ len .responsables }}</span>
+    </div>
+    <div>
+      <p class="font-bold">L'exécutif de CEDILLE qui délégue les tâches, gère l'infrastucture et les projets, et en général s'assure du bon fonctionnement du club.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+        {{ range .responsables }}
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm text-center p-3 rounded-3">
+                <div class="my-3 d-flex justify-content-center">
+                    {{ if .image }}
+                    <img src="{{ .image | relURL }}" alt="{{ .name }}" class="rounded-circle team-avatar" width="150" height="150" style="object-fit: cover; object-position: 50% 20%;" loading="lazy">
+                    {{ else }}
+                    <img src="{{ "images/membres/anonyme.jpg" | relURL }}" alt="{{ .name }}" class="rounded-circle team-avatar" width="150" height="150" style="object-fit: cover; object-position: 50% 20%;" loading="lazy">
+                    {{ end }}
+                </div>
+                <div class="card-body p-0 d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold mb-2">{{ .name }}</h5>
+                        <span class="badge border border-orange text-dark mb-3 text-wrap w-75 lh-sm">{{ .post }}</span>
                     </div>
-                    <div class="member-information">
-                        <h4>{{.name}}</h4>
-                        <h5>{{.post}}</h5>
-                    </div>
+
                     {{ if .social }}
-                    <div class="row">
-                        <div class="social-links">
-                            {{ range .social}}
-                                <a class="mx-1" href="{{.url}}"><i class="fab fa-{{ .title }} fa-lg"></i></a>
-                            {{end}}
-                        </div>
+                    <div class="d-flex justify-content-center gap-3 pt-3 border-top">
+                        {{ range .social }}
+                        <a class="text-dark fs-5" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .title }}" title="{{ .title | title }}">
+                            <i class="fab fa-{{ .title }}"></i>
+                        </a>
+                        {{ end }}
                     </div>
                     {{ end }}
                 </div>
             </div>
-            {{end}}
         </div>
+        {{ end }}
     </div>
 </div>
+{{ end }}
 
-<div class="row">
-    <h2 style="border-bottom: solid 2px grey;"><b>Anciens Membres</b></h2>
-</div>
+<!-- membres -->
+{{ if .membres }}
+<div class="mb-5">
+    <div class="d-flex align-items-center mb-4">
+        <h3 class="mb-0">
+            <i class="fas fa-user-friends text-warning me-2"></i><b>Membres</b>
+        </h3>
+        <span class="badge bg-secondary ms-2">{{ len .membres }}</span>
+    </div>
+    <div>
+      <p>Les membres actifs qui contribuent à l'infrastructure et aux projets de CEDILLE. </p>
+    </div>
 
-<div class="members">
-    <div class="container py-5">
-        <div class="row text-center">
-            {{ range .anciensmembres}}
-            <div class="col-md-4 col-sm-6 my-3">
-                <div class="member">
-                    <div class="image mb-4">
-                        {{ if .image }}
-                        <img src="{{ .image | relURL }}" alt="{{.name}}" class="member-image">
-                        {{ else }}
-                        <img src="{{ .Site.baseurl }}/images/membres/anonyme.jpg" alt="{{.name}}" class="member-image">
-                        {{ end }}
+    <div class="row g-4 justify-content-center">
+        {{ range .membres }}
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm text-center p-3 rounded-3">
+                <div class="my-3 d-flex justify-content-center">
+                    {{ if .image }}
+                    <img src="{{ .image | relURL }}" alt="{{ .name }}" class="rounded-circle team-avatar" width="150" height="150" style="object-fit: cover; object-position: 50% 20%;" loading="lazy">
+                    {{ else }}
+                    <img src="{{ "images/membres/anonyme.jpg" | relURL }}" alt="{{ .name }}" class="rounded-circle team-avatar" width="150" height="150" style="object-fit: cover; object-position: 50% 20%;" loading="lazy">
+                    {{ end }}
+                </div>
+                <div class="card-body p-0 d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold mb-2">{{ .name }}</h5>
+                        <span class="badge bg-light text-dark border text-wrap mb-3">{{ .post }}</span>
                     </div>
-                    <div class="member-information">
-                        <h4>{{.name}}</h4>
-                        <h5>{{.post}}</h5>
-                    </div>
+
                     {{ if .social }}
-                    <div class="row">
-                        <div class="social-links">
-                            {{ range .social}}
-                                <a class="mx-1" href="{{.url}}"><i class="fab fa-{{ .title }} fa-lg"></i></a>
-                            {{end}}
-                        </div>
+                    <div class="d-flex justify-content-center gap-3 pt-3 border-top">
+                        {{ range .social }}
+                        <a class="text-dark fs-5" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .title }}" title="{{ .title | title }}">
+                            <i class="fab fa-{{ .title }}"></i>
+                        </a>
+                        {{ end }}
                     </div>
                     {{ end }}
                 </div>
             </div>
-            {{end}}
         </div>
+        {{ end }}
+    </div>
+    <p class="text-muted mt-2">
+      Vous êtes membre et ne voyez pas votre nom? Ouvrez une PR sur <a href="https://github.com/ClubCedille/cedille.etsmtl.ca/blob/master/data/equipe.yml" target="_blank" rel="noopener noreferrer">ce fichier</a> avec vos détails.
+    </p>
+</div>
+{{ end }}
+
+<!-- cta -->
+<div class="my-5">
+    <div class="p-5 rounded-3 bg-dark text-white text-center">
+        <div class="mb-3 text-warning fs-1">
+            <i class="fas fa-terminal"></i>
+        </div>
+        <h3 class="fw-bold mb-3 text-white">
+            {{ with .button.tagline }}{{ . }}{{ end }}
+        </h3>
+        <p class="text-muted mx-auto mb-4" style="max-width: 40rem;">
+            {{ with .button.description }}{{ . }} {{ end }}
+        </p>
+        <a class="btn btn-warning px-5 py-2 fw-bold" href="{{ .button.url }}">
+            <i class="fas fa-paper-plane me-2"></i>{{ .button.becomingMember }}
+        </a>
     </div>
 </div>
-<!-- Becoming member section -->
-<div class="becoming-member">
-    <div class="container">
-        <div class="row py-3 mt-5">
-            <div class="col-12">
-                <div class="d-flex justify-content-center">
-                    <a class="btn py-2 px-5" href="{{ .button.url }}">{{ .button.becomingMember }}</a>
+
+<!-- anciens -->
+{{ if .anciensmembres }}
+<div class="mb-5">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+        <div class="d-flex align-items-center">
+            <h3 class="mb-0">
+                <i class="fas fa-history text-muted me-2"></i><b>Anciens Membres</b>
+            </h3>
+            <span class="badge bg-secondary ms-2">{{ len .anciensmembres }}</span>
+        </div>
+
+    </div>
+
+    <div class="row g-3" id="alumniGrid">
+        {{ range .anciensmembres }}
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12 alumni-item">
+            <div class="card h-100 border-0 shadow-sm p-2 rounded-3">
+                <div class="d-flex align-items-center">
+                    <div class="me-3 flex-shrink-0">
+                        {{ if .image }}
+                        <img src="{{ .image | relURL }}" alt="{{ .name }}" class="rounded-circle alumni-avatar" width="48" height="48" style="object-fit: cover; object-position: 50% 20%;" loading="lazy">
+                        {{ else }}
+                        <img src="{{ "images/membres/anonyme.jpg" | relURL }}" alt="{{ .name }}" class="rounded-circle alumni-avatar" width="48" height="48" style="object-fit: cover; object-position: 50% 20%;" loading="lazy">
+                        {{ end }}
+                    </div>
+                    <div class="overflow-hidden">
+                        <h6 class="mb-0 fw-bold text-truncate" title="{{ .name }}">{{ .name }}</h6>
+                        <small class="text-muted text-truncate d-block" title="{{ .post }}">{{ .post }}</small>
+                        {{ if .social }}
+                        <div class="d-flex gap-2 mt-1">
+                            {{ range .social }}
+                            <a class="text-secondary small" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .title }}">
+                                <i class="fab fa-{{ .title }}"></i>
+                            </a>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
                 </div>
             </div>
         </div>
+        {{ end }}
     </div>
 </div>
-{{end}}
-{{end}}
+{{ end }}
 
-<style>
-.members .member {
-    text-align: center;
-}
+{{ end }}
+{{ end }}
 
-.member-image {
-    width: 225px;
-    height: 225px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 23%;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.member-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
-}
-
-.member-information h4 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.member-information h5 {
-    font-size: 1rem;
-    font-weight: normal;
-    color: #555;
-}
-
-.social-links a {
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-.becoming-member {
-    text-align: center;
-}
-
-.becoming-member a {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-</style>

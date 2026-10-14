@@ -995,23 +995,28 @@ header{
 }
 
 /*---------------- TEAM PAGE ---------------- */
-.team-section .social-links a{
-    color: black;
+.team-wide-photo {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    object-position: center 30%;
 }
 
-.team-section .social-links a:hover{
-    color: rgb(89, 89, 89);
+.team-avatar,
+.member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 20%;
 }
 
-.team-section .becoming-member .btn {
-    border: 1px solid black !important;
-    border-radius: 0 !important;
-    transition: all 0.4s ease-in-out;
-}
-
-.team-section .becoming-member .btn:hover{
-    color:orange;
-    background-color: black;
+.alumni-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 20%;
 }
 
 /*---------------------- PARTNERSHIP PAGE -----------------*/
