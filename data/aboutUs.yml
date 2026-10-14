@@ -7,12 +7,15 @@ sections:
     subtitle: "Qui sommes-nous ?"
     layout: "grid"
     lead: true
+    compact: true
     cards: true
     intro: "CEDILLE est un club étudiant de l’ÉTS axé sur le DevOps, travaillant également sur des projets de développement web et applicatif. Notre mission est double, fondée sur ce que nous pouvons offrir à nos membres et aux autres clubs."
     items:
-      - title: "Hébergement gratuit pour les clubs"
+      - icon: "fas fa-server"
+        title: "Hébergement gratuit pour les clubs"
         text: "Plutôt que chaque club consacre du temps aux mêmes problèmes d'infrastructure, nous centralisons l'hébergement web, le stockage, le SSO et plus — gratuitement — pour que chaque club se concentre sur sa mission principale."
-      - title: "Apprentissage par la pratique"
+      - icon: "fas fa-graduation-cap"
+        title: "Apprentissage par la pratique"
         text: "Chaque déploiement est une opportunité d'apprendre. Kubernetes, GitOps, CI/CD, observabilité — nos membres travaillent avec les mêmes technologies que l'industrie, sur de vrais projets."
 
   - title: "philosophie"
@@ -20,6 +23,7 @@ sections:
     layout: "grid"
     compact: true
     cards: true
+    highlight: "orange"
     intro: "CEDILLE fonctionne comme un collectif technique plutôt qu'une simple équipe d'exécution."
     items:
       - title: "Logiciel libre"
@@ -38,6 +42,7 @@ sections:
   - title: "rencontres"
     subtitle: "Rencontres hebdomadaires"
     layout: "grid"
+    compact: true
     cards: true
     intro: "Nos rencontres sont ouvertes à tous, aucune expérience requise!"
     note: "Les locaux et les heures sont annoncés avant chaque rencontre. Confirmez sur [Discord](https://discord.gg/kX4rXRTMR6) avant de vous déplacer."
@@ -67,8 +72,10 @@ sections:
     layout: "links"
     intro: "Notre communication se fait principalement sur [Discord](https://discord.gg/kX4rXRTMR6). Voici les liens essentiels pour vous orienter."
     links:
-      - label: "GitHub — ClubCedille"
+      - label: "GitHub ClubCedille"
         url: "https://github.com/ClubCedille"
+      - label: "Forgejo CEDILLE"
+        url: "https://git.etsmtl.club/Cedille"
       - label: "Wiki publique CEDILLE"
         url: "https://cedille.etsmtl.club/s/wiki"
       - label: "Document de vision (lecture essentielle)"

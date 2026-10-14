@@ -13,6 +13,10 @@ body{
     border-bottom: 2px solid orange;
 }
 
+.card-highlight {
+    border-left: 4px solid var(--highlight-color, orange) !important;
+}
+
 .icon-circle {
     display: inline-flex;
     justify-content: center;
@@ -211,7 +215,7 @@ header{
     background-color:orange;
 }
 
-@media only screen and (max-width:990px){
+@media only screen and (max-width:1199.5px){
 
     .navbar{
         flex-direction: column;
