@@ -4,9 +4,7 @@
 <!-- Partnership section -->
 <div class="partenaires-section my-5">
   <div class="container">
-    <div class="row">
-      <h2 class="title-border"><b>{{ .title }}</b></h2>
-    </div>
+    {{ partial "page-header.html" (dict "title" .title) }}
     <!-- Partnership card section -->
     {{ range .partnerships }}
     <!-- version mobile -->

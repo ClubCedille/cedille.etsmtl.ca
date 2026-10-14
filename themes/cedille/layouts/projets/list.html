@@ -1,8 +1,8 @@
 {{ define "main" }}
 <!-- Infra section -->
 <div class="container my-5">
+  {{ partial "page-header.html" (dict "title" "Infrastructure") }}
   <div class="row">
-    <h2 class="title-border"><b>Infrastructure</b></h2>
     <h3>Répertoires clés de notre infrastructure</h3>
     <p>Dans le but de d'adhérer à la philosophie GitOps, notre infrastructure est composée de plusieurs répertoires, partant de k8s-base comme point de départ. Les repos sont structurés de façon à séparer les différents types de services.</p>
   </div>
@@ -18,9 +18,7 @@
 
 <!-- Progress project section -->
 <div class="container my-5">
-  <div class="row">
-    <h2 class="title-border"><b>Projets en cours</b></h2>
-  </div>
+  {{ partial "page-header.html" (dict "title" "Projets en cours") }}
   <div class="row">
     {{ range $.Site.Data.projects.inProgress }}
       <div class="col-12 col-lg-6 col-md-6">
@@ -33,9 +31,7 @@
 
 <!-- Finished projects section -->
 <div class="container my-5">
-    <div class="row">
-	<h2 class="title-border"><b>Projets terminés</b></h2>
-    </div>
+    {{ partial "page-header.html" (dict "title" "Projets terminés") }}
     <div class="row">
 	{{ $index := 0 }}
 	{{ range .Site.Data.projects.done }}

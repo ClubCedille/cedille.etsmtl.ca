@@ -1,6 +1,7 @@
 ---
 enable: true
 title: "Services offerts"
+subtitle: "Découvrez nos services gratuits dédiés aux clubs étudiants et organisations de l'ÉTS."
 button:
   getInvolved: "Entrer en contact"
   url: "/contact/"
