@@ -1,12 +1,16 @@
 ---
 enable: true
 title: "Équipe"
+subtitle: "L'équipe d'étudiants passionnés qui administre l'infrastructure, développe nos projets et promeut les technologies open source à l'ÉTS."
+teamImage: "images/membres/team-wide.jpg"
 button:
-  becomingMember: "Devenir membre"
+  becomingMember: "Rejoindre l'équipe"
   url: "/contact/"
-membres:
+  tagline: "Envie de participer à CEDILLE?"
+  description: "Que vous soyez passionné de Linux, d'administration système, de DevOps, de développement logiciel ou simplement curieux d'apprendre au sein d'une équipe motivée, rejoignez-nous !"
+responsables:
   - name: "Alexandre Baudouin Vegas"
-    post: "Capitaine"
+    post: "Capitaine & Responsable Partenariat"
     social:
       - title: github
         url: "https://github.com/alexvegas22"
@@ -15,7 +19,7 @@ membres:
     image: "images/membres/photoalex.jpg"
 
   - name: "Julien Giguère"
-    post: "Co-Capitaine"
+    post: "Co-Capitaine & Responsable SRE"
     social:
       - title: github
         url: "https://github.com/JulienGiguere"
@@ -24,7 +28,7 @@ membres:
     image: "images/membres/julieng.jpg"
 
   - name: "Andrei Anton"
-    post: "Trésorier"
+    post: "Trésorier & Responsable Déploiement"
     social:
       - title: github
         url: "https://github.com/andrei22131"
@@ -32,32 +36,51 @@ membres:
         url: "https://www.linkedin.com/in/andrei-anton-422869292/"
     image: "images/membres/andrei-anton.jpg"
 
-  - name: "Hassaan Bahsoun"
-    post: "Communications Réseaux Sociaux"
+  - name: "Emilien Busson"
+    post: "Responsable Cloud"
     social:
-      - title: github
-        url: "https://github.com/HassaanBahsoun"
-      - title: linkedin
-        url: "https://www.linkedin.com/in/hassaan-bahsoun/"
-    image: "images/membres/hassaan-bahsoun.jpg"
+        - title: github
+          url: "https://github.com/Emilinkb"
+        - title: linkedin
+          url: "https://www.linkedin.com/in/emilien-busson/"
+    image: "images/membres/emilien-busson.jpg"
 
   - name: "Yann Mijatovic"
-    post: "Membre"
+    post: "Responsable Services"
     social:
       - title: github
         url: "https://github.com/Oxsw1ng"
       - title: linkedin
         url: "https://www.linkedin.com/in/yann-mijatovic/"
-    image: "images/membres/yannmijatovic.jpg"
-    
+    image: "images/membres/yann.jpg"
+
+  - name: "Louis Raymond"
+    post: "Responsable Infrastructure"
+    social:
+      - title: github
+        url: "https://github.com/greatsymphonia"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/louis-raymond-6a46131a5"
+    image: "images/membres/louis.jpg"
+
   - name: "Mathieu Gouveia Sousa"
-    post: "Membre"
+    post: "Responsable Développement & Adj. Partenariat"
     social:
       - title: github
         url: "https://github.com/hodux"
       - title: linkedin
         url: "https://www.linkedin.com/in/mathieu-sousa/"
-    image: "images/membres/matsou.jpg"
+    image: "images/membres/matsou2.jpg"
+
+membres:
+  - name: "Hassaan Bahsoun"
+    post: "Membre"
+    social:
+      - title: github
+        url: "https://github.com/HassaanBahsoun"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/hassaan-bahsoun/"
+    image: "images/membres/hassaan.jpg"
 
   - name: "Ethan Chea"
     post: "Membre"
@@ -67,15 +90,6 @@ membres:
       - title: linkedin
         url: "https://www.linkedin.com/in/ethan-chea"
     image: "images/membres/Ethan_Chea.png"
-
-  - name: "Emilien Busson"
-    post: "Membre"
-    social:
-        - title: github
-          url: "https://github.com/Emilinkb"
-        - title: linkedin
-          url: "https://www.linkedin.com/in/emilien-busson/"
-    image: "images/membres/emilien-busson.jpg"
 
   - name: "Oumaima Lairani"
     post: "Membre"
