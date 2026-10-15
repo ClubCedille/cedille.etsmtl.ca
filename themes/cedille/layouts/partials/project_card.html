@@ -1,29 +1,119 @@
-<div class="card my-2" style="background-color: white; height: 250px">
-    <div class="card-body mt-1">
-      <div class="row mb-3">
-	<div class="col">
-          <h5><b>{{ .name }}</b></h5>
-	</div>
-	<div class="col-auto text-end">
-	  <a href="https://github.com/ClubCedille/{{ .name }}" class="btn btn-dark rounded-circle d-flex align-items-center justify-content-center p-2" style="width: 30px; height: 30px;">
-    <i class="fab fa-github"></i>
-	  </a>
-	</div>
+{{ $p := . }}
+{{ $status := "current" }}
+{{ $name := "" }}
+
+{{ if reflect.IsMap . }}
+  {{ if isset . "project" }}
+    {{ $p = .project }}
+  {{ end }}
+  {{ if isset . "status" }}
+    {{ $status = .status }}
+  {{ end }}
+  {{ if isset . "name" }}
+    {{ $name = .name }}
+  {{ end }}
+{{ end }}
+
+<!-- placeholders for null values -->
+{{ $repoName := $name }}
+{{ if and $p (reflect.IsMap $p) }}
+  {{ with $p.name }}{{ $repoName = . }}{{ end }}
+{{ end }}
+{{ if not $repoName }}{{ $repoName = "Projet" }}{{ end }}
+
+{{ $description := "Projet en attente de synchronisation avec GitHub..." }}
+{{ if and $p (reflect.IsMap $p) }}
+  {{ with $p.description }}{{ $description = . }}{{ end }}
+{{ end }}
+
+{{ $stars := 0 }}
+{{ $commits := 0 }}
+{{ $contributorsCount := 0 }}
+
+{{ if and $p (reflect.IsMap $p) }}
+  {{ with $p.stargazers_count }}{{ $stars = . }}{{ end }}
+  {{ with $p.commits }}{{ $commits = . }}{{ end }}
+  {{ with $p.contributors }}{{ $contributorsCount = len . }}{{ end }}
+{{ end }}
+
+<!-- lang colors -->
+{{ $langColors := dict 
+  "Go" "#00ADD8" 
+  "Python" "#3572A5" 
+  "C++" "#f34b7d" 
+  "JavaScript" "#f1e05a" 
+  "TypeScript" "#3178c6" 
+  "HTML" "#e34c26" 
+  "CSS" "#563d7c" 
+  "SCSS" "#c6538c" 
+  "Shell" "#89e051" 
+  "PHP" "#4F5D95" 
+  "HCL" "#844FBA" 
+  "Dockerfile" "#384d54" 
+  "YAML" "#cb171e" 
+  "Jinja" "#a52a22" 
+  "Makefile" "#427819" 
+  "Go Template" "#00ADD8"
+}}
+
+<div class="card h-100 border-0 shadow-sm rounded-3 bg-white position-relative overflow-hidden">
+  <!-- accent -->
+  <div class="w-100 {{ if eq $status "current" }}bg-warning{{ else }}bg-secondary{{ end }}" style="height: 4px;"></div>
+
+  <div class="card-body p-4 d-flex flex-column">
+    <!-- title -->
+    <h5 class="card-title fw-bold mb-2">
+      <a href="https://github.com/ClubCedille/{{ $repoName }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none">
+        {{ $repoName }}
+      </a>
+    </h5>
+
+    <p class="card-text text-muted flex-grow-1 mb-3" style="font-size: 0.925rem; line-height: 1.55;">
+      {{ $description }}
+    </p>
+
+    <!-- languages -->
+    <div class="mb-3">
+      <div class="d-flex flex-wrap gap-1">
+        {{ if and $p (reflect.IsMap $p) $p.languages }}
+          {{ range $lang, $pct := $p.languages }}
+            {{ if or (ge $pct 0.015) (le (len $p.languages) 2) }}
+              {{ $color := index $langColors $lang | default "#6c757d" }}
+              <span class="badge bg-light text-dark border rounded-pill px-2 py-1 fw-normal d-inline-flex align-items-center" style="font-size: 0.75rem;" title="{{ $lang }}: {{ printf "%.1f%%" (mul $pct 100) }}">
+                <span class="rounded-circle me-1 d-inline-block flex-shrink-0" style="width: 8px; height: 8px; background-color: {{ $color }};"></span>
+                {{ $lang }}
+              </span>
+            {{ end }}
+          {{ end }}
+        {{ else }}
+          <span class="badge bg-light text-muted border rounded-pill px-2 py-1 fw-normal d-inline-flex align-items-center" style="font-size: 0.75rem;">
+            <i class="fa-solid fa-clock-rotate-left fa-2xs text-muted me-1"></i>En attente de synchro
+          </span>
+        {{ end }}
       </div>
-      <p class="mb-2">{{ .description }}</p>
-      {{ if .languages }}
-	       {{ $languages := slice }}
-         {{ range $language, $_ := .languages }}
-             {{ $languages = append $language $languages }}
-         {{ end }}
-         <p>Languages: {{ delimit $languages ", " }}</p>
-      {{ end }}
     </div>
-    <div class="card-footer">
-        <ul class="list-unstyled list-inline">
-            <li class="list-inline-item"><b>{{ .contributors | len }}</b> contributeurs</li>
-            <li class="list-inline-item"><b>{{ .stargazers_count }}</b> étoiles</li>
-            <li class="list-inline-item"><b>{{ .commits }}</b> commits</li>
-        </ul>
+
+    <!-- github stats -->
+    <div class="pt-3 border-top mt-auto d-flex align-items-center justify-content-between text-muted small">
+      <div class="d-flex align-items-center gap-3">
+        <span title="{{ $stars }} étoiles sur GitHub">
+          <i class="fa-solid fa-star text-warning me-1"></i>
+          <strong class="text-dark">{{ $stars }}</strong>
+        </span>
+        <span title="{{ $contributorsCount }} contributeurs">
+          <i class="fa-solid fa-users text-primary me-1"></i>
+          <strong class="text-dark">{{ $contributorsCount }}</strong>
+        </span>
+        <span title="{{ $commits }} commits">
+          <i class="fa-solid fa-code-commit text-secondary me-1"></i>
+          <strong class="text-dark">{{ $commits }}</strong>
+        </span>
+      </div>
+      <div>
+        <a href="https://github.com/ClubCedille/{{ $repoName }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none fw-bold small">
+          Code <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+        </a>
+      </div>
     </div>
+  </div>
 </div>
