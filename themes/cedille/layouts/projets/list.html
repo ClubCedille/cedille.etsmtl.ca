@@ -1,74 +1,186 @@
 {{ define "main" }}
-<!-- Infra section -->
 <div class="container my-5">
-  <div class="row">
-    <h2 class="title-border"><b>Infrastructure</b></h2>
-    <h3>Répertoires clés de notre infrastructure</h3>
-    <p>Dans le but de d'adhérer à la philosophie GitOps, notre infrastructure est composée de plusieurs répertoires, partant de k8s-base comme point de départ. Les repos sont structurés de façon à séparer les différents types de services.</p>
-  </div>
-  <div class="row">
-    {{ range $.Site.Data.projects.infrastructure }}
-      <div class="col-12 col-lg-6 col-md-6">
-       {{ partial "project_card" . }}
-      </div>
-    {{ end }}
-  </div>
-</div>
-<!-- end progress project section -->
 
-<!-- Progress project section -->
-<div class="container my-5">
-  <div class="row">
-    <h2 class="title-border"><b>Projets en cours</b></h2>
+  <!-- Page Header -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <h2 class="title-border mb-3"><b>Projets</b></h2>
+      <p class="lead mb-0">
+        Infrastructure cloud-native, microservices et logiciels libres conçus et maintenus par les membres de CEDILLE.
+      </p>
+      <p class="fs-6 text-muted">
+        CEDILLE utilise principalement Github pour ses projets. Néanmoins, nous hébergeons certains repos
+        sur notre instance <a href="https://git.etsmtl.club">Forgejo</a> pour mieux adhérer à notre philosophie.
+      </p>
+    </div>
   </div>
-  <div class="row">
-    {{ range $.Site.Data.projects.inProgress }}
-      <div class="col-12 col-lg-6 col-md-6">
-        {{ partial "project_card" . }}
-      </div>
-    {{ end }}
-  </div>
-</div>
-<!-- end progress project section -->
 
-<!-- Finished projects section -->
-<div class="container my-5">
-    <div class="row">
-	<h2 class="title-border"><b>Projets terminés</b></h2>
+  <!-- toggle -->
+  <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-3">
+    <div>
+      <div id="heading-current" class="d-block">
+        <h3 class="fw-bold mb-1 d-flex align-items-center">
+          <span>Projets en cours</span>
+        </h3>
+        <p class="text-muted mb-0">
+          Projets en développement ou en exploitation dans notre infrastructure.
+        </p>
+      </div>
+      <div id="heading-archived" class="d-none">
+        <h3 class="fw-bold mb-1 d-flex align-items-center">
+          <span>Projets archivés & terminés</span>
+        </h3>
+        <p class="text-muted mb-0">
+          Projets archivés ou complétés dont le code reste accessible pour consultation.
+        </p>
+      </div>
     </div>
-    <div class="row">
-	{{ $index := 0 }}
-	{{ range .Site.Data.projects.done }}
-	    {{ if or (eq $index 0) (eq $index 1) }}
-		{{ $index = add $index 1 }}
-		<div class="col-12 col-lg-6 col-md-6">
-		    {{ partial "project_card" . }}
-		</div>
-	    {{ end }}
-	{{ end }}
+
+    <!-- title -->
+    <div class="p-1 bg-white rounded-pill shadow-sm border d-inline-flex gap-1" id="projects-toggle-container">
+      <button type="button" class="btn btn-dark text-white rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 border-0 shadow-sm" id="btn-toggle-current">
+        <i class="fa-solid fa-bolt text-warning"></i>
+        <span>Projets en cours</span>
+        <span class="badge bg-warning text-dark rounded-pill">{{ len $.Site.Data.projects.current }}</span>
+      </button>
+      <button type="button" class="btn btn-light text-muted rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 border-0" id="btn-toggle-archived">
+        <i class="fa-solid fa-box-archive"></i>
+        <span>Projets archivés</span>
+        <span class="badge bg-secondary text-white rounded-pill">{{ len $.Site.Data.projects.archived }}</span>
+      </button>
     </div>
-    <div class="row btn-collapse collapse" id="PROJETS-APPARITION">
-	{{ $index := 0 }}
-	{{ range .Site.Data.projects.done }}
-	    {{ if not (or (eq $index 0) (eq $index 1)) }}
-		<div class="col-12 col-lg-6 col-md-6">
-		    {{ partial "project_card" . }}
-		</div>
-	    {{ end }}
-	    {{ $index = add $index 1 }}
-	{{ end }}
+  </div>
+
+  <!-- projects -->
+  <div id="projects-sections">
+    <!-- active projects -->
+    <div id="section-current" class="d-block">
+      <div class="row g-4">
+        {{ range $name, $val := $.Site.Data.projects.current }}
+          <div class="col-12 col-md-6 col-lg-4">
+            {{ partial "project_card" (dict "name" $name "project" $val "status" "current") }}
+          </div>
+        {{ end }}
+      </div>
     </div>
-    <div class="row text-center mt-2" id="button-down" style="display: block">
-	<h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir plus</h6>
-	<button class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
-	    <i class="fa-solid fa-angles-down"></i>
-	</button>
+
+    <!-- archived projects -->
+    <div id="section-archived" class="d-none">
+      <div class="row g-4">
+        {{ range $name, $val := $.Site.Data.projects.archived }}
+          <div class="col-12 col-md-6 col-lg-4">
+            {{ partial "project_card" (dict "name" $name "project" $val "status" "archived") }}
+          </div>
+        {{ end }}
+      </div>
     </div>
-    <div class="row text-center mt-2" id="button-up" style="display: none">
-	<h6 class="mb-0" style="border-bottom: solid 2px grey;">Voir moins</h6>
-	<button class="btn" data-bs-toggle="collapse" data-bs-target="#PROJETS-APPARITION">
-	    <i class="fa-solid fa-angles-up"></i>
-	</button>
-    </div>
+
+  </div>
+
+  <!-- cta -->
+  <div class="my-5">
+      <div class="p-5 rounded-3 bg-dark text-white text-center">
+          <div class="mb-3 text-warning fs-1">
+            <i class="fa-solid fa-code-fork fa-xl"></i>
+          </div>
+          <h4 class="fw-bold mb-2">Vous voulez contribuer à CEDILLE?</h4>
+          <p class="text-muted mx-auto mb-4" style="max-width: 620px;">
+            CEDILLE développe activement des projets open-source d'infrastructure, de cloud et d'automatisation. Rejoignez l'équipe et venez contribuer!
+          </p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="https://github.com/ClubCedille" target="_blank" rel="noopener noreferrer" class="btn btn-warning px-5 py-2 fw-bold">
+              <i class="fa-brands fa-github me-2"></i>Organisation GitHub
+            </a>
+            <a href="/contact/" class="btn btn-warning px-5 py-2 fw-bold">
+              <i class="fa-solid fa-user-plus me-2"></i>Rejoindre le club
+            </a>
+          </div>
+      </div>
+  </div>
+
 </div>
+
+<script>
+  (function () {
+    function initProjectToggle() {
+      const btnCurrent = document.getElementById('btn-toggle-current');
+      const btnArchived = document.getElementById('btn-toggle-archived');
+      const secCurrent = document.getElementById('section-current');
+      const secArchived = document.getElementById('section-archived');
+      const headingCurrent = document.getElementById('heading-current');
+      const headingArchived = document.getElementById('heading-archived');
+
+      if (!btnCurrent || !btnArchived || !secCurrent || !secArchived) return;
+
+      function showCurrent(updateHash) {
+        secCurrent.classList.remove('d-none');
+        secCurrent.classList.add('d-block');
+        secArchived.classList.remove('d-block');
+        secArchived.classList.add('d-none');
+
+        if (headingCurrent && headingArchived) {
+          headingCurrent.classList.remove('d-none');
+          headingCurrent.classList.add('d-block');
+          headingArchived.classList.remove('d-block');
+          headingArchived.classList.add('d-none');
+        }
+
+        btnCurrent.classList.remove('btn-light', 'text-muted');
+        btnCurrent.classList.add('btn-dark', 'text-white', 'shadow-sm');
+
+        btnArchived.classList.remove('btn-dark', 'text-white', 'shadow-sm');
+        btnArchived.classList.add('btn-light', 'text-muted');
+
+        if (updateHash && history.replaceState) {
+          history.replaceState(null, null, '#current');
+        }
+      }
+
+      function showArchived(updateHash) {
+        secArchived.classList.remove('d-none');
+        secArchived.classList.add('d-block');
+        secCurrent.classList.remove('d-block');
+        secCurrent.classList.add('d-none');
+
+        if (headingCurrent && headingArchived) {
+          headingArchived.classList.remove('d-none');
+          headingArchived.classList.add('d-block');
+          headingCurrent.classList.remove('d-block');
+          headingCurrent.classList.add('d-none');
+        }
+
+        btnArchived.classList.remove('btn-light', 'text-muted');
+        btnArchived.classList.add('btn-dark', 'text-white', 'shadow-sm');
+
+        btnCurrent.classList.remove('btn-dark', 'text-white', 'shadow-sm');
+        btnCurrent.classList.add('btn-light', 'text-muted');
+
+        if (updateHash && history.replaceState) {
+          history.replaceState(null, null, '#archived');
+        }
+      }
+
+      btnCurrent.addEventListener('click', function () {
+        showCurrent(true);
+      });
+
+      btnArchived.addEventListener('click', function () {
+        showArchived(true);
+      });
+
+      const hash = window.location.hash.toLowerCase();
+      if (hash === '#archived' || hash === '#archives' || hash === '#archive') {
+        showArchived(false);
+      } else if (hash === '#current' || hash === '#actifs' || hash === '#en-cours') {
+        showCurrent(false);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initProjectToggle);
+    } else {
+      initProjectToggle();
+    }
+  })();
+</script>
 {{ end }}
