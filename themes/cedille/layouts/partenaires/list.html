@@ -1,114 +1,111 @@
 {{ define "main" }}
 {{ with $.Site.Data.partenaires }}
-{{ $pdf := resources.Get "/documents/Plan_de_partenariat.pdf"}}
-<!-- Partnership section -->
+{{ $pdf := resources.Get "/documents/plan-partenariat.pdf"}}
+
 <div class="partenaires-section my-5">
   <div class="container">
-    <div class="row">
-      <h2 class="title-border"><b>{{ .title }}</b></h2>
-    </div>
-    <!-- Partnership card section -->
-    {{ range .partnerships }}
-    <!-- version mobile -->
-    <div class="card mt-5 d-flex d-lg-none d-md-none" style="background-color:rgb(242, 242, 242);">
-      <img src="{{ .imageCard }}" class="card-img-top" alt="{{ .name }}">
-      <div class="card-body">
-        {{ if .isLogoOnly }}
-        <a href="{{ .websiteURL }}" target="_blank" style="text-decoration: none; color: inherit;">
-          <div class="row">
-            <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-            <h3 class="col-6 mt-3">{{ .logoText }}</h3>
-          </div>
-        </a>
-        {{ else }}
-        <a href="{{ .websiteURL }}" target="_blank">
-          <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-        </a>
-        {{ end }}
-        <p class="card-text"><b>{{ .text }}</b></p>
-      </div>
-    </div>
-    <!-- end mobile version -->
-    <div class="card border-0 py-5 d-lg-flex d-md-flex d-none" style="background-color:rgb(242, 242, 242); ">
-      <div class="row">
-        {{ if .imageSide }}
-        <div class="col-md-7 d-flex align-items-center">
-          <div class="d-block me-5">
-            {{ if .isLogoOnly }}
-            <a href="{{ .websiteURL }}" target="_blank" style="text-decoration: none; color: inherit;">
-              <div class="row">
-                <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-                <h3 class="col-6 mt-3">{{ .logoText }}</h3>
-              </div>
-            </a>
-            {{ else }}
-            <a href="{{ .websiteURL }}" target="_blank">
-              <img class="mb-4" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-            </a>
-            {{ end }}
-            <p class="card-text">{{ .text }}</p>
-          </div>
-        </div>
-        <a class="col-md-5 p-0 d-block" href="{{ .websiteURL }}" target="_blank">
-          <img class="w-100" src="{{ .imageCard }}" alt="{{ .name }}" style="box-shadow: 0px 10px 10px 0px black;">
-        </a>
-        {{ else }}
-        <a class="col-md-5 p-0 d-block" href="{{ .websiteURL }}" target="_blank">
-          <img class="w-100" src="{{ .imageCard }}" alt="{{ .name }}" style="box-shadow: 0px 10px 10px 0px black;">
-        </a>
-        <div class="col-md-7 d-flex align-items-center">
-          <div class="d-block ms-5">
-            {{ if .isLogoOnly }}
-            <a href="{{ .websiteURL }}" target="_blank" style="text-decoration: none; color: inherit;">
-              <div class="row">
-                <img class="col-6 mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-                <h3 class="col-6 mt-3" style="position: relative; left: -20px; top: 4px;">{{ .logoText }}</h3>
-              </div>
-            </a>
-            {{ else }}
-            <a href="{{ .websiteURL }}" target="_blank">
-              <img class="mb-3" src="{{ .logo }}" alt="{{ .name }}" style="width: {{ .width }}px;">
-            </a>
-            {{ end }}
-            <p class="card-text">{{ .text }}</p>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-    {{ end }}
-    <!-- end partnership card section -->
 
-    <!-- Formulas link section -->
-    <div class="row m-5 text-center">
-      <h4><b>{{ .partnerLink.title }}</b></h4>
-      <div class="col mx-md-5">
-        <div class="row">
-          <div class="col mt-2 mx-md-5">
-            <p>{{ .partnerLink.text }}</p>
+    <!-- Page Header -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 class="title-border mb-3"><b>{{ .title }}</b></h2>
+        {{ with .subtitle }}
+        <p class="lead text-muted mb-0">
+          {{ . }}
+        </p>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- thanks -->
+    {{ with .thankYou }}
+    <div class="thank-you-section mb-5">
+      <div class="p-3 p-md-3 rounded-3 text-center bg-light shadow-sm" style="background-color: rgb(242, 242, 242);">
+        <div class="row g-3 g-md-4 justify-content-center mb-4">
+          <div class="col-12 col-md-6">
+            <div class="card border-0 shadow-sm overflow-hidden rounded-3">
+              <img src="{{ .image1 | relURL }}" alt="Partenariat CEDILLE" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
+            </div>
           </div>
-        </div>
-        <div class="row mt-2 mx-md-5 px-md-5">
-          <div class="col-12 col-md-6 text-md-end">
-            <a class="btn py-2 px-4" href="/contact">
-              {{ .partnerLink.buttonContactLink }}
-            </a>
-          </div>
-          <div class="col-12 col-md-6 text-md-start">
-            <div class="mt-2">
-              <a target="_blank" href="{{ $pdf.Permalink }}" style="text-decoration: none; color:black;">
-                {{ .partnerLink.buttonFormulas }}
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
+          <div class="col-12 col-md-6">
+            <div class="card border-0 shadow-sm overflow-hidden rounded-3">
+              <img src="{{ .image2 | relURL }}" alt="Partenariat CEDILLE" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
             </div>
           </div>
         </div>
+        <p class="lead mx-auto mb-0" style="max-width: 820px;">
+          {{ .text }}
+        </p>
       </div>
     </div>
-    <!-- end formulas link section -->
+    {{ end }}
+
+    {{ $emptyTierText := .emptyTierText | default "Aucun en ce moment, soyez le premier!" }}
+
+    <!-- sponsors -->
+    {{ range $tier := .tiers }}
+      {{ $tierPartners := slice }}
+      {{ range $.Site.Data.partenaires.partnerships }}
+        {{ if eq .tier $tier.id }}
+          {{ $tierPartners = $tierPartners | append . }}
+        {{ end }}
+      {{ end }}
+
+      <div class="tier-section mb-5 text-center" id="tier-{{ $tier.id }}">
+        <div class="mb-4 d-flex flex-column align-items-center">
+          <h3 class="fw-bold mb-2">
+            {{ $tier.name }}
+          </h3>
+          <div style="height: 3px; width: 450px; max-width: 85%; background-color: {{ $tier.color }}; border-radius: 2px;"></div>
+        </div>
+
+        {{ if gt (len $tierPartners) 0 }}
+        <div class="row justify-content-center align-items-center g-4 g-lg-5">
+          {{ range $partner := $tierPartners }}
+          <div class="col-12 {{ if eq $tier.id "platine" }}col-md-6 col-lg-5{{ else }}col-12 col-sm-6 col-md-5 col-lg-4{{ end }} text-center">
+            <a href="{{ $partner.websiteURL }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark d-inline-flex align-items-center justify-content-center p-3" title="{{ $partner.name }}">
+              {{ if not $partner.hasText }}
+              <div class="d-flex align-items-center justify-content-center gap-3">
+                <img src="{{ $partner.logo }}" alt="{{ $partner.name }}" class="img-fluid" style="width: {{ with $partner.width }}{{ . }}px{{ else }}auto{{ end }}; max-width: 100%; height: auto; object-fit: contain;">
+                <span class="fw-bold {{ if eq $tier.id "platine" }}fs-4{{ else }}fs-4{{ end }} text-dark">{{ $partner.logoText }}</span>
+              </div>
+              {{ else }}
+              <img src="{{ $partner.logo }}" alt="{{ $partner.name }}" class="img-fluid" style="width: {{ with $partner.width }}{{ . }}px{{ else }}auto{{ end }}; max-width: 100%; height: auto; object-fit: contain;">
+              {{ end }}
+            </a>
+          </div>
+          {{ end }}
+        </div>
+        {{ else }}
+        <p class="text-muted my-4">{{ $emptyTierText }}</p>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <!-- cta -->
+    <div class="my-5">
+      <div class="p-5 rounded-3 bg-dark text-white text-center">
+        <div class="mb-3 text-warning fs-1">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <h4 class="fw-bold mb-2">{{ .partnerLink.title }}</h4>
+        <p class="text-muted mx-auto mb-4" style="max-width: 640px;">
+          {{ .partnerLink.text }}
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="/contact/" class="btn btn-warning px-5 py-2 fw-bold">
+            <i class="fa-solid fa-envelope me-2"></i>{{ .partnerLink.buttonContactLink }}
+          </a>
+          {{ with $pdf }}
+          <a href="{{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="btn btn-warning px-5 py-2 fw-bold">
+            <i class="fa-solid fa-file-pdf me-2"></i>{{ $.Site.Data.partenaires.partnerLink.buttonFormulas }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>
-<!-- end partnership section -->
 {{ end }}
 {{ end }}
