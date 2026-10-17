@@ -1,4 +1,4 @@
-commits: 1565
+commits: 1568
 contributors:
 - svc-cedille-user
 - EdvinHonda
@@ -33,13 +33,13 @@ contributors:
 description: Site web du club CEDILLE
 forks: 6
 languages:
-  CSS: 0.24684223131631836
-  Dockerfile: 0.0020513781720866786
-  HTML: 0.6765278602147179
-  JavaScript: 0.06720606458196661
-  Makefile: 0.005935459685733029
-  Nix: 0.0013537013318338487
-  Shell: 8.330469734362146e-05
+  CSS: 0.24651365938374184
+  Dockerfile: 0.002048647580620002
+  HTML: 0.6769584342924886
+  JavaScript: 0.06711660652447458
+  Makefile: 0.005927558989611173
+  Nix: 0.00135189941868325
+  Shell: 8.31938103805077e-05
 name: cedille.etsmtl.ca
 open_issues: 8
 owner: ClubCedille
