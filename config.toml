@@ -51,7 +51,7 @@ baseURL = 'https://cedille.etsmtl.ca'
     titleFollowUs = "Suivez-nous"
     titleContactPage = "Pour nous contacter"
     copyright = "©"
-    year = "2022"
+    year = "2026"
 
     #General Params
     [params.general]
