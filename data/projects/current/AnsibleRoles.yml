@@ -1,0 +1,22 @@
+commits: 375
+contributors:
+- GreatSymphonia
+- alex420-c
+- AimeMelancon
+- mataai
+- alexvegas22
+- JulienGiguere
+description: Roles Ansible pour l'infrastructure physique à administrer pour les clubs
+  étudiants
+forks: 3
+languages:
+  Jinja: 0.6094438755064785
+  Makefile: 0.11478694509995993
+  Nix: 0.03361681285898749
+  Python: 0.17685560354423616
+  Shell: 0.06529676299033794
+name: AnsibleRoles
+open_issues: 0
+owner: ClubCedille
+pulls: 0
+stargazers_count: 3
