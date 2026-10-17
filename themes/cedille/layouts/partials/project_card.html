@@ -54,6 +54,8 @@
   "Jinja" "#a52a22" 
   "Makefile" "#427819" 
   "Go Template" "#00ADD8"
+  "Nix" "#7e7eff"
+  "Rust" "#dea584"
 }}
 
 <div class="card h-100 border-0 shadow-sm rounded-3 bg-white position-relative overflow-hidden">
@@ -73,28 +75,66 @@
     </p>
 
     <!-- languages -->
-    <div class="mb-3">
-      <div class="d-flex flex-wrap gap-1">
-        {{ if and $p (reflect.IsMap $p) $p.languages }}
-          {{ range $lang, $pct := $p.languages }}
-            {{ if or (ge $pct 0.015) (le (len $p.languages) 2) }}
-              {{ $color := index $langColors $lang | default "#6c757d" }}
-              <span class="badge bg-light text-dark border rounded-pill px-2 py-1 fw-normal d-inline-flex align-items-center" style="font-size: 0.75rem;" title="{{ $lang }}: {{ printf "%.1f%%" (mul $pct 100) }}">
+    <div class="mt-auto mb-3">
+      {{ if and $p (reflect.IsMap $p) $p.languages }}
+        {{ $sortedLangs := slice }}
+        {{ range $lang, $pct := $p.languages }}
+          {{ $sortedLangs = $sortedLangs | append (dict "lang" $lang "pct" $pct) }}
+        {{ end }}
+        {{ $sortedLangs = sort $sortedLangs "pct" "desc" }}
+
+        <!-- Language breakdown with percentage -->
+        <div class="d-flex flex-wrap gap-1 mb-2">
+          {{ $otherPct := 0.0 }}
+          {{ $otherLangs := slice }}
+          {{ range $sortedLangs }}
+            {{ if or (ge .pct 0.01) (le (len $sortedLangs) 4) }}
+              {{ $color := index $langColors .lang | default "#6c757d" }}
+              {{ $pctVal := mul .pct 100 }}
+              {{ $pctText := printf "%.1f%%" $pctVal }}
+              {{ if lt $pctVal 0.1 }}{{ $pctText = "< 0.1%" }}{{ end }}
+              <span class="badge bg-light text-dark border rounded-pill px-2 py-1 fw-normal d-inline-flex align-items-center" style="font-size: 0.75rem;" title="{{ .lang }}: {{ $pctText }}">
                 <span class="rounded-circle me-1 d-inline-block flex-shrink-0" style="width: 8px; height: 8px; background-color: {{ $color }};"></span>
-                {{ $lang }}
+                <span class="fw-semibold me-1">{{ .lang }}</span>
+                <span class="text-muted">{{ $pctText }}</span>
               </span>
+            {{ else }}
+              {{ $otherPct = add $otherPct .pct }}
+              {{ $otherLangs = $otherLangs | append .lang }}
             {{ end }}
           {{ end }}
-        {{ else }}
-          <span class="badge bg-light text-muted border rounded-pill px-2 py-1 fw-normal d-inline-flex align-items-center" style="font-size: 0.75rem;">
-            <i class="fa-solid fa-clock-rotate-left fa-2xs text-muted me-1"></i>En attente de synchro
-          </span>
-        {{ end }}
-      </div>
+          {{ if gt $otherPct 0.0 }}
+            {{ $pctVal := mul $otherPct 100 }}
+            {{ $pctText := printf "%.1f%%" $pctVal }}
+            {{ if lt $pctVal 0.1 }}{{ $pctText = "< 0.1%" }}{{ end }}
+            <span class="badge bg-light text-muted border rounded-pill px-2 py-1 fw-normal d-inline-flex align-items-center" style="font-size: 0.75rem;" title="{{ delimit $otherLangs ", " }}: {{ $pctText }}">
+              <span class="rounded-circle me-1 d-inline-block flex-shrink-0" style="width: 8px; height: 8px; background-color: #8c959f;"></span>
+              <span class="fw-semibold me-1">Autre</span>
+              <span>{{ $pctText }}</span>
+            </span>
+          {{ end }}
+        </div>
+
+        <!-- GitHub-style language bar -->
+        <div class="d-flex w-100 rounded-pill overflow-hidden" style="height: 8px; background-color: #eaecf0;" aria-label="Language distribution">
+          {{ range $sortedLangs }}
+            {{ $color := index $langColors .lang | default "#6c757d" }}
+            {{ $pctVal := mul .pct 100 }}
+            {{ $pctText := printf "%.1f%%" $pctVal }}
+            {{ if lt $pctVal 0.1 }}{{ $pctText = "< 0.1%" }}{{ end }}
+            <div style="width: {{ printf "%.4f" $pctVal }}%; background-color: {{ $color }}; height: 100%;" 
+                 title="{{ .lang }}: {{ $pctText }}"></div>
+          {{ end }}
+        </div>
+      {{ else }}
+        <span class="badge bg-light text-muted border rounded-pill px-2 py-1 fw-normal d-inline-flex align-items-center" style="font-size: 0.75rem;">
+          <i class="fa-solid fa-clock-rotate-left fa-2xs text-muted me-1"></i>En attente de synchro
+        </span>
+      {{ end }}
     </div>
 
     <!-- github stats -->
-    <div class="pt-3 border-top mt-auto d-flex align-items-center justify-content-between text-muted small">
+    <div class="pt-3 border-top d-flex align-items-center justify-content-between text-muted small">
       <div class="d-flex align-items-center gap-3">
         <span title="{{ $stars }} étoiles sur GitHub">
           <i class="fa-solid fa-star text-warning me-1"></i>
