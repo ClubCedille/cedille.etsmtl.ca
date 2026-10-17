@@ -21,14 +21,18 @@
         {{ end }}
     </div>
     {{ else if eq .layout "ordered" }}
-    <ol class="ps-3 mt-2">
-        {{ range .items }}
-        <li class="mb-3">
-            <h6 class="fw-bold mb-1">{{ .title }}</h6>
-            <div class="small">{{ .text | markdownify }}</div>
-        </li>
-        {{ end }}
-    </ol>
+    <div class="card border-0 shadow-sm rounded-3 mt-2">
+        <div class="card-body">
+            <ol class="ps-3 mb-0">
+                {{ range $i, $item := .items }}
+                <li class="{{ if lt $i (sub (len $section.items) 1) }}mb-3{{ end }}">
+                    <h6 class="fw-bold mb-1">{{ $item.title }}</h6>
+                    <div class="small">{{ $item.text | markdownify }}</div>
+                </li>
+                {{ end }}
+            </ol>
+        </div>
+    </div>
     {{ else if .items }}
     <div class="row g-4 mt-2">
         {{ range .items }}
