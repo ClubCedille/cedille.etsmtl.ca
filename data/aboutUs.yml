@@ -1,136 +1,88 @@
 enable: true
 title: "À propos"
+subtitle: "Découvrez notre mission, notre philosophie et les différentes façons de nous rejoindre."
 
 sections:
   - title: "qui-sommes-nous"
     subtitle: "Qui sommes-nous ?"
-    text: |
-      <p class="lead">CEDILLE est un club étudiant de l'<a href="https://www.etsmtl.ca/"  style="color:inherit">ÉTS</a> axé sur le DevOps et le développement logiciel.
-      Notre plateforme est exploitée <em>on-premise</em>, en collaboration avec le <a  href="https://lanets.ca" style="color:inherit">Lan ETS</a>, et repose sur des technologies modernes utilisées en industrie.</p>
-      <div class="row g-3 mt-1">
-        <div class="col-md-6">
-          <div class="p-3 border rounded h-100">
-            <h5>🏗️ Hébergement gratuit pour les clubs</h5>
-            <p class="mb-0 text-muted">Plutôt que chaque club consacre du temps aux mêmes problèmes d'infrastructure, nous centralisons l'hébergement web, le stockage, le SSO et plus — gratuitement — pour que chaque club se concentre sur sa mission principale.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="p-3 border rounded h-100">
-            <h5>🎓 Apprentissage par la pratique</h5>
-            <p class="mb-0 text-muted">Chaque déploiement est une opportunité d'apprendre. Kubernetes, GitOps, CI/CD, observabilité — nos membres travaillent avec les mêmes technologies que l'industrie, sur de vrais projets.</p>
-          </div>
-        </div>
-      </div>
+    layout: "grid"
+    lead: true
+    compact: true
+    cards: true
+    intro: "CEDILLE est un club étudiant de l’ÉTS axé sur le DevOps, travaillant également sur des projets de développement web et applicatif. Notre mission est double, fondée sur ce que nous pouvons offrir à nos membres et aux autres clubs."
+    items:
+      - icon: "fas fa-server"
+        title: "Hébergement gratuit pour les clubs"
+        text: "Plutôt que laisser chaque club résoudre les mêmes problèmes d'infrastructure à leur tour, nous centralisons l'hébergement web, le stockage, le SSO et plus, pour que chaque club puisse se concentrer sur sa mission principale."
+      - icon: "fas fa-graduation-cap"
+        title: "Apprentissage par la pratique"
+        text: "Chaque déploiement est une opportunité d'apprendre de nouvelles technologies, telles Kubernetes, GitOps, CI/CD, observabilité. Nos membres travaillent avec les mêmes outils que l'industrie, sur de vrais projets."
 
   - title: "philosophie"
     subtitle: "Philosophie du club"
-    text: |
-      <p>CEDILLE fonctionne comme un collectif technique plutôt qu'une simple équipe d'exécution.</p>
-      <div class="row g-3 mt-1">
-        <div class="col-md-4">
-          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
-            <h6 class="fw-bold">Logiciel libre</h6>
-            <p class="mb-0 small text-muted">Toutes nos solutions reposent sur des outils open-source, pertinents sur le marché et audités par la communauté.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
-            <h6 class="fw-bold">Git comme source de vérité</h6>
-            <p class="mb-0 small text-muted">Chaque déploiement est décrit en code, versionné et reproductible. Infrastructure as Code, pas de changements manuels.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
-            <h6 class="fw-bold">No blame</h6>
-            <p class="mb-0 small text-muted">Si une erreur se produit, c'est notre système qui l'a permise — pas un individu. On améliore les processus collectivement.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
-            <h6 class="fw-bold">Documentation = code</h6>
-            <p class="mb-0 small text-muted">Les procédures, guides et décisions techniques sont documentés avec le même soin que le code qu'on écrit.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
-            <h6 class="fw-bold">Participation volontaire</h6>
-            <p class="mb-0 small text-muted">Aucun minimum d'implication n'est exigé. On apprend ensemble, à des rythmes différents. Les rencontres sont optionnelles.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-3 border-start border-3 border-orange bg-light rounded-end h-100">
-            <h6 class="fw-bold">Décisions discutées</h6>
-            <p class="mb-0 small text-muted">Les choix techniques sont expliqués, débattus et documentés. On fonctionne comme un collectif, pas une hiérarchie.</p>
-          </div>
-        </div>
-      </div>
+    layout: "grid"
+    compact: true
+    cards: true
+    highlight: "orange"
+    intro: "CEDILLE fonctionne comme un collectif technique plutôt qu'une simple équipe d'exécution."
+    items:
+      - title: "Logiciel libre"
+        text: "Toutes nos solutions reposent sur des outils open-source, pertinents sur le marché et audités par la communauté."
+      - title: "Git comme source de vérité"
+        text: "Chaque déploiement est décrit en code, versionné et reproductible. Infrastructure as Code, pas de changements manuels, ni de configurations fantômes."
+      - title: "Pas de culture de blâme"
+        text: "Lorsqu'une erreur se produit, c'est indicatif d'une faille dans nos systèmes et procédures, et non sur l'individu. Nous visons à améliorer nos démarches et réglementations pour que le système lui-même limite l'erreur humaine."
+      - title: "Documentation = code"
+        text: "Les procédures, guides et décisions techniques sont documentés avec le même soin que le code qu'on écrit."
+      - title: "Participation volontaire"
+        text: "Aucun minimum d'implication n'est exigé. On apprend ensemble, à des rythmes différents. Les rencontres sont optionnelles."
+      - title: "Décisions discutées"
+        text: "Les choix techniques sont expliqués, débattus et documentés. On fonctionne comme un collectif, pas une hiérarchie."
 
   - title: "rencontres"
-    subtitle: "Rencontres — Hivers 2026"
-    text: |
-      <div class="row g-3">
-        <p class="text-muted">Nos rencontres sont ouvertes à tous!</p>
-        <div class="col-md-6">
-        <div class="card h-100">
-            <div class="card-header d-flex align-items-center gap-2">
-              <strong>Scrum hebdomadaire</strong>
-            </div>
-            <div class="card-body">
-              <p class="text-muted small">Chaque semaine, on fait le point sur les projets en cours, on adresse les défis, on passe en revue le backlog et on attribue les tâches. Suivi d'une session de codage au local D-2020.</p>
-              <span class="badge bg-success-subtle text-success border border-success-subtle">📅 Mardi · 17h30–18h00 · D-3014</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-header d-flex align-items-center gap-2">
-              <strong>Workshop du vendredi</strong>
-            </div>
-            <div class="card-body">
-              <p class="text-muted small">Session de collaboration ouverte sur les projets en cours. Les membres s'entraident sur leurs tâches, la participation est encouragée et l'ambiance détendue.</p>
-              <span class="badge bg-primary-subtle text-primary border border-primary-subtle">📅 Vendredi · 12h30-20h00 · D-2020</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="mt-3 text-danger small">⚠ Nous indiquons toujours les locaux et les heures avant les rencontres. Confirmez sur <a href="https://discord.gg/kX4rXRTMR6" style="color:inherit">Discord</a> avant de vous déplacer.</p>
+    subtitle: "Rencontres hebdomadaires"
+    layout: "grid"
+    compact: true
+    cards: true
+    intro: "Nos rencontres sont ouvertes à tous, aucune expérience requise!"
+    note: "Les locaux et les heures sont annoncés avant chaque rencontre. Confirmez sur [Discord](https://discord.gg/kX4rXRTMR6) avant de vous déplacer."
+    noteStyle: "secondary"
+    items:
+      - title: "Scrum hebdomadaire"
+        text: "On fait le point sur les projets en cours, on adresse les défis, on passe en revue le backlog et on attribue les tâches."
+      - title: "Workshop"
+        text: "Session de collaboration ouverte : les membres s'entraident sur leurs tâches dans une ambiance détendue."
+      - title: "Pratiques DevOps"
+        text: "Sur une fréquence d'environ une semaine sur deux, nous pratiquons différents types de scénarios en lien avec le DevOps, Linux, et plus. Tous les exercices se font sur la plateforme [Sad Servers](https://sadservers.com)."
 
   - title: "rejoindre"
     subtitle: "Comment rejoindre"
-    text: |
-      <p class="text-muted">Nous acceptons seulement les étudiants après les avoir rencontrés.</p>
-      <ol class="list-group list-group-numbered mt-3">
-        <li class="list-group-item d-flex gap-3">
-          <div>
-            <h6 class="fw-bold mb-1">Prenez contact avec nous</h6>
-            <p class="mb-0 small text-muted">Rejoignez notre <a href="https://discord.gg/kX4rXRTMR6" style="color:inherit">Discord</a>, envoyez nous un courriel ou participez à une de nos réunions. C'est la première étape pour rencontrer l'équipe et découvrir nos projets.</p>
-          </div>
-        </li>
-        <li class="list-group-item d-flex gap-3">
-          <div>
-            <h6 class="fw-bold mb-1">Remplissez le formulaire sur Monets</h6>
-            <p class="mb-0 small text-muted">Une fois votre demande acceptée, remplissez le formulaire d'adhésion officiel sur le portail Monets.</p>
-          </div>
-        </li>
-        <li class="list-group-item d-flex gap-3">
-          <div>
-            <h6 class="fw-bold mb-1">Complétez le quiz sur Moodle</h6>
-            <p class="mb-0 small text-muted">Le questionnaire d'intégration sera accessible après acceptation. Il vous familiarisera avec nos outils et nos pratiques.</p>
-          </div>
-        </li>
-      </ol>
+    layout: "ordered"
+    intro: "Nous acceptons seulement les étudiants après les avoir rencontrés."
+    items:
+      - title: "Prenez contact avec nous"
+        text: "Rejoignez notre [Discord](https://discord.gg/kX4rXRTMR6), envoyez nous un courriel ou participez à une de nos réunions. C'est la première étape pour rencontrer l'équipe et découvrir nos projets."
+      - title: "Remplissez le formulaire d'adhésion"
+        text: "Une fois votre demande acceptée, remplissez le [formulaire d'adhésion officiel](https://formulaires.etsmtl.ca/ClubEtudiantAdhesion?requete=cedille&categorie=0) sur le portail Monets."
+      - title: "Complétez le quiz sur Moodle"
+        text: "Le questionnaire d'intégration sera accessible après acceptation. Il vous familiarisera avec nos outils et nos pratiques."
 
   - title: "ressources"
     subtitle: "Ressources utiles"
-    text: |
-      <p class="text-muted mb-3">Notre communication se fait principalement sur <a href="https://discord.gg/kX4rXRTMR6" style="color:inherit">Discord</a>. Voici les liens essentiels pour vous orienter.</p>
-      <div class="row g-3">
-        <div class="col-12">
-          <h6 class="text-uppercase text-muted small fw-bold mb-2">Liens utiles</h6>
-          <div class="d-flex flex-wrap gap-2">
-            <a href="https://github.com/ClubCedille" class="btn btn-outline-secondary btn-sm" target="_blank">🐙 GitHub — ClubCedille</a>
-            <a href="https://cedille.etsmtl.club/s/wiki" class="btn btn-outline-secondary btn-sm" target="_blank">🌐 Wiki Publique CEDILLE</a>
-            <a href="https://cedille.etsmtl.club/s/05b8bdc7-765a-4359-b6a1-0679f98bfca9" class="btn btn-outline-secondary btn-sm" target="_blank">Document de Vision - Lecture essentielle</a>
-            </div>
-        </div>
-      </div>
+    layout: "links"
+    intro: "Notre communication se fait principalement sur [Discord](https://discord.gg/kX4rXRTMR6). Voici les liens essentiels pour vous orienter."
+    links:
+      - label: "GitHub ClubCedille"
+        url: "https://github.com/ClubCedille"
+      - label: "Forgejo CEDILLE"
+        url: "https://git.etsmtl.club/Cedille"
+      - label: "Wiki publique CEDILLE"
+        url: "https://cedille.etsmtl.club/s/wiki"
+      - label: "Document de vision (lecture essentielle)"
+        url: "https://cedille.etsmtl.club/s/05b8bdc7-765a-4359-b6a1-0679f98bfca9"
+
+button:
+  tagline: "Prêt à embarquer avec CEDILLE?"
+  description: "Que vous soyez passionné de Linux, d'infrastructure, de DevOps ou simplement curieux d'apprendre, venez rencontrer l'équipe et participer à nos projets."
+  label: "Rejoindre l'équipe"
+  url: "/contact/"

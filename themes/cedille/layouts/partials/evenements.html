@@ -7,13 +7,7 @@
 {{ $past := sort .sections "date" "desc" }}
 
 <section class="evenements-section my-5">
-  <div class="row">
-    <h2 class="title-border"><b>{{ .title }}</b></h2>
-  </div>
-
-  <p class="mt-3 mb-4">
-    Venez nous rejoindre lors de nos événements pour en apprendre davantage sur nos initiatives.
-  </p>
+  {{ partial "page-header.html" (dict "title" .title "subtitle" "Venez nous rejoindre lors de nos événements pour en apprendre davantage sur nos initiatives.") }}
 
   <div class="container my-4">
 
