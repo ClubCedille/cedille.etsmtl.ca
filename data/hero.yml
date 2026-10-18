@@ -3,4 +3,11 @@ enable: true
 logoCedille: "images/cedille-new-logo.png"
 content: 
   title: "Faire le pont entre l'éducation et l'industrie"
+  subtitle: "Contribuez à des logicielles open-source, orchestrez des clusters Kubernetes en production et développez des compétences concrètes en DevOps et SRE au sein d'une communauté étudiante passionnée."
+buttons:
+  projects:
+    text: "Découvrir nos projets"
+    url: "/projets/"
+  discord:
+    url: "https://discord.com/invite/2g9bVMyGtj"
 ---

@@ -4,48 +4,48 @@ title = 'CEDILLE'
 theme = 'cedille'
 baseURL = 'https://cedille.etsmtl.ca'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 # main menu
 [menu]
-    [[menu.main]]
-        identifier = "accueil"
-        name = "Accueil"
-        url = "/"
-        weight = 1
     [[menu.main]]
         identifier = "a-propos"
         name = "À propos"
         url = "/a-propos/"
-        weight = 2
+        weight = 1
     [[menu.main]]
         identifier = "services"
         name = "Services"
         url = "/services/"
-        weight = 3
+        weight = 2
     [[menu.main]]
         identifier = "equipe"
         name = "Équipe"
         url = "/equipe/"
-        weight = 4
+        weight = 3
     [[menu.main]]
         identifier = "projets"
         name = "Projets"
         url = "/projets/"
-        weight = 5
+        weight = 4
     [[menu.main]]
         identifier = "evenements"
         name = "Événements"
         url = "/evenements/"
-        weight = 6
+        weight = 5
     [[menu.main]]
         identifier = "partenaires"
         name = "Partenaires"
         url = "/partenaires/"
-        weight = 7
+        weight = 6
     [[menu.main]]
         identifier = "contact"
-        name = "Joignez l'équipe"
+        name = "Contactez-nous"
         url = "/contact/"
-        weight = 8
+        weight = 7
 
 [params]
     titleFollowUs = "Suivez-nous"
@@ -60,44 +60,46 @@ baseURL = 'https://cedille.etsmtl.ca'
     #Address Information Params
     [params.address]
     title = "Adresse"
-    address = "1219 rue William <br>Montréal (Québec) <br>H3C 1R1 <br>Local D-2020"
-    email = "cedille@ens.etsmtl.ca"
+    address = "1219 rue William <br>Montréal (Québec) <br>H3C 0S6 <br>Local D-2020"
+    email = "cedille@etsmtl.net"
     phoneNumber = "5143968800p7302"
     phone = "514 396-8800, poste 7302"
 
     [params.map]
-    APIkey="AIzaSyD1aM-ZRRtAGOlk4qQWdLhHQe0qiAZlFRA"
-    latitude = "45.49382"
-    longitude = "-73.56233"
+    provider = "openstreetmap"
+    latitude = "45.4935"
+    longitude = "-73.5626"
+    zoom = 17
 
-    [params.form]
-    APIkey = "JJ^j6qUYa^t5bCoQ7bfy"
+   [params.form]
+    APIkey = ""
     link = "https://calidum-rotae.prodv2.cedille.club"
 
     ############ Footer section #############
     [params.footer]
+    tagline = "Club scientifique étudiant de l'ÉTS dédié à l'open source, l'infrastructure, au cloud et au DevOps depuis 2013."
     addressTitle = "Adresse:"
-    address = "1219 rue William, Montréal QC, H3C 1R1, Local D-2020"
+    address = "1219 rue William, Montréal QC, H3C 0S6, Local D-2020"
     contactTitle = "Contact:"
-    email = "cedille@ens.etsmtl.ca"
+    email = "cedille@etsmtl.net"
     owner = "CEDILLE"
     privacyPolicy = "Politique de confidentialité"
     termsOfService = "Conditions de service"
 
     [[params.footer.menu]]
-    name = "Accueil"
-    url = "/"
-    weight = 1
-    [[params.footer.menu]]
     name = "À propos"
     url = "/a-propos/"
+    weight = 1
+    [[params.footer.menu]]
+    name = "Services"
+    url = "/services/"
     weight = 2
     [[params.footer.menu]]
     name = "Équipe"
     url = "/equipe/"
     weight = 3
     [[params.footer.menu]]
-    name = "Nos projets"
+    name = "Projets"
     url = "/projets/"
     weight = 4
     [[params.footer.menu]]
@@ -109,9 +111,13 @@ baseURL = 'https://cedille.etsmtl.ca'
     url = "/partenaires/"
     weight = 6
     [[params.footer.menu]]
-    name = "Contact"
-    url = "/contact/"
+    name = "Statut des services"
+    url = "https://status.cedille.club"
     weight = 7
+    [[params.footer.menu]]
+    name = "Faire un don"
+    url = "https://activitesphilanthropie.etsmtl.ca/CLUBSDONSCIEN"
+    weight = 8
 
     [[params.footer.social]]
     icon = "fab fa-facebook-f"
@@ -131,5 +137,5 @@ baseURL = 'https://cedille.etsmtl.ca'
     weight = 4
     [[params.footer.social]]
     icon = "fa-brands fa-discord"
-    url = "https://discord.gg/kX4rXRTMR6"
+    url = "https://discord.com/invite/2g9bVMyGtj"
     weight = 5

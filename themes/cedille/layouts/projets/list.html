@@ -37,13 +37,13 @@
     </div>
 
     <!-- title -->
-    <div class="p-1 bg-white rounded-pill shadow-sm border d-inline-flex gap-1" id="projects-toggle-container">
-      <button type="button" class="btn btn-dark text-white rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 border-0 shadow-sm" id="btn-toggle-current">
+    <div class="p-1 bg-white rounded-lg shadow-sm border d-inline-flex gap-1 text-nowrap" id="projects-toggle-container">
+      <button type="button" class="btn btn-dark text-white rounded-lg px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 border-0 shadow-sm" id="btn-toggle-current">
         <i class="fa-solid fa-bolt text-warning"></i>
         <span>Projets en cours</span>
         <span class="badge bg-warning text-dark rounded-pill">{{ len $.Site.Data.projects.current }}</span>
       </button>
-      <button type="button" class="btn btn-light text-muted rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 border-0" id="btn-toggle-archived">
+      <button type="button" class="btn btn-light text-muted rounded-lg px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 border-0" id="btn-toggle-archived">
         <i class="fa-solid fa-box-archive"></i>
         <span>Projets archivés</span>
         <span class="badge bg-secondary text-white rounded-pill">{{ len $.Site.Data.projects.archived }}</span>

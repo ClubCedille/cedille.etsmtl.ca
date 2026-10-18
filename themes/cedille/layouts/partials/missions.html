@@ -1,0 +1,76 @@
+{{ with .Site.Data.missions }}
+{{ if .enable }}
+<section class="bg-light py-5">
+    <div class="container py-lg-4">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-dark mb-2">
+                {{ .title }}
+            </h2>
+
+            {{ with .subtitle }}
+            <p class="lead text-muted mx-auto" style="max-width: 650px;">
+                {{ . }}
+            </p>
+            {{ end }}
+        </div>
+
+        <!-- missions -->
+        <div class="row g-4">
+            {{ range $pillar := .pillars }}
+            <div class="col-12 col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                    <div class="card-body p-0 d-flex flex-column">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <span class="badge rounded-3 p-3 fs-4 text-white" style="background-color: {{ .color }};">
+                                <i class="{{ .icon }}"></i>
+                            </span>
+                            <h4 class="card-title fw-bold mb-0 text-dark">{{ .title }}</h4>
+                        </div>
+
+                        <p class="card-text text-secondary mb-4 flex-grow-1">
+                            {{ .description }}
+                        </p>
+
+                        <div class="pt-3 border-top d-flex flex-wrap align-items-center justify-content-between gap-2 mt-auto">
+                            <div class="d-flex flex-wrap gap-1">
+                                {{ range .tags }}
+                                <span class="badge bg-light text-dark border font-monospace">{{ . }}</span>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+        <!-- club callout -->
+        {{ with .callout }}
+        <div class="card border-0 rounded-3 text-white mt-5 shadow-sm overflow-hidden" style="background-color: #080808;">
+            <div class="card-body p-4 p-lg-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-8">
+                        <h3 class="fw-bold text-white mb-2">
+                            {{ .title | markdownify | safeHTML }}
+                        </h3>
+                        <p class="text-muted mb-0 lead fs-6" style="max-width: 680px;">
+                            {{ .description | markdownify | safeHTML }}
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center text-lg-end">
+                        {{ with .button }}
+                        <a href="{{ .url | relURL }}" class="btn btn-warning btn-lg fw-bold px-3 py-2 shadow-sm d-inline-flex align-items-center">
+                            {{ with .icon }}<i class="{{ . }} me-2"></i>{{ end }}
+                            <span>{{ .text }}</span>
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
