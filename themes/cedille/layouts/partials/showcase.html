@@ -19,15 +19,15 @@
         <div class="slider-track d-inline-flex align-items-center" style="width: max-content;">
             <!-- First set of logos -->
             {{ range .logos }}
-            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center justify-content-center bg-black border border-secondary rounded-3 text-decoration-none shadow-sm mx-2 p-2" style="width: 180px; height: 78px; flex-shrink: 0;" title="{{ .alt }}">
-                <img src="{{ .image | relURL }}" alt="{{ .alt }}" class="img-fluid" width="130" height="58" style="max-height: 58px; max-width: 130px; width: auto; height: auto; object-fit: contain;" loading="lazy">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="slider-card" title="{{ .alt }}">
+                <img src="{{ .image | relURL }}" alt="{{ .alt }}" loading="lazy">
             </a>
             {{ end }}
 
             <!-- Duplicate set for seamless continuous loop -->
             {{ range .logos }}
-            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center justify-content-center bg-black border border-secondary rounded-3 text-decoration-none shadow-sm mx-2 p-2" style="width: 180px; height: 78px; flex-shrink: 0;" title="{{ .alt }}">
-                <img src="{{ .image | relURL }}" alt="{{ .alt }}" class="img-fluid" width="130" height="58" style="max-height: 58px; max-width: 130px; width: auto; height: auto; object-fit: contain;" loading="lazy">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="slider-card" title="{{ .alt }}">
+                <img src="{{ .image | relURL }}" alt="{{ .alt }}" loading="lazy">
             </a>
             {{ end }}
         </div>
