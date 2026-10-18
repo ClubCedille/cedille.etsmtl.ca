@@ -1,0 +1,37 @@
+---
+enable: true
+title: "Des compétences pour le monde professionnel"
+subtitle: "CEDILLE est un complément à vos études et une opportunité d'appliquer votre expertise sur des systèmes de production réels."
+pillars:
+  - title: "Infonuagique & DevOps"
+    icon: "bi bi-cloud-arrow-up-fill"
+    color: "#ff6b00"
+    bgColor: "rgba(255, 107, 0, 0.12)"
+    description: "Automatisation de pipelines CI/CD, conteneurisation Docker, orchestration Kubernetes cloud-native et infrastructure-as-code avec Terraform et Ansible."
+    tags: ["Kubernetes", "Docker", "CI/CD", "Linux", "Bash", "Terraform", "HashiCorp Vault", "Ansible"]
+  - title: "Développement"
+    icon: "bi bi-code-slash"
+    color: "#0d6efd"
+    bgColor: "rgba(13, 110, 253, 0.12)"
+    description: "Conception de systèmes distribués, de microservices, de CLIs et d’outils d’automatisation."
+    tags: ["Go", "Python", "Systèmes distribués", "Microservices", "Cloud-Native", "Backend"]
+  - title: "SRE & Fiabilité Systèmes"
+    icon: "bi bi-shield-check"
+    color: "#198754"
+    bgColor: "rgba(25, 135, 84, 0.12)"
+    description: "Surveillance en temps réel, métriques avec Netdata et Coroot, gestion des incidents et maintien d'une haute disponibilité."
+    tags: ["Prometheus", "Grafana", "Netdata", "Coroot", "Logs", "Metrics", "Trace"]
+  - title: "Hébergement & Services Cloud"
+    icon: "bi bi-hdd-network-fill"
+    color: "#6f42c1"
+    bgColor: "rgba(111, 66, 193, 0.12)"
+    description: "Déploiement et maintien d'outils souverains et gratuits pour les clubs de l'ÉTS (Authentik, Nextcloud, Vaultwarden, Outline)."
+    tags: ["Authentik", "Nextcloud", "Vaultwarden", "Outline"]
+callout:
+  title: "Vous êtes un club en besoin d'hébergement ou d'outils cloud?"
+  description: "En tant que club scientifique à l’ÉTS, vous avez accès <strong class='text-white'>gratuitement</strong> aux services hébergés sur notre infrastructure. Ceux-ci incluent notamment l’hébergement web ainsi qu’une multitude d’alternatives à des outils tels que Notion (Outline Wiki) ou Google Drive (Nextcloud). Si vous avez un besoin particulier, n’hésitez pas à nous en faire part sur Discord ou par courriel!"
+  button:
+    text: "Explorer nos services"
+    url: "/services/"
+    icon: "bi bi-cloud-check-fill"
+---

@@ -1,7 +1,13 @@
 {{ define "main" }}
-{{ partial "hero.html" . }}
-{{ partial "introduction.html" . }}
-{{ partial "motivation.html" . }}
-{{ partial "description.html" . }}
+<div class="d-flex flex-column" style="min-height: calc(100vh - var(--header-height, 0px)); background-color: #080808;">
+    <div class="d-flex flex-column justify-content-center" style="flex: 1 1 50%;">
+        {{ partial "hero.html" . }}
+    </div>
+    <div class="d-flex flex-column justify-content-center" style="flex: 1 1 50%;">
+        {{ partial "showcase.html" . }}
+    </div>
+</div>
+{{ partial "missions.html" . }}
+{{ partial "testimonials.html" . }}
 {{ partial "faq.html" . }}
 {{ end }}

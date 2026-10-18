@@ -1,39 +1,70 @@
-{{with .Site.Data.faq }}
+{{ with .Site.Data.faq }}
 {{ if .enable }}
-<!-- FAQ section -->
-<div class="faq">
-    <div class="container py-5">
-        <div class="row text-center text-lg-start text-md-start py-3 mb-4">
-            <h3><b>{{ .title }}</b></h3>
-            <div class="mt-2 col-lg-5 col-md-5">
-                <p>{{ .text.first }}</p>
-            </div>
-        </div>
-        <div class="accordion accordion-flush" id="accordionFaq">
-          {{ range .accordion }}
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="{{ .idHeader }}">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ .target }}" aria-expanded="false" aria-controls="{{ .target }}">
-                <b>
-                  {{ .question }}
-                </b>
-              </button>
+<section class="bg-light py-5 border-top">
+    <div class="container py-lg-4">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-dark mb-2">
+                {{ .title }}
             </h2>
-            <div id="{{ .target }}" class="accordion-collapse collapse" aria-labelledby="{{ .idHeader }}" data-bs-parent="#{{ .idParent }}">
-              <div class="accordion-body">{{ .response | safeHTML }}</div>
-            </div>
-          </div>
-          {{ end }}
+
+            {{ with .subtitle }}
+            <p class="lead text-muted mx-auto" style="max-width: 650px;">
+                {{ . }}
+            </p>
+            {{ end }}
         </div>
-        <div class="row text-center text-lg-start text-md-start py-3 mt-5">
-            <div class="col-lg-5 col-md-5">
-                <h4><b>{{ .questionTitle }}</b></h4>
-                <p class="mt-3">{{ .text.second }}</p>
-                <a class="btn py-2 px-4" href="{{ .button.url }}">{{ .button.contactUs }}</a>
+
+        <!-- accordion -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-lg-8">
+                <div class="accordion" id="accordionFaqHome">
+                    {{ range $index, $item := .questions }}
+                    <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm overflow-hidden">
+                        <h3 class="accordion-header" id="heading-{{ $index }}">
+                            <button class="accordion-button collapsed fw-bold text-dark py-3 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $index }}" aria-expanded="false" aria-controls="collapse-{{ $index }}">
+                                {{ $item.question }}
+                            </button>
+                        </h3>
+                        <div id="collapse-{{ $index }}" class="accordion-collapse collapse" aria-labelledby="heading-{{ $index }}" data-bs-parent="#accordionFaqHome">
+                            <div class="accordion-body px-4 pb-4 pt-2 text-secondary">
+                                {{ $item.answer | safeHTML }}
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
             </div>
         </div>
+
+        <!-- cta -->
+        {{ with .cta }}
+        <div class="my-5">
+            <div class="p-5 rounded-3 bg-dark text-white text-center">
+                <div class="mb-3 text-warning fs-1">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <h3 class="fw-bold mb-3 text-white">
+                    {{ .title }}
+                </h3>
+                <p class="text-muted mx-auto mb-4" style="max-width: 40rem;">
+                    {{ .description }}
+                </p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center align-items-center">
+                    {{ with .primaryButton }}
+                    <a class="btn btn-warning px-5 py-2 fw-bold shadow-sm" href="{{ .url }}">
+                        <i class="fas fa-paper-plane me-2"></i>{{ .text }}
+                    </a>
+                    {{ end }}
+                    {{ with .secondaryButton }}
+                    <a class="btn btn-outline-light px-4 py-2 fw-bold" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-discord me-2"></i>{{ .text }}
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
     </div>
-</div>
-<!-- end faq section -->
+</section>
 {{ end }}
 {{ end }}

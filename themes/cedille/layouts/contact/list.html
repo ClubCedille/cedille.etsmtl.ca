@@ -1,38 +1,71 @@
 {{ define "main" }}
 {{ $address := .Site.Params.address }}
-<div class="contact mt-5">
-  {{/*  <div class="figure w-100" >
-    <section class="rectangle"></section>
-    <section class="triangle text-center">
-      <h2>{{ .Site.Params.titleContactPage }}</h2>
-    </section>
-  </div>  */}}
-  <div class="container">
-    {{ partial "page-header.html" (dict "title" "Contact") }}
-  </div>
-  <div class="container form-contact mt-4 mb-5 pb-4">
+{{ $formContact := .Site.Data.formContact }}
+
+<!-- leaflet css -->
+<link rel="stylesheet" href="{{ "leaflet/leaflet.css" | relURL }}" />
+
+<div class="container my-5">
+  {{ partial "page-header.html" (dict "title" $formContact.title "subtitle" $formContact.subtitle) }}
+
+  <!-- form -->
+  <div class="card border-0 shadow-sm rounded-3 p-3 p-md-4 bg-white mb-4">
     {{ partial "formContact.html" . }}
   </div>
-  <div class="container-fulid">
+
+  <!-- map -->
+  <div class="card border-0 shadow-sm rounded-3 overflow-hidden bg-white mb-5">
     <div class="row g-0">
-      <div class="col-md-6">
-        <div id="map"></div>
+      <div class="col-md-7">
+        <div id="map" data-lat="{{ default "45.4935" .Site.Params.map.latitude }}" data-lng="{{ default "-73.5626" .Site.Params.map.longitude }}" data-zoom="{{ default "17" .Site.Params.map.zoom }}" style="height: 380px; min-height: 380px; width: 100%;"></div>
       </div>
-      <div class="col-md-6 text-center text-md-start">
-        <div class="contact-info">
-          <h3>
-            {{ $address.address | safeHTML}}
-          </h3>
-          <ul>
-            <li>
-              <a href="mailto: {{ $address.email }}">
-                {{ $address.email }}
-              </a>
-            </li>
-          </ul>
+      <div class="col-md-5 p-4 p-lg-5 d-flex flex-column justify-content-center">
+        <h4 class="fw-bold mb-3">Adresse</h4>
+        <p class="text-secondary mb-3">
+          <strong>CEDILLE</strong><br>
+          1219 rue William<br>
+          Pavillon D, Local D-2020<br>
+          Montréal (Québec) H3C 0S6
+        </p>
+
+        <div>
+          <div class="dropdown">
+            <button class="btn btn-sm btn-outline-dark dropdown-toggle d-inline-flex align-items-center gap-1 shadow-sm" type="button" id="openMapDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-geo-alt-fill text-warning"></i>
+              <span>Ouvrir dans une carte</span>
+            </button>
+            <ul class="dropdown-menu shadow-sm" aria-labelledby="openMapDropdown">
+              <li>
+                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="https://www.openstreetmap.org/?mlat={{ default "45.4935" .Site.Params.map.latitude }}&mlon={{ default "-73.5626" .Site.Params.map.longitude }}#map=17/{{ default "45.4935" .Site.Params.map.latitude }}/{{ default "-73.5626" .Site.Params.map.longitude }}" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-map-fill"></i>
+                  <span>OpenStreetMap</span>
+                  <i class="bi bi-box-arrow-up-right ms-auto small text-muted"></i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="https://www.google.com/maps/search/?api=1&query={{ default "45.4935" .Site.Params.map.latitude }},{{ default "-73.5626" .Site.Params.map.longitude }}" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-google"></i>
+                  <span>Google Maps</span>
+                  <i class="bi bi-box-arrow-up-right ms-auto small text-muted"></i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="https://maps.apple.com/?ll={{ default "45.4935" .Site.Params.map.latitude }},{{ default "-73.5626" .Site.Params.map.longitude }}&q=CEDILLE" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-apple"></i>
+                  <span>Apple Maps</span>
+                  <i class="bi bi-box-arrow-up-right ms-auto small text-muted"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- leaflet  -->
+<script src="{{ "leaflet/leaflet.js" | relURL }}"></script>
+{{ $mapJS := resources.Get "js/map-handler.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $mapJS.RelPermalink }}" defer></script>
 {{ end }}

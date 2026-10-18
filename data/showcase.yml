@@ -1,0 +1,107 @@
+---
+enable: true
+title: "Propulsé par les serveurs de CEDILLE"
+subtitle: "Plus de 15 clubs scientifiques et regroupements étudiants de l'ÉTS comptent sur nos clusters pour héberger leurs sites web, wikis et applications."
+stats:
+  - number: "15+"
+    label: "Clubs & initiatives hébergés"
+    icon: "bi bi-hdd-rack-fill"
+  - number: "5+"
+    label: "Services cloud en libre-service"
+    icon: "bi bi-cloud-check-fill"
+  - number: "0$"
+    label: "Gratuit pour les clubs de l'ÉTS"
+    icon: "bi bi-bag-heart"
+  - number: "10+"
+    label: "Années d'impact à l'ÉTS"
+    icon: "bi bi-mortarboard-fill"
+slides:
+  - items:
+      - image: /images/sitesHeberges/synapse.png
+        url: "https://synapsets.etsmtl.ca/"
+        alt: "Synapse ÉTS"
+      - image: /images/sitesHeberges/preci.png
+        url: "https://preci.etsmtl.ca/"
+        alt: "PRÉCI"
+      - image: /images/sitesHeberges/sonia.png
+        url: "https://wiki.sonia.etsmtl.ca/hardware/overview"
+        alt: "S.O.N.I.A. AUV"
+      - image: /images/sitesHeberges/capra.png
+        url: "https://wiki.capra.etsmtl.ca/"
+        alt: "Club Capra"
+      - image: /images/sitesHeberges/pontAcier.png
+        url: "https://pontacier.etsmtl.ca/"
+        alt: "Pont d'Acier ÉTS"
+  - items:
+      - image: /images/sitesHeberges/integrale.png
+        url: "https://integrale.etsmtl.ca/"
+        alt: "Journal L'Intégrale"
+      - image: /images/sitesHeberges/saveursGenie.png
+        url: "https://saveursdegenie.etsmtl.ca"
+        alt: "Saveurs de Génie"
+      - image: /images/sitesHeberges/dronoLab.png
+        url: "https://dronolab.etsmtl.ca/"
+        alt: "Dronolab"
+      - image: /images/sitesHeberges/raconteursdangles.png
+        url: "https://raconteurs.etsmtl.ca/"
+        alt: "Raconteurs d'Angles"
+      - image: /images/sitesHeberges/conjure.png
+        url: "https://conjure.etsmtl.ca/"
+        alt: "Conjure ÉTS"
+  - items:
+      - image: /images/sitesHeberges/crabe-logo.png
+        url: "https://atelier.crabe.cedille.club/"
+        alt: "Atelier CRABE"
+      - image: /images/sitesHeberges/ingenieuses.svg
+        url: "https://ingenieuses.ca/"
+        alt: "Les Ingénieuses"
+      - image: /images/sitesHeberges/algoets.png
+        url: "https://markets.prod.cedille.club/"
+        alt: "AlgoÉTS"
+      - image: /images/sitesHeberges/fraternite.png
+        url: "https://commande.fraternitedupiranha.com/"
+        alt: "Fraternité du Piranha"
+logos:
+  - image: /images/sitesHeberges/synapse.png
+    url: "https://synapsets.etsmtl.ca/"
+    alt: "Synapse ÉTS"
+  - image: /images/sitesHeberges/preci.png
+    url: "https://preci.etsmtl.ca/"
+    alt: "PRÉCI"
+  - image: /images/sitesHeberges/sonia.png
+    url: "https://wiki.sonia.etsmtl.ca/hardware/overview"
+    alt: "S.O.N.I.A. AUV"
+  - image: /images/sitesHeberges/capra.png
+    url: "https://wiki.capra.etsmtl.ca/"
+    alt: "Club Capra"
+  - image: /images/sitesHeberges/pontAcier.png
+    url: "https://pontacier.etsmtl.ca/"
+    alt: "Pont d'Acier ÉTS"
+  - image: /images/sitesHeberges/integrale.png
+    url: "https://integrale.etsmtl.ca/"
+    alt: "Journal L'Intégrale"
+  - image: /images/sitesHeberges/saveursGenie.png
+    url: "https://saveursdegenie.etsmtl.ca"
+    alt: "Saveurs de Génie"
+  - image: /images/sitesHeberges/dronoLab.png
+    url: "https://dronolab.etsmtl.ca/"
+    alt: "Dronolab"
+  - image: /images/sitesHeberges/raconteursdangles.png
+    url: "https://raconteurs.etsmtl.ca/"
+    alt: "Raconteurs d'Angles"
+  - image: /images/sitesHeberges/conjure.png
+    url: "https://conjure.etsmtl.ca/"
+    alt: "Conjure ÉTS"
+  - image: /images/sitesHeberges/crabe-logo.png
+    url: "https://atelier.crabe.cedille.club/"
+    alt: "Atelier CRABE"
+  - image: /images/sitesHeberges/ingenieuses.svg
+    url: "https://ingenieuses.ca/"
+    alt: "Les Ingénieuses"
+  - image: /images/sitesHeberges/algoets.png
+    url: "https://markets.prod.cedille.club/"
+    alt: "AlgoÉTS"
+  - image: /images/sitesHeberges/fraternite.png
+    url: "https://commande.fraternitedupiranha.com/"
+    alt: "Fraternité du Piranha"
+---

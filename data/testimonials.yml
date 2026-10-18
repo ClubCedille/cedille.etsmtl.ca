@@ -1,0 +1,33 @@
+---
+enable: true
+title: "Une expérience concrète qui propulse votre carrière"
+subtitle: "Devenir membre de CEDILLE, c'est acquérir l'expérience pratique recherchée par l'industrie et ouvrir les portes à un stage."
+testimonials:
+  - name: "Thomas Cardin"
+    role: "Ancien Co-Capitaine"
+    image: "/images/membres/tcardin.jpg"
+    quote: "L'expérience acquise chez CEDILLE a eu un impact déterminant sur ma trajectoire professionnelle. Grâce à leur expertise en DevOps et à des activités pratiques concrètes, j'ai pu décrocher un stage en tant qu'ingénieur SRE."
+  - name: "Jonathan Lopez"
+    role: "Ancien Capitaine"
+    image: "/images/membres/jolopez.jpg"
+    quote: "Rejoindre CEDILLE a été une étape clé dans ma carrière. En appliquant mes compétences en Kubernetes et en automatisation sur l'infrastructure du club, j'ai obtenu un stage en DevSecOps et consolidé mon savoir-faire infonuagique."
+partners:
+  title: "Ateliers et maillage avec l'industrie"
+  subtitle: "Nous collaborons avec des partenaires de premier plan pour offrir des conférences, des défis pratiques et du réseautage."
+  items:
+    - name: "AÉÉTS"
+      logo: "/images/Partenaire/aeets.png"
+      url: "https://www.aeets.com"
+    - name: "Sidero Labs"
+      logo: "/images/Partenaire/Sidero/Sidero.png"
+      url: "https://www.siderolabs.com"
+    - name: "ÉTS Montréal"
+      logo: "/images/Partenaire/Logo_ETS_SansTypo_FR.png"
+      url: "https://www.etsmtl.ca"
+    - name: "SadServers"
+      logo: "/images/Partenaire/sadservers.png"
+      url: "https://sadservers.com"
+    - name: "API"
+      logo: "/images/Partenaire/api.webp"
+      url: "#"
+---

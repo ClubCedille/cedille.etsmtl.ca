@@ -31,7 +31,7 @@
           {{ $active = or $active (and (eq .Name "Partenaires") (eq $current.Section "partenaires")) }}
           {{ $active = or $active (and (eq .Name "Joignez l'équipe") (eq $current.Section "contact")) }}
           <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }} nav-item">
-            {{ if eq .Name "Joignez l'équipe" }}
+            {{ if eq .Name "Contactez-nous" }}
             <a class="link-navbar btn p-1 {{ if $active }}active{{ end }} nav-item" href="{{ .URL | relURL }}">
               {{ .Name }}
             </a>

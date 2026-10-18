@@ -1,0 +1,56 @@
+{{ with .Site.Data.showcase }}
+{{ if .enable }}
+<section class="py-5 text-white" style="background-color: #080808; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+    <div class="container py-2 text-center">
+
+        <h2 class="display-6 fw-bold text-white mb-2">
+            {{ .title }}
+        </h2>
+
+        {{ with .subtitle }}
+        <p class="lead text-muted mx-auto mb-4" style="max-width: 650px;">
+            {{ . }}
+        </p>
+        {{ end }}
+    </div>
+
+    <!-- club carousel -->
+    <div class="slider-container overflow-hidden py-2 my-2" style="white-space: nowrap; width: 100%;">
+        <div class="slider-track d-inline-flex align-items-center" style="width: max-content;">
+            <!-- First set of logos -->
+            {{ range .logos }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center justify-content-center bg-black border border-secondary rounded-3 text-decoration-none shadow-sm mx-2 p-2" style="width: 180px; height: 78px; flex-shrink: 0;" title="{{ .alt }}">
+                <img src="{{ .image | relURL }}" alt="{{ .alt }}" class="img-fluid" width="130" height="58" style="max-height: 58px; max-width: 130px; width: auto; height: auto; object-fit: contain;" loading="lazy">
+            </a>
+            {{ end }}
+
+            <!-- Duplicate set for seamless continuous loop -->
+            {{ range .logos }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center justify-content-center bg-black border border-secondary rounded-3 text-decoration-none shadow-sm mx-2 p-2" style="width: 180px; height: 78px; flex-shrink: 0;" title="{{ .alt }}">
+                <img src="{{ .image | relURL }}" alt="{{ .alt }}" class="img-fluid" width="130" height="58" style="max-height: 58px; max-width: 130px; width: auto; height: auto; object-fit: contain;" loading="lazy">
+            </a>
+            {{ end }}
+        </div>
+    </div>
+
+    <!-- stats -->
+    {{ with .stats }}
+    <div class="container mt-5 pt-3 border-top border-secondary">
+        <div class="row g-3 justify-content-center text-center">
+            {{ range . }}
+            <div class="col-6 col-lg-3">
+                <div class="card bg-black border border-secondary p-3 h-100 rounded-3 shadow-sm">
+                    <div class="fs-2 text-warning mb-1">
+                        <i class="{{ .icon }}"></i>
+                    </div>
+                    <div class="display-6 font-monospace fw-bold text-white">{{ .number }}</div>
+                    <div class="small text-muted mt-1">{{ .label }}</div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</section>
+{{ end }}
+{{ end }}

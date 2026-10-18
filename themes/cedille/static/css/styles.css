@@ -615,287 +615,73 @@ header{
 
 /*----------  Fin partenaires ----------*/
 
-/*------------- CONTACT PAGE ------------*/
-.contact{
-    min-height: 100vh;
-}
 
-.contact .rectangle{
-    width: 100%;
-    height: 100px;
-    background-color: #080808;
-}
-
-.contact .triangle {
-  width: 100%;
-  height: 200px;
-  color: white;
-  background-color: #080808;
-  opacity: 1;
-  background-image:
-    linear-gradient(to bottom left, transparent 50%, #F2F2F2 0),
-    linear-gradient(to top left, #F2F2F2 50%, transparent 0);
-  background-size: 50% 100%;
-  background-repeat: no-repeat;
-  background-position: left, right;
-}
-.contact .container.form-contact {
-    background-color: #ffffff;
-    border-radius: 0.25rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.contact .nav-tabs .nav-link {
-    color: #333333;
-    transition: background-color 0.3s ease;
-}
-
-.contact .nav-tabs .nav-link.active {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid orange;
-}
-
-.contact .form-label {
-    font-size: 12px;
-    font-variant: ordinal;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-}
-
-.contact .btn {
-    color: #ffffff;
-    background-color: orange;
-    border-radius: 0.625rem;
-    transition: background-color 0.3s ease;
-}
-
-.contact .btn:hover {
-    background-color: darkorange;
-}
-
-.contact .btn:focus {
-    box-shadow: none;
-    outline: none;
-}
-
-#map{
-    height: 100%;
-}
-
-.contact .contact-info{
-    background-color: #222029;
-    padding: 80px;
-}
-
-.contact .contact-info h3{
-    font-size: 25px;
-    line-height: 38px;
-    font-weight: 300;
-    color: #fff;
-}
-
-.contact .contact-info ul{
-    padding: 0;
-    margin: 30px 0;
-}
-
-.contact .contact-info ul li{
-    list-style: none;
-}
-
-.contact .contact-info ul li a{
-    color: #fff;
-    line-height: 32px;
-    font-size: 19px;
-    font-weight: 300;
-    text-decoration: underline;
-    font-family: system-ui;
-}
-
-.contact .contact-info p{
-    color: #fff;
-    font-weight: 300;
-    line-height: 32px;
-    margin-bottom: 20px;
-}
-
-.form-success {
-    display: none;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #d4edda;
-    color: #155724;
-    border-color: #c3e6cb;
-  }
-
-  .form-error {
-    display: none;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #f8d7da;
-    color: #721c24;
-    border-color: #f5c6cb;
-  }
-
-@media screen and (max-width: 767px){
-    #map{
-        height: 400px;
-    }
-}
 
 
 /*----------------- HOME PAGE SECTION ----------------*/
-
-/*---------- HERO SECTION ----------*/
-.hero-section{
-    background-color: #080808;
-    color: white;
-}
-
-.hero-section h1 b{
-    font-size: 2.7rem;
-}
-
-/*----- INFO AND PRACTICE SECTION ----*/
-.info h3 b{
-    font-size: 40px;
-}
-
-.practice h3 b{
-    font-size: 40px;
-}
-
-.practice a{
-    color: black;
-    text-decoration: none;
-}
-
-/*---------- MINDSET SECTION ---------*/
-.mindset h3 b{
-    font-size: 40px;
-}
-.mindset a{
-    color: black;
-    text-decoration: none;
-}
-
-/*--------- MOTIVATION SECTION --------*/
-.motivation{
-    color: white;
-}
-
-.motivation h3 b{
-    font-size: 40px;
-}
-
-.motivation .slider{
-    position: relative;
-    max-width: 100%;
+/* carousel */
+.slider-container {
     overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    padding: 0.75rem 0;
 }
 
-.motivation .slider .slide-track{
-    display: flex;
-    width: calc(250px*22);
-    animation: scroll 10s linear infinite;
+.slider-track {
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+    animation: scrollLogos 30s linear infinite;
 }
 
-@keyframes scroll{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-250px*11));
-    }
-}
-
-.motivation .slider .slide-track:hover{
+.slider-container:hover .slider-track {
     animation-play-state: paused;
 }
 
-.motivation .slider .slide-track .slide{
-    height: 150px;
-    width: 250px;
-    display: flex;
+@keyframes scrollLogos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.slider-card {
+    display: inline-flex;
     align-items: center;
-    padding: 30px;
+    justify-content: center;
+    width: 160px;
+    height: 72px;
+    padding: 10px 18px;
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
 
-.motivation .slider .slide-track .slide img{
-    width: 100px;
+.slider-card:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: orange;
+    transform: translateY(-2px);
+}
+
+.slider-card img {
+    max-height: 42px;
+    max-width: 125px;
+    width: auto;
     height: auto;
+    object-fit: contain;
+    filter: brightness(0.95);
+    transition: transform 0.2s ease-in-out;
 }
 
-.motivation .slider .slide-track .slide img:hover{
-    transform: scale(1.2) translateX(-5px);
-}
-
-/*--------- CONTRIBUTE SECTION --------*/
-.contribute h3 b{
-    font-size: 40px;
-}
-
-/*--------- MENTORING SECTION ---------*/
-.mentoring h3 b{
-    font-size: 40px;
-}
-
-/*---------- NETWORK SECTION ----------*/
-.network h3 b{
-    font-size: 40px;
-}
-
-.network img{
-    border-radius: 100%;
-    width: 56px;
-    height: 56px;
-}
-
-/*----------- FAQs SECTION ------------*/
-.faq h3 b{
-    font-size: 40px;
-}
-
-.faq .accordion-flush{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.faq .accordion-item{
-    background-color: transparent;
-    border-bottom: 1px solid black;
-    border-left: 0;
-    border-right: 0;
-}
-
-.faq .accordion-button{
-    background-color: transparent;
-}
-
-.faq .accordion-button:focus{
-    box-shadow: none;
-}
-
-.faq .accordion-button:not(.collapsed){
-    color: black;
-    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
-}
-
-.faq .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-
-.faq .btn{
-    border: 1px solid black !important;
-    border-radius: 0 !important;
-    transition: all 0.4s ease-in-out;
-}
-
-.faq .btn:hover{
-    color:orange;
-    background-color: black;
+.slider-card:hover img {
+    filter: brightness(1);
+    transform: scale(1.08);
 }
 
 /*--------------------- SERVICES PAGE ----------------------*/
@@ -1022,43 +808,40 @@ header{
 
 /*---------------------- FOOTER SECTION ---------------------*/
 
-footer{
+footer {
     background-color: #080808;
-    color: white;
+    color: #e5e7eb;
 }
 
-footer .info{
-    font-size: 14px;
+.footer-link {
+    color: #9ca3af !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-footer hr{
-    background-color: white;
-    opacity: inherit !important;
+.footer-link:hover {
+    color: orange !important;
 }
 
-footer a{
-    color: white;
+.footer-social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 10px;
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 1.15rem;
+    transition: all 0.2s ease;
 }
 
-footer a:hover{
-    color:orange;
+.footer-social-btn:hover {
+    color: orange;
 }
 
 footer .copyleft {
     display: inline-block;
     transform: rotateY(180deg);
-}
-
-@media only screen and (max-width:1199px){
-    .footer-right-col{
-        padding-left: 10px;
-    }
-}
-
-@media only screen and (max-width:991px){
-    .footer-right-col{
-        padding-left: 0;
-    }
 }
 
 /*--------------------- EVENEMENTS PAGE ----------------------*/

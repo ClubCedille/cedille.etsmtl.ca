@@ -2,48 +2,98 @@
     {{ $info := .Site.Params.footer }}
     {{ $currentYear := now.Year }}
     {{ $owner := default .Site.Title $info.owner }}
-    <div class="container text-center py-5">
-        <div class="row text-start mb-5">
-            <div class="col-8">
-                <div class="row g-0">
-                    <div class="col-3 d-none d-lg-block">
-                        <img style="width: 160px; max-width: 100%; height: auto;" src="{{ .Site.Params.general.logoCedille | relURL }}" alt="cedille-logo">
-                    </div>
-                    <div class="col-9">
-                        <div class="container my-4 footer-right-col">
-                            <div class="row">
-                                <h6>{{ $info.addressTitle }}</h6>
-                                <p class="info">{{ $info.address }}</p>
-                                <h6>{{$info.contactTitle}}</h6>
-                                <p class="info"><a href="mailto: {{ $info.email }}">{{ $info.email }}</a></p>
-                                <ul class="list-unstyled list-inline">
-                                    {{ range .Site.Params.Footer.social }}
-                                    <li class="list-inline-item px-md-1">
-                                        <a target="_blank" href={{ .url }}><i class="{{ .icon }} fa-lg"></i></a>
-                                    </li>
-                                    {{ end }}
-                                </ul>
-                            </div> 
-                        </div>
-                    </div>
+    <div class="container py-5">
+        <div class="row g-4 g-lg-5 mb-5 text-start">
+            <!-- logo -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="{{ "/" | relURL }}" class="d-inline-block mb-3" title="{{ .Site.Title }}">
+                    <img style="width: 150px; max-width: 100%; height: auto;" src="{{ .Site.Params.general.logoCedille | relURL }}" alt="{{ .Site.Title }} logo" class="img-fluid">
+                </a>
+                <p class="text-secondary small mb-4 pe-lg-3" style="line-height: 1.6;">
+                    {{ $info.tagline }}
+                </p>
+                <div class="d-flex flex-wrap align-items-center gap-2">
+                    {{ range .Site.Params.Footer.social }}
+                    <a target="_blank" rel="noopener noreferrer" href="{{ .url }}" class="footer-social-btn" aria-label="{{ .icon }}" title="{{ .icon }}">
+                        <i class="{{ .icon }}"></i>
+                    </a>
+                    {{ end }}
                 </div>
             </div>
-            <div class="col-4">
-                <div class="row text-end mt-4">
-                    <ul class="list-unstyled">
-                        {{ range .Site.Params.footer.menu }}
-                        <li class="mb-2">
-                            <a href="{{ .url | relURL }}" style="text-decoration: none;">{{ .name }}</a>
-                        </li> 
-                        {{ end }}
-                    </ul>
+
+            <!-- navlinks -->
+            <div class="col-6 col-md-3 col-lg-2">
+                <h6 class="text-uppercase fw-bold text-white small mb-3">
+                    Navigation
+                </h6>
+                <ul class="list-unstyled mb-0">
+                    {{ range sort .Site.Params.footer.menu "weight" }}
+                    {{ if not (hasPrefix .url "http") }}
+                    <li class="mb-2">
+                        <a href="{{ .url | relURL }}" class="footer-link small">
+                            {{ .name }}
+                        </a>
+                    </li> 
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- ext. links -->
+            <div class="col-6 col-md-3 col-lg-3">
+                <h6 class="text-uppercase fw-bold text-white small mb-3">
+                    Services & Liens
+                </h6>
+                <ul class="list-unstyled mb-0">
+                    {{ range sort .Site.Params.footer.menu "weight" }}
+                    {{ if hasPrefix .url "http" }}
+                    <li class="mb-2">
+                        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="footer-link small d-inline-flex align-items-center">
+                            {{ if eq .name "Statut des services" }}
+                            <span class="d-inline-block rounded-circle bg-success me-2 align-middle flex-shrink-0" style="width: 8px; height: 8px; box-shadow: 0 0 6px rgba(40, 167, 69, 0.7);"></span>
+                            {{ else if eq .name "Faire un don" }}
+                            <i class="fa-solid fa-heart text-danger me-2 flex-shrink-0"></i>
+                            {{ else }}
+                            <i class="bi bi-box-arrow-up-right text-warning me-2 flex-shrink-0"></i>
+                            {{ end }}
+                            <span>{{ .name }}</span>
+                            <i class="bi bi-box-arrow-up-right ms-1 text-muted" style="font-size: 0.7rem;"></i>
+                        </a>
+                    </li> 
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- contact cta -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <h6 class="text-uppercase fw-bold text-white small mb-3">
+                    Une question ?
+                </h6>
+                <p class="text-secondary small mb-3" style="line-height: 1.6;">
+                  Vous souhaitez intégrer CEDILLE dans votre club, rejoindre l'équipe ou collaborer avec nous? Quel que soit votre enquête, nous sommes à l'écoute!
+                </p>
+                <div class="mb-3">
+                    <a href="{{ "/contact/" | relURL }}" class="btn btn-warning fw-bold px-3 py-2 shadow-sm d-inline-flex align-items-center">
+                        <span>Nous contacter</span>
+                    </a>
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="row mt-3">
-            <div class="col-12">
-                <p><span class="copyleft">&copy</span> {{ $currentYear }} | {{ $owner }}</p>
+
+        <!-- bottom -->
+        <div class="pt-4 mt-2 border-top border-secondary border-opacity-25">
+            <div class="row align-items-center g-2 text-center text-md-start">
+                <div class="col-12 col-md-6">
+                    <p class="text-secondary small mb-0">
+                        <span class="copyleft">&copy;</span> {{ $currentYear }} {{ $owner }} &middot; Tous droits réservés.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 text-md-end">
+                    <p class="text-secondary small mb-0">
+                        Hébergé par CEDILLE
+                    </p>
+                </div>
             </div>
         </div>
     </div>

@@ -1,137 +1,35 @@
-{{ with .Site.Data.formContact }}
-{{ if .enable }}
-<nav>
-    <div class="nav nav-tabs row" id="nav-tab" role="tablist">
-      <button class="nav-link col-6 active" id="nav-member-tab" data-bs-toggle="tab" data-bs-target="#nav-member" type="button" role="tab" aria-controls="nav-member" aria-selected="true">
-        {{ .navTabsTitle.membershipRequest }}
-      </button>
+<div class="p-3 p-md-4 text-center">
+  <div class="mb-3">
+    <div class="rounded-circle p-3 bg-light text-warning d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+      <i class="bi bi-tools fs-3"></i>
+    </div>
+  </div>
+  <h4 class="fw-bold mb-2">Formulaire en cours d'amélioration</h4>
+  <p class="text-muted mx-auto mb-4" style="max-width: 650px; font-size: 1.05rem; line-height: 1.6;">
+    Notre formulaire de contact est temporairement désactivé pendant que nous travaillons à son amélioration.
+    Pour toute demande d'adhésion, proposition de partenariat ou question générale, n'hésitez pas à nous écrire directement par courriel ou à venir échanger sur notre Discord.
+  </p>
 
-      <button class="nav-link col-6" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info" aria-selected="false">
-        {{ .navTabsTitle.informationRequest }}
-      </button>
-    </div>
-</nav>
-<div class="tab-content" id="nav-tabContent">
-  <!-- member tab section -->
-  {{ $navMember := .navMember }}
-  <div class="tab-pane fade show active" id="nav-member" role="tabpanel" aria-labelledby="nav-member-tab">
-    <form class="row g-3 px-2 mt-2" id="member-form">
-      <div class="col-md-6">
-        <label for="nameMember" class="form-label">{{ $navMember.name }}</label>
-        <input name="nom" type="text" class="form-control" id="nameMember" required>
-      </div>
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">{{ $navMember.email }}</label>
-        <input name="courriel" type="email" class="form-control" id="inputEmail4" required>
-      </div>
-      <div class="col-md-6">
-        <label for="formation" class="form-label">{{ $navMember.education }}</label>
-        <select name="formation" class="form-select" id="formation">
-          <option selected>{{ $navMember.selectedEducation }}</option>
-          {{ range $navMember.optionValueEducation }}
-          <option value="{{ .value }}">{{ .choice }}</option>
-          {{ end }}
-        </select>
-      </div>
-      <div class="col-md-6">
-        <label for="programme" class="form-label">{{ $navMember.program }}</label>
-        <select name="programme" class="form-select" id="programme">
-          <option selected>{{ $navMember.selectedProgram }}</option>
-          {{ range $navMember.optionValueProgram }}
-          <option value="{{ .value }}">{{ .choice }}</option>
-          {{ end }}
-        </select>
-      </div>
-      <div class="col-md-6">
-        <label for="interests" class="form-label">{{ $navMember.interests }}</label>
-        <textarea name="interets" class="form-control" id="interests"></textarea>
-      </div>
-    </form>
-    <div class="text-end mt-2 me-2">
-      <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm('member-form');">
-        <span id="loading-member" class="spinner-border spinner-border-sm" role="loading" style="display: none;"></span>
-        {{ .button.submit }}
-      </button>
-      <div id="member-form-success" style="display: none;" class="alert alert-success form-success" role="alert">
-        Formulaire soumis avec succès!
-      </div>
-      <div id="member-form-error" style="display: none;" class="alert alert-danger form-error" role="alert">
-        Il y a eu une erreur lors de la soumission du formulaire.
-      </div>
-    </div>
+  <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-3">
+    <a href="mailto:cedille@etsmtl.net" class="btn btn-warning fw-bold px-4 py-2 shadow-sm d-inline-flex align-items-center">
+      <i class="bi bi-envelope-fill me-2"></i>
+      <span>Écrivez-nous à cedille@etsmtl.net</span>
+    </a>
+    <a href="https://discord.com/invite/2g9bVMyGtj" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark fw-bold px-4 py-2 shadow-sm d-inline-flex align-items-center">
+      <i class="fa-brands fa-discord me-2 text-warning"></i>
+      <span>Rejoindre notre Discord</span>
+      <i class="bi bi-box-arrow-up-right ms-2 small text-muted"></i>
+    </a>
   </div>
-  <!-- collab tab section -->
-  {{/*  {{ $navCollab := .navCollab }}
-  <div class="tab-pane fade" id="nav-collab" role="tabpanel" aria-labelledby="nav-collaboration-tab">
-    <form class="row g-3 px-2 mt-2">
-      <div class="col-md-6">
-        <label for="formGroupExampleInput" class="form-label">{{ $navCollab.name }}</label>
-        <input type="text" class="form-control" id="formGroupExampleInput">
-      </div>
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">{{ $navCollab.email }}</label>
-        <input type="email" class="form-control" id="inputEmail4">
-      </div>
-      <div class="col-md-6">
-        <label for="formation" class="form-label">{{ $navCollab.club }}</label>
-        <select class="form-select" id="specificSizeSelect">
-          <option selected>{{ $navCollab.selectedClub }}</option>
-          {{ range $navCollab.optionValueClub }}
-          <option value="{{ .value }}">{{ .choice }}</option>
-          {{ end }}
-        </select>
-      </div>
-      <div class="col-md-6">
-        <label for="website" class="form-label">{{ $navCollab.website }}</label>
-        <input type="url" class="form-control" id="inputWebsite">
-      </div>
-      <div class="col-md-6">
-        <label class="form-label">{{ $navCollab.projectToPropose }}</label>
-        <textarea name="projectToPropose" class="form-control"></textarea>
-      </div>
-    </form>
-    <div class="text-end mt-2 me-2">
-      <button type="submit" class="btn py-2 px-5">
-          {{ .button.submit }}
-      </button>
-    </div>
-  </div>  */}}
-  <!-- info tab section -->
-  {{ $navInfo := .navInfo }}
-  <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
-    <form class="row g-3 px-2 mt-2" id="partnership-form">
-      <div class="col-md-6">
-        <label for="namePartnership" class="form-label">{{ $navInfo.name }}</label>
-        <input name="nom" type="text" class="form-control" id="namePartnership" required>
-      </div>
-      <div class="col-md-6">
-        <label for="emailPartnership" class="form-label">{{ $navInfo.email }}</label>
-        <input name="courriel" type="email" class="form-control" id="emailPartnership" required>
-      </div>
-      <div class="col-md-6">
-        <label for="companyPartnership" class="form-label">{{ $navInfo.company }}</label>
-        <input name="compagnie" type="text" class="form-control" id="companyPartnership" required>
-      </div>
-      <div class="col-md-6">
-        <label for="messageCompagnie" class="form-label">{{ $navInfo.message }}</label>
-        <textarea name="messageCompagnie" class="form-control" id="messageCompagnie"></textarea>
-      </div>
-    </form>
-    <div class="text-end mt-2 me-2">
-      <button type="submit" class="btn py-2 px-5" onclick="event.preventDefault(); submitForm('partnership-form');">
-        <span id="loading-partnership" class="spinner-border spinner-border-sm" role="loading" style="display: none;"></span>
-          {{ .button.submit }}
-      </button>
-      <div id="partnership-form-success" style="display: none;" class="alert alert-success form-success" role="alert">
-        Formulaire soumis avec succès!
-      </div>
-      <div id="partnership-form-error" style="display: none;" class="alert alert-danger form-error" role="alert">
-        Il y a eu une erreur lors de la soumission du formulaire.
-      </div>
-    </div>
+
+  {{ with resources.Get "/documents/plan-partenariat.pdf" }}
+  <div class="pt-3 border-top mt-4 text-center">
+    <span class="small text-muted me-2">
+      <i class="bi bi-file-earmark-pdf-fill text-danger me-1"></i> Vous représentez une entreprise ou un partenaire potentiel?
+    </span>
+    <a href="{{ .RelPermalink }}" target="_blank" rel="noopener noreferrer" class="small text-decoration-underline fw-semibold text-dark">
+      Consultez notre plan de partenariat (PDF) &rarr;
+    </a>
   </div>
+  {{ end }}
 </div>
-{{ $formJS := resources.Get "js/form-handler.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $formJS.RelPermalink }}" defer></script>
-{{ end }}
-{{ end }}
