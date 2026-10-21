@@ -51,7 +51,7 @@
         {{ if gt (len $tierPartners) 0 }}
         <div class="row justify-content-center align-items-center g-4 g-lg-5">
           {{ range $partner := $tierPartners }}
-          <div class="col-12 {{ if eq $tier.id "platine" }}col-md-6 col-lg-5{{ else }}col-12 col-sm-6 col-md-5 col-lg-4{{ end }} text-center">
+          <div class="col-12 py-5 my-5 {{ if eq $tier.id "platine" }}col-md-6 col-lg-5{{ else }}col-12 col-sm-6 col-md-5 col-lg-4{{ end }} text-center">
             <a href="{{ $partner.websiteURL }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark d-inline-flex align-items-center justify-content-center p-3" title="{{ $partner.name }}">
               {{ if not $partner.hasText }}
               <div class="d-flex align-items-center justify-content-center gap-3">
@@ -66,10 +66,20 @@
           {{ end }}
         </div>
         {{ else }}
-        <p class="text-muted my-4">{{ $emptyTierText }}</p>
+        <p class="text-muted my-4 pb-4">{{ $emptyTierText }}</p>
         {{ end }}
       </div>
+      {{ if eq $tier.id "bronze" }}
+      <div class="my-5">
+        <div class="p-3 rounded-3 text-center bg-light shadow-sm border" style="max-width: 1000px; margin: 0 auto;">
+          <p class="mb-0 text-muted">
+            Nous sommes un fier club étudiant de l'ÉTS et nous les remercions pour notre espace au sein de l'école.
+          </p>
+        </div>
+      </div>
+      {{ end }}
     {{ end }}
+
 
     <!-- cta -->
     <div class="my-5">
