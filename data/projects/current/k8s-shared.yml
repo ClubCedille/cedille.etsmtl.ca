@@ -30,7 +30,7 @@ languages:
   Shell: 0.016736084394890056
   YAML: 0.9325276378099014
 name: k8s-shared
-open_issues: 26
+open_issues: 27
 owner: ClubCedille
-pulls: 9
+pulls: 12
 stargazers_count: 5
