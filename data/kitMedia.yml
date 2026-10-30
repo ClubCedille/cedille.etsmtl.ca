@@ -1,0 +1,67 @@
+---
+enable: true
+title: "Kit Média"
+subtitle: "Ressources graphiques officielles, typographie, palette de couleurs et logos de CEDILLE."
+
+nomenclature:
+  title: "Nomenclature officielle"
+  description: "Afin d'assurer une cohérence visuelle, veuillez respecter ces règles d'écriture."
+  correct:
+    name: "CEDILLE"
+    description: "Veuillez l'utiliser dans toutes les communications, partenariats, titres et textes."
+  incorrect:
+    - name: "Cedille"
+      description: "Le nom doit toujours être écrit entièrement en lettres majuscules."
+    - name: "Cédille"
+      description: "Ne jamais ajouter d'accent sur le « E »."
+    - name: "Club Cedille"
+      description: "Bien qu'utilisée par le passé, cette appellation ne doit plus être employée."
+
+colors:
+  title: "Palette de couleurs"
+  subtitle: "Les couleurs officielles qui composent l'identité visuelle de CEDILLE."
+  palette:
+    - name: "Noir"
+      hex: "#080808"
+      usage: "Principale / Fond dominant"
+      description: "Base identitaire de la marque. Utilisé pour les arrière-plans principaux et les textes sur surfaces claires."
+    - name: "Blanc"
+      hex: "#FFFFFF"
+      usage: "Secondaire / Surface inversée"
+      description: "Utilisé pour la lisibilité et comme surface alternative sur les fonds sombres."
+    - name: "Orange"
+      hex: "#FFA500"
+      usage: "Accent"
+      description: "Couleur d'accent (boutons, éléments clés, etc.)."
+
+typography:
+  title: "Typographie"
+  subtitle: "La typographie officielle de CEDILLE."
+  fonts:
+    - name: "Century Gothic"
+      description: "Notre police de caractères principale, notamment utilisé sur « CEDILLE »."
+
+logos:
+  title: "Logos officiels"
+  subtitle: "Sélectionnez les variantes souhaitées en utilisant les cases à cocher."
+  items:
+    - id: "logo-noir"
+      name: "Noir (Sans fond)"
+      image: "images/kit-media/cedille-black-nobg.png"
+      filename: "CEDILLE-noir-sans-fond.png"
+      previewBg: "light"
+    - id: "logo-blanc"
+      name: "Blanc (Sans fond)"
+      image: "images/kit-media/cedille-new-logo.png"
+      filename: "CEDILLE-blanc-sans-fond.png"
+      previewBg: "dark"
+    - id: "logo-fond-blanc"
+      name: "Fond Blanc"
+      image: "images/kit-media/cedille-black-whitebg.png"
+      filename: "CEDILLE-fond-blanc.png"
+      previewBg: "light"
+    - id: "logo-fond-noir"
+      name: "Fond Noir"
+      image: "images/kit-media/cedille-new-logo-black-bg.png"
+      filename: "CEDILLE-fond-noir.png"
+      previewBg: "dark"

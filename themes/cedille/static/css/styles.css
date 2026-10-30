@@ -8,6 +8,50 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F2F2F2;
 }
+
+/*--------------- bootstrap overrides for accent color --------------*/
+:root {
+    --bs-warning: #FFA500;
+    --bs-warning-rgb: 255, 165, 0;
+}
+
+.text-warning {
+    color: #FFA500 !important;
+}
+
+.bg-warning {
+    background-color: #FFA500 !important;
+}
+
+.border-warning {
+    border-color: #FFA500 !important;
+}
+
+.btn-warning {
+    background-color: #FFA500 !important;
+    border-color: #FFA500 !important;
+    color: #080808 !important;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+    background-color: #e69500 !important;
+    border-color: #e69500 !important;
+    color: #080808 !important;
+}
+
+.btn-warning:active, .btn-warning.active, .show > .btn-warning.dropdown-toggle {
+    background-color: #cc8400 !important;
+    border-color: #cc8400 !important;
+    color: #080808 !important;
+}
+
+.btn-warning:disabled, .btn-warning.disabled {
+    background-color: #FFA500 !important;
+    border-color: #FFA500 !important;
+    opacity: 0.65;
+    color: #080808 !important;
+}
+
 /*--------------- Common Components --------------*/
 .title-border {
     border-bottom: 2px solid orange;
@@ -993,4 +1037,67 @@ footer .copyleft {
     border: 4px solid transparent;
     border-radius: 10px;
     box-shadow: inset 10px 10px 10px orange;
+}
+
+/*--------------- KIT MEDIA SECTION --------------*/
+.font-century-gothic {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, "TeX Gyre Adventor", "URW Gothic L", "Avant Garde", sans-serif;
+}
+
+.kit-color-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kit-color-block {
+    cursor: pointer;
+    transition: filter 0.2s ease;
+    user-select: none;
+}
+
+.kit-block-copied-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(8, 8, 8, 0.85);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.kit-color-block.copied .kit-block-copied-overlay {
+    opacity: 1;
+}
+
+.kit-logo-card {
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    border-color: #e5e7eb;
+}
+
+.kit-logo-card * {
+    cursor: pointer;
+}
+
+.kit-logo-card.selected-card,
+.kit-logo-card:has(.logo-checkbox:checked) {
+    border-color: #FFA500 !important;
+    box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.4), 0 0.5rem 1rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.kit-preview-checkered {
+    background-color: #f8f9fa;
+    background-image:
+        linear-gradient(45deg, #eeeeee 25%, transparent 25%),
+        linear-gradient(-45deg, #eeeeee 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #eeeeee 75%),
+        linear-gradient(-45deg, transparent 75%, #eeeeee 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }

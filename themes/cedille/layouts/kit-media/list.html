@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="kit-media-section my-5">
+  <div class="container">
+    {{ partial "kitMedia.html" . }}
+  </div>
+</div>
+
+{{ $jszip := resources.Get "js/jszip.min.js" }}
+{{ if $jszip }}
+<script src="{{ $jszip.RelPermalink }}"></script>
+{{ end }}
+
+{{ $kitMediaJS := resources.Get "js/kit-media.js" | resources.Minify | resources.Fingerprint }}
+{{ if $kitMediaJS }}
+<script type="module" src="{{ $kitMediaJS.RelPermalink }}"></script>
+{{ end }}
+{{ end }}

@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-expand-xl py-3">
-    <div class="container-xl">
+    <div class="container">
       {{ if not .IsHome }}
       <div class="shell-prompt">
         <a class="navbar-brand" href="{{ relref . "/" }}">
@@ -32,7 +32,7 @@
           {{ $active = or $active (and (eq .Name "Joignez l'équipe") (eq $current.Section "contact")) }}
           <li class="{{ if $current.IsMenuCurrent "main" . }}active{{ end }} nav-item">
             {{ if eq .Name "Contactez-nous" }}
-            <a class="link-navbar btn p-1 {{ if $active }}active{{ end }} nav-item" href="{{ .URL | relURL }}">
+            <a class="link-navbar btn p-1 ms-3 {{ if $active }}active{{ end }} nav-item" href="{{ .URL | relURL }}">
               {{ .Name }}
             </a>
             {{ else }}

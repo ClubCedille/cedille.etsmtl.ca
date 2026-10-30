@@ -1,0 +1,188 @@
+{{ with .Site.Data.kitMedia }}
+{{ if .enable }}
+
+{{ partial "page-header.html" (dict "title" .title "subtitle" .subtitle) }}
+
+{{ with .nomenclature }}
+<section id="nomenclature" class="mb-5 pt-3">
+  <h3 class="fw-bold mb-3">{{ .title }}</h3>
+  <p class="text-secondary lead">{{ .description }}</p>
+
+  <!-- nomenclature -->
+  <div class="row g-4 mb-4">
+    <div class="col-12">
+      <div class="card h-100 border-2 border-success shadow-sm rounded-3 overflow-hidden bg-white">
+        <div class="card-header bg-success bg-opacity-10 text-success fw-bold d-flex align-items-center justify-content-between py-3">
+          <span class="d-inline-flex align-items-center">
+            <i class="text-success fs-5"></i>
+            Nomenclature officielle
+          </span>
+        </div>
+        <div class="card-body p-4 text-center d-flex flex-column justify-content-center">
+          <div class="p-3 my-2 bg-light rounded-3 border">
+            <span class="display-5 fw-bold text-dark font-century-gothic">{{ .correct.name }}</span>
+          </div>
+          <p class="card-text text-secondary mt-3 mb-0">{{ .correct.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="card border-2 border-danger shadow-sm rounded-3 bg-white p-3 p-md-4">
+        <h6 class="fw-bold small text-uppercase mb-3 d-flex align-items-center">
+          <p class="text-danger mb-0">Nomenclature à éviter</p>
+        </h6>
+        <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+          {{ range .incorrect }}
+          <li class="d-flex align-items-baseline small">
+            <i class="bi bi-x-circle text-danger me-2 flex-shrink-0" style="font-size: 0.85rem;"></i>
+            <div>
+              <span class="text-decoration-line-through fw-bold text-dark me-2">{{ .name }}</span>
+              <span class="text-secondary">{{ .description }}</span>
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .typography }}
+<section id="typographie" class="mb-5 pt-3">
+  <h3 class="fw-bold mb-3">{{ .title }}</h3>
+  <p class="text-secondary lead">{{ .subtitle }}</p>
+  {{ range .fonts }}
+  <div class="card border-0 shadow-sm rounded-3 bg-white p-2">
+    <div class="row align-items-center g-3">
+      <div class="col-12 col-md-auto text-center text-md-start">
+        <div class="fs-4 fw-bold text-dark font-century-gothic px-4 py-2 ms-2 bg-light rounded-3 border d-inline-block">
+          {{ .name }}
+        </div>
+      </div>
+      <div class="col-12 col-md">
+        <div class="d-flex align-items-center gap-2 mb-1">
+          <p class="fs-6 mt-3 text-muted ms-1">{{ .description }}</p>
+        </div>
+      </div>
+    </div>
+  </div> 
+  {{ end }}
+</section>
+{{ end }}
+
+{{ with .colors }}
+<!-- color palette -->
+<section id="couleurs" class="mb-5 pt-3">
+  <h3 class="fw-bold mb-3">{{ .title }}</h3>
+  <p class="text-secondary lead">{{ .subtitle }}</p>
+
+  <div class="row g-4 mb-4">
+    {{ range .palette }}
+    <div class="col-12 col-md-4">
+      <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden bg-white kit-color-card">
+        <!-- color block -->
+        <div class="kit-color-block d-flex flex-column align-items-center justify-content-center p-3 position-relative"
+             role="button"
+             tabindex="0"
+             data-hex="{{ .hex }}"
+             aria-label="Copier le code HEX {{ .hex }}"
+             title="Cliquer pour copier le code HEX {{ .hex }}"
+             style="background-color: {{ .hex }}; height: 160px; {{ if eq .hex "#FFFFFF" }}border-bottom: 1px solid #e5e7eb;{{ end }}">
+          
+          <div class="kit-block-content text-center {{ if eq .hex "#080808" }}text-white{{ else }}text-dark{{ end }}">
+            <span class="kit-block-hex font-monospace fs-3 fw-bold d-block">{{ .hex }}</span>
+            <span class="kit-block-hint small opacity-75 d-inline-flex align-items-center gap-1 mt-1">
+              <i class="bi bi-clipboard"></i>
+              <span>Cliquer pour copier</span>
+            </span>
+          </div>
+
+          <!-- overlay -->
+          <div class="kit-block-copied-overlay">
+            <div class="d-flex align-items-center gap-2 fs-5 fw-bold">
+              <i class="bi bi-check2-circle text-warning fs-4"></i>
+              <span>Copié!</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body p-4 d-flex flex-column justify-content-between">
+          <div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h4 class="fw-bold mb-0">{{ .name }}</h4>
+              <span class="badge {{ if eq .usage "Accent" }}bg-warning text-dark{{ else }}bg-dark text-white{{ end }}">{{ .usage }}</span>
+            </div>
+            <p class="small text-secondary mb-0">{{ .description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+
+</section>
+{{ end }}
+
+{{ with .logos }}
+<section id="logos" class="mb-5 pt-3">
+  <h3 class="fw-bold mb-3">{{ .title }}</h3>
+  <p class="text-secondary lead">{{ .subtitle }}</p>
+
+  <!-- selection bar -->
+  <div class="card border-0 shadow-sm rounded-3 p-3 bg-white mb-4 sticky-top" style="top: 15px; z-index: 1020;">
+    <div class="row align-items-center g-3">
+      <div class="col-12 col-md-6 col-lg-5 d-flex align-items-center gap-2 flex-wrap">
+        <button type="button" id="btn-select-all" class="btn btn-sm btn-outline-dark">
+          <i class="bi bi-check-all me-1"></i>Tout sélectionner
+        </button>
+        <button type="button" id="btn-deselect-all" class="btn btn-sm btn-outline-secondary">
+          <i class="bi bi-dash me-1"></i>Tout désélectionner
+        </button>
+        <span id="selected-badge" class="badge bg-secondary px-3 py-2 fs-6">
+          0 sélectionné
+        </span>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-7 d-flex align-items-center justify-content-md-end gap-2 flex-wrap">
+        <button type="button" id="btn-download-selected" class="btn btn-warning fw-bold px-4 shadow-sm" disabled>
+          <i class="bi bi-archive-fill me-2"></i>Télécharger la sélection (.zip)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- logo grid -->
+  <div class="row g-4 mb-4">
+    {{ range .items }}
+    <div class="col-12 col-lg-3">
+      <label class="card h-100 border-2 shadow-sm rounded-3 overflow-hidden bg-white kit-logo-card" id="card-{{ .id }}" for="check-{{ .id }}">
+        
+        <div class="card-header bg-white border-bottom py-3 d-flex align-items-center justify-content-between">
+          <div class="form-check m-0 d-flex align-items-center">
+            <input class="form-check-input logo-checkbox me-2" type="checkbox" value="{{ .id }}" id="check-{{ .id }}"
+                   data-url="{{ .image | relURL }}" data-filename="{{ default (path.Base .image) .filename }}" style="width: 1.25rem; height: 1.25rem;">
+            <span class="form-check-label fw-bold user-select-none">
+              {{ .name }}
+            </span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center p-4 {{ if eq .previewBg "dark" }}bg-dark{{ else }}bg-light kit-preview-checkered{{ end }}"
+             style="height: 220px; position: relative;">
+          <img src="{{ .image | relURL }}" alt="{{ .name }}" class="img-fluid kit-logo-img"
+               style="max-height: 160px; max-width: 90%; object-fit: contain;">
+        </div>
+
+      </label>
+    </div>
+    {{ end }}
+  </div>
+
+</section>
+{{ end }}
+
+
+{{ end }}
+{{ end }}
