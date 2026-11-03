@@ -42,10 +42,15 @@ baseURL = 'https://cedille.etsmtl.ca'
         url = "/partenaires/"
         weight = 6
     [[menu.main]]
+        identifier = "kit-media"
+        name = "Kit média"
+        url = "/kit-media/"
+        weight = 7
+    [[menu.main]]
         identifier = "contact"
         name = "Contactez-nous"
         url = "/contact/"
-        weight = 7
+        weight = 8
 
 [params]
     titleFollowUs = "Suivez-nous"
@@ -111,13 +116,17 @@ baseURL = 'https://cedille.etsmtl.ca'
     url = "/partenaires/"
     weight = 6
     [[params.footer.menu]]
+    name = "Kit média"
+    url = "/kit-media/"
+    weight = 7
+    [[params.footer.menu]]
     name = "Statut des services"
     url = "https://status.cedille.club"
-    weight = 7
+    weight = 8
     [[params.footer.menu]]
     name = "Faire un don"
     url = "https://activitesphilanthropie.etsmtl.ca/CLUBSDONSCIEN"
-    weight = 8
+    weight = 9
 
     [[params.footer.social]]
     icon = "fab fa-facebook-f"
