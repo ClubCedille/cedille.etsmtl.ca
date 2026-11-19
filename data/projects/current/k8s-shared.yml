@@ -1,4 +1,4 @@
-commits: 1342
+commits: 1347
 contributors:
 - alexvegas22
 - GreatSymphonia
@@ -13,8 +13,8 @@ contributors:
 - Emilinkb
 - Meddad-Red
 - nqlp
-- mhd-hi
 - Kyohkotsu
+- mhd-hi
 - github-actions[bot]
 - BradLeneus
 - Stoaties
@@ -24,14 +24,14 @@ contributors:
 description: 'Cluster Kubernetes: k8s-shared'
 forks: 1
 languages:
-  HCL: 0.03448738423041517
-  Jinja: 0.013622793321093079
-  Python: 0.004787177231091603
-  SCSS: 0.0019511084890066574
-  Shell: 0.015294172994471542
-  YAML: 0.9298573637339219
+  HCL: 0.037620132339448255
+  Jinja: 0.013347311010161223
+  Python: 0.008589045712110934
+  SCSS: 0.001911652860284898
+  Shell: 0.01498489177578162
+  YAML: 0.9235469663022131
 name: k8s-shared
-open_issues: 27
+open_issues: 26
 owner: ClubCedille
-pulls: 9
+pulls: 13
 stargazers_count: 5
