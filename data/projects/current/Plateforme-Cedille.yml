@@ -1,4 +1,4 @@
-commits: 1303
+commits: 1348
 contributors:
 - SonOfLope
 - Simon-Boyer
@@ -14,9 +14,9 @@ contributors:
 - RussellJimmies
 - Epsot
 - ahenrij
+- Emilinkb
 - etienneoh
 - svc-cedille-user
-- Emilinkb
 - AXDOOMER
 - github-actions[bot]
 - Endlessflow
@@ -26,10 +26,11 @@ contributors:
 description: Nouvelle infra du club CEDILLE
 forks: 3
 languages:
-  HCL: 0.9744918150746538
-  Jinja: 0.025508184925346285
+  HCL: 0.6934729564863765
+  Jinja: 0.021316253219465908
+  Python: 0.2852107902941575
 name: Plateforme-Cedille
 open_issues: 227
 owner: ClubCedille
-pulls: 0
+pulls: 1
 stargazers_count: 11

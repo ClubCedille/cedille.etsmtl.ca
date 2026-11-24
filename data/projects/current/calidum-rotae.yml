@@ -1,4 +1,4 @@
-commits: 162
+commits: 185
 contributors:
 - alexvegas22
 - renovate[bot]
@@ -13,11 +13,12 @@ description: Microservices permettant de router une demande d'admission vers dif
   plateformes de messagerie.
 forks: 0
 languages:
-  Dockerfile: 0.061932338971752356
-  Go: 0.9155278726772769
-  Makefile: 0.022539788350970754
+  Dockerfile: 0.05093313066242023
+  Go: 0.9305248935374519
+  Makefile: 0.01096594404835149
+  Nix: 0.007576031751776386
 name: calidum-rotae
 open_issues: 4
 owner: ClubCedille
-pulls: 13
+pulls: 14
 stargazers_count: 5
