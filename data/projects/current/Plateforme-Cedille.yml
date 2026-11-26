@@ -1,4 +1,4 @@
-commits: 1348
+commits: 1384
 contributors:
 - SonOfLope
 - Simon-Boyer
@@ -11,8 +11,8 @@ contributors:
 - andrei22131
 - HassaanBahsoun
 - Oxsw1ng
-- RussellJimmies
 - Epsot
+- RussellJimmies
 - ahenrij
 - Emilinkb
 - etienneoh
@@ -20,15 +20,16 @@ contributors:
 - AXDOOMER
 - github-actions[bot]
 - Endlessflow
+- GreatSymphonia
 - Vianpyro
 - lamiphil
 - notpeelz
 description: Nouvelle infra du club CEDILLE
 forks: 3
 languages:
-  HCL: 0.6934729564863765
-  Jinja: 0.021316253219465908
-  Python: 0.2852107902941575
+  HCL: 0.7126426033289696
+  Jinja: 0.02502961162022318
+  Python: 0.2623277850508073
 name: Plateforme-Cedille
 open_issues: 228
 owner: ClubCedille
